@@ -1,0 +1,5 @@
+<map id="map/tiles/tile.hh" name="map/tiles/tile.hh">
+<area shape="rect" id="node1" title="The file containing the standard (i.e without effects) tiles." alt="" coords="5,5,120,32"/>
+<area shape="rect" id="node2" href="$map_8hh.html" title="A class to describe a map in the game." alt="" coords="15,80,110,107"/>
+<area shape="rect" id="node3" href="$main_8cc.html" title="File containing the main." alt="" coords="16,155,109,181"/>
+</map>

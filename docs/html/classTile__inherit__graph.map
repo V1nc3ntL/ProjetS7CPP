@@ -1,0 +1,5 @@
+<map id="Tile" name="Tile">
+<area shape="rect" id="node1" title=" " alt="" coords="72,5,181,83"/>
+<area shape="rect" id="node2" href="$classNormalTile.html" title=" " alt="" coords="5,138,115,215"/>
+<area shape="rect" id="node3" href="$classSpecialTile.html" title=" " alt="" coords="139,131,248,223"/>
+</map>

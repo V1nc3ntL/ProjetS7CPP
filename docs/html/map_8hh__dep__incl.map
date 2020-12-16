@@ -1,0 +1,4 @@
+<map id="map/map.hh" name="map/map.hh">
+<area shape="rect" id="node1" title="A class to describe a map in the game." alt="" coords="5,5,100,32"/>
+<area shape="rect" id="node2" href="$main_8cc.html" title="File containing the main." alt="" coords="6,80,99,107"/>
+</map>

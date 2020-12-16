@@ -1,0 +1,6 @@
+<map id="app/main.cc" name="app/main.cc">
+<area shape="rect" id="node1" title="File containing the main." alt="" coords="35,5,129,32"/>
+<area shape="rect" id="node2" href="$map_8hh.html" title="A class to describe a map in the game." alt="" coords="29,80,135,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,155,63,181"/>
+<area shape="rect" id="node4" href="$tile_8hh.html" title="The file containing the standard (i.e without effects) tiles." alt="" coords="87,155,173,181"/>
+</map>

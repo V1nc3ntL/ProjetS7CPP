@@ -3,6 +3,7 @@
 
 #ifndef __HEADERSLOCATION_HH__
 #define __HEADERSLOCATION_HH__
+#define SFML_GRAPHIC "../sfmlLib/include/Graphics.hpp"
 
 #define MAP_H "../gameLogic/map/map.hh"
 

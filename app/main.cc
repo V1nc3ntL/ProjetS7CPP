@@ -29,11 +29,48 @@
   */
  
 #include "headersLocation.hh"
+#include <SFML/Graphics.hpp>
+
 #include <iostream>
 #include MAP_H
 
+#define TILE_OUTLINE_THICKNESS -5
 
 int main(void){
-    std::cout << MAP_H;
+
+sf::RenderWindow window(
+		sf::VideoMode(
+			sf::VideoMode::getDesktopMode().height
+			,sf::VideoMode::getDesktopMode().width), 
+            "Projet S7");
+    
+    
+    sf::VertexArray shape(sf::Quads,4);
+    
+    shape[0].position =  sf::Vector2f(10, 10);
+    shape[1].position =  sf::Vector2f(10, 50);
+    shape[2].position =  sf::Vector2f(50, 50);
+    shape[3].position =  sf::Vector2f(50, 10);
+    /*
+
+    shape.setFillColor(sf::Color::Black);
+
+    shape.setOutlineThickness(TILE_OUTLINE_THICKNESS);
+    shape.setOutlineColor(sf::Color::White);
+*/
+    while (window.isOpen())
+    {
+        sf::Event event;
+        while (window.pollEvent(event))
+        {
+            if (event.type == sf::Event::Closed)
+                window.close();
+        }
+
+        window.clear();
+        window.draw(shape);
+        window.display();
+    }
+
     return 0;
 }

@@ -1,8 +1,8 @@
 CC=g++
-CCFLAGS= -Wall -Werror -pedantic -std=c++17 -g
-LIBFLAGS= -lsfml-graphics -lsfml-window -lsfml-system
-SRC_DIRS=app/
-SRC=$(wildcard $(SRC_DIRS)*.cc) $(wildcard /.cpp)
+CCFLAGS=-Wall -Werror -pedantic -std=c++17 -g
+LIBFLAGS=-lsfml-graphics -lsfml-window -lsfml-system
+SRC_DIRS= app graphic gameLogic graphic/GIs
+SRC= $(wildcard **/*.cc) 
 OBJ=$(SRC:.cc=.o)
 TST_DIR=tests/
 TST=$(wildcard $(TST_DIR)/*.cc)
@@ -16,13 +16,14 @@ testcase :
 	cd $(TST_DIR) ;  make
 
 $(EXEC): $(OBJ)
-	$(CC) $^ -o $@ $(LIB_PATH) $(LIBFLAGS) 
+	$(CC) $(CCFLAGS) $^ -o $@ $(LIB_PATH) $(LIBFLAGS) 
 
 %.o: %.cc
 	$(CC) $(CCFLAGS) -o $@ -c $<
 
 .depend:
 	$(CC) $(CCFLAGS) -MM $(SRC) > .depends
+
 -include .depends
 
 clean:

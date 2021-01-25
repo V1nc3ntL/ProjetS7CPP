@@ -1,5 +1,5 @@
-<map id="map/map.hh" name="map/map.hh">
-<area shape="rect" id="node1" title="A class to describe a map in the game." alt="" coords="35,5,129,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,80,63,107"/>
-<area shape="rect" id="node3" href="$tile_8hh.html" title="The file containing the standard (i.e without effects) tiles." alt="" coords="87,80,173,107"/>
+<map id="gameLogic/map/map.hh" name="gameLogic/map/map.hh">
+<area shape="rect" id="node1" title="A class to describe a map in the game." alt="" coords="5,5,167,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="9,80,67,107"/>
+<area shape="rect" id="node3" href="$tile_8hh.html" title="The file containing the standard (i.e without effects) tiles." alt="" coords="91,80,177,107"/>
 </map>

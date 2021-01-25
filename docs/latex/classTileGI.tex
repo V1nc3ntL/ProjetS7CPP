@@ -1,0 +1,246 @@
+\hypertarget{classTileGI}{}\doxysection{Référence de la classe Tile\+GI}
+\label{classTileGI}\index{TileGI@{TileGI}}
+
+
+{\ttfamily \#include $<$tile\+G\+I.\+hh$>$}
+
+
+
+Graphe d\textquotesingle{}héritage de Tile\+GI\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{classTileGI__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de Tile\+GI\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{classTileGI__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTileGI_a941cbb595e222a5e658d3417f857ad63}{$\sim$\+Tile\+GI}} ()
+\begin{DoxyCompactList}\small\item\em Destroys a tile graphic implementation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTileGI_a930e8da9d8e3dfe41b1b1b281a20eb97}{Tile\+GI}} ()
+\begin{DoxyCompactList}\small\item\em Creates an empty graphic implementation The implementation must be set after construction ! \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTileGI_ad8f6f4b486f329c5bf84dbab6d65e206}{Tile\+GI}} (std\+::pair$<$ int, int $>$ \mbox{\hyperlink{classTileGI_a1f924dac5907f5ddb6960c108e014327}{north\+Position}}, int square\+Size, int outline\+Size)
+\item 
+\mbox{\hyperlink{classTileGI_a49a4539de908883cec26aa9c18c8006f}{Tile\+GI}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTile}{Tile}} $>$ \mbox{\hyperlink{classTileGI_a08ea45ce1675890be952cb08f3a5054f}{tile}}, std\+::pair$<$ int, int $>$ \mbox{\hyperlink{classTileGI_a1f924dac5907f5ddb6960c108e014327}{north\+Position}}, int square\+Size, int outline\+Size, int \mbox{\hyperlink{classTileGI_aba6af9f42acd389f46b47862bc881519}{rt\+Code}})
+\item 
+virtual void \mbox{\hyperlink{classTileGI_af075373de82f131983713c2d6f6ce09b}{draw}} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
+\item 
+virtual int \mbox{\hyperlink{classTileGI_a90074668f433d0365ef7a9a3e4a64108}{left\+Click\+Action}} ()
+\begin{DoxyCompactList}\small\item\em The action triggered by a left click button. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classTileGI_a35014ce8624ce06ba6cbdff2976509ac}{right\+Click\+Action}} ()
+\begin{DoxyCompactList}\small\item\em The action triggered by a right click button. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classTileGI_a644903ffaae2045a597509fc113ad14d}{is\+Under}} (std\+::pair$<$ int, int $>$mouse)
+\begin{DoxyCompactList}\small\item\em Checks that a graphic implementation is under a clicked pixel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classTileGI_a5eedcc8fe86cb186e5d279f122cf73fa}{set\+Quad\+Color}} (sf\+::\+Vertex\+Array \&the\+Quad, \mbox{\hyperlink{structColors_a373cfe301d0a5ab158daaf789bf2f077}{Colors\+::\+Tile\+Color}} the\+Color)
+\item 
+void \mbox{\hyperlink{classTileGI_a7a2833daa0d607c03c0cc146e2fcd8eb}{get\+Outside\+Tile}} (int square\+Size, int outline\+Size)
+\item 
+void \mbox{\hyperlink{classTileGI_ac0288d5209ab3a863df3849cecf8504a}{get\+Inside\+Tile}} (int square\+Size, int outline\+Size)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Vertex\+Array \mbox{\hyperlink{classTileGI_ad8b3a398a1380a957e329cfcc58fa3af}{inside\+Tile}}
+\item 
+sf\+::\+Vertex\+Array \mbox{\hyperlink{classTileGI_ab2b758ff49197d31733e763ef4c167e5}{outside\+Tile}}
+\item 
+std\+::pair$<$ int, int $>$ \mbox{\hyperlink{classTileGI_a1f924dac5907f5ddb6960c108e014327}{north\+Position}}
+\item 
+\mbox{\hyperlink{structColors_a373cfe301d0a5ab158daaf789bf2f077}{Colors\+::\+Tile\+Color}} \mbox{\hyperlink{classTileGI_a0facb1b3bd29d3c54f188e4140136282}{color}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTile}{Tile}} $>$ \mbox{\hyperlink{classTileGI_a08ea45ce1675890be952cb08f3a5054f}{tile}}
+\item 
+int \mbox{\hyperlink{classTileGI_aba6af9f42acd389f46b47862bc881519}{rt\+Code}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classTileGI_a941cbb595e222a5e658d3417f857ad63}\label{classTileGI_a941cbb595e222a5e658d3417f857ad63}} 
+\index{TileGI@{TileGI}!````~TileGI@{$\sim$TileGI}}
+\index{````~TileGI@{$\sim$TileGI}!TileGI@{TileGI}}
+\doxysubsubsection{\texorpdfstring{$\sim$TileGI()}{~TileGI()}}
+{\footnotesize\ttfamily Tile\+G\+I\+::$\sim$\+Tile\+GI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroys a tile graphic implementation. 
+
+\mbox{\Hypertarget{classTileGI_a930e8da9d8e3dfe41b1b1b281a20eb97}\label{classTileGI_a930e8da9d8e3dfe41b1b1b281a20eb97}} 
+\index{TileGI@{TileGI}!TileGI@{TileGI}}
+\index{TileGI@{TileGI}!TileGI@{TileGI}}
+\doxysubsubsection{\texorpdfstring{TileGI()}{TileGI()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Tile\+G\+I\+::\+Tile\+GI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates an empty graphic implementation The implementation must be set after construction ! 
+
+\mbox{\Hypertarget{classTileGI_ad8f6f4b486f329c5bf84dbab6d65e206}\label{classTileGI_ad8f6f4b486f329c5bf84dbab6d65e206}} 
+\index{TileGI@{TileGI}!TileGI@{TileGI}}
+\index{TileGI@{TileGI}!TileGI@{TileGI}}
+\doxysubsubsection{\texorpdfstring{TileGI()}{TileGI()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Tile\+G\+I\+::\+Tile\+GI (\begin{DoxyParamCaption}\item[{std\+::pair$<$ int, int $>$}]{north\+Position,  }\item[{int}]{square\+Size,  }\item[{int}]{outline\+Size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTileGI_a49a4539de908883cec26aa9c18c8006f}\label{classTileGI_a49a4539de908883cec26aa9c18c8006f}} 
+\index{TileGI@{TileGI}!TileGI@{TileGI}}
+\index{TileGI@{TileGI}!TileGI@{TileGI}}
+\doxysubsubsection{\texorpdfstring{TileGI()}{TileGI()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Tile\+G\+I\+::\+Tile\+GI (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTile}{Tile}} $>$}]{tile,  }\item[{std\+::pair$<$ int, int $>$}]{north\+Position,  }\item[{int}]{square\+Size,  }\item[{int}]{outline\+Size,  }\item[{int}]{rt\+Code }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classTileGI_af075373de82f131983713c2d6f6ce09b}\label{classTileGI_af075373de82f131983713c2d6f6ce09b}} 
+\index{TileGI@{TileGI}!draw@{draw}}
+\index{draw@{draw}!TileGI@{TileGI}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void Tile\+G\+I\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{target,  }\item[{sf\+::\+Render\+States}]{states }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classTileGI_ac0288d5209ab3a863df3849cecf8504a}\label{classTileGI_ac0288d5209ab3a863df3849cecf8504a}} 
+\index{TileGI@{TileGI}!getInsideTile@{getInsideTile}}
+\index{getInsideTile@{getInsideTile}!TileGI@{TileGI}}
+\doxysubsubsection{\texorpdfstring{getInsideTile()}{getInsideTile()}}
+{\footnotesize\ttfamily void Tile\+G\+I\+::get\+Inside\+Tile (\begin{DoxyParamCaption}\item[{int}]{square\+Size,  }\item[{int}]{outline\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em square\+Size} & the square size before isometric transformation \\
+\hline
+{\em outline\+Size} & the size in pixel of the tile outline \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTileGI_a7a2833daa0d607c03c0cc146e2fcd8eb}\label{classTileGI_a7a2833daa0d607c03c0cc146e2fcd8eb}} 
+\index{TileGI@{TileGI}!getOutsideTile@{getOutsideTile}}
+\index{getOutsideTile@{getOutsideTile}!TileGI@{TileGI}}
+\doxysubsubsection{\texorpdfstring{getOutsideTile()}{getOutsideTile()}}
+{\footnotesize\ttfamily void Tile\+G\+I\+::get\+Outside\+Tile (\begin{DoxyParamCaption}\item[{int}]{square\+Size,  }\item[{int}]{outline\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em square\+Size} & the square size before isometric transformation \\
+\hline
+{\em outline\+Size} & the size in pixel of the tile outline \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTileGI_a644903ffaae2045a597509fc113ad14d}\label{classTileGI_a644903ffaae2045a597509fc113ad14d}} 
+\index{TileGI@{TileGI}!isUnder@{isUnder}}
+\index{isUnder@{isUnder}!TileGI@{TileGI}}
+\doxysubsubsection{\texorpdfstring{isUnder()}{isUnder()}}
+{\footnotesize\ttfamily bool Tile\+G\+I\+::is\+Under (\begin{DoxyParamCaption}\item[{std\+::pair$<$ int, int $>$}]{mouse }\end{DoxyParamCaption})}
+
+
+
+Checks that a graphic implementation is under a clicked pixel. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mouse} & the mouse XY position when clicked in pixel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+a boolean 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTileGI_a90074668f433d0365ef7a9a3e4a64108}\label{classTileGI_a90074668f433d0365ef7a9a3e4a64108}} 
+\index{TileGI@{TileGI}!leftClickAction@{leftClickAction}}
+\index{leftClickAction@{leftClickAction}!TileGI@{TileGI}}
+\doxysubsubsection{\texorpdfstring{leftClickAction()}{leftClickAction()}}
+{\footnotesize\ttfamily int Tile\+G\+I\+::left\+Click\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+The action triggered by a left click button. 
+
+\begin{DoxyReturn}{Renvoie}
+code an int that the main application translates 
+\end{DoxyReturn}
+
+
+Implémente \mbox{\hyperlink{classClickable_a86326f5a68dde9469b2a706fa95a2484}{Clickable}}.
+
+\mbox{\Hypertarget{classTileGI_a35014ce8624ce06ba6cbdff2976509ac}\label{classTileGI_a35014ce8624ce06ba6cbdff2976509ac}} 
+\index{TileGI@{TileGI}!rightClickAction@{rightClickAction}}
+\index{rightClickAction@{rightClickAction}!TileGI@{TileGI}}
+\doxysubsubsection{\texorpdfstring{rightClickAction()}{rightClickAction()}}
+{\footnotesize\ttfamily int Tile\+G\+I\+::right\+Click\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+The action triggered by a right click button. 
+
+\begin{DoxyReturn}{Renvoie}
+code an int that the main application translates 
+\end{DoxyReturn}
+
+
+Implémente \mbox{\hyperlink{classClickable_a33ce6f79466159705d00906f7171e33f}{Clickable}}.
+
+\mbox{\Hypertarget{classTileGI_a5eedcc8fe86cb186e5d279f122cf73fa}\label{classTileGI_a5eedcc8fe86cb186e5d279f122cf73fa}} 
+\index{TileGI@{TileGI}!setQuadColor@{setQuadColor}}
+\index{setQuadColor@{setQuadColor}!TileGI@{TileGI}}
+\doxysubsubsection{\texorpdfstring{setQuadColor()}{setQuadColor()}}
+{\footnotesize\ttfamily void Tile\+G\+I\+::set\+Quad\+Color (\begin{DoxyParamCaption}\item[{sf\+::\+Vertex\+Array \&}]{the\+Quad,  }\item[{\mbox{\hyperlink{structColors_a373cfe301d0a5ab158daaf789bf2f077}{Colors\+::\+Tile\+Color}}}]{the\+Color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{classTileGI_a0facb1b3bd29d3c54f188e4140136282}\label{classTileGI_a0facb1b3bd29d3c54f188e4140136282}} 
+\index{TileGI@{TileGI}!color@{color}}
+\index{color@{color}!TileGI@{TileGI}}
+\doxysubsubsection{\texorpdfstring{color}{color}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColors_a373cfe301d0a5ab158daaf789bf2f077}{Colors\+::\+Tile\+Color}} Tile\+G\+I\+::color\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTileGI_ad8b3a398a1380a957e329cfcc58fa3af}\label{classTileGI_ad8b3a398a1380a957e329cfcc58fa3af}} 
+\index{TileGI@{TileGI}!insideTile@{insideTile}}
+\index{insideTile@{insideTile}!TileGI@{TileGI}}
+\doxysubsubsection{\texorpdfstring{insideTile}{insideTile}}
+{\footnotesize\ttfamily sf\+::\+Vertex\+Array Tile\+G\+I\+::inside\+Tile\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTileGI_a1f924dac5907f5ddb6960c108e014327}\label{classTileGI_a1f924dac5907f5ddb6960c108e014327}} 
+\index{TileGI@{TileGI}!northPosition@{northPosition}}
+\index{northPosition@{northPosition}!TileGI@{TileGI}}
+\doxysubsubsection{\texorpdfstring{northPosition}{northPosition}}
+{\footnotesize\ttfamily std\+::pair$<$int, int$>$ Tile\+G\+I\+::north\+Position\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTileGI_ab2b758ff49197d31733e763ef4c167e5}\label{classTileGI_ab2b758ff49197d31733e763ef4c167e5}} 
+\index{TileGI@{TileGI}!outsideTile@{outsideTile}}
+\index{outsideTile@{outsideTile}!TileGI@{TileGI}}
+\doxysubsubsection{\texorpdfstring{outsideTile}{outsideTile}}
+{\footnotesize\ttfamily sf\+::\+Vertex\+Array Tile\+G\+I\+::outside\+Tile\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTileGI_aba6af9f42acd389f46b47862bc881519}\label{classTileGI_aba6af9f42acd389f46b47862bc881519}} 
+\index{TileGI@{TileGI}!rtCode@{rtCode}}
+\index{rtCode@{rtCode}!TileGI@{TileGI}}
+\doxysubsubsection{\texorpdfstring{rtCode}{rtCode}}
+{\footnotesize\ttfamily int Tile\+G\+I\+::rt\+Code\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTileGI_a08ea45ce1675890be952cb08f3a5054f}\label{classTileGI_a08ea45ce1675890be952cb08f3a5054f}} 
+\index{TileGI@{TileGI}!tile@{tile}}
+\index{tile@{tile}!TileGI@{TileGI}}
+\doxysubsubsection{\texorpdfstring{tile}{tile}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classTile}{Tile}}$>$ Tile\+G\+I\+::tile\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+src/graphics/\mbox{\hyperlink{tileGI_8hh}{tile\+G\+I.\+hh}}\item 
+src/graphics/\mbox{\hyperlink{tileGI_8cc}{tile\+G\+I.\+cc}}\end{DoxyCompactItemize}

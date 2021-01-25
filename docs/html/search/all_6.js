@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['radiating_5feffect_2ehh_14',['radiating_effect.hh',['../radiating__effect_8hh.html',1,'']]],
-  ['radiatingeffect_15',['RadiatingEffect',['../classRadiatingEffect.html',1,'']]],
-  ['readme_2emd_16',['README.md',['../README_8md.html',1,'']]]
+  ['fonts_5fdir_40',['FONTS_DIR',['../headersLocation_8hh.html#a36c3fec3e9086ef0cf1d639423032f68',1,'headersLocation.hh']]]
 ];

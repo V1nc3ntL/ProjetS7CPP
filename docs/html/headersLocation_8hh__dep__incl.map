@@ -1,0 +1,9 @@
+<map id="src/app/headersLocation.hh" name="src/app/headersLocation.hh">
+<area shape="rect" id="node1" title=" " alt="" coords="306,5,489,32"/>
+<area shape="rect" id="node2" href="$mainMenuEventTreatment_8hh.html" title=" " alt="" coords="5,80,184,121"/>
+<area shape="rect" id="node3" href="$eventTreatment_8hh.html" title="File containing the treatment associated with events." alt="" coords="125,169,317,196"/>
+<area shape="rect" id="node4" href="$main_8cc.html" title="File containing the main." alt="" coords="259,87,373,114"/>
+<area shape="rect" id="node5" href="$buttonGI_8cc.html" title="Implementation of the buttons." alt="" coords="397,87,563,114"/>
+<area shape="rect" id="node6" href="$playEventTreatment_8hh.html" title="File containing the game event treatment." alt="" coords="587,87,805,114"/>
+<area shape="rect" id="node7" href="$SpriteButtonGI_8cc.html" title=" " alt="" coords="830,80,999,121"/>
+</map>

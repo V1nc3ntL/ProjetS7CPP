@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['normaltile_24',['NormalTile',['../classNormalTile.html',1,'']]]
+  ['effect_204',['Effect',['../classEffect.html',1,'']]]
 ];

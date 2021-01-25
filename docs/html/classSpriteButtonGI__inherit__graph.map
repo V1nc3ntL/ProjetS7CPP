@@ -1,0 +1,6 @@
+<map id="SpriteButtonGI" name="SpriteButtonGI">
+<area shape="rect" id="node1" title=" " alt="" coords="54,145,190,340"/>
+<area shape="rect" id="node4" href="$classUnitGI.html" title=" " alt="" coords="84,388,160,509"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,13,100,90"/>
+<area shape="rect" id="node3" href="$classClickable.html" title=" " alt="" coords="124,5,259,97"/>
+</map>

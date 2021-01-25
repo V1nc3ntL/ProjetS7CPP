@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet C++ S7 : EL-KHARROUBI LEFEBVRE:  Fichier source de src/graphics/mapGI.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet C++ S7 : EL-KHARROUBI LEFEBVRE
+   </div>
+   <div id="projectbrief">Le projet S7 de C++ pour EISE4, réalisé par Karim El-KHARROUBI et Vincent LEFEBVRE</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_560415a5d2bc4999842279f4fc1debef.html">graphics</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">mapGI.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="mapGI_8hh.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef __MAP_GRAPHIC_IMP_HH__</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define __MAP_GRAPHIC_IMP_HH__</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;../gameLogic/map/tiles/tile.hh&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="buttonGI_8hh.html">buttonGI.hh</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// Forward declaration</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span><a class="code" href="classGameMap.html">GameMap</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classMapGI.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="classMapGI.html">MapGI</a> : <span class="keyword">public</span> sf::Drawable {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classMapGI.html#afd8443fda766591d1410bf00e724913b">   25</a></span>&#160;  <a class="code" href="classMapGI.html#afd8443fda766591d1410bf00e724913b">MapGI</a>(){};</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classMapGI.html#a22fad3f490b2ec8613f665246cd2eece">   30</a></span>&#160;  <a class="code" href="classMapGI.html#a22fad3f490b2ec8613f665246cd2eece">~MapGI</a>(){};</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="classMapGI.html#afd8443fda766591d1410bf00e724913b">MapGI</a>(<span class="keywordtype">int</span> &amp;windowWidth, <span class="keywordtype">int</span> &amp;windowHeight, <a class="code" href="classGameMap.html">GameMap</a> &amp;map);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classMapGI.html#a5eceb45b5734f29c446ed1616426a8aa">createMapGraphs</a>(std::pair&lt;int, int&gt; &amp;northPosition,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                       std::vector&lt;std::shared_ptr&lt;Tile&gt;&gt;::iterator it);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  std::shared_ptr&lt;TileGI&gt; <a class="code" href="classMapGI.html#a2107ca49ad2bedddb101d11c0dc0fd34">getClickedOn</a>(std::pair&lt;int,int&gt;mouse) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classMapGI.html#a0060df309ed53e97cced8b69a5397583">   56</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classMapGI.html#a0060df309ed53e97cced8b69a5397583">draw</a>(sf::RenderTarget &amp;target, sf::RenderStates states)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    std::vector&lt;TileGI&gt;::const_iterator it;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">for</span> (it = <a class="code" href="classMapGI.html#a2235037b13c1c78d0e63b9f38e5a7764">tls</a>.begin(); it &lt; <a class="code" href="classMapGI.html#a2235037b13c1c78d0e63b9f38e5a7764">tls</a>.end(); it++)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      target.draw(*it);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classMapGI.html#a42e6c514e9147bfbdbe5a80a00315c79">resize</a>(<span class="keywordtype">int</span> windowWidth, <span class="keywordtype">int</span> windowHeight);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classMapGI.html#afcedf27dd59d7e093b38df7566b62a1f">   65</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classMapGI.html#afcedf27dd59d7e093b38df7566b62a1f">width</a>, <a class="code" href="classMapGI.html#a2e4ea720139ebf8dd21e3be0e6d6a412">height</a>, <a class="code" href="classMapGI.html#a572aa5bc5e1613fdf500c554e4e6e407">sqH</a>, <a class="code" href="classMapGI.html#af16795ce695ed39915ea9e6a654398ab">sqW</a>, <a class="code" href="classMapGI.html#af02529985a04a7eadd50aef84a4cf381">outline</a> = 5;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classMapGI.html#a1af383fc2729b5e02b7f67d5d4e295cc">   66</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classMapGI.html#a1af383fc2729b5e02b7f67d5d4e295cc">squareSize</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classMapGI.html#a2235037b13c1c78d0e63b9f38e5a7764">   67</a></span>&#160;  std::vector&lt;TileGI&gt; <a class="code" href="classMapGI.html#a2235037b13c1c78d0e63b9f38e5a7764">tls</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classMapGI.html#af646fd87cee602768979b7c29515bc5d">   68</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classMapGI.html#af646fd87cee602768979b7c29515bc5d">lastSelected</a> = -1;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classMapGI.html#a81923507fdb7356802ecd44bd1e0ea7f">getSquareSize</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;};</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassMapGI_html_af646fd87cee602768979b7c29515bc5d"><div class="ttname"><a href="classMapGI.html#af646fd87cee602768979b7c29515bc5d">MapGI::lastSelected</a></div><div class="ttdeci">int lastSelected</div><div class="ttdef"><b>Definition:</b> mapGI.hh:68</div></div>
+<div class="ttc" id="aclassMapGI_html_a2235037b13c1c78d0e63b9f38e5a7764"><div class="ttname"><a href="classMapGI.html#a2235037b13c1c78d0e63b9f38e5a7764">MapGI::tls</a></div><div class="ttdeci">std::vector&lt; TileGI &gt; tls</div><div class="ttdef"><b>Definition:</b> mapGI.hh:67</div></div>
+<div class="ttc" id="aclassMapGI_html_a81923507fdb7356802ecd44bd1e0ea7f"><div class="ttname"><a href="classMapGI.html#a81923507fdb7356802ecd44bd1e0ea7f">MapGI::getSquareSize</a></div><div class="ttdeci">int getSquareSize() const</div><div class="ttdef"><b>Definition:</b> mapGI.cc:65</div></div>
+<div class="ttc" id="aclassMapGI_html"><div class="ttname"><a href="classMapGI.html">MapGI</a></div><div class="ttdef"><b>Definition:</b> mapGI.hh:18</div></div>
+<div class="ttc" id="aclassMapGI_html_af02529985a04a7eadd50aef84a4cf381"><div class="ttname"><a href="classMapGI.html#af02529985a04a7eadd50aef84a4cf381">MapGI::outline</a></div><div class="ttdeci">int outline</div><div class="ttdef"><b>Definition:</b> mapGI.hh:65</div></div>
+<div class="ttc" id="aclassMapGI_html_a572aa5bc5e1613fdf500c554e4e6e407"><div class="ttname"><a href="classMapGI.html#a572aa5bc5e1613fdf500c554e4e6e407">MapGI::sqH</a></div><div class="ttdeci">int sqH</div><div class="ttdef"><b>Definition:</b> mapGI.hh:65</div></div>
+<div class="ttc" id="abuttonGI_8hh_html"><div class="ttname"><a href="buttonGI_8hh.html">buttonGI.hh</a></div><div class="ttdoc">The graphic implementation of a button.</div></div>
+<div class="ttc" id="aclassMapGI_html_afcedf27dd59d7e093b38df7566b62a1f"><div class="ttname"><a href="classMapGI.html#afcedf27dd59d7e093b38df7566b62a1f">MapGI::width</a></div><div class="ttdeci">int width</div><div class="ttdef"><b>Definition:</b> mapGI.hh:65</div></div>
+<div class="ttc" id="aclassMapGI_html_a0060df309ed53e97cced8b69a5397583"><div class="ttname"><a href="classMapGI.html#a0060df309ed53e97cced8b69a5397583">MapGI::draw</a></div><div class="ttdeci">virtual void draw(sf::RenderTarget &amp;target, sf::RenderStates states) const</div><div class="ttdef"><b>Definition:</b> mapGI.hh:56</div></div>
+<div class="ttc" id="aclassGameMap_html"><div class="ttname"><a href="classGameMap.html">GameMap</a></div><div class="ttdef"><b>Definition:</b> gameMap.hh:22</div></div>
+<div class="ttc" id="aclassMapGI_html_afd8443fda766591d1410bf00e724913b"><div class="ttname"><a href="classMapGI.html#afd8443fda766591d1410bf00e724913b">MapGI::MapGI</a></div><div class="ttdeci">MapGI()</div><div class="ttdoc">Creates an empty graphic implementation The implementation must be set after construction !</div><div class="ttdef"><b>Definition:</b> mapGI.hh:25</div></div>
+<div class="ttc" id="aclassMapGI_html_a2e4ea720139ebf8dd21e3be0e6d6a412"><div class="ttname"><a href="classMapGI.html#a2e4ea720139ebf8dd21e3be0e6d6a412">MapGI::height</a></div><div class="ttdeci">int height</div><div class="ttdef"><b>Definition:</b> mapGI.hh:65</div></div>
+<div class="ttc" id="aclassMapGI_html_a42e6c514e9147bfbdbe5a80a00315c79"><div class="ttname"><a href="classMapGI.html#a42e6c514e9147bfbdbe5a80a00315c79">MapGI::resize</a></div><div class="ttdeci">void resize(int windowWidth, int windowHeight)</div><div class="ttdoc">Update an already created graphic implementation.</div><div class="ttdef"><b>Definition:</b> mapGI.cc:76</div></div>
+<div class="ttc" id="aclassMapGI_html_a2107ca49ad2bedddb101d11c0dc0fd34"><div class="ttname"><a href="classMapGI.html#a2107ca49ad2bedddb101d11c0dc0fd34">MapGI::getClickedOn</a></div><div class="ttdeci">std::shared_ptr&lt; TileGI &gt; getClickedOn(std::pair&lt; int, int &gt;mouse) const</div><div class="ttdoc">Retrieve the clicked tile from the map.</div><div class="ttdef"><b>Definition:</b> mapGI.cc:83</div></div>
+<div class="ttc" id="aclassMapGI_html_a22fad3f490b2ec8613f665246cd2eece"><div class="ttname"><a href="classMapGI.html#a22fad3f490b2ec8613f665246cd2eece">MapGI::~MapGI</a></div><div class="ttdeci">~MapGI()</div><div class="ttdoc">Destroys a map graphic implementation.</div><div class="ttdef"><b>Definition:</b> mapGI.hh:30</div></div>
+<div class="ttc" id="aclassMapGI_html_a5eceb45b5734f29c446ed1616426a8aa"><div class="ttname"><a href="classMapGI.html#a5eceb45b5734f29c446ed1616426a8aa">MapGI::createMapGraphs</a></div><div class="ttdeci">void createMapGraphs(std::pair&lt; int, int &gt; &amp;northPosition, std::vector&lt; std::shared_ptr&lt; Tile &gt;&gt;::iterator it)</div><div class="ttdoc">Creates a graphic representation of a map from an iterator on a vector of tile beyond the northPositi...</div><div class="ttdef"><b>Definition:</b> mapGI.cc:39</div></div>
+<div class="ttc" id="aclassMapGI_html_a1af383fc2729b5e02b7f67d5d4e295cc"><div class="ttname"><a href="classMapGI.html#a1af383fc2729b5e02b7f67d5d4e295cc">MapGI::squareSize</a></div><div class="ttdeci">int squareSize</div><div class="ttdef"><b>Definition:</b> mapGI.hh:66</div></div>
+<div class="ttc" id="aclassMapGI_html_af16795ce695ed39915ea9e6a654398ab"><div class="ttname"><a href="classMapGI.html#af16795ce695ed39915ea9e6a654398ab">MapGI::sqW</a></div><div class="ttdeci">int sqW</div><div class="ttdef"><b>Definition:</b> mapGI.hh:65</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

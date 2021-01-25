@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet C++ S7 : EL-KHARROUBI LEFEBVRE:  Fichier source de src/gameLogic/unit.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet C++ S7 : EL-KHARROUBI LEFEBVRE
+   </div>
+   <div id="projectbrief">Le projet S7 de C++ pour EISE4, réalisé par Karim El-KHARROUBI et Vincent LEFEBVRE</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_a3cd0e418fdb8bca2b697bc9c54f67ce.html">gameLogic</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">unit.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="unit_8hh.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef __UNIT_HH__</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define __UNIT_HH__</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classUnit.html">   11</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classUnit.html">Unit</a>{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        public :</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classUnit.html#adcb402ba309c66987397e441ecd5c54b">   14</a></span>&#160;            <a class="code" href="classUnit.html#adcb402ba309c66987397e441ecd5c54b">Unit</a>(std::string <a class="code" href="classUnit.html#a03a2344fa6977a2ce44b320e44bc9caa">name</a>,<span class="keywordtype">int</span> <a class="code" href="classUnit.html#a0d73ae7f79e48da36aaa54ad5f016e71">maxHP</a>,<span class="keywordtype">int</span> <a class="code" href="classUnit.html#a45243122ae655f50179f96bc831bfb1d">type</a>,std::pair&lt;int,int&gt; <a class="code" href="classUnit.html#a5e0d570e8b06f33f873df82ede77bd73">pos</a>) : <a class="code" href="classUnit.html#a0d73ae7f79e48da36aaa54ad5f016e71">maxHP</a>(<a class="code" href="classUnit.html#a0d73ae7f79e48da36aaa54ad5f016e71">maxHP</a>),<a class="code" href="classUnit.html#a45741ad1efff07340150700d9a624678">hP</a>(<a class="code" href="classUnit.html#a0d73ae7f79e48da36aaa54ad5f016e71">maxHP</a>),</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            <a class="code" href="classUnit.html#a45243122ae655f50179f96bc831bfb1d">type</a>(<a class="code" href="classUnit.html#a45243122ae655f50179f96bc831bfb1d">type</a>),<a class="code" href="classUnit.html#a03a2344fa6977a2ce44b320e44bc9caa">name</a>(<a class="code" href="classUnit.html#a03a2344fa6977a2ce44b320e44bc9caa">name</a>),<a class="code" href="classUnit.html#a5e0d570e8b06f33f873df82ede77bd73">pos</a>(<a class="code" href="classUnit.html#a5e0d570e8b06f33f873df82ede77bd73">pos</a>) {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            }</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classUnit.html#ab6b22ed6ce31db0c3c3ff3a9ccc92b56">   18</a></span>&#160;            <a class="code" href="classUnit.html">Unit</a>* <a class="code" href="classUnit.html#ab6b22ed6ce31db0c3c3ff3a9ccc92b56">operator-</a>(<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; b) {  </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                this-&gt;<a class="code" href="classUnit.html#a45741ad1efff07340150700d9a624678">hP</a> -= b;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                <span class="keywordflow">if</span>(<a class="code" href="classUnit.html#a45741ad1efff07340150700d9a624678">hP</a>&lt;=0)</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                    <span class="keyword">delete</span> <span class="keyword">this</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        private :</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classUnit.html#a0d73ae7f79e48da36aaa54ad5f016e71">   26</a></span>&#160;            <span class="keywordtype">int</span> <a class="code" href="classUnit.html#a0d73ae7f79e48da36aaa54ad5f016e71">maxHP</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classUnit.html#a45741ad1efff07340150700d9a624678">   27</a></span>&#160;            <span class="keywordtype">int</span> <a class="code" href="classUnit.html#a45741ad1efff07340150700d9a624678">hP</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classUnit.html#a45243122ae655f50179f96bc831bfb1d">   28</a></span>&#160;            <span class="keywordtype">int</span> <a class="code" href="classUnit.html#a45243122ae655f50179f96bc831bfb1d">type</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classUnit.html#a03a2344fa6977a2ce44b320e44bc9caa">   29</a></span>&#160;            std::string <a class="code" href="classUnit.html#a03a2344fa6977a2ce44b320e44bc9caa">name</a>; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classUnit.html#a5e0d570e8b06f33f873df82ede77bd73">   30</a></span>&#160;            std::pair&lt;int,int&gt; <a class="code" href="classUnit.html#a5e0d570e8b06f33f873df82ede77bd73">pos</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    };</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassUnit_html_a0d73ae7f79e48da36aaa54ad5f016e71"><div class="ttname"><a href="classUnit.html#a0d73ae7f79e48da36aaa54ad5f016e71">Unit::maxHP</a></div><div class="ttdeci">int maxHP</div><div class="ttdef"><b>Definition:</b> unit.hh:26</div></div>
+<div class="ttc" id="aclassUnit_html_ab6b22ed6ce31db0c3c3ff3a9ccc92b56"><div class="ttname"><a href="classUnit.html#ab6b22ed6ce31db0c3c3ff3a9ccc92b56">Unit::operator-</a></div><div class="ttdeci">Unit * operator-(const int &amp;b)</div><div class="ttdef"><b>Definition:</b> unit.hh:18</div></div>
+<div class="ttc" id="aclassUnit_html_a45243122ae655f50179f96bc831bfb1d"><div class="ttname"><a href="classUnit.html#a45243122ae655f50179f96bc831bfb1d">Unit::type</a></div><div class="ttdeci">int type</div><div class="ttdef"><b>Definition:</b> unit.hh:28</div></div>
+<div class="ttc" id="aclassUnit_html_a45741ad1efff07340150700d9a624678"><div class="ttname"><a href="classUnit.html#a45741ad1efff07340150700d9a624678">Unit::hP</a></div><div class="ttdeci">int hP</div><div class="ttdef"><b>Definition:</b> unit.hh:27</div></div>
+<div class="ttc" id="aclassUnit_html_a5e0d570e8b06f33f873df82ede77bd73"><div class="ttname"><a href="classUnit.html#a5e0d570e8b06f33f873df82ede77bd73">Unit::pos</a></div><div class="ttdeci">std::pair&lt; int, int &gt; pos</div><div class="ttdef"><b>Definition:</b> unit.hh:30</div></div>
+<div class="ttc" id="aclassUnit_html"><div class="ttname"><a href="classUnit.html">Unit</a></div><div class="ttdef"><b>Definition:</b> unit.hh:11</div></div>
+<div class="ttc" id="aclassUnit_html_adcb402ba309c66987397e441ecd5c54b"><div class="ttname"><a href="classUnit.html#adcb402ba309c66987397e441ecd5c54b">Unit::Unit</a></div><div class="ttdeci">Unit(std::string name, int maxHP, int type, std::pair&lt; int, int &gt; pos)</div><div class="ttdef"><b>Definition:</b> unit.hh:14</div></div>
+<div class="ttc" id="aclassUnit_html_a03a2344fa6977a2ce44b320e44bc9caa"><div class="ttname"><a href="classUnit.html#a03a2344fa6977a2ce44b320e44bc9caa">Unit::name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition:</b> unit.hh:29</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

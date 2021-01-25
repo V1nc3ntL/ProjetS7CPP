@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['main_2ecc_30',['main.cc',['../main_8cc.html',1,'']]],
-  ['map_2ehh_31',['map.hh',['../map_8hh.html',1,'']]]
+  ['character_2ehh_227',['character.hh',['../character_8hh.html',1,'']]],
+  ['clickable_2ehh_228',['clickable.hh',['../clickable_8hh.html',1,'']]],
+  ['colors_2ehh_229',['colors.hh',['../colors_8hh.html',1,'']]]
 ];

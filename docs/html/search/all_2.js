@@ -1,7 +1,15 @@
 var searchData=
 [
-  ['geteffect_3',['getEffect',['../classSpecialTile.html#acaf0fb44c4b3c31af64ffa12d6fcc87c',1,'SpecialTile']]],
-  ['geteffectadjective_4',['getEffectAdjective',['../classEffect.html#a8cf80798ac25d8493affe59895dd7d8f',1,'Effect']]],
-  ['getname_5',['getName',['../classEffect.html#a10bb87040b9169a01cfaa6f8069761ab',1,'Effect']]],
-  ['gettiletype_6',['getTileType',['../classNormalTile.html#ae05b25c474b268d6d506631f90ad1628',1,'NormalTile::getTileType()'],['../classSpecialTile.html#a8e0bacb2afc4ec4fb7d70b45c0b9798d',1,'SpecialTile::getTileType()'],['../classTile.html#a8a240d026fbbf2038aaebc1ddd3e65cf',1,'Tile::getTileType()']]]
+  ['background_6',['Background',['../classMainMenuGI.html#a15def3eabeec543b08ea04ebc2dd8c2d',1,'MainMenuGI']]],
+  ['beneficial_7',['BENEFICIAL',['../classEffect.html#a2adc3ed1139e115acae9a3c08fbb36d0aebd538956f5f42828a01264846bb55f3',1,'Effect']]],
+  ['board_5fgi_5fh_8',['BOARD_GI_H',['../headersLocation_8hh.html#a1a16cd128e3ae5c834efe81140b1eddc',1,'headersLocation.hh']]],
+  ['boardgi_9',['BoardGI',['../classBoardGI.html',1,'BoardGI'],['../classBoardGI.html#a5cc9f72fc7975392ec83a2c206d75371',1,'BoardGI::BoardGI()'],['../classinfoTextGI.html#a5b03ebd2692c8fa484b15908f4e405fc',1,'infoTextGI::BoardGI()']]],
+  ['boardgi_2ehh_10',['boardGI.hh',['../boardGI_8hh.html',1,'']]],
+  ['buttonfont_11',['buttonFont',['../classButtonGI.html#a396161cff635a3cf010de15246c08aab',1,'ButtonGI']]],
+  ['buttongi_12',['ButtonGI',['../classButtonGI.html',1,'ButtonGI'],['../classButtonGI.html#af06e658aef80f006335d7c42792238a4',1,'ButtonGI::ButtonGI()'],['../classButtonGI.html#a2e8d388c171902e48cd1923f30d2f6d3',1,'ButtonGI::ButtonGI(std::pair&lt; int, int &gt; topLeftCorner, int buttonWidth, int buttonHeight, std::string buttonString, int returnCode, int offset)'],['../classButtonGI.html#acf2be1c089823bdab8de33d0178a5b3f',1,'ButtonGI::ButtonGI(std::pair&lt; int, int &gt; topLeftCorner, int buttonWidth, int buttonHeight, std::string buttonString, int returnCode)']]],
+  ['buttongi_2ecc_13',['buttonGI.cc',['../buttonGI_8cc.html',1,'']]],
+  ['buttongi_2ehh_14',['buttonGI.hh',['../buttonGI_8hh.html',1,'']]],
+  ['buttonnr_15',['buttonNr',['../mainMenuGI_8hh.html#ab63261bdcb7a48c6685e4dcb7da25918',1,'mainMenuGI.hh']]],
+  ['buttons_16',['buttons',['../classMainMenuGI.html#a54c0bc7f74242cf274ae71adc95ef85a',1,'MainMenuGI']]],
+  ['buttontext_17',['buttonText',['../classButtonGI.html#a50b71e16fd3466d2b3c4eb1782e7de37',1,'ButtonGI']]]
 ];

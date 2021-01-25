@@ -1,0 +1,13 @@
+<map id="BoardGI" name="BoardGI">
+<area shape="rect" id="node1" title=" " alt="" coords="295,841,415,948"/>
+<area shape="rect" id="node2" href="$classusrInterface.html" title=" " alt="" coords="5,439,125,531"/>
+<area shape="rect" id="node3" title=" " alt="" coords="211,5,287,83"/>
+<area shape="rect" id="node6" href="$classButtonGI.html" title=" " alt="" coords="287,555,422,779"/>
+<area shape="rect" id="node10" href="$classGameGI.html" title=" " alt="" coords="143,613,263,720"/>
+<area shape="rect" id="node11" href="$classMapGI.html" title=" " alt="" coords="94,132,239,415"/>
+<area shape="rect" id="node4" href="$classGame.html" title=" " alt="" coords="625,569,730,764"/>
+<area shape="rect" id="node5" href="$classGameMap.html" title=" " alt="" coords="643,154,746,393"/>
+<area shape="rect" id="node7" href="$classClickable.html" title=" " alt="" coords="366,227,501,319"/>
+<area shape="rect" id="node8" href="$classSpriteButtonGI.html" title=" " alt="" coords="447,569,583,764"/>
+<area shape="rect" id="node9" title=" " alt="" coords="525,235,619,312"/>
+</map>

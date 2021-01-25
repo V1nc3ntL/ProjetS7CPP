@@ -1,0 +1,170 @@
+\hypertarget{classSpriteButtonGI}{}\doxysection{Référence de la classe Sprite\+Button\+GI}
+\label{classSpriteButtonGI}\index{SpriteButtonGI@{SpriteButtonGI}}
+
+
+{\ttfamily \#include $<$sprite\+Button\+G\+I.\+hh$>$}
+
+
+
+Graphe d\textquotesingle{}héritage de Sprite\+Button\+GI\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{classSpriteButtonGI__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de Sprite\+Button\+GI\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{classSpriteButtonGI__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSpriteButtonGI_a79b2e8b3831bd0c4ba1f1dd5a64aaa12}{$\sim$\+Sprite\+Button\+GI}} ()
+\begin{DoxyCompactList}\small\item\em Destroys a main menu graphic implementation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSpriteButtonGI_abe07c72e863338195a6a90fa8067d10f}{Sprite\+Button\+GI}} (std\+::pair$<$ int, int $>$ top\+Left\+Corner, std\+::string sprite\+File\+Name, int \mbox{\hyperlink{classSpriteButtonGI_a200729783436731ade2bd9ca57a220cd}{return\+Code}})
+\begin{DoxyCompactList}\small\item\em Creates a button from the parameters. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classSpriteButtonGI_a42f6f9f8ecd95dced1732aef9ef80868}{left\+Click\+Action}} ()
+\begin{DoxyCompactList}\small\item\em The action triggered by a left click button. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classSpriteButtonGI_abb53bd9c17f4a7b92695e2dc8572358b}{right\+Click\+Action}} ()
+\begin{DoxyCompactList}\small\item\em The action triggered by a right click button. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classSpriteButtonGI_a8b94b9ed4288e1113982447ed9d9cdc1}{draw}} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
+\item 
+bool \mbox{\hyperlink{classSpriteButtonGI_aa1545da97f3f753f762e3eea8824afc5}{is\+Under}} (std\+::pair$<$ int, int $>$mouse) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classSpriteButtonGI_a200729783436731ade2bd9ca57a220cd}{return\+Code}}
+\item 
+sf\+::\+Sprite \mbox{\hyperlink{classSpriteButtonGI_a3b837acfb505e49a0a9c0069ae2e662f}{sprit}}
+\item 
+sf\+::\+Rectangle\+Shape \mbox{\hyperlink{classSpriteButtonGI_aa4f9feab4a1ad5239214c2232bdc8aaf}{rect}}
+\item 
+sf\+::\+Texture \mbox{\hyperlink{classSpriteButtonGI_ae4686a2faa78e117aa0388a261d1e5d7}{texture}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classSpriteButtonGI_a79b2e8b3831bd0c4ba1f1dd5a64aaa12}\label{classSpriteButtonGI_a79b2e8b3831bd0c4ba1f1dd5a64aaa12}} 
+\index{SpriteButtonGI@{SpriteButtonGI}!````~SpriteButtonGI@{$\sim$SpriteButtonGI}}
+\index{````~SpriteButtonGI@{$\sim$SpriteButtonGI}!SpriteButtonGI@{SpriteButtonGI}}
+\doxysubsubsection{\texorpdfstring{$\sim$SpriteButtonGI()}{~SpriteButtonGI()}}
+{\footnotesize\ttfamily Sprite\+Button\+G\+I\+::$\sim$\+Sprite\+Button\+GI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroys a main menu graphic implementation. 
+
+\mbox{\Hypertarget{classSpriteButtonGI_abe07c72e863338195a6a90fa8067d10f}\label{classSpriteButtonGI_abe07c72e863338195a6a90fa8067d10f}} 
+\index{SpriteButtonGI@{SpriteButtonGI}!SpriteButtonGI@{SpriteButtonGI}}
+\index{SpriteButtonGI@{SpriteButtonGI}!SpriteButtonGI@{SpriteButtonGI}}
+\doxysubsubsection{\texorpdfstring{SpriteButtonGI()}{SpriteButtonGI()}}
+{\footnotesize\ttfamily Sprite\+Button\+G\+I\+::\+Sprite\+Button\+GI (\begin{DoxyParamCaption}\item[{std\+::pair$<$ int, int $>$}]{top\+Left\+Corner,  }\item[{std\+::string}]{sprite\+File\+Name,  }\item[{int}]{return\+Code }\end{DoxyParamCaption})}
+
+
+
+Creates a button from the parameters. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em top\+Left\+Corner} & the xy position of the top Left corner \\
+\hline
+{\em sprite\+File\+Name} & the sprite file name \\
+\hline
+{\em return\+Code} & the int returned by the button when clicked on it \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classSpriteButtonGI_a8b94b9ed4288e1113982447ed9d9cdc1}\label{classSpriteButtonGI_a8b94b9ed4288e1113982447ed9d9cdc1}} 
+\index{SpriteButtonGI@{SpriteButtonGI}!draw@{draw}}
+\index{draw@{draw}!SpriteButtonGI@{SpriteButtonGI}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void Sprite\+Button\+G\+I\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{target,  }\item[{sf\+::\+Render\+States}]{states }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classUnitGI_a41bbe6f06293cc40cd753b0bd32f7535}{Unit\+GI}}.
+
+\mbox{\Hypertarget{classSpriteButtonGI_aa1545da97f3f753f762e3eea8824afc5}\label{classSpriteButtonGI_aa1545da97f3f753f762e3eea8824afc5}} 
+\index{SpriteButtonGI@{SpriteButtonGI}!isUnder@{isUnder}}
+\index{isUnder@{isUnder}!SpriteButtonGI@{SpriteButtonGI}}
+\doxysubsubsection{\texorpdfstring{isUnder()}{isUnder()}}
+{\footnotesize\ttfamily bool Sprite\+Button\+G\+I\+::is\+Under (\begin{DoxyParamCaption}\item[{std\+::pair$<$ int, int $>$}]{mouse }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classSpriteButtonGI_a42f6f9f8ecd95dced1732aef9ef80868}\label{classSpriteButtonGI_a42f6f9f8ecd95dced1732aef9ef80868}} 
+\index{SpriteButtonGI@{SpriteButtonGI}!leftClickAction@{leftClickAction}}
+\index{leftClickAction@{leftClickAction}!SpriteButtonGI@{SpriteButtonGI}}
+\doxysubsubsection{\texorpdfstring{leftClickAction()}{leftClickAction()}}
+{\footnotesize\ttfamily virtual int Sprite\+Button\+G\+I\+::left\+Click\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+The action triggered by a left click button. 
+
+\begin{DoxyReturn}{Renvoie}
+code an int that the main application translates 
+\end{DoxyReturn}
+
+
+Implémente \mbox{\hyperlink{classClickable_a86326f5a68dde9469b2a706fa95a2484}{Clickable}}.
+
+\mbox{\Hypertarget{classSpriteButtonGI_abb53bd9c17f4a7b92695e2dc8572358b}\label{classSpriteButtonGI_abb53bd9c17f4a7b92695e2dc8572358b}} 
+\index{SpriteButtonGI@{SpriteButtonGI}!rightClickAction@{rightClickAction}}
+\index{rightClickAction@{rightClickAction}!SpriteButtonGI@{SpriteButtonGI}}
+\doxysubsubsection{\texorpdfstring{rightClickAction()}{rightClickAction()}}
+{\footnotesize\ttfamily virtual int Sprite\+Button\+G\+I\+::right\+Click\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+The action triggered by a right click button. 
+
+\begin{DoxyReturn}{Renvoie}
+code an int that the main application translates 
+\end{DoxyReturn}
+
+
+Implémente \mbox{\hyperlink{classClickable_a33ce6f79466159705d00906f7171e33f}{Clickable}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{classSpriteButtonGI_aa4f9feab4a1ad5239214c2232bdc8aaf}\label{classSpriteButtonGI_aa4f9feab4a1ad5239214c2232bdc8aaf}} 
+\index{SpriteButtonGI@{SpriteButtonGI}!rect@{rect}}
+\index{rect@{rect}!SpriteButtonGI@{SpriteButtonGI}}
+\doxysubsubsection{\texorpdfstring{rect}{rect}}
+{\footnotesize\ttfamily sf\+::\+Rectangle\+Shape Sprite\+Button\+G\+I\+::rect\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpriteButtonGI_a200729783436731ade2bd9ca57a220cd}\label{classSpriteButtonGI_a200729783436731ade2bd9ca57a220cd}} 
+\index{SpriteButtonGI@{SpriteButtonGI}!returnCode@{returnCode}}
+\index{returnCode@{returnCode}!SpriteButtonGI@{SpriteButtonGI}}
+\doxysubsubsection{\texorpdfstring{returnCode}{returnCode}}
+{\footnotesize\ttfamily int Sprite\+Button\+G\+I\+::return\+Code\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpriteButtonGI_a3b837acfb505e49a0a9c0069ae2e662f}\label{classSpriteButtonGI_a3b837acfb505e49a0a9c0069ae2e662f}} 
+\index{SpriteButtonGI@{SpriteButtonGI}!sprit@{sprit}}
+\index{sprit@{sprit}!SpriteButtonGI@{SpriteButtonGI}}
+\doxysubsubsection{\texorpdfstring{sprit}{sprit}}
+{\footnotesize\ttfamily sf\+::\+Sprite Sprite\+Button\+G\+I\+::sprit\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpriteButtonGI_ae4686a2faa78e117aa0388a261d1e5d7}\label{classSpriteButtonGI_ae4686a2faa78e117aa0388a261d1e5d7}} 
+\index{SpriteButtonGI@{SpriteButtonGI}!texture@{texture}}
+\index{texture@{texture}!SpriteButtonGI@{SpriteButtonGI}}
+\doxysubsubsection{\texorpdfstring{texture}{texture}}
+{\footnotesize\ttfamily sf\+::\+Texture Sprite\+Button\+G\+I\+::texture\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+src/graphics/\mbox{\hyperlink{spriteButtonGI_8hh}{sprite\+Button\+G\+I.\+hh}}\item 
+src/graphics/\mbox{\hyperlink{SpriteButtonGI_8cc}{Sprite\+Button\+G\+I.\+cc}}\end{DoxyCompactItemize}

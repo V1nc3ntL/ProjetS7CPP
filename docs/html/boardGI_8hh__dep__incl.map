@@ -1,0 +1,5 @@
+<map id="src/graphics/boardGI.hh" name="src/graphics/boardGI.hh">
+<area shape="rect" id="node1" title="the board graphic implementation, containing a map and units" alt="" coords="34,5,195,32"/>
+<area shape="rect" id="node2" href="$playEventTreatment_8hh.html" title="File containing the game event treatment." alt="" coords="5,80,224,107"/>
+<area shape="rect" id="node3" href="$eventTreatment_8hh.html" title="File containing the treatment associated with events." alt="" coords="19,155,211,181"/>
+</map>

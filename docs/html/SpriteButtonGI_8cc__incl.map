@@ -1,0 +1,7 @@
+<map id="src/graphics/SpriteButtonGI.cc" name="src/graphics/SpriteButtonGI.cc">
+<area shape="rect" id="node1" title=" " alt="" coords="159,5,329,47"/>
+<area shape="rect" id="node2" href="$spriteButtonGI_8hh.html" title="The graphic implementation of a button with an embedded sprite." alt="" coords="95,95,219,121"/>
+<area shape="rect" id="node5" href="$headersLocation_8hh.html" title=" " alt="" coords="244,95,417,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,169,144,196"/>
+<area shape="rect" id="node4" href="$clickable_8hh.html" title="The interface for clickable graphics." alt="" coords="169,169,314,196"/>
+</map>

@@ -1,5 +1,11 @@
-<map id="map/tiles/tile.hh" name="map/tiles/tile.hh">
-<area shape="rect" id="node1" title="The file containing the standard (i.e without effects) tiles." alt="" coords="5,5,120,32"/>
-<area shape="rect" id="node2" href="$map_8hh.html" title="A class to describe a map in the game." alt="" coords="15,80,110,107"/>
-<area shape="rect" id="node3" href="$main_8cc.html" title="File containing the main." alt="" coords="16,155,109,181"/>
+<map id="src/gameLogic/map/tiles/tile.hh" name="src/gameLogic/map/tiles/tile.hh">
+<area shape="rect" id="node1" title="The file containing the tile class for graphic representation." alt="" coords="141,5,305,47"/>
+<area shape="rect" id="node2" href="$gameMap_8cc.html" title=" " alt="" coords="5,169,220,196"/>
+<area shape="rect" id="node3" href="$tileGI_8cc.html" title="The tiles graphic implementation." alt="" coords="150,95,297,121"/>
+<area shape="rect" id="node4" href="$mapGI_8hh.html" title="The graphic implementation of a map." alt="" coords="321,95,475,121"/>
+<area shape="rect" id="node5" href="$infoTextGI_8hh.html" title="the board graphic implementation, containing a map and units" alt="" coords="244,169,419,196"/>
+<area shape="rect" id="node6" href="$boardGI_8hh.html" title="the board graphic implementation, containing a map and units" alt="" coords="443,169,604,196"/>
+<area shape="rect" id="node9" href="$mapGI_8cc.html" title="The maps graphic implementation." alt="" coords="629,169,783,196"/>
+<area shape="rect" id="node7" href="$playEventTreatment_8hh.html" title="File containing the game event treatment." alt="" coords="414,244,633,271"/>
+<area shape="rect" id="node8" href="$eventTreatment_8hh.html" title="File containing the treatment associated with events." alt="" coords="427,319,619,345"/>
 </map>

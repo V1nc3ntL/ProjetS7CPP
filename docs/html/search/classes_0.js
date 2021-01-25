@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['effect_22',['Effect',['../classEffect.html',1,'']]]
+  ['boardgi_200',['BoardGI',['../classBoardGI.html',1,'']]],
+  ['buttongi_201',['ButtonGI',['../classButtonGI.html',1,'']]]
 ];

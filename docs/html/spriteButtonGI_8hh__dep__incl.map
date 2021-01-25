@@ -1,0 +1,8 @@
+<map id="src/graphics/spriteButtonGI.hh" name="src/graphics/spriteButtonGI.hh">
+<area shape="rect" id="node1" title="The graphic implementation of a button with an embedded sprite." alt="" coords="201,5,368,47"/>
+<area shape="rect" id="node2" href="$infoTextGI_8hh.html" title="the board graphic implementation, containing a map and units" alt="" coords="5,102,180,129"/>
+<area shape="rect" id="node3" href="$boardGI_8hh.html" title="the board graphic implementation, containing a map and units" alt="" coords="204,102,365,129"/>
+<area shape="rect" id="node6" href="$SpriteButtonGI_8cc.html" title=" " alt="" coords="389,95,559,136"/>
+<area shape="rect" id="node4" href="$playEventTreatment_8hh.html" title="File containing the game event treatment." alt="" coords="175,184,394,211"/>
+<area shape="rect" id="node5" href="$eventTreatment_8hh.html" title="File containing the treatment associated with events." alt="" coords="189,259,381,285"/>
+</map>

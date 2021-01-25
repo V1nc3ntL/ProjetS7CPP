@@ -1,0 +1,175 @@
+\hypertarget{classMainMenuGI}{}\doxysection{Référence de la classe Main\+Menu\+GI}
+\label{classMainMenuGI}\index{MainMenuGI@{MainMenuGI}}
+
+
+{\ttfamily \#include $<$main\+Menu\+G\+I.\+hh$>$}
+
+
+
+Graphe d\textquotesingle{}héritage de Main\+Menu\+GI\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{classMainMenuGI__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de Main\+Menu\+GI\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classMainMenuGI__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMainMenuGI_a3ac61a80a5f3dba2e4d0936f81bc9394}{Main\+Menu\+GI}} ()
+\begin{DoxyCompactList}\small\item\em Creates an empty graphic implementation The implementation must be set after construction ! \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMainMenuGI_a2c3388ad574d460801accec46e58dd13}{$\sim$\+Main\+Menu\+GI}} ()
+\begin{DoxyCompactList}\small\item\em Destroys a main menu graphic implementation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMainMenuGI_ad5d7906f6b7b2bc467a4f4dbb1159ab9}{Main\+Menu\+GI}} (int \&window\+Width, int \&window\+Height)
+\begin{DoxyCompactList}\small\item\em Creates a main menu graphic implementation pfollowing its parameter. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classMainMenuGI_acdf837f54f60b743d9cba117eabcfe52}{draw}} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classClickable}{Clickable}} $>$ \mbox{\hyperlink{classMainMenuGI_add708fb2562fb67da5d20f1831badb43}{get\+Clicked\+On}} (std\+::pair$<$ int, int $>$mouse) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Texture \mbox{\hyperlink{classMainMenuGI_a15def3eabeec543b08ea04ebc2dd8c2d}{Background}}
+\item 
+sf\+::\+Sprite \mbox{\hyperlink{classMainMenuGI_a0fd502e47468cfee70663d7f0494a7b3}{s\+\_\+bg}}
+\item 
+sf\+::\+Font \mbox{\hyperlink{classMainMenuGI_a2ab030a6e9abc591e675576547abd221}{title\+Font}}
+\item 
+sf\+::\+Text \mbox{\hyperlink{classMainMenuGI_aaf9dccad109298a945e983671fa2dfc6}{title}}
+\item 
+int \mbox{\hyperlink{classMainMenuGI_a0a3f9d9e9214f1fbd3fb4471d2b61ccd}{width}}
+\item 
+\mbox{\hyperlink{classButtonGI}{Button\+GI}} \mbox{\hyperlink{classMainMenuGI_a2ec323b8660db02740c3e4b2a7de9ee7}{new\+Game\+Button}}
+\item 
+\mbox{\hyperlink{classButtonGI}{Button\+GI}} \mbox{\hyperlink{classMainMenuGI_ac40e13043e4d1c1eb30b9791947f960b}{quit\+Button}}
+\item 
+std\+::array$<$ \mbox{\hyperlink{classButtonGI}{Button\+GI}}, 2 $>$ \mbox{\hyperlink{classMainMenuGI_a54c0bc7f74242cf274ae71adc95ef85a}{buttons}} = \{\mbox{\hyperlink{classMainMenuGI_a2ec323b8660db02740c3e4b2a7de9ee7}{new\+Game\+Button}},\mbox{\hyperlink{classMainMenuGI_ac40e13043e4d1c1eb30b9791947f960b}{quit\+Button}}\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classMainMenuGI_a3ac61a80a5f3dba2e4d0936f81bc9394}\label{classMainMenuGI_a3ac61a80a5f3dba2e4d0936f81bc9394}} 
+\index{MainMenuGI@{MainMenuGI}!MainMenuGI@{MainMenuGI}}
+\index{MainMenuGI@{MainMenuGI}!MainMenuGI@{MainMenuGI}}
+\doxysubsubsection{\texorpdfstring{MainMenuGI()}{MainMenuGI()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Main\+Menu\+G\+I\+::\+Main\+Menu\+GI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates an empty graphic implementation The implementation must be set after construction ! 
+
+\mbox{\Hypertarget{classMainMenuGI_a2c3388ad574d460801accec46e58dd13}\label{classMainMenuGI_a2c3388ad574d460801accec46e58dd13}} 
+\index{MainMenuGI@{MainMenuGI}!````~MainMenuGI@{$\sim$MainMenuGI}}
+\index{````~MainMenuGI@{$\sim$MainMenuGI}!MainMenuGI@{MainMenuGI}}
+\doxysubsubsection{\texorpdfstring{$\sim$MainMenuGI()}{~MainMenuGI()}}
+{\footnotesize\ttfamily Main\+Menu\+G\+I\+::$\sim$\+Main\+Menu\+GI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroys a main menu graphic implementation. 
+
+\mbox{\Hypertarget{classMainMenuGI_ad5d7906f6b7b2bc467a4f4dbb1159ab9}\label{classMainMenuGI_ad5d7906f6b7b2bc467a4f4dbb1159ab9}} 
+\index{MainMenuGI@{MainMenuGI}!MainMenuGI@{MainMenuGI}}
+\index{MainMenuGI@{MainMenuGI}!MainMenuGI@{MainMenuGI}}
+\doxysubsubsection{\texorpdfstring{MainMenuGI()}{MainMenuGI()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Main\+Menu\+G\+I\+::\+Main\+Menu\+GI (\begin{DoxyParamCaption}\item[{int \&}]{window\+Width,  }\item[{int \&}]{window\+Height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a main menu graphic implementation pfollowing its parameter. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em window\+Width} & the width of the window where the main menu is displayed in pixel \\
+\hline
+{\em window\+Height} & the height of the window where the main menu is displayed in pixel \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classMainMenuGI_acdf837f54f60b743d9cba117eabcfe52}\label{classMainMenuGI_acdf837f54f60b743d9cba117eabcfe52}} 
+\index{MainMenuGI@{MainMenuGI}!draw@{draw}}
+\index{draw@{draw}!MainMenuGI@{MainMenuGI}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void Main\+Menu\+G\+I\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{target,  }\item[{sf\+::\+Render\+States}]{states }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implémente \mbox{\hyperlink{classusrInterface_a9b7cd8f878718b08f978101ffa840233}{usr\+Interface}}.
+
+\mbox{\Hypertarget{classMainMenuGI_add708fb2562fb67da5d20f1831badb43}\label{classMainMenuGI_add708fb2562fb67da5d20f1831badb43}} 
+\index{MainMenuGI@{MainMenuGI}!getClickedOn@{getClickedOn}}
+\index{getClickedOn@{getClickedOn}!MainMenuGI@{MainMenuGI}}
+\doxysubsubsection{\texorpdfstring{getClickedOn()}{getClickedOn()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classClickable}{Clickable}}$>$ Main\+Menu\+G\+I\+::get\+Clicked\+On (\begin{DoxyParamCaption}\item[{std\+::pair$<$ int, int $>$}]{mouse }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implémente \mbox{\hyperlink{classusrInterface_aca71adb6a91ad92f1118591af9885b26}{usr\+Interface}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{classMainMenuGI_a15def3eabeec543b08ea04ebc2dd8c2d}\label{classMainMenuGI_a15def3eabeec543b08ea04ebc2dd8c2d}} 
+\index{MainMenuGI@{MainMenuGI}!Background@{Background}}
+\index{Background@{Background}!MainMenuGI@{MainMenuGI}}
+\doxysubsubsection{\texorpdfstring{Background}{Background}}
+{\footnotesize\ttfamily sf\+::\+Texture Main\+Menu\+G\+I\+::\+Background\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMainMenuGI_a54c0bc7f74242cf274ae71adc95ef85a}\label{classMainMenuGI_a54c0bc7f74242cf274ae71adc95ef85a}} 
+\index{MainMenuGI@{MainMenuGI}!buttons@{buttons}}
+\index{buttons@{buttons}!MainMenuGI@{MainMenuGI}}
+\doxysubsubsection{\texorpdfstring{buttons}{buttons}}
+{\footnotesize\ttfamily std\+::array$<$\mbox{\hyperlink{classButtonGI}{Button\+GI}},2$>$ Main\+Menu\+G\+I\+::buttons = \{\mbox{\hyperlink{classMainMenuGI_a2ec323b8660db02740c3e4b2a7de9ee7}{new\+Game\+Button}},\mbox{\hyperlink{classMainMenuGI_ac40e13043e4d1c1eb30b9791947f960b}{quit\+Button}}\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMainMenuGI_a2ec323b8660db02740c3e4b2a7de9ee7}\label{classMainMenuGI_a2ec323b8660db02740c3e4b2a7de9ee7}} 
+\index{MainMenuGI@{MainMenuGI}!newGameButton@{newGameButton}}
+\index{newGameButton@{newGameButton}!MainMenuGI@{MainMenuGI}}
+\doxysubsubsection{\texorpdfstring{newGameButton}{newGameButton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classButtonGI}{Button\+GI}} Main\+Menu\+G\+I\+::new\+Game\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMainMenuGI_ac40e13043e4d1c1eb30b9791947f960b}\label{classMainMenuGI_ac40e13043e4d1c1eb30b9791947f960b}} 
+\index{MainMenuGI@{MainMenuGI}!quitButton@{quitButton}}
+\index{quitButton@{quitButton}!MainMenuGI@{MainMenuGI}}
+\doxysubsubsection{\texorpdfstring{quitButton}{quitButton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classButtonGI}{Button\+GI}} Main\+Menu\+G\+I\+::quit\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMainMenuGI_a0fd502e47468cfee70663d7f0494a7b3}\label{classMainMenuGI_a0fd502e47468cfee70663d7f0494a7b3}} 
+\index{MainMenuGI@{MainMenuGI}!s\_bg@{s\_bg}}
+\index{s\_bg@{s\_bg}!MainMenuGI@{MainMenuGI}}
+\doxysubsubsection{\texorpdfstring{s\_bg}{s\_bg}}
+{\footnotesize\ttfamily sf\+::\+Sprite Main\+Menu\+G\+I\+::s\+\_\+bg\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMainMenuGI_aaf9dccad109298a945e983671fa2dfc6}\label{classMainMenuGI_aaf9dccad109298a945e983671fa2dfc6}} 
+\index{MainMenuGI@{MainMenuGI}!title@{title}}
+\index{title@{title}!MainMenuGI@{MainMenuGI}}
+\doxysubsubsection{\texorpdfstring{title}{title}}
+{\footnotesize\ttfamily sf\+::\+Text Main\+Menu\+G\+I\+::title\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMainMenuGI_a2ab030a6e9abc591e675576547abd221}\label{classMainMenuGI_a2ab030a6e9abc591e675576547abd221}} 
+\index{MainMenuGI@{MainMenuGI}!titleFont@{titleFont}}
+\index{titleFont@{titleFont}!MainMenuGI@{MainMenuGI}}
+\doxysubsubsection{\texorpdfstring{titleFont}{titleFont}}
+{\footnotesize\ttfamily sf\+::\+Font Main\+Menu\+G\+I\+::title\+Font\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMainMenuGI_a0a3f9d9e9214f1fbd3fb4471d2b61ccd}\label{classMainMenuGI_a0a3f9d9e9214f1fbd3fb4471d2b61ccd}} 
+\index{MainMenuGI@{MainMenuGI}!width@{width}}
+\index{width@{width}!MainMenuGI@{MainMenuGI}}
+\doxysubsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily int Main\+Menu\+G\+I\+::width\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+src/graphics/\mbox{\hyperlink{mainMenuGI_8hh}{main\+Menu\+G\+I.\+hh}}\end{DoxyCompactItemize}

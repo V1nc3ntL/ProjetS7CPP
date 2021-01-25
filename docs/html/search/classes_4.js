@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['specialtile_26',['SpecialTile',['../classSpecialTile.html',1,'']]]
+  ['infotextgi_209',['infoTextGI',['../classinfoTextGI.html',1,'']]]
 ];

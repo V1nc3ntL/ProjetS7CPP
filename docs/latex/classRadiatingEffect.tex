@@ -1,13 +1,12 @@
-\hypertarget{classRadiatingEffect}{}\doxysection{Radiating\+Effect Class Reference}
+\hypertarget{classRadiatingEffect}{}\doxysection{Référence de la classe Radiating\+Effect}
 \label{classRadiatingEffect}\index{RadiatingEffect@{RadiatingEffect}}
 
 
-{\ttfamily \#include $<$radiating\+\_\+effect.\+hh$>$}
+{\ttfamily \#include $<$radiating\+Effect.\+hh$>$}
 
 
 
-Inheritance diagram for Radiating\+Effect\+:
-\nopagebreak
+Graphe d\textquotesingle{}héritage de Radiating\+Effect\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -16,17 +15,90 @@ Inheritance diagram for Radiating\+Effect\+:
 \end{figure}
 
 
-Collaboration diagram for Radiating\+Effect\+:
-\nopagebreak
+Graphe de collaboration de Radiating\+Effect\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=190pt]{classRadiatingEffect__coll__graph}
 \end{center}
 \end{figure}
-\doxysubsection*{Additional Inherited Members}
-
-
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
 \item 
-map/effects/\mbox{\hyperlink{radiating__effect_8hh}{radiating\+\_\+effect.\+hh}}\end{DoxyCompactItemize}
+virtual std\+::string \mbox{\hyperlink{classEffect_a10bb87040b9169a01cfaa6f8069761ab}{get\+Name}} ()=0
+\item 
+\mbox{\hyperlink{classEffect_a2adc3ed1139e115acae9a3c08fbb36d0}{Effect\+Adjective}} \mbox{\hyperlink{classEffect_a8cf80798ac25d8493affe59895dd7d8f}{get\+Effect\+Adjective}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Types privés}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classEffect_a2adc3ed1139e115acae9a3c08fbb36d0}{Effect\+Adjective}} \+: Char \{ \mbox{\hyperlink{classEffect_a2adc3ed1139e115acae9a3c08fbb36d0a31ba17aa58cdb681423f07ca21a6efc7}{Effect\+Adjective\+::\+N\+E\+U\+T\+R\+AL}} = -\/1, 
+\mbox{\hyperlink{classEffect_a2adc3ed1139e115acae9a3c08fbb36d0a37f9073f0495475d0dfe188a05e672d6}{Effect\+Adjective\+::\+D\+E\+T\+R\+I\+M\+E\+N\+T\+AL}}, 
+\mbox{\hyperlink{classEffect_a2adc3ed1139e115acae9a3c08fbb36d0aebd538956f5f42828a01264846bb55f3}{Effect\+Adjective\+::\+B\+E\+N\+E\+F\+I\+C\+I\+AL}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classRadiatingEffect_a53a8665835e151ae44776cd522e9fed0}{radius}}
+\item 
+\mbox{\hyperlink{classEffect_a2adc3ed1139e115acae9a3c08fbb36d0}{Effect\+Adjective}} \mbox{\hyperlink{classEffect_aec574fdfb34f7c2113baabed2163a0dc}{adjective}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des énumérations membres}
+\mbox{\Hypertarget{classEffect_a2adc3ed1139e115acae9a3c08fbb36d0}\label{classEffect_a2adc3ed1139e115acae9a3c08fbb36d0}} 
+\index{RadiatingEffect@{RadiatingEffect}!EffectAdjective@{EffectAdjective}}
+\index{EffectAdjective@{EffectAdjective}!RadiatingEffect@{RadiatingEffect}}
+\doxysubsubsection{\texorpdfstring{EffectAdjective}{EffectAdjective}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classEffect_a2adc3ed1139e115acae9a3c08fbb36d0}{Effect\+::\+Effect\+Adjective}} \+: Char\hspace{0.3cm}{\ttfamily [strong]}, {\ttfamily [private]}, {\ttfamily [inherited]}}
+
+\begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NEUTRAL@{NEUTRAL}!RadiatingEffect@{RadiatingEffect}}\index{RadiatingEffect@{RadiatingEffect}!NEUTRAL@{NEUTRAL}}}\mbox{\Hypertarget{classEffect_a2adc3ed1139e115acae9a3c08fbb36d0a31ba17aa58cdb681423f07ca21a6efc7}\label{classEffect_a2adc3ed1139e115acae9a3c08fbb36d0a31ba17aa58cdb681423f07ca21a6efc7}} 
+N\+E\+U\+T\+R\+AL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DETRIMENTAL@{DETRIMENTAL}!RadiatingEffect@{RadiatingEffect}}\index{RadiatingEffect@{RadiatingEffect}!DETRIMENTAL@{DETRIMENTAL}}}\mbox{\Hypertarget{classEffect_a2adc3ed1139e115acae9a3c08fbb36d0a37f9073f0495475d0dfe188a05e672d6}\label{classEffect_a2adc3ed1139e115acae9a3c08fbb36d0a37f9073f0495475d0dfe188a05e672d6}} 
+D\+E\+T\+R\+I\+M\+E\+N\+T\+AL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BENEFICIAL@{BENEFICIAL}!RadiatingEffect@{RadiatingEffect}}\index{RadiatingEffect@{RadiatingEffect}!BENEFICIAL@{BENEFICIAL}}}\mbox{\Hypertarget{classEffect_a2adc3ed1139e115acae9a3c08fbb36d0aebd538956f5f42828a01264846bb55f3}\label{classEffect_a2adc3ed1139e115acae9a3c08fbb36d0aebd538956f5f42828a01264846bb55f3}} 
+B\+E\+N\+E\+F\+I\+C\+I\+AL&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classEffect_a8cf80798ac25d8493affe59895dd7d8f}\label{classEffect_a8cf80798ac25d8493affe59895dd7d8f}} 
+\index{RadiatingEffect@{RadiatingEffect}!getEffectAdjective@{getEffectAdjective}}
+\index{getEffectAdjective@{getEffectAdjective}!RadiatingEffect@{RadiatingEffect}}
+\doxysubsubsection{\texorpdfstring{getEffectAdjective()}{getEffectAdjective()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEffect_a2adc3ed1139e115acae9a3c08fbb36d0}{Effect\+Adjective}} Effect\+::get\+Effect\+Adjective (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classEffect_a10bb87040b9169a01cfaa6f8069761ab}\label{classEffect_a10bb87040b9169a01cfaa6f8069761ab}} 
+\index{RadiatingEffect@{RadiatingEffect}!getName@{getName}}
+\index{getName@{getName}!RadiatingEffect@{RadiatingEffect}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily virtual std\+::string Effect\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [inherited]}}
+
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{classEffect_aec574fdfb34f7c2113baabed2163a0dc}\label{classEffect_aec574fdfb34f7c2113baabed2163a0dc}} 
+\index{RadiatingEffect@{RadiatingEffect}!adjective@{adjective}}
+\index{adjective@{adjective}!RadiatingEffect@{RadiatingEffect}}
+\doxysubsubsection{\texorpdfstring{adjective}{adjective}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEffect_a2adc3ed1139e115acae9a3c08fbb36d0}{Effect\+Adjective}} Effect\+::adjective\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classRadiatingEffect_a53a8665835e151ae44776cd522e9fed0}\label{classRadiatingEffect_a53a8665835e151ae44776cd522e9fed0}} 
+\index{RadiatingEffect@{RadiatingEffect}!radius@{radius}}
+\index{radius@{radius}!RadiatingEffect@{RadiatingEffect}}
+\doxysubsubsection{\texorpdfstring{radius}{radius}}
+{\footnotesize\ttfamily int Radiating\+Effect\+::radius\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+src/game\+Logic/map/effects/\mbox{\hyperlink{radiatingEffect_8hh}{radiating\+Effect.\+hh}}\end{DoxyCompactItemize}

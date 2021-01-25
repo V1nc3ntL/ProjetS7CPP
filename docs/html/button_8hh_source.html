@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet C++ S7 : EL-KHARROUBI LEFEBVRE:  Fichier source de src/app/button.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet C++ S7 : EL-KHARROUBI LEFEBVRE
+   </div>
+   <div id="projectbrief">Le projet S7 de C++ pour EISE4, réalisé par Karim El-KHARROUBI et Vincent LEFEBVRE</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_5194e5fea318fda12687127c23f8aba1.html">app</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">button.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="button_8hh.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00002"></a><span class="lineno"><a class="line" href="classButton.html">    2</a></span>&#160;<span class="keyword">class </span><a class="code" href="classButton.html">Button</a> {</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    <a class="code" href="classButton.html#a57b61dc7368463cdbb4f87f74ec7f9fa">Button</a> (sf::Image* <a class="code" href="classButton.html#a5a2a5e1c6b378762f5b2fe39e9053d9e">normal</a>,sf::Image* <a class="code" href="classButton.html#a2017ec29df405df0c2deb62e565027a6">clicked</a>,std::string,sf::Vector2f location);</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classButton.html#a658bed54f583ec784a538cf076dee95b">checkClick</a> (sf::Vector2f);</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classButton.html#aff1947a13a865d0eb06375f70c116869">setState</a>(<span class="keywordtype">bool</span>);</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classButton.html#a5afe171a85f4a81c731e9b9ec7098c53">setText</a>(std::string);</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classButton.html#a180d0761a1ebe3a88136315f604c9cbc">getVar</a>();</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    sf::Sprite* <a class="code" href="classButton.html#a041f3bc8dc2cba1741a2c9ecb076707b">getSprite</a>();</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    sf::String * <a class="code" href="classButton.html#ae11e6bce5ef30e99fb7a45a8af6cf8e4">getText</a>();</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classButton.html#a5a2a5e1c6b378762f5b2fe39e9053d9e">   12</a></span>&#160;    sf::Sprite <a class="code" href="classButton.html#a5a2a5e1c6b378762f5b2fe39e9053d9e">normal</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classButton.html#a2017ec29df405df0c2deb62e565027a6">   13</a></span>&#160;    sf::Sprite <a class="code" href="classButton.html#a2017ec29df405df0c2deb62e565027a6">clicked</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classButton.html#a305f1060bce94fe536a2cf822ded9dc8">   14</a></span>&#160;    sf::Sprite* <a class="code" href="classButton.html#a305f1060bce94fe536a2cf822ded9dc8">currentSpr</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classButton.html#a2003a157b18c043e9cb3fdb293747dea">   15</a></span>&#160;    sf::String <a class="code" href="classButton.html#a2003a157b18c043e9cb3fdb293747dea">String</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classButton.html#a649e75cce5359e0b2433831453833c74">   16</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classButton.html#a649e75cce5359e0b2433831453833c74">current</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;};</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classButton.html#a57b61dc7368463cdbb4f87f74ec7f9fa">   19</a></span>&#160;<a class="code" href="classButton.html#a57b61dc7368463cdbb4f87f74ec7f9fa">Button::Button</a>(sf::Image* normal,sf::Image* clicked,std::string words,sf::Vector2f location) {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    this-&gt;normal.SetImage(*<a class="code" href="classButton.html#a5a2a5e1c6b378762f5b2fe39e9053d9e">normal</a>);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    this-&gt;clicked.SetImage(*<a class="code" href="classButton.html#a2017ec29df405df0c2deb62e565027a6">clicked</a>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    this-&gt;<a class="code" href="classButton.html#a305f1060bce94fe536a2cf822ded9dc8">currentSpr</a>=&amp;this-&gt;<a class="code" href="classButton.html#a5a2a5e1c6b378762f5b2fe39e9053d9e">normal</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="classButton.html#a649e75cce5359e0b2433831453833c74">current</a> =<span class="keyword">false</span>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    this-&gt;normal.SetPosition(location);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    this-&gt;clicked.SetPosition(location);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="classButton.html#a2003a157b18c043e9cb3fdb293747dea">String</a>.SetText(words);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="classButton.html#a2003a157b18c043e9cb3fdb293747dea">String</a>.SetPosition(location.x+3,location.y+3);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="classButton.html#a2003a157b18c043e9cb3fdb293747dea">String</a>.SetSize(14);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classButton.html#a658bed54f583ec784a538cf076dee95b">   30</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classButton.html#a658bed54f583ec784a538cf076dee95b">Button::checkClick</a> (sf::Vector2f mousePos) {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">if</span> (mousePos.x&gt;<a class="code" href="classButton.html#a305f1060bce94fe536a2cf822ded9dc8">currentSpr</a>-&gt;GetPosition().x &amp;&amp; mousePos.x&lt;(<a class="code" href="classButton.html#a305f1060bce94fe536a2cf822ded9dc8">currentSpr</a>-&gt;GetPosition().x + <a class="code" href="classButton.html#a305f1060bce94fe536a2cf822ded9dc8">currentSpr</a>-&gt;GetSize().x)) {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">if</span>(mousePos.y&gt;<a class="code" href="classButton.html#a305f1060bce94fe536a2cf822ded9dc8">currentSpr</a>-&gt;GetPosition().y &amp;&amp; mousePos.y&lt;(<a class="code" href="classButton.html#a305f1060bce94fe536a2cf822ded9dc8">currentSpr</a>-&gt;GetPosition().y + <a class="code" href="classButton.html#a305f1060bce94fe536a2cf822ded9dc8">currentSpr</a>-&gt;GetSize().y)) {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <a class="code" href="classButton.html#aff1947a13a865d0eb06375f70c116869">setState</a>(!<a class="code" href="classButton.html#a649e75cce5359e0b2433831453833c74">current</a>);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        }</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classButton.html#aff1947a13a865d0eb06375f70c116869">   37</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classButton.html#aff1947a13a865d0eb06375f70c116869">Button::setState</a>(<span class="keywordtype">bool</span> which) {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="classButton.html#a649e75cce5359e0b2433831453833c74">current</a> = which;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classButton.html#a649e75cce5359e0b2433831453833c74">current</a>) {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="classButton.html#a305f1060bce94fe536a2cf822ded9dc8">currentSpr</a>=&amp;<a class="code" href="classButton.html#a2017ec29df405df0c2deb62e565027a6">clicked</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="classButton.html#a305f1060bce94fe536a2cf822ded9dc8">currentSpr</a>=&amp;<a class="code" href="classButton.html#a5a2a5e1c6b378762f5b2fe39e9053d9e">normal</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classButton.html#a5afe171a85f4a81c731e9b9ec7098c53">   45</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classButton.html#a5afe171a85f4a81c731e9b9ec7098c53">Button::setText</a>(std::string words) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="classButton.html#a2003a157b18c043e9cb3fdb293747dea">String</a>.SetText(words);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classButton.html#a180d0761a1ebe3a88136315f604c9cbc">   48</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classButton.html#a180d0761a1ebe3a88136315f604c9cbc">Button::getVar</a>() {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classButton.html#a649e75cce5359e0b2433831453833c74">current</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classButton.html#a041f3bc8dc2cba1741a2c9ecb076707b">   51</a></span>&#160;sf::Sprite* <a class="code" href="classButton.html#a041f3bc8dc2cba1741a2c9ecb076707b">Button::getSprite</a>() {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classButton.html#a305f1060bce94fe536a2cf822ded9dc8">currentSpr</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classButton.html#ae11e6bce5ef30e99fb7a45a8af6cf8e4">   55</a></span>&#160;sf::String * <a class="code" href="classButton.html#ae11e6bce5ef30e99fb7a45a8af6cf8e4">Button::getText</a>() {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">return</span> &amp;<a class="code" href="classButton.html#a2003a157b18c043e9cb3fdb293747dea">String</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassButton_html_a649e75cce5359e0b2433831453833c74"><div class="ttname"><a href="classButton.html#a649e75cce5359e0b2433831453833c74">Button::current</a></div><div class="ttdeci">bool current</div><div class="ttdef"><b>Definition:</b> button.hh:16</div></div>
+<div class="ttc" id="aclassButton_html_ae11e6bce5ef30e99fb7a45a8af6cf8e4"><div class="ttname"><a href="classButton.html#ae11e6bce5ef30e99fb7a45a8af6cf8e4">Button::getText</a></div><div class="ttdeci">sf::String * getText()</div><div class="ttdef"><b>Definition:</b> button.hh:55</div></div>
+<div class="ttc" id="aclassButton_html_a2003a157b18c043e9cb3fdb293747dea"><div class="ttname"><a href="classButton.html#a2003a157b18c043e9cb3fdb293747dea">Button::String</a></div><div class="ttdeci">sf::String String</div><div class="ttdef"><b>Definition:</b> button.hh:15</div></div>
+<div class="ttc" id="aclassButton_html"><div class="ttname"><a href="classButton.html">Button</a></div><div class="ttdef"><b>Definition:</b> button.hh:2</div></div>
+<div class="ttc" id="aclassButton_html_a180d0761a1ebe3a88136315f604c9cbc"><div class="ttname"><a href="classButton.html#a180d0761a1ebe3a88136315f604c9cbc">Button::getVar</a></div><div class="ttdeci">bool getVar()</div><div class="ttdef"><b>Definition:</b> button.hh:48</div></div>
+<div class="ttc" id="aclassButton_html_a041f3bc8dc2cba1741a2c9ecb076707b"><div class="ttname"><a href="classButton.html#a041f3bc8dc2cba1741a2c9ecb076707b">Button::getSprite</a></div><div class="ttdeci">sf::Sprite * getSprite()</div><div class="ttdef"><b>Definition:</b> button.hh:51</div></div>
+<div class="ttc" id="aclassButton_html_a57b61dc7368463cdbb4f87f74ec7f9fa"><div class="ttname"><a href="classButton.html#a57b61dc7368463cdbb4f87f74ec7f9fa">Button::Button</a></div><div class="ttdeci">Button(sf::Image *normal, sf::Image *clicked, std::string, sf::Vector2f location)</div><div class="ttdef"><b>Definition:</b> button.hh:19</div></div>
+<div class="ttc" id="aclassButton_html_a305f1060bce94fe536a2cf822ded9dc8"><div class="ttname"><a href="classButton.html#a305f1060bce94fe536a2cf822ded9dc8">Button::currentSpr</a></div><div class="ttdeci">sf::Sprite * currentSpr</div><div class="ttdef"><b>Definition:</b> button.hh:14</div></div>
+<div class="ttc" id="aclassButton_html_a5afe171a85f4a81c731e9b9ec7098c53"><div class="ttname"><a href="classButton.html#a5afe171a85f4a81c731e9b9ec7098c53">Button::setText</a></div><div class="ttdeci">void setText(std::string)</div><div class="ttdef"><b>Definition:</b> button.hh:45</div></div>
+<div class="ttc" id="aclassButton_html_a2017ec29df405df0c2deb62e565027a6"><div class="ttname"><a href="classButton.html#a2017ec29df405df0c2deb62e565027a6">Button::clicked</a></div><div class="ttdeci">sf::Sprite clicked</div><div class="ttdef"><b>Definition:</b> button.hh:13</div></div>
+<div class="ttc" id="aclassButton_html_a658bed54f583ec784a538cf076dee95b"><div class="ttname"><a href="classButton.html#a658bed54f583ec784a538cf076dee95b">Button::checkClick</a></div><div class="ttdeci">void checkClick(sf::Vector2f)</div><div class="ttdef"><b>Definition:</b> button.hh:30</div></div>
+<div class="ttc" id="aclassButton_html_a5a2a5e1c6b378762f5b2fe39e9053d9e"><div class="ttname"><a href="classButton.html#a5a2a5e1c6b378762f5b2fe39e9053d9e">Button::normal</a></div><div class="ttdeci">sf::Sprite normal</div><div class="ttdef"><b>Definition:</b> button.hh:12</div></div>
+<div class="ttc" id="aclassButton_html_aff1947a13a865d0eb06375f70c116869"><div class="ttname"><a href="classButton.html#aff1947a13a865d0eb06375f70c116869">Button::setState</a></div><div class="ttdeci">void setState(bool)</div><div class="ttdef"><b>Definition:</b> button.hh:37</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

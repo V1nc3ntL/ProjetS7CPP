@@ -1,0 +1,243 @@
+\hypertarget{classMapGI}{}\doxysection{Référence de la classe Map\+GI}
+\label{classMapGI}\index{MapGI@{MapGI}}
+
+
+{\ttfamily \#include $<$map\+G\+I.\+hh$>$}
+
+
+
+Graphe d\textquotesingle{}héritage de Map\+GI\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{classMapGI__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de Map\+GI\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{classMapGI__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMapGI_afd8443fda766591d1410bf00e724913b}{Map\+GI}} ()
+\begin{DoxyCompactList}\small\item\em Creates an empty graphic implementation The implementation must be set after construction ! \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMapGI_a22fad3f490b2ec8613f665246cd2eece}{$\sim$\+Map\+GI}} ()
+\begin{DoxyCompactList}\small\item\em Destroys a map graphic implementation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMapGI_abf08d0e1b6c06c157fe99054a97ce3ea}{Map\+GI}} (int \&window\+Width, int \&window\+Height, \mbox{\hyperlink{classGameMap}{Game\+Map}} \&map)
+\begin{DoxyCompactList}\small\item\em Creates a map centered on the window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMapGI_a5eceb45b5734f29c446ed1616426a8aa}{create\+Map\+Graphs}} (std\+::pair$<$ int, int $>$ \&north\+Position, std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTile}{Tile}} $>$$>$\+::iterator it)
+\begin{DoxyCompactList}\small\item\em Creates a graphic representation of a map from an iterator on a vector of tile beyond the north\+Position. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTileGI}{Tile\+GI}} $>$ \mbox{\hyperlink{classMapGI_a2107ca49ad2bedddb101d11c0dc0fd34}{get\+Clicked\+On}} (std\+::pair$<$ int, int $>$mouse) const
+\begin{DoxyCompactList}\small\item\em Retrieve the clicked tile from the map. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classMapGI_a0060df309ed53e97cced8b69a5397583}{draw}} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
+\item 
+void \mbox{\hyperlink{classMapGI_a42e6c514e9147bfbdbe5a80a00315c79}{resize}} (int window\+Width, int window\+Height)
+\begin{DoxyCompactList}\small\item\em Update an already created graphic implementation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classMapGI_a81923507fdb7356802ecd44bd1e0ea7f}{get\+Square\+Size}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classMapGI_afcedf27dd59d7e093b38df7566b62a1f}{width}}
+\item 
+int \mbox{\hyperlink{classMapGI_a2e4ea720139ebf8dd21e3be0e6d6a412}{height}}
+\item 
+int \mbox{\hyperlink{classMapGI_a572aa5bc5e1613fdf500c554e4e6e407}{sqH}}
+\item 
+int \mbox{\hyperlink{classMapGI_af16795ce695ed39915ea9e6a654398ab}{sqW}}
+\item 
+int \mbox{\hyperlink{classMapGI_af02529985a04a7eadd50aef84a4cf381}{outline}} = 5
+\item 
+int \mbox{\hyperlink{classMapGI_a1af383fc2729b5e02b7f67d5d4e295cc}{square\+Size}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classTileGI}{Tile\+GI}} $>$ \mbox{\hyperlink{classMapGI_a2235037b13c1c78d0e63b9f38e5a7764}{tls}}
+\item 
+int \mbox{\hyperlink{classMapGI_af646fd87cee602768979b7c29515bc5d}{last\+Selected}} = -\/1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classMapGI_afd8443fda766591d1410bf00e724913b}\label{classMapGI_afd8443fda766591d1410bf00e724913b}} 
+\index{MapGI@{MapGI}!MapGI@{MapGI}}
+\index{MapGI@{MapGI}!MapGI@{MapGI}}
+\doxysubsubsection{\texorpdfstring{MapGI()}{MapGI()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Map\+G\+I\+::\+Map\+GI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates an empty graphic implementation The implementation must be set after construction ! 
+
+\mbox{\Hypertarget{classMapGI_a22fad3f490b2ec8613f665246cd2eece}\label{classMapGI_a22fad3f490b2ec8613f665246cd2eece}} 
+\index{MapGI@{MapGI}!````~MapGI@{$\sim$MapGI}}
+\index{````~MapGI@{$\sim$MapGI}!MapGI@{MapGI}}
+\doxysubsubsection{\texorpdfstring{$\sim$MapGI()}{~MapGI()}}
+{\footnotesize\ttfamily Map\+G\+I\+::$\sim$\+Map\+GI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroys a map graphic implementation. 
+
+\mbox{\Hypertarget{classMapGI_abf08d0e1b6c06c157fe99054a97ce3ea}\label{classMapGI_abf08d0e1b6c06c157fe99054a97ce3ea}} 
+\index{MapGI@{MapGI}!MapGI@{MapGI}}
+\index{MapGI@{MapGI}!MapGI@{MapGI}}
+\doxysubsubsection{\texorpdfstring{MapGI()}{MapGI()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Map\+G\+I\+::\+Map\+GI (\begin{DoxyParamCaption}\item[{int \&}]{window\+Width,  }\item[{int \&}]{window\+Height,  }\item[{\mbox{\hyperlink{classGameMap}{Game\+Map}} \&}]{map }\end{DoxyParamCaption})}
+
+
+
+Creates a map centered on the window. 
+
+Creates graphic from a game\+Map and a Window size.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em window\+Width} & the window width \\
+\hline
+{\em window\+Height} & the window height\\
+\hline
+{\em window\+Width} & the width of the window where the map is displayed \\
+\hline
+{\em window\+Height} & the height of the window where the map is displayed \\
+\hline
+{\em map} & the game\+Map to obtain \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classMapGI_a5eceb45b5734f29c446ed1616426a8aa}\label{classMapGI_a5eceb45b5734f29c446ed1616426a8aa}} 
+\index{MapGI@{MapGI}!createMapGraphs@{createMapGraphs}}
+\index{createMapGraphs@{createMapGraphs}!MapGI@{MapGI}}
+\doxysubsubsection{\texorpdfstring{createMapGraphs()}{createMapGraphs()}}
+{\footnotesize\ttfamily void Map\+G\+I\+::create\+Map\+Graphs (\begin{DoxyParamCaption}\item[{std\+::pair$<$ int, int $>$ \&}]{north\+Position,  }\item[{std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTile}{Tile}} $>$$>$\+::iterator}]{it }\end{DoxyParamCaption})}
+
+
+
+Creates a graphic representation of a map from an iterator on a vector of tile beyond the north\+Position. 
+
+Creates the sub-\/graphic implementation.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em std\+::pair$<$int,int$>$\&} & a reference to a pair of int representing the north corner of the map to be created\\
+\hline
+{\em std\+::vector$<$std\+::shared\+\_\+ptr$<$\+Tile$>$$>$\+::iterator} & an iterator initialized on the first tile\\
+\hline
+{\em north\+Position} & the northern corner position of the map \\
+\hline
+{\em it} & an iterator on a vector of shared pointer to the game Logic tile \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMapGI_a0060df309ed53e97cced8b69a5397583}\label{classMapGI_a0060df309ed53e97cced8b69a5397583}} 
+\index{MapGI@{MapGI}!draw@{draw}}
+\index{draw@{draw}!MapGI@{MapGI}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void Map\+G\+I\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{target,  }\item[{sf\+::\+Render\+States}]{states }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classMapGI_a2107ca49ad2bedddb101d11c0dc0fd34}\label{classMapGI_a2107ca49ad2bedddb101d11c0dc0fd34}} 
+\index{MapGI@{MapGI}!getClickedOn@{getClickedOn}}
+\index{getClickedOn@{getClickedOn}!MapGI@{MapGI}}
+\doxysubsubsection{\texorpdfstring{getClickedOn()}{getClickedOn()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classClickable}{Clickable}} $>$ Map\+G\+I\+::get\+Clicked\+On (\begin{DoxyParamCaption}\item[{std\+::pair$<$ int, int $>$}]{mouse }\end{DoxyParamCaption}) const}
+
+
+
+Retrieve the clicked tile from the map. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mouse} & the pair of the click xy coordinates \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMapGI_a81923507fdb7356802ecd44bd1e0ea7f}\label{classMapGI_a81923507fdb7356802ecd44bd1e0ea7f}} 
+\index{MapGI@{MapGI}!getSquareSize@{getSquareSize}}
+\index{getSquareSize@{getSquareSize}!MapGI@{MapGI}}
+\doxysubsubsection{\texorpdfstring{getSquareSize()}{getSquareSize()}}
+{\footnotesize\ttfamily int Map\+G\+I\+::get\+Square\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMapGI_a42e6c514e9147bfbdbe5a80a00315c79}\label{classMapGI_a42e6c514e9147bfbdbe5a80a00315c79}} 
+\index{MapGI@{MapGI}!resize@{resize}}
+\index{resize@{resize}!MapGI@{MapGI}}
+\doxysubsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily void Map\+G\+I\+::resize (\begin{DoxyParamCaption}\item[{int}]{window\+Width,  }\item[{int}]{window\+Height }\end{DoxyParamCaption})}
+
+
+
+Update an already created graphic implementation. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em window\+Width} & the window width \\
+\hline
+{\em window\+Height} & the window height \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{classMapGI_a2e4ea720139ebf8dd21e3be0e6d6a412}\label{classMapGI_a2e4ea720139ebf8dd21e3be0e6d6a412}} 
+\index{MapGI@{MapGI}!height@{height}}
+\index{height@{height}!MapGI@{MapGI}}
+\doxysubsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily int Map\+G\+I\+::height\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMapGI_af646fd87cee602768979b7c29515bc5d}\label{classMapGI_af646fd87cee602768979b7c29515bc5d}} 
+\index{MapGI@{MapGI}!lastSelected@{lastSelected}}
+\index{lastSelected@{lastSelected}!MapGI@{MapGI}}
+\doxysubsubsection{\texorpdfstring{lastSelected}{lastSelected}}
+{\footnotesize\ttfamily int Map\+G\+I\+::last\+Selected = -\/1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMapGI_af02529985a04a7eadd50aef84a4cf381}\label{classMapGI_af02529985a04a7eadd50aef84a4cf381}} 
+\index{MapGI@{MapGI}!outline@{outline}}
+\index{outline@{outline}!MapGI@{MapGI}}
+\doxysubsubsection{\texorpdfstring{outline}{outline}}
+{\footnotesize\ttfamily int Map\+G\+I\+::outline = 5\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMapGI_a572aa5bc5e1613fdf500c554e4e6e407}\label{classMapGI_a572aa5bc5e1613fdf500c554e4e6e407}} 
+\index{MapGI@{MapGI}!sqH@{sqH}}
+\index{sqH@{sqH}!MapGI@{MapGI}}
+\doxysubsubsection{\texorpdfstring{sqH}{sqH}}
+{\footnotesize\ttfamily int Map\+G\+I\+::sqH\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMapGI_a1af383fc2729b5e02b7f67d5d4e295cc}\label{classMapGI_a1af383fc2729b5e02b7f67d5d4e295cc}} 
+\index{MapGI@{MapGI}!squareSize@{squareSize}}
+\index{squareSize@{squareSize}!MapGI@{MapGI}}
+\doxysubsubsection{\texorpdfstring{squareSize}{squareSize}}
+{\footnotesize\ttfamily int Map\+G\+I\+::square\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMapGI_af16795ce695ed39915ea9e6a654398ab}\label{classMapGI_af16795ce695ed39915ea9e6a654398ab}} 
+\index{MapGI@{MapGI}!sqW@{sqW}}
+\index{sqW@{sqW}!MapGI@{MapGI}}
+\doxysubsubsection{\texorpdfstring{sqW}{sqW}}
+{\footnotesize\ttfamily int Map\+G\+I\+::sqW\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMapGI_a2235037b13c1c78d0e63b9f38e5a7764}\label{classMapGI_a2235037b13c1c78d0e63b9f38e5a7764}} 
+\index{MapGI@{MapGI}!tls@{tls}}
+\index{tls@{tls}!MapGI@{MapGI}}
+\doxysubsubsection{\texorpdfstring{tls}{tls}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classTileGI}{Tile\+GI}}$>$ Map\+G\+I\+::tls\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMapGI_afcedf27dd59d7e093b38df7566b62a1f}\label{classMapGI_afcedf27dd59d7e093b38df7566b62a1f}} 
+\index{MapGI@{MapGI}!width@{width}}
+\index{width@{width}!MapGI@{MapGI}}
+\doxysubsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily int Map\+G\+I\+::width\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+src/graphics/\mbox{\hyperlink{mapGI_8hh}{map\+G\+I.\+hh}}\item 
+src/graphics/\mbox{\hyperlink{mapGI_8cc}{map\+G\+I.\+cc}}\end{DoxyCompactItemize}

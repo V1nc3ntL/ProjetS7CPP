@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet C++ S7 : EL-KHARROUBI LEFEBVRE:  Fichier source de src/graphics/mainMenuGI.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet C++ S7 : EL-KHARROUBI LEFEBVRE
+   </div>
+   <div id="projectbrief">Le projet S7 de C++ pour EISE4, réalisé par Karim El-KHARROUBI et Vincent LEFEBVRE</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_560415a5d2bc4999842279f4fc1debef.html">graphics</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">mainMenuGI.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="mainMenuGI_8hh.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef __MAIN_MENU_GRAPHIC_IMP_HH__</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define __MAIN_MENU_GRAPHIC_IMP_HH__</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="buttonGI_8hh.html">buttonGI.hh</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="localization_8hh.html">localization.hh</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="usrInterface_8hh.html">usrInterface.hh</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="mainMenuGI_8hh.html#ab63261bdcb7a48c6685e4dcb7da25918">   15</a></span>&#160;<span class="keyword">static</span> constexpr <span class="keywordtype">int</span> <a class="code" href="mainMenuGI_8hh.html#ab63261bdcb7a48c6685e4dcb7da25918">buttonNr</a> = 2;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="mainMenuGI_8hh.html#a22bf37a66e90898e3aa456a8d121bdf9">   17</a></span>&#160;<span class="keyword">static</span> constexpr <span class="keywordtype">int</span> <a class="code" href="mainMenuGI_8hh.html#a22bf37a66e90898e3aa456a8d121bdf9">itemsHeight</a> = 100;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// Forward declaration</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">class </span><a class="code" href="classClickable.html">Clickable</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classMainMenuGI.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="classMainMenuGI.html">MainMenuGI</a> : <span class="keyword">public</span> <a class="code" href="classusrInterface.html">usrInterface</a> {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classMainMenuGI.html#a3ac61a80a5f3dba2e4d0936f81bc9394">   28</a></span>&#160;  <a class="code" href="classMainMenuGI.html#a3ac61a80a5f3dba2e4d0936f81bc9394">MainMenuGI</a>(){};</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classMainMenuGI.html#a2c3388ad574d460801accec46e58dd13">   33</a></span>&#160;  <a class="code" href="classMainMenuGI.html#a2c3388ad574d460801accec46e58dd13">~MainMenuGI</a>(){};</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classMainMenuGI.html#ad5d7906f6b7b2bc467a4f4dbb1159ab9">   42</a></span>&#160;  <a class="code" href="classMainMenuGI.html#ad5d7906f6b7b2bc467a4f4dbb1159ab9">MainMenuGI</a>(<span class="keywordtype">int</span> &amp;windowWidth, <span class="keywordtype">int</span> &amp;windowHeight)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      : <a class="code" href="classMainMenuGI.html#aaf9dccad109298a945e983671fa2dfc6">title</a>(<span class="stringliteral">&quot;DYSTOPIA&quot;</span>, <a class="code" href="classMainMenuGI.html#a2ab030a6e9abc591e675576547abd221">titleFont</a>, <a class="code" href="mainMenuGI_8hh.html#a22bf37a66e90898e3aa456a8d121bdf9">itemsHeight</a>), </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      <a class="code" href="classMainMenuGI.html#a0a3f9d9e9214f1fbd3fb4471d2b61ccd">width</a>(windowWidth),</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="classMainMenuGI.html#a2ec323b8660db02740c3e4b2a7de9ee7">newGameButton</a>(</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        std::make_pair&lt;int,int&gt; (<a class="code" href="classMainMenuGI.html#a0a3f9d9e9214f1fbd3fb4471d2b61ccd">width</a>/2-<a class="code" href="classMainMenuGI.html#a0a3f9d9e9214f1fbd3fb4471d2b61ccd">width</a>/8, <a class="code" href="mainMenuGI_8hh.html#a22bf37a66e90898e3aa456a8d121bdf9">itemsHeight</a>*3),</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="classMainMenuGI.html#a0a3f9d9e9214f1fbd3fb4471d2b61ccd">width</a>/4,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="mainMenuGI_8hh.html#a22bf37a66e90898e3aa456a8d121bdf9">itemsHeight</a>,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="namespacelocalization.html">localization</a>::<a class="code" href="namespacelocalization.html#af11276e8361696baca908516f6aeb7a7">newGameButtonText</a>,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        1),</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <a class="code" href="classMainMenuGI.html#ac40e13043e4d1c1eb30b9791947f960b">quitButton</a>(</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;          std::make_pair&lt;int,int&gt; (<a class="code" href="classMainMenuGI.html#a0a3f9d9e9214f1fbd3fb4471d2b61ccd">width</a>/2-<a class="code" href="classMainMenuGI.html#a0a3f9d9e9214f1fbd3fb4471d2b61ccd">width</a>/8,<a class="code" href="mainMenuGI_8hh.html#a22bf37a66e90898e3aa456a8d121bdf9">itemsHeight</a>*5),</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;          <a class="code" href="classMainMenuGI.html#a0a3f9d9e9214f1fbd3fb4471d2b61ccd">width</a>/4,</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;          <a class="code" href="mainMenuGI_8hh.html#a22bf37a66e90898e3aa456a8d121bdf9">itemsHeight</a>,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;          <a class="code" href="namespacelocalization.html">localization</a>::<a class="code" href="namespacelocalization.html#acadb8956bc2db55f5128dc512a648c07">quitButtonText</a>,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;          0) </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="classMainMenuGI.html#a15def3eabeec543b08ea04ebc2dd8c2d">Background</a>.loadFromFile(<a class="code" href="headersLocation_8hh.html#a5a32060ea6e15641630ebbccf4fdd714">IMGS_DIR</a><span class="stringliteral">&quot;mainMenuBackground.jpg&quot;</span>);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="classMainMenuGI.html#a2ab030a6e9abc591e675576547abd221">titleFont</a>.loadFromFile(<a class="code" href="headersLocation_8hh.html#a36c3fec3e9086ef0cf1d639423032f68">FONTS_DIR</a><span class="stringliteral">&quot;insomnia.ttf&quot;</span>); </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="classMainMenuGI.html#a0fd502e47468cfee70663d7f0494a7b3">s_bg</a>.setTexture(<a class="code" href="classMainMenuGI.html#a15def3eabeec543b08ea04ebc2dd8c2d">Background</a>);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="classMainMenuGI.html#a0fd502e47468cfee70663d7f0494a7b3">s_bg</a>.setScale(1, 1);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="classMainMenuGI.html#aaf9dccad109298a945e983671fa2dfc6">title</a>.setFont(<a class="code" href="classMainMenuGI.html#a2ab030a6e9abc591e675576547abd221">titleFont</a>);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="classMainMenuGI.html#aaf9dccad109298a945e983671fa2dfc6">title</a>.setFillColor(sf::Color::Black);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="classMainMenuGI.html#aaf9dccad109298a945e983671fa2dfc6">title</a>.setPosition(<a class="code" href="classMainMenuGI.html#a0a3f9d9e9214f1fbd3fb4471d2b61ccd">width</a> / 2 - <a class="code" href="classMainMenuGI.html#aaf9dccad109298a945e983671fa2dfc6">title</a>.getGlobalBounds().width / 2, 40);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classMainMenuGI.html#acdf837f54f60b743d9cba117eabcfe52">   70</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classMainMenuGI.html#acdf837f54f60b743d9cba117eabcfe52">draw</a>(sf::RenderTarget &amp;target, sf::RenderStates states)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    target.draw(<a class="code" href="classMainMenuGI.html#a0fd502e47468cfee70663d7f0494a7b3">s_bg</a>);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    target.draw(<a class="code" href="classMainMenuGI.html#aaf9dccad109298a945e983671fa2dfc6">title</a>);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">for</span>(<a class="code" href="classButtonGI.html">ButtonGI</a> b : <a class="code" href="classMainMenuGI.html#a54c0bc7f74242cf274ae71adc95ef85a">buttons</a> )</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      target.draw(b);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classMainMenuGI.html#add708fb2562fb67da5d20f1831badb43">   78</a></span>&#160;  std::shared_ptr&lt;Clickable&gt; <a class="code" href="classMainMenuGI.html#add708fb2562fb67da5d20f1831badb43">getClickedOn</a>(std::pair&lt;int,int&gt;mouse)<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    std::shared_ptr&lt;ButtonGI&gt; tmp;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">for</span> (<a class="code" href="classButtonGI.html">ButtonGI</a> b : <a class="code" href="classMainMenuGI.html#a54c0bc7f74242cf274ae71adc95ef85a">buttons</a>)</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      <span class="keywordflow">if</span> (b.isUnder(mouse)) {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        tmp = std::make_shared&lt;ButtonGI&gt;(b);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">return</span> tmp;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="classMainMenuGI.html#a15def3eabeec543b08ea04ebc2dd8c2d">   93</a></span>&#160;  sf::Texture <a class="code" href="classMainMenuGI.html#a15def3eabeec543b08ea04ebc2dd8c2d">Background</a>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="classMainMenuGI.html#a0fd502e47468cfee70663d7f0494a7b3">   94</a></span>&#160;  sf::Sprite <a class="code" href="classMainMenuGI.html#a0fd502e47468cfee70663d7f0494a7b3">s_bg</a>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classMainMenuGI.html#a2ab030a6e9abc591e675576547abd221">   95</a></span>&#160;  sf::Font <a class="code" href="classMainMenuGI.html#a2ab030a6e9abc591e675576547abd221">titleFont</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="classMainMenuGI.html#aaf9dccad109298a945e983671fa2dfc6">   96</a></span>&#160;  sf::Text <a class="code" href="classMainMenuGI.html#aaf9dccad109298a945e983671fa2dfc6">title</a>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="classMainMenuGI.html#a0a3f9d9e9214f1fbd3fb4471d2b61ccd">   97</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classMainMenuGI.html#a0a3f9d9e9214f1fbd3fb4471d2b61ccd">width</a>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="classMainMenuGI.html#a2ec323b8660db02740c3e4b2a7de9ee7">   99</a></span>&#160;  <a class="code" href="classButtonGI.html">ButtonGI</a> <a class="code" href="classMainMenuGI.html#a2ec323b8660db02740c3e4b2a7de9ee7">newGameButton</a>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classMainMenuGI.html#ac40e13043e4d1c1eb30b9791947f960b">  100</a></span>&#160;  <a class="code" href="classButtonGI.html">ButtonGI</a> <a class="code" href="classMainMenuGI.html#ac40e13043e4d1c1eb30b9791947f960b">quitButton</a>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="classMainMenuGI.html#a54c0bc7f74242cf274ae71adc95ef85a">  102</a></span>&#160;  std::array&lt;ButtonGI,2&gt; <a class="code" href="classMainMenuGI.html#a54c0bc7f74242cf274ae71adc95ef85a">buttons</a> = {<a class="code" href="classMainMenuGI.html#a2ec323b8660db02740c3e4b2a7de9ee7">newGameButton</a>,<a class="code" href="classMainMenuGI.html#ac40e13043e4d1c1eb30b9791947f960b">quitButton</a>};</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;};</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassMainMenuGI_html_ad5d7906f6b7b2bc467a4f4dbb1159ab9"><div class="ttname"><a href="classMainMenuGI.html#ad5d7906f6b7b2bc467a4f4dbb1159ab9">MainMenuGI::MainMenuGI</a></div><div class="ttdeci">MainMenuGI(int &amp;windowWidth, int &amp;windowHeight)</div><div class="ttdoc">Creates a main menu graphic implementation pfollowing its parameter.</div><div class="ttdef"><b>Definition:</b> mainMenuGI.hh:42</div></div>
+<div class="ttc" id="aclassMainMenuGI_html_a15def3eabeec543b08ea04ebc2dd8c2d"><div class="ttname"><a href="classMainMenuGI.html#a15def3eabeec543b08ea04ebc2dd8c2d">MainMenuGI::Background</a></div><div class="ttdeci">sf::Texture Background</div><div class="ttdef"><b>Definition:</b> mainMenuGI.hh:93</div></div>
+<div class="ttc" id="aclassButtonGI_html"><div class="ttname"><a href="classButtonGI.html">ButtonGI</a></div><div class="ttdef"><b>Definition:</b> buttonGI.hh:16</div></div>
+<div class="ttc" id="aclassMainMenuGI_html_acdf837f54f60b743d9cba117eabcfe52"><div class="ttname"><a href="classMainMenuGI.html#acdf837f54f60b743d9cba117eabcfe52">MainMenuGI::draw</a></div><div class="ttdeci">virtual void draw(sf::RenderTarget &amp;target, sf::RenderStates states) const</div><div class="ttdef"><b>Definition:</b> mainMenuGI.hh:70</div></div>
+<div class="ttc" id="amainMenuGI_8hh_html_ab63261bdcb7a48c6685e4dcb7da25918"><div class="ttname"><a href="mainMenuGI_8hh.html#ab63261bdcb7a48c6685e4dcb7da25918">buttonNr</a></div><div class="ttdeci">static constexpr int buttonNr</div><div class="ttdef"><b>Definition:</b> mainMenuGI.hh:15</div></div>
+<div class="ttc" id="aclassMainMenuGI_html_a2c3388ad574d460801accec46e58dd13"><div class="ttname"><a href="classMainMenuGI.html#a2c3388ad574d460801accec46e58dd13">MainMenuGI::~MainMenuGI</a></div><div class="ttdeci">~MainMenuGI()</div><div class="ttdoc">Destroys a main menu graphic implementation.</div><div class="ttdef"><b>Definition:</b> mainMenuGI.hh:33</div></div>
+<div class="ttc" id="anamespacelocalization_html_acadb8956bc2db55f5128dc512a648c07"><div class="ttname"><a href="namespacelocalization.html#acadb8956bc2db55f5128dc512a648c07">localization::quitButtonText</a></div><div class="ttdeci">std::string quitButtonText</div><div class="ttdef"><b>Definition:</b> localization.hh:5</div></div>
+<div class="ttc" id="ausrInterface_8hh_html"><div class="ttname"><a href="usrInterface_8hh.html">usrInterface.hh</a></div><div class="ttdoc">An interface to ease polymorphism on graphical interfaces.</div></div>
+<div class="ttc" id="aclassMainMenuGI_html_add708fb2562fb67da5d20f1831badb43"><div class="ttname"><a href="classMainMenuGI.html#add708fb2562fb67da5d20f1831badb43">MainMenuGI::getClickedOn</a></div><div class="ttdeci">std::shared_ptr&lt; Clickable &gt; getClickedOn(std::pair&lt; int, int &gt;mouse) const</div><div class="ttdef"><b>Definition:</b> mainMenuGI.hh:78</div></div>
+<div class="ttc" id="anamespacelocalization_html"><div class="ttname"><a href="namespacelocalization.html">localization</a></div><div class="ttdef"><b>Definition:</b> localization.hh:3</div></div>
+<div class="ttc" id="aclassMainMenuGI_html"><div class="ttname"><a href="classMainMenuGI.html">MainMenuGI</a></div><div class="ttdef"><b>Definition:</b> mainMenuGI.hh:21</div></div>
+<div class="ttc" id="abuttonGI_8hh_html"><div class="ttname"><a href="buttonGI_8hh.html">buttonGI.hh</a></div><div class="ttdoc">The graphic implementation of a button.</div></div>
+<div class="ttc" id="aclassMainMenuGI_html_a2ab030a6e9abc591e675576547abd221"><div class="ttname"><a href="classMainMenuGI.html#a2ab030a6e9abc591e675576547abd221">MainMenuGI::titleFont</a></div><div class="ttdeci">sf::Font titleFont</div><div class="ttdef"><b>Definition:</b> mainMenuGI.hh:95</div></div>
+<div class="ttc" id="aclassusrInterface_html"><div class="ttname"><a href="classusrInterface.html">usrInterface</a></div><div class="ttdef"><b>Definition:</b> usrInterface.hh:12</div></div>
+<div class="ttc" id="anamespacelocalization_html_af11276e8361696baca908516f6aeb7a7"><div class="ttname"><a href="namespacelocalization.html#af11276e8361696baca908516f6aeb7a7">localization::newGameButtonText</a></div><div class="ttdeci">std::string newGameButtonText</div><div class="ttdef"><b>Definition:</b> localization.hh:6</div></div>
+<div class="ttc" id="aclassClickable_html"><div class="ttname"><a href="classClickable.html">Clickable</a></div><div class="ttdef"><b>Definition:</b> clickable.hh:12</div></div>
+<div class="ttc" id="aheadersLocation_8hh_html_a36c3fec3e9086ef0cf1d639423032f68"><div class="ttname"><a href="headersLocation_8hh.html#a36c3fec3e9086ef0cf1d639423032f68">FONTS_DIR</a></div><div class="ttdeci">#define FONTS_DIR</div><div class="ttdef"><b>Definition:</b> headersLocation.hh:8</div></div>
+<div class="ttc" id="aclassMainMenuGI_html_aaf9dccad109298a945e983671fa2dfc6"><div class="ttname"><a href="classMainMenuGI.html#aaf9dccad109298a945e983671fa2dfc6">MainMenuGI::title</a></div><div class="ttdeci">sf::Text title</div><div class="ttdef"><b>Definition:</b> mainMenuGI.hh:96</div></div>
+<div class="ttc" id="aclassMainMenuGI_html_ac40e13043e4d1c1eb30b9791947f960b"><div class="ttname"><a href="classMainMenuGI.html#ac40e13043e4d1c1eb30b9791947f960b">MainMenuGI::quitButton</a></div><div class="ttdeci">ButtonGI quitButton</div><div class="ttdef"><b>Definition:</b> mainMenuGI.hh:100</div></div>
+<div class="ttc" id="amainMenuGI_8hh_html_a22bf37a66e90898e3aa456a8d121bdf9"><div class="ttname"><a href="mainMenuGI_8hh.html#a22bf37a66e90898e3aa456a8d121bdf9">itemsHeight</a></div><div class="ttdeci">static constexpr int itemsHeight</div><div class="ttdef"><b>Definition:</b> mainMenuGI.hh:17</div></div>
+<div class="ttc" id="aclassMainMenuGI_html_a3ac61a80a5f3dba2e4d0936f81bc9394"><div class="ttname"><a href="classMainMenuGI.html#a3ac61a80a5f3dba2e4d0936f81bc9394">MainMenuGI::MainMenuGI</a></div><div class="ttdeci">MainMenuGI()</div><div class="ttdoc">Creates an empty graphic implementation The implementation must be set after construction !</div><div class="ttdef"><b>Definition:</b> mainMenuGI.hh:28</div></div>
+<div class="ttc" id="aclassMainMenuGI_html_a54c0bc7f74242cf274ae71adc95ef85a"><div class="ttname"><a href="classMainMenuGI.html#a54c0bc7f74242cf274ae71adc95ef85a">MainMenuGI::buttons</a></div><div class="ttdeci">std::array&lt; ButtonGI, 2 &gt; buttons</div><div class="ttdef"><b>Definition:</b> mainMenuGI.hh:102</div></div>
+<div class="ttc" id="aclassMainMenuGI_html_a2ec323b8660db02740c3e4b2a7de9ee7"><div class="ttname"><a href="classMainMenuGI.html#a2ec323b8660db02740c3e4b2a7de9ee7">MainMenuGI::newGameButton</a></div><div class="ttdeci">ButtonGI newGameButton</div><div class="ttdef"><b>Definition:</b> mainMenuGI.hh:99</div></div>
+<div class="ttc" id="aclassMainMenuGI_html_a0fd502e47468cfee70663d7f0494a7b3"><div class="ttname"><a href="classMainMenuGI.html#a0fd502e47468cfee70663d7f0494a7b3">MainMenuGI::s_bg</a></div><div class="ttdeci">sf::Sprite s_bg</div><div class="ttdef"><b>Definition:</b> mainMenuGI.hh:94</div></div>
+<div class="ttc" id="aclassMainMenuGI_html_a0a3f9d9e9214f1fbd3fb4471d2b61ccd"><div class="ttname"><a href="classMainMenuGI.html#a0a3f9d9e9214f1fbd3fb4471d2b61ccd">MainMenuGI::width</a></div><div class="ttdeci">int width</div><div class="ttdef"><b>Definition:</b> mainMenuGI.hh:97</div></div>
+<div class="ttc" id="aheadersLocation_8hh_html_a5a32060ea6e15641630ebbccf4fdd714"><div class="ttname"><a href="headersLocation_8hh.html#a5a32060ea6e15641630ebbccf4fdd714">IMGS_DIR</a></div><div class="ttdeci">#define IMGS_DIR</div><div class="ttdef"><b>Definition:</b> headersLocation.hh:9</div></div>
+<div class="ttc" id="alocalization_8hh_html"><div class="ttname"><a href="localization_8hh.html">localization.hh</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

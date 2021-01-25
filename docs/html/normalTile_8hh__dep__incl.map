@@ -1,0 +1,4 @@
+<map id="src/gameLogic/map/tiles/normalTile.hh" name="src/gameLogic/map/tiles/normalTile.hh">
+<area shape="rect" id="node1" title="The file containing the standard (i.e without effects) tiles." alt="" coords="31,5,195,47"/>
+<area shape="rect" id="node2" href="$gameMap_8cc.html" title=" " alt="" coords="5,95,220,121"/>
+</map>

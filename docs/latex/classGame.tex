@@ -1,0 +1,123 @@
+\hypertarget{classGame}{}\doxysection{Référence de la classe Game}
+\label{classGame}\index{Game@{Game}}
+
+
+{\ttfamily \#include $<$game.\+hh$>$}
+
+
+
+Graphe de collaboration de Game\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=159pt]{classGame__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGame_aa4a7425e05ee4908991fe62716df7fc3}{Game}} (\mbox{\hyperlink{classGameMap}{Game\+Map}} \&\mbox{\hyperlink{classGame_a45be81aaf550d2abb9ac4ba9a59d1036}{map}})
+\item 
+\mbox{\hyperlink{classGame_a0b9125094a73ae1147b3923037baf94b}{Game}} (\mbox{\hyperlink{classGameMap}{Game\+Map}} \&\mbox{\hyperlink{classGame_a45be81aaf550d2abb9ac4ba9a59d1036}{map}}, std\+::vector$<$ \mbox{\hyperlink{classUnit}{Unit}} $>$ \&\mbox{\hyperlink{classGame_acc6c46078e14baf7fbc8090cd1e2823f}{units}})
+\item 
+\mbox{\hyperlink{classGameMap}{Game\+Map}} \& \mbox{\hyperlink{classGame_ac974f4b26a1ea15782e87f15aa3c090d}{get\+Map}} ()
+\item 
+void \mbox{\hyperlink{classGame_a801658c7cef474bc1d9a830f4a79034c}{next\+Turn}} ()
+\item 
+int \mbox{\hyperlink{classGame_a1deb5e9b45d145383ee5d4f03f5e8eb3}{get\+Turn}} () const
+\item 
+std\+::ostream \& \mbox{\hyperlink{classGame_a683ba3e18bb3396a12d65e7857792bc9}{operator$<$$<$}} (std\+::ostream \&os)
+\item 
+std\+::string \mbox{\hyperlink{classGame_a609b647fa263d3e87f75249058558b2d}{get\+Turn\+Str}} () const
+\item 
+std\+::string \mbox{\hyperlink{classGame_aa6cd58a347914869b106d90e7b74d025}{to\+String}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classGame_ac6668952517c2ed23e73c1e70724db84}{cur\+Turn}} = 0
+\item 
+\mbox{\hyperlink{classGameMap}{Game\+Map}} \mbox{\hyperlink{classGame_a45be81aaf550d2abb9ac4ba9a59d1036}{map}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classUnit}{Unit}} $>$ \mbox{\hyperlink{classGame_acc6c46078e14baf7fbc8090cd1e2823f}{units}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classGame_aa4a7425e05ee4908991fe62716df7fc3}\label{classGame_aa4a7425e05ee4908991fe62716df7fc3}} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGameMap}{Game\+Map}} \&}]{map }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGame_a0b9125094a73ae1147b3923037baf94b}\label{classGame_a0b9125094a73ae1147b3923037baf94b}} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGameMap}{Game\+Map}} \&}]{map,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classUnit}{Unit}} $>$ \&}]{units }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classGame_ac974f4b26a1ea15782e87f15aa3c090d}\label{classGame_ac974f4b26a1ea15782e87f15aa3c090d}} 
+\index{Game@{Game}!getMap@{getMap}}
+\index{getMap@{getMap}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getMap()}{getMap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGameMap}{Game\+Map}}\& Game\+::get\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGame_a1deb5e9b45d145383ee5d4f03f5e8eb3}\label{classGame_a1deb5e9b45d145383ee5d4f03f5e8eb3}} 
+\index{Game@{Game}!getTurn@{getTurn}}
+\index{getTurn@{getTurn}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getTurn()}{getTurn()}}
+{\footnotesize\ttfamily int Game\+::get\+Turn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGame_a609b647fa263d3e87f75249058558b2d}\label{classGame_a609b647fa263d3e87f75249058558b2d}} 
+\index{Game@{Game}!getTurnStr@{getTurnStr}}
+\index{getTurnStr@{getTurnStr}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getTurnStr()}{getTurnStr()}}
+{\footnotesize\ttfamily std\+::string Game\+::get\+Turn\+Str (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGame_a801658c7cef474bc1d9a830f4a79034c}\label{classGame_a801658c7cef474bc1d9a830f4a79034c}} 
+\index{Game@{Game}!nextTurn@{nextTurn}}
+\index{nextTurn@{nextTurn}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{nextTurn()}{nextTurn()}}
+{\footnotesize\ttfamily void Game\+::next\+Turn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGame_a683ba3e18bb3396a12d65e7857792bc9}\label{classGame_a683ba3e18bb3396a12d65e7857792bc9}} 
+\index{Game@{Game}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily std\+::ostream\& Game\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGame_aa6cd58a347914869b106d90e7b74d025}\label{classGame_aa6cd58a347914869b106d90e7b74d025}} 
+\index{Game@{Game}!toString@{toString}}
+\index{toString@{toString}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily std\+::string Game\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{classGame_ac6668952517c2ed23e73c1e70724db84}\label{classGame_ac6668952517c2ed23e73c1e70724db84}} 
+\index{Game@{Game}!curTurn@{curTurn}}
+\index{curTurn@{curTurn}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{curTurn}{curTurn}}
+{\footnotesize\ttfamily int Game\+::cur\+Turn = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGame_a45be81aaf550d2abb9ac4ba9a59d1036}\label{classGame_a45be81aaf550d2abb9ac4ba9a59d1036}} 
+\index{Game@{Game}!map@{map}}
+\index{map@{map}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{map}{map}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGameMap}{Game\+Map}} Game\+::map\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGame_acc6c46078e14baf7fbc8090cd1e2823f}\label{classGame_acc6c46078e14baf7fbc8090cd1e2823f}} 
+\index{Game@{Game}!units@{units}}
+\index{units@{units}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{units}{units}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classUnit}{Unit}}$>$ Game\+::units\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+src/game\+Logic/\mbox{\hyperlink{game_8hh}{game.\+hh}}\end{DoxyCompactItemize}

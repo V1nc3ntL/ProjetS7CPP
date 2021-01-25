@@ -1,0 +1,5 @@
+<map id="src/graphics/buttonGI.hh" name="src/graphics/buttonGI.hh">
+<area shape="rect" id="node1" title="The graphic implementation of a button." alt="" coords="75,5,240,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,144,107"/>
+<area shape="rect" id="node3" href="$clickable_8hh.html" title="The interface for clickable graphics." alt="" coords="169,80,314,107"/>
+</map>

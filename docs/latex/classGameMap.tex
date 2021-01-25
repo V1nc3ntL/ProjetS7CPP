@@ -1,0 +1,188 @@
+\hypertarget{classGameMap}{}\doxysection{Référence de la classe Game\+Map}
+\label{classGameMap}\index{GameMap@{GameMap}}
+
+
+{\ttfamily \#include $<$game\+Map.\+hh$>$}
+
+
+
+Graphe de collaboration de Game\+Map\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{classGameMap__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGameMap_adc5dce14e3bfc185fad77bdd0d1f4818}{Game\+Map}} (int w, int h, int $\ast$tile\+Types)
+\begin{DoxyCompactList}\small\item\em Creates a game map as indicated by an array of tile. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGameMap_aaaadbbfc0443a8c6b5a720f3444cfbe5}{set\+GI}} (\mbox{\hyperlink{classMapGI}{Map\+GI}} \&m\+GI)
+\item 
+\mbox{\hyperlink{classMapGI}{Map\+GI}} \mbox{\hyperlink{classGameMap_afaf0116d12afca48565eb21c4083b099}{get\+GI}} () const
+\begin{DoxyCompactList}\small\item\em give the current graphic implementation of the map \end{DoxyCompactList}\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classMapGI}{Map\+GI}} $>$ $\ast$ \mbox{\hyperlink{classGameMap_ab749f7a5fa7457ca3a337dda494064e0}{get\+Pt\+Gi}} ()
+\begin{DoxyCompactList}\small\item\em give a pointer on an unique pointer to the graphic implementation of the map \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classGameMap_a11e629f83d76da8925542d45896e0d31}{Game\+Map}} (const \mbox{\hyperlink{classGameMap}{Game\+Map}} \&cp)
+\item 
+int \mbox{\hyperlink{classGameMap_ac002093e06886923ec10fac54aca2470}{get\+Width}} () const
+\begin{DoxyCompactList}\small\item\em getter to get the depth of a game\+Map ! \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classGameMap_af7ee2687ec81f7a748890a04c9cb9519}{get\+Height}} () const
+\begin{DoxyCompactList}\small\item\em getter to get the height of a game\+Map ! \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTile}{Tile}} $>$ $>$ \mbox{\hyperlink{classGameMap_a6bec028b4a65267db62cf9f741f8cae1}{get\+Tiles}} () const
+\begin{DoxyCompactList}\small\item\em getter to get the Tiles of a game\+Map ! \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classGameMap_a571f155d09c171a39dd9edf5f170b126}{width}} = \mbox{\hyperlink{gameMap_8hh_afd483d6947247a58e991b0a1c80da7e6}{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+I\+ZE}}
+\item 
+int \mbox{\hyperlink{classGameMap_a1459ab755b472ad0d9b1819c100df21a}{height}} = \mbox{\hyperlink{gameMap_8hh_afd483d6947247a58e991b0a1c80da7e6}{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+I\+ZE}}
+\item 
+int \mbox{\hyperlink{classGameMap_a2d53c8e5fb04a726970380a506862c76}{selected}} = -\/1
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTile}{Tile}} $>$ $>$ \mbox{\hyperlink{classGameMap_a09e05323044e38843643bb2d67ac031d}{tiles}}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classMapGI}{Map\+GI}} $>$ \mbox{\hyperlink{classGameMap_acb2db5872c9f93600273b7e1b2388b8b}{graph}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classGameMap_adc5dce14e3bfc185fad77bdd0d1f4818}\label{classGameMap_adc5dce14e3bfc185fad77bdd0d1f4818}} 
+\index{GameMap@{GameMap}!GameMap@{GameMap}}
+\index{GameMap@{GameMap}!GameMap@{GameMap}}
+\doxysubsubsection{\texorpdfstring{GameMap()}{GameMap()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Game\+Map\+::\+Game\+Map (\begin{DoxyParamCaption}\item[{int}]{w,  }\item[{int}]{h,  }\item[{int $\ast$}]{tile\+Types }\end{DoxyParamCaption})}
+
+
+
+Creates a game map as indicated by an array of tile. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em w} & the map width in px \\
+\hline
+{\em h} & the map height in px \\
+\hline
+{\em tile\+Types} & an array of int describing a map \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGameMap_a11e629f83d76da8925542d45896e0d31}\label{classGameMap_a11e629f83d76da8925542d45896e0d31}} 
+\index{GameMap@{GameMap}!GameMap@{GameMap}}
+\index{GameMap@{GameMap}!GameMap@{GameMap}}
+\doxysubsubsection{\texorpdfstring{GameMap()}{GameMap()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Game\+Map\+::\+Game\+Map (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGameMap}{Game\+Map}} \&}]{cp }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classGameMap_afaf0116d12afca48565eb21c4083b099}\label{classGameMap_afaf0116d12afca48565eb21c4083b099}} 
+\index{GameMap@{GameMap}!getGI@{getGI}}
+\index{getGI@{getGI}!GameMap@{GameMap}}
+\doxysubsubsection{\texorpdfstring{getGI()}{getGI()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGameMap}{Game\+Map}} \& Game\+Map\+::get\+GI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+give the current graphic implementation of the map 
+
+\begin{DoxyReturn}{Renvoie}
+the graphic implementation 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGameMap_af7ee2687ec81f7a748890a04c9cb9519}\label{classGameMap_af7ee2687ec81f7a748890a04c9cb9519}} 
+\index{GameMap@{GameMap}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!GameMap@{GameMap}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily Game\+Map\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+getter to get the height of a game\+Map ! 
+
+\begin{DoxyReturn}{Renvoie}
+int the width of the game\+Map 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGameMap_ab749f7a5fa7457ca3a337dda494064e0}\label{classGameMap_ab749f7a5fa7457ca3a337dda494064e0}} 
+\index{GameMap@{GameMap}!getPtGi@{getPtGi}}
+\index{getPtGi@{getPtGi}!GameMap@{GameMap}}
+\doxysubsubsection{\texorpdfstring{getPtGi()}{getPtGi()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGameMap}{Game\+Map}} \& Game\+Map\+::get\+Pt\+Gi (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+give a pointer on an unique pointer to the graphic implementation of the map 
+
+\begin{DoxyReturn}{Renvoie}
+a pointer to the unique pointer to the graphic implementation 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGameMap_a6bec028b4a65267db62cf9f741f8cae1}\label{classGameMap_a6bec028b4a65267db62cf9f741f8cae1}} 
+\index{GameMap@{GameMap}!getTiles@{getTiles}}
+\index{getTiles@{getTiles}!GameMap@{GameMap}}
+\doxysubsubsection{\texorpdfstring{getTiles()}{getTiles()}}
+{\footnotesize\ttfamily Game\+Map\+::get\+Tiles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+getter to get the Tiles of a game\+Map ! 
+
+\begin{DoxyReturn}{Renvoie}
+std\+::vector$<$std\+::shared\+\_\+ptr$<$\+Tile$>$$>$ the tiles of the map 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGameMap_ac002093e06886923ec10fac54aca2470}\label{classGameMap_ac002093e06886923ec10fac54aca2470}} 
+\index{GameMap@{GameMap}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!GameMap@{GameMap}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily Game\+Map\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+getter to get the depth of a game\+Map ! 
+
+\begin{DoxyReturn}{Renvoie}
+int the depth of the game\+Map 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGameMap_aaaadbbfc0443a8c6b5a720f3444cfbe5}\label{classGameMap_aaaadbbfc0443a8c6b5a720f3444cfbe5}} 
+\index{GameMap@{GameMap}!setGI@{setGI}}
+\index{setGI@{setGI}!GameMap@{GameMap}}
+\doxysubsubsection{\texorpdfstring{setGI()}{setGI()}}
+{\footnotesize\ttfamily void Game\+Map\+::set\+GI (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMapGI}{Map\+GI}} \&}]{m\+GI }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{classGameMap_acb2db5872c9f93600273b7e1b2388b8b}\label{classGameMap_acb2db5872c9f93600273b7e1b2388b8b}} 
+\index{GameMap@{GameMap}!graph@{graph}}
+\index{graph@{graph}!GameMap@{GameMap}}
+\doxysubsubsection{\texorpdfstring{graph}{graph}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classMapGI}{Map\+GI}}$>$ Game\+Map\+::graph\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGameMap_a1459ab755b472ad0d9b1819c100df21a}\label{classGameMap_a1459ab755b472ad0d9b1819c100df21a}} 
+\index{GameMap@{GameMap}!height@{height}}
+\index{height@{height}!GameMap@{GameMap}}
+\doxysubsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily int Game\+Map\+::height = \mbox{\hyperlink{gameMap_8hh_afd483d6947247a58e991b0a1c80da7e6}{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+I\+ZE}}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGameMap_a2d53c8e5fb04a726970380a506862c76}\label{classGameMap_a2d53c8e5fb04a726970380a506862c76}} 
+\index{GameMap@{GameMap}!selected@{selected}}
+\index{selected@{selected}!GameMap@{GameMap}}
+\doxysubsubsection{\texorpdfstring{selected}{selected}}
+{\footnotesize\ttfamily int Game\+Map\+::selected = -\/1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGameMap_a09e05323044e38843643bb2d67ac031d}\label{classGameMap_a09e05323044e38843643bb2d67ac031d}} 
+\index{GameMap@{GameMap}!tiles@{tiles}}
+\index{tiles@{tiles}!GameMap@{GameMap}}
+\doxysubsubsection{\texorpdfstring{tiles}{tiles}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classTile}{Tile}}$>$ $>$ Game\+Map\+::tiles\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGameMap_a571f155d09c171a39dd9edf5f170b126}\label{classGameMap_a571f155d09c171a39dd9edf5f170b126}} 
+\index{GameMap@{GameMap}!width@{width}}
+\index{width@{width}!GameMap@{GameMap}}
+\doxysubsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily int Game\+Map\+::width = \mbox{\hyperlink{gameMap_8hh_afd483d6947247a58e991b0a1c80da7e6}{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+I\+ZE}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+src/game\+Logic/map/\mbox{\hyperlink{gameMap_8hh}{game\+Map.\+hh}}\item 
+src/game\+Logic/map/\mbox{\hyperlink{gameMap_8cc}{game\+Map.\+cc}}\end{DoxyCompactItemize}

@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet C++ S7 : EL-KHARROUBI LEFEBVRE:  Fichier source de src/graphics/infoTextGI.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet C++ S7 : EL-KHARROUBI LEFEBVRE
+   </div>
+   <div id="projectbrief">Le projet S7 de C++ pour EISE4, réalisé par Karim El-KHARROUBI et Vincent LEFEBVRE</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_560415a5d2bc4999842279f4fc1debef.html">graphics</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">infoTextGI.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="infoTextGI_8hh.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef __INFO_TXT_HH__</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define __INFO_TXT_HH__</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mapGI_8hh.html">mapGI.hh</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="spriteButtonGI_8hh.html">spriteButtonGI.hh</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include USR_INTERFACE_H</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include PLAY_EVENTS_H</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include GAME_H</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="infoTextGI_8hh.html#a481347ba3862f9a1e99b60f653b92915">   17</a></span>&#160;constexpr <span class="keywordtype">int</span> <a class="code" href="infoTextGI_8hh.html#a481347ba3862f9a1e99b60f653b92915">END_TURN_BUTTON_SIZE</a> = 150;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="infoTextGI_8hh.html#a998ab4d5bf695fe7dc0c592fe213de49">   18</a></span>&#160;constexpr <span class="keywordtype">int</span> <a class="code" href="infoTextGI_8hh.html#a998ab4d5bf695fe7dc0c592fe213de49">TURN_TEXT_HEIGHT</a> = 50;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classinfoTextGI.html">   20</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classinfoTextGI.html">infoTextGI</a> : <span class="keyword">public</span>  sf::Drawable {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        public :</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classinfoTextGI.html#a5b03ebd2692c8fa484b15908f4e405fc">   24</a></span>&#160;        <a class="code" href="classinfoTextGI.html#a5b03ebd2692c8fa484b15908f4e405fc">BoardGI</a>(<span class="keywordtype">int</span> &amp;windowWidth, <span class="keywordtype">int</span> &amp;windowHeight, std::unique_ptr&lt;Game&gt;* <a class="code" href="classinfoTextGI.html#a5549e762a022944aed454eb819b9dca7">game</a>) :</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <a class="code" href="classinfoTextGI.html#a13845abdc784feeb33643c080b638481">theMap</a> (windowWidth,windowHeight,(*<a class="code" href="classinfoTextGI.html#a5549e762a022944aed454eb819b9dca7">game</a>)-&gt;getMap()),</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            nextTurnButton(windowWidth-<a class="code" href="infoTextGI_8hh.html#a481347ba3862f9a1e99b60f653b92915">END_TURN_BUTTON_SIZE</a>-<a class="code" href="buttonGI_8hh.html#a47e9f4d7d2646df7325f0784fb34f98f">MARGIN</a>,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                windowHeight-<a class="code" href="infoTextGI_8hh.html#a481347ba3862f9a1e99b60f653b92915">END_TURN_BUTTON_SIZE</a>-<a class="code" href="buttonGI_8hh.html#a47e9f4d7d2646df7325f0784fb34f98f">MARGIN</a>, <span class="stringliteral">&quot;hourGlass.png&quot;</span>,<a class="code" href="playEventTreatment_8hh.html#ab880a4baebdba540e42c50779b1ce139">END_TURN</a>),</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <a class="code" href="namespacelocalization.html#af509306fe3f5abd1d170f08eb9164235">turn</a>( windowWidth-<a class="code" href="infoTextGI_8hh.html#a481347ba3862f9a1e99b60f653b92915">END_TURN_BUTTON_SIZE</a>,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                windowHeight-<a class="code" href="infoTextGI_8hh.html#a481347ba3862f9a1e99b60f653b92915">END_TURN_BUTTON_SIZE</a>-<a class="code" href="infoTextGI_8hh.html#a998ab4d5bf695fe7dc0c592fe213de49">TURN_TEXT_HEIGHT</a>-<a class="code" href="buttonGI_8hh.html#a47e9f4d7d2646df7325f0784fb34f98f">MARGIN</a>,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                <a class="code" href="infoTextGI_8hh.html#a481347ba3862f9a1e99b60f653b92915">END_TURN_BUTTON_SIZE</a>-<a class="code" href="infoTextGI_8hh.html#a998ab4d5bf695fe7dc0c592fe213de49">TURN_TEXT_HEIGHT</a>-15,<a class="code" href="infoTextGI_8hh.html#a998ab4d5bf695fe7dc0c592fe213de49">TURN_TEXT_HEIGHT</a>,(*<a class="code" href="classinfoTextGI.html#a5549e762a022944aed454eb819b9dca7">game</a>)-&gt;getTurnStr(),<a class="code" href="playEventTreatment_8hh.html#ab880a4baebdba540e42c50779b1ce139">END_TURN</a>,<a class="code" href="buttonGI_8hh.html#a47e9f4d7d2646df7325f0784fb34f98f">MARGIN</a>) ,<a class="code" href="classinfoTextGI.html#a5549e762a022944aed454eb819b9dca7">game</a>(**<a class="code" href="classinfoTextGI.html#a5549e762a022944aed454eb819b9dca7">game</a>)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            {};</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classinfoTextGI.html#a031b67056570bb28bf06fc1859a632e1">   33</a></span>&#160;         std::shared_ptr&lt;Clickable&gt; <a class="code" href="classinfoTextGI.html#a031b67056570bb28bf06fc1859a632e1">getClickedOn</a>(std::pair&lt;int,int&gt;mouse)<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;             std::shared_ptr&lt;Clickable&gt; tmp;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;             </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;             <span class="keywordflow">if</span>( nextTurnButton.isUnder(mouse))</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                tmp = std::make_shared&lt;SpriteButtonGI&gt;(nextTurnButton);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;             <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                tmp = <a class="code" href="classinfoTextGI.html#a13845abdc784feeb33643c080b638481">theMap</a>.<a class="code" href="classMapGI.html#a2107ca49ad2bedddb101d11c0dc0fd34">getClickedOn</a>(mouse);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordflow">return</span> tmp;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;         }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classinfoTextGI.html#a5a5c9eef6ac351c1c28d8bc81f705302">   44</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classinfoTextGI.html#a5a5c9eef6ac351c1c28d8bc81f705302">draw</a>(sf::RenderTarget &amp;target, sf::RenderStates states)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            target.draw(<a class="code" href="classinfoTextGI.html#a13845abdc784feeb33643c080b638481">theMap</a>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            target.draw(nextTurnButton);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            target.draw(<a class="code" href="namespacelocalization.html#af509306fe3f5abd1d170f08eb9164235">turn</a>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        private :</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classinfoTextGI.html#a13845abdc784feeb33643c080b638481">   53</a></span>&#160;            <a class="code" href="classMapGI.html">MapGI</a> <a class="code" href="classinfoTextGI.html#a13845abdc784feeb33643c080b638481">theMap</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            sf::Text</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classinfoTextGI.html#a5549e762a022944aed454eb819b9dca7">   56</a></span>&#160;            <a class="code" href="classGame.html">Game</a> <a class="code" href="classinfoTextGI.html#a5549e762a022944aed454eb819b9dca7">game</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    };</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aspriteButtonGI_8hh_html"><div class="ttname"><a href="spriteButtonGI_8hh.html">spriteButtonGI.hh</a></div><div class="ttdoc">The graphic implementation of a button with an embedded sprite.</div></div>
+<div class="ttc" id="ainfoTextGI_8hh_html_a481347ba3862f9a1e99b60f653b92915"><div class="ttname"><a href="infoTextGI_8hh.html#a481347ba3862f9a1e99b60f653b92915">END_TURN_BUTTON_SIZE</a></div><div class="ttdeci">constexpr int END_TURN_BUTTON_SIZE</div><div class="ttdef"><b>Definition:</b> infoTextGI.hh:17</div></div>
+<div class="ttc" id="aclassMapGI_html"><div class="ttname"><a href="classMapGI.html">MapGI</a></div><div class="ttdef"><b>Definition:</b> mapGI.hh:18</div></div>
+<div class="ttc" id="aclassinfoTextGI_html_a5a5c9eef6ac351c1c28d8bc81f705302"><div class="ttname"><a href="classinfoTextGI.html#a5a5c9eef6ac351c1c28d8bc81f705302">infoTextGI::draw</a></div><div class="ttdeci">virtual void draw(sf::RenderTarget &amp;target, sf::RenderStates states) const</div><div class="ttdef"><b>Definition:</b> infoTextGI.hh:44</div></div>
+<div class="ttc" id="amapGI_8hh_html"><div class="ttname"><a href="mapGI_8hh.html">mapGI.hh</a></div><div class="ttdoc">The graphic implementation of a map.</div></div>
+<div class="ttc" id="aplayEventTreatment_8hh_html_ab880a4baebdba540e42c50779b1ce139"><div class="ttname"><a href="playEventTreatment_8hh.html#ab880a4baebdba540e42c50779b1ce139">END_TURN</a></div><div class="ttdeci">constexpr int END_TURN</div><div class="ttdef"><b>Definition:</b> playEventTreatment.hh:18</div></div>
+<div class="ttc" id="abuttonGI_8hh_html_a47e9f4d7d2646df7325f0784fb34f98f"><div class="ttname"><a href="buttonGI_8hh.html#a47e9f4d7d2646df7325f0784fb34f98f">MARGIN</a></div><div class="ttdeci">constexpr int MARGIN</div><div class="ttdef"><b>Definition:</b> buttonGI.hh:14</div></div>
+<div class="ttc" id="aclassinfoTextGI_html_a031b67056570bb28bf06fc1859a632e1"><div class="ttname"><a href="classinfoTextGI.html#a031b67056570bb28bf06fc1859a632e1">infoTextGI::getClickedOn</a></div><div class="ttdeci">std::shared_ptr&lt; Clickable &gt; getClickedOn(std::pair&lt; int, int &gt;mouse) const</div><div class="ttdef"><b>Definition:</b> infoTextGI.hh:33</div></div>
+<div class="ttc" id="aclassinfoTextGI_html_a5b03ebd2692c8fa484b15908f4e405fc"><div class="ttname"><a href="classinfoTextGI.html#a5b03ebd2692c8fa484b15908f4e405fc">infoTextGI::BoardGI</a></div><div class="ttdeci">BoardGI(int &amp;windowWidth, int &amp;windowHeight, std::unique_ptr&lt; Game &gt; *game)</div><div class="ttdef"><b>Definition:</b> infoTextGI.hh:24</div></div>
+<div class="ttc" id="aclassinfoTextGI_html_a5549e762a022944aed454eb819b9dca7"><div class="ttname"><a href="classinfoTextGI.html#a5549e762a022944aed454eb819b9dca7">infoTextGI::game</a></div><div class="ttdeci">sf::Text Game game</div><div class="ttdef"><b>Definition:</b> infoTextGI.hh:56</div></div>
+<div class="ttc" id="aclassinfoTextGI_html_a13845abdc784feeb33643c080b638481"><div class="ttname"><a href="classinfoTextGI.html#a13845abdc784feeb33643c080b638481">infoTextGI::theMap</a></div><div class="ttdeci">MapGI theMap</div><div class="ttdef"><b>Definition:</b> infoTextGI.hh:53</div></div>
+<div class="ttc" id="aclassinfoTextGI_html"><div class="ttname"><a href="classinfoTextGI.html">infoTextGI</a></div><div class="ttdef"><b>Definition:</b> infoTextGI.hh:20</div></div>
+<div class="ttc" id="ainfoTextGI_8hh_html_a998ab4d5bf695fe7dc0c592fe213de49"><div class="ttname"><a href="infoTextGI_8hh.html#a998ab4d5bf695fe7dc0c592fe213de49">TURN_TEXT_HEIGHT</a></div><div class="ttdeci">constexpr int TURN_TEXT_HEIGHT</div><div class="ttdef"><b>Definition:</b> infoTextGI.hh:18</div></div>
+<div class="ttc" id="anamespacelocalization_html_af509306fe3f5abd1d170f08eb9164235"><div class="ttname"><a href="namespacelocalization.html#af509306fe3f5abd1d170f08eb9164235">localization::turn</a></div><div class="ttdeci">std::string turn</div><div class="ttdef"><b>Definition:</b> localization.hh:7</div></div>
+<div class="ttc" id="aclassMapGI_html_a2107ca49ad2bedddb101d11c0dc0fd34"><div class="ttname"><a href="classMapGI.html#a2107ca49ad2bedddb101d11c0dc0fd34">MapGI::getClickedOn</a></div><div class="ttdeci">std::shared_ptr&lt; TileGI &gt; getClickedOn(std::pair&lt; int, int &gt;mouse) const</div><div class="ttdoc">Retrieve the clicked tile from the map.</div><div class="ttdef"><b>Definition:</b> mapGI.cc:83</div></div>
+<div class="ttc" id="aclassGame_html"><div class="ttname"><a href="classGame.html">Game</a></div><div class="ttdef"><b>Definition:</b> game.hh:14</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

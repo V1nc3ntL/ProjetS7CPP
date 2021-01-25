@@ -1,0 +1,10 @@
+<map id="src/graphics/tileGI.cc" name="src/graphics/tileGI.cc">
+<area shape="rect" id="node1" title="The tiles graphic implementation." alt="" coords="171,5,318,32"/>
+<area shape="rect" id="node2" href="$tileGI_8hh.html" title="The file containing the tile class for graphic representation." alt="" coords="253,169,324,196"/>
+<area shape="rect" id="node4" href="$colors_8hh.html" title="The enum and various color used." alt="" coords="5,244,81,271"/>
+<area shape="rect" id="node6" title=" " alt="" coords="422,244,494,271"/>
+<area shape="rect" id="node8" href="$tile_8hh.html" title="The file containing the tile class for graphic representation." alt="" coords="225,80,379,121"/>
+<area shape="rect" id="node3" href="$clickable_8hh.html" title="The interface for clickable graphics." alt="" coords="105,244,251,271"/>
+<area shape="rect" id="node5" title=" " alt="" coords="97,319,235,345"/>
+<area shape="rect" id="node7" title=" " alt="" coords="327,244,397,271"/>
+</map>

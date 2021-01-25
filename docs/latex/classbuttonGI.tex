@@ -1,0 +1,153 @@
+\hypertarget{classButtonGI}{}\doxysection{Référence de la classe button\+GI}
+\label{classButtonGI}\index{ButtonGI@{ButtonGI}}
+
+
+{\ttfamily \#include $<$button\+G\+I.\+hh$>$}
+
+
+
+Graphe d\textquotesingle{}héritage de button\+GI\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{classButtonGI__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de button\+GI\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{classButtonGI__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classButtonGI_af1e7e6634eee72bab9e63455cc27ab62}{button\+GI}} ()
+\begin{DoxyCompactList}\small\item\em Creates an empty graphic implementation The implementation must be set after construction ! \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classButtonGI_ad77b1e20d2cbc0453d516a9c4405e802}{$\sim$button\+GI}} ()
+\begin{DoxyCompactList}\small\item\em Destroys a main menu graphic implementation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classButtonGI_a1a8b29b24500f5f7656471f571b6ed59}{button\+GI}} (std\+::pair$<$ int, int $>$ top\+Left\+Corner, int button\+Width, std\+::string button\+String)
+\begin{DoxyCompactList}\small\item\em Creates a button from the parameters. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classButtonGI_ae54b8a356092ef13e6c03e7781719c5a}{left\+Click\+Action}} ()
+\item 
+virtual void \mbox{\hyperlink{classButtonGI_ac070ffc3f37aab43197bd1a95370e6e8}{right\+Click\+Action}} ()
+\item 
+virtual void \mbox{\hyperlink{classButtonGI_a6b4c10153f4366d85c6d333ce354ab79}{draw}} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+std\+::pair$<$ int, int $>$ \mbox{\hyperlink{classButtonGI_ac6d8b67b783681e93e859053fadcb7c1}{northern\+Corner}}
+\item 
+sf\+::\+Text \mbox{\hyperlink{classButtonGI_a20a1775856c0f657f6602c9d617dfc48}{text}}
+\item 
+sf\+::\+Vertex\+Array \mbox{\hyperlink{classButtonGI_adbf4055e8c76ea9718d684f0ffda767e}{outside}}
+\item 
+sf\+::\+Vertex\+Array \mbox{\hyperlink{classButtonGI_abb5e31cabe535eaba3106cc432f09e2f}{inside}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classButtonGI_af1e7e6634eee72bab9e63455cc27ab62}\label{classButtonGI_af1e7e6634eee72bab9e63455cc27ab62}} 
+\index{ButtonGI@{ButtonGI}!ButtonGI@{ButtonGI}}
+\index{ButtonGI@{ButtonGI}!ButtonGI@{ButtonGI}}
+\doxysubsubsection{\texorpdfstring{ButtonGI()}{ButtonGI()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily button\+G\+I\+::button\+GI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates an empty graphic implementation The implementation must be set after construction ! 
+
+\mbox{\Hypertarget{classButtonGI_ad77b1e20d2cbc0453d516a9c4405e802}\label{classButtonGI_ad77b1e20d2cbc0453d516a9c4405e802}} 
+\index{ButtonGI@{ButtonGI}!````~ButtonGI@{$\sim$ButtonGI}}
+\index{````~ButtonGI@{$\sim$ButtonGI}!ButtonGI@{ButtonGI}}
+\doxysubsubsection{\texorpdfstring{$\sim$ButtonGI()}{~ButtonGI()}}
+{\footnotesize\ttfamily button\+G\+I\+::$\sim$button\+GI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroys a main menu graphic implementation. 
+
+\mbox{\Hypertarget{classButtonGI_a1a8b29b24500f5f7656471f571b6ed59}\label{classButtonGI_a1a8b29b24500f5f7656471f571b6ed59}} 
+\index{ButtonGI@{ButtonGI}!ButtonGI@{ButtonGI}}
+\index{ButtonGI@{ButtonGI}!ButtonGI@{ButtonGI}}
+\doxysubsubsection{\texorpdfstring{ButtonGI()}{ButtonGI()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily button\+G\+I\+::button\+GI (\begin{DoxyParamCaption}\item[{std\+::pair$<$ int, int $>$}]{top\+Left\+Corner,  }\item[{int}]{button\+Width,  }\item[{std\+::string}]{button\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a button from the parameters. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em top\+Left\+Corner} & the position in pixel of the top left corner of the button \\
+\hline
+{\em button\+Width} & the button width in pixels \\
+\hline
+{\em button\+String} & the button text \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classButtonGI_a6b4c10153f4366d85c6d333ce354ab79}\label{classButtonGI_a6b4c10153f4366d85c6d333ce354ab79}} 
+\index{ButtonGI@{ButtonGI}!draw@{draw}}
+\index{draw@{draw}!ButtonGI@{ButtonGI}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void button\+G\+I\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{target,  }\item[{sf\+::\+Render\+States}]{states }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classButtonGI_ae54b8a356092ef13e6c03e7781719c5a}\label{classButtonGI_ae54b8a356092ef13e6c03e7781719c5a}} 
+\index{ButtonGI@{ButtonGI}!leftClickAction@{leftClickAction}}
+\index{leftClickAction@{leftClickAction}!ButtonGI@{ButtonGI}}
+\doxysubsubsection{\texorpdfstring{leftClickAction()}{leftClickAction()}}
+{\footnotesize\ttfamily virtual void button\+G\+I\+::left\+Click\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implémente \mbox{\hyperlink{classClickable_a97271971cad98d3f8b608d441f75a11e}{Clickable}}.
+
+\mbox{\Hypertarget{classButtonGI_ac070ffc3f37aab43197bd1a95370e6e8}\label{classButtonGI_ac070ffc3f37aab43197bd1a95370e6e8}} 
+\index{ButtonGI@{ButtonGI}!rightClickAction@{rightClickAction}}
+\index{rightClickAction@{rightClickAction}!ButtonGI@{ButtonGI}}
+\doxysubsubsection{\texorpdfstring{rightClickAction()}{rightClickAction()}}
+{\footnotesize\ttfamily virtual void button\+G\+I\+::right\+Click\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implémente \mbox{\hyperlink{classClickable_a8682c1cda3f3345ebad5d5a57b108439}{Clickable}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{classButtonGI_abb5e31cabe535eaba3106cc432f09e2f}\label{classButtonGI_abb5e31cabe535eaba3106cc432f09e2f}} 
+\index{ButtonGI@{ButtonGI}!inside@{inside}}
+\index{inside@{inside}!ButtonGI@{ButtonGI}}
+\doxysubsubsection{\texorpdfstring{inside}{inside}}
+{\footnotesize\ttfamily sf\+::\+Vertex\+Array button\+G\+I\+::inside\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classButtonGI_ac6d8b67b783681e93e859053fadcb7c1}\label{classButtonGI_ac6d8b67b783681e93e859053fadcb7c1}} 
+\index{ButtonGI@{ButtonGI}!northernCorner@{northernCorner}}
+\index{northernCorner@{northernCorner}!ButtonGI@{ButtonGI}}
+\doxysubsubsection{\texorpdfstring{northernCorner}{northernCorner}}
+{\footnotesize\ttfamily std\+::pair$<$int, int$>$ button\+G\+I\+::northern\+Corner\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classButtonGI_adbf4055e8c76ea9718d684f0ffda767e}\label{classButtonGI_adbf4055e8c76ea9718d684f0ffda767e}} 
+\index{ButtonGI@{ButtonGI}!outside@{outside}}
+\index{outside@{outside}!ButtonGI@{ButtonGI}}
+\doxysubsubsection{\texorpdfstring{outside}{outside}}
+{\footnotesize\ttfamily sf\+::\+Vertex\+Array button\+G\+I\+::outside\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classButtonGI_a20a1775856c0f657f6602c9d617dfc48}\label{classButtonGI_a20a1775856c0f657f6602c9d617dfc48}} 
+\index{ButtonGI@{ButtonGI}!text@{text}}
+\index{text@{text}!ButtonGI@{ButtonGI}}
+\doxysubsubsection{\texorpdfstring{text}{text}}
+{\footnotesize\ttfamily sf\+::\+Text button\+G\+I\+::text\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+src/graphics/\mbox{\hyperlink{ButtonGI_8hh}{button\+G\+I.\+hh}}\end{DoxyCompactItemize}

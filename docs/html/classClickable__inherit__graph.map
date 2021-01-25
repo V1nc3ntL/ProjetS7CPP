@@ -1,0 +1,7 @@
+<map id="Clickable" name="Clickable">
+<area shape="rect" id="node1" title=" " alt="" coords="165,5,300,97"/>
+<area shape="rect" id="node2" href="$classButtonGI.html" title=" " alt="" coords="5,182,140,406"/>
+<area shape="rect" id="node3" href="$classSpriteButtonGI.html" title=" " alt="" coords="165,197,301,391"/>
+<area shape="rect" id="node5" href="$classTileGI.html" title=" " alt="" coords="325,145,460,443"/>
+<area shape="rect" id="node4" href="$classUnitGI.html" title=" " alt="" coords="195,491,271,612"/>
+</map>

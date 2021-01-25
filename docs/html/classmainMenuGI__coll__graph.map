@@ -1,0 +1,6 @@
+<map id="MainMenuGI" name="MainMenuGI">
+<area shape="rect" id="node1" title=" " alt="" coords="5,419,129,599"/>
+<area shape="rect" id="node2" title=" " alt="" coords="8,13,84,90"/>
+<area shape="rect" id="node3" href="$classButtonGI.html" title=" " alt="" coords="84,147,219,341"/>
+<area shape="rect" id="node4" href="$classClickable.html" title=" " alt="" coords="108,5,243,97"/>
+</map>

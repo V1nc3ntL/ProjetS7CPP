@@ -1,0 +1,5 @@
+<map id="graphics/mapGI.hh" name="graphics/mapGI.hh">
+<area shape="rect" id="node1" title="The graphic implementation of a map." alt="" coords="5,5,191,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="21,80,79,107"/>
+<area shape="rect" id="node3" href="$tile_8hh.html" title="The file containing the standard (i.e without effects) tiles." alt="" coords="103,80,189,107"/>
+</map>

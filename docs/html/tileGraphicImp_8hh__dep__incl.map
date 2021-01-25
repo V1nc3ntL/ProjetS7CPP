@@ -1,0 +1,4 @@
+<map id="graphics/tileGI.hh" name="graphics/tileGI.hh">
+<area shape="rect" id="node1" title="The file containing the tile class for graphic representation." alt="" coords="5,5,183,32"/>
+<area shape="rect" id="node2" href="$tileGI_8cc.html" title="The tiles graphic implementation." alt="" coords="5,80,183,107"/>
+</map>

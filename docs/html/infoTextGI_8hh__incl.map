@@ -1,0 +1,14 @@
+<map id="src/graphics/infoTextGI.hh" name="src/graphics/infoTextGI.hh">
+<area shape="rect" id="node1" title="the board graphic implementation, containing a map and units" alt="" coords="104,5,279,32"/>
+<area shape="rect" id="node2" href="$mapGI_8hh.html" title="The graphic implementation of a map." alt="" coords="309,80,388,107"/>
+<area shape="rect" id="node12" href="$SpriteGI_8hh.html" title="The graphic implementation of a button with an embedded sprite." alt="" coords="5,244,129,271"/>
+<area shape="rect" id="node3" href="$tile_8hh.html" title="The file containing the tile class for graphic representation." alt="" coords="271,155,426,196"/>
+<area shape="rect" id="node8" title=" " alt="" coords="497,319,569,345"/>
+<area shape="rect" id="node10" title=" " alt="" coords="504,162,561,189"/>
+<area shape="rect" id="node11" href="$buttonGI_8hh.html" title="The graphic implementation of a button." alt="" coords="154,244,245,271"/>
+<area shape="rect" id="node4" href="$tileGI_8hh.html" title="The file containing the tile class for graphic representation." alt="" coords="269,244,429,271"/>
+<area shape="rect" id="node5" href="$clickable_8hh.html" title="The interface for clickable graphics." alt="" coords="29,319,175,345"/>
+<area shape="rect" id="node6" href="$colors_8hh.html" title="The enum and various color used." alt="" coords="396,319,472,345"/>
+<area shape="rect" id="node7" title=" " alt="" coords="169,393,307,420"/>
+<area shape="rect" id="node9" title=" " alt="" coords="301,319,372,345"/>
+</map>

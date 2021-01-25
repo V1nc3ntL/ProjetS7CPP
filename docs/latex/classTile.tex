@@ -1,4 +1,4 @@
-\hypertarget{classTile}{}\doxysection{Tile Class Reference}
+\hypertarget{classTile}{}\doxysection{Référence de la classe Tile}
 \label{classTile}\index{Tile@{Tile}}
 
 
@@ -6,44 +6,160 @@
 
 
 
-Inheritance diagram for Tile\+:
-\nopagebreak
+Graphe d\textquotesingle{}héritage de Tile\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=262pt]{classTile__inherit__graph}
+\includegraphics[width=266pt]{classTile__inherit__graph}
 \end{center}
 \end{figure}
 
 
-Collaboration diagram for Tile\+:
-\nopagebreak
+Graphe de collaboration de Tile\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=162pt]{classTile__coll__graph}
 \end{center}
 \end{figure}
-\doxysubsection*{Public Member Functions}
+\doxysubsection*{Fonctions membres publiques}
 \begin{DoxyCompactItemize}
 \item 
-virtual bool \mbox{\hyperlink{classTile_a8a240d026fbbf2038aaebc1ddd3e65cf}{get\+Tile\+Type}} ()=0
+virtual int \mbox{\hyperlink{classTile_a8f414d4c7d022a07674aa62baae745ee}{get\+Tile\+Type}} ()
+\item 
+\mbox{\hyperlink{classTile_aba5a50b9d16b068e06cfefc4eac2585b}{Tile}} (const \mbox{\hyperlink{classTile}{Tile}} \&cp)
+\item 
+\mbox{\hyperlink{classTile_a57578cc8313b33af7f002553a31b52af}{Tile}} (int \mbox{\hyperlink{classTile_a1053838fe655e55f3acaf48979a4dc99}{tile\+Type}})
+\item 
+\mbox{\hyperlink{classTile_aeeb5593bb6b75aae2edfcccbc84ab378}{Tile}} ()
+\begin{DoxyCompactList}\small\item\em Default tile constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTile_a027cbb52793ef4db14bd0d3aa33113a7}{set\+GI}} (\mbox{\hyperlink{classTileGI}{Tile\+GI}} \&the\+Imp)
+\begin{DoxyCompactList}\small\item\em Compose the given graphic Implementation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTileGI}{Tile\+GI}} \mbox{\hyperlink{classTile_a9fc9998967deeab8312c59d886e4c0bf}{get\+GI}} () const
+\item 
+void \mbox{\hyperlink{classTile_a14184d7f22e2f156fa984c1becad2949}{select}} ()
+\item 
+bool \mbox{\hyperlink{classTile_aa637d7a4c530a66c6bb180494a20ff21}{is\+Selected}} ()
+\item 
+std\+::string \mbox{\hyperlink{classTile_a57c6649d2af3d5fb8758ef5851e08dfd}{to\+String}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classTileGI}{Tile\+GI}} $>$ \mbox{\hyperlink{classTile_a3bc9db83c7c00a6653d149be334ab625}{graph}}
+\item 
+int \mbox{\hyperlink{classTile_a1053838fe655e55f3acaf48979a4dc99}{tile\+Type}}
+\item 
+bool \mbox{\hyperlink{classTile_a74c3476e62de7d53f5f87e36b346f8e8}{selected}} = false
+\item 
+std\+::string \mbox{\hyperlink{classTile_a30fb897d8c617b18e6a9bbd0a06096eb}{description}}
 \end{DoxyCompactItemize}
 
 
-\doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classTile_a8a240d026fbbf2038aaebc1ddd3e65cf}\label{classTile_a8a240d026fbbf2038aaebc1ddd3e65cf}} 
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classTile_aba5a50b9d16b068e06cfefc4eac2585b}\label{classTile_aba5a50b9d16b068e06cfefc4eac2585b}} 
+\index{Tile@{Tile}!Tile@{Tile}}
+\index{Tile@{Tile}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{Tile()}{Tile()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Tile\+::\+Tile (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classTile}{Tile}} \&}]{cp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTile_a57578cc8313b33af7f002553a31b52af}\label{classTile_a57578cc8313b33af7f002553a31b52af}} 
+\index{Tile@{Tile}!Tile@{Tile}}
+\index{Tile@{Tile}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{Tile()}{Tile()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Tile\+::\+Tile (\begin{DoxyParamCaption}\item[{int}]{tile\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTile_aeeb5593bb6b75aae2edfcccbc84ab378}\label{classTile_aeeb5593bb6b75aae2edfcccbc84ab378}} 
+\index{Tile@{Tile}!Tile@{Tile}}
+\index{Tile@{Tile}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{Tile()}{Tile()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Tile\+::\+Tile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default tile constructor. 
+
+This constructor serves for debug and for ensuring that \mbox{\hyperlink{classTile}{Tile}} are well formed 
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classTile_a9fc9998967deeab8312c59d886e4c0bf}\label{classTile_a9fc9998967deeab8312c59d886e4c0bf}} 
+\index{Tile@{Tile}!getGI@{getGI}}
+\index{getGI@{getGI}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{getGI()}{getGI()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTileGI}{Tile\+GI}} Tile\+::get\+GI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTile_a8f414d4c7d022a07674aa62baae745ee}\label{classTile_a8f414d4c7d022a07674aa62baae745ee}} 
 \index{Tile@{Tile}!getTileType@{getTileType}}
 \index{getTileType@{getTileType}!Tile@{Tile}}
 \doxysubsubsection{\texorpdfstring{getTileType()}{getTileType()}}
-{\footnotesize\ttfamily virtual bool Tile\+::get\+Tile\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual int Tile\+::get\+Tile\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 
 
-Implemented in \mbox{\hyperlink{classSpecialTile_a8e0bacb2afc4ec4fb7d70b45c0b9798d}{Special\+Tile}}, and \mbox{\hyperlink{classNormalTile_ae05b25c474b268d6d506631f90ad1628}{Normal\+Tile}}.
+Réimplémentée dans \mbox{\hyperlink{classSpecialTile_a4034282f25376fadfbbdf94b5c4f3a8f}{Special\+Tile}}, et \mbox{\hyperlink{classNormalTile_a45085f6cfd9ac3ec1426e270cdc8b06a}{Normal\+Tile}}.
+
+\mbox{\Hypertarget{classTile_aa637d7a4c530a66c6bb180494a20ff21}\label{classTile_aa637d7a4c530a66c6bb180494a20ff21}} 
+\index{Tile@{Tile}!isSelected@{isSelected}}
+\index{isSelected@{isSelected}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{isSelected()}{isSelected()}}
+{\footnotesize\ttfamily bool Tile\+::is\+Selected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTile_a14184d7f22e2f156fa984c1becad2949}\label{classTile_a14184d7f22e2f156fa984c1becad2949}} 
+\index{Tile@{Tile}!select@{select}}
+\index{select@{select}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{select()}{select()}}
+{\footnotesize\ttfamily void Tile\+::select (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTile_a027cbb52793ef4db14bd0d3aa33113a7}\label{classTile_a027cbb52793ef4db14bd0d3aa33113a7}} 
+\index{Tile@{Tile}!setGI@{setGI}}
+\index{setGI@{setGI}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{setGI()}{setGI()}}
+{\footnotesize\ttfamily void Tile\+::set\+GI (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTileGI}{Tile\+GI}} \&}]{the\+Imp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+Compose the given graphic Implementation. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em the\+Imp} & an implementation of the \mbox{\hyperlink{classTileGI}{Tile\+GI}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTile_a57c6649d2af3d5fb8758ef5851e08dfd}\label{classTile_a57c6649d2af3d5fb8758ef5851e08dfd}} 
+\index{Tile@{Tile}!toString@{toString}}
+\index{toString@{toString}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily std\+::string Tile\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{classTile_a30fb897d8c617b18e6a9bbd0a06096eb}\label{classTile_a30fb897d8c617b18e6a9bbd0a06096eb}} 
+\index{Tile@{Tile}!description@{description}}
+\index{description@{description}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{description}{description}}
+{\footnotesize\ttfamily std\+::string Tile\+::description\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTile_a3bc9db83c7c00a6653d149be334ab625}\label{classTile_a3bc9db83c7c00a6653d149be334ab625}} 
+\index{Tile@{Tile}!graph@{graph}}
+\index{graph@{graph}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{graph}{graph}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classTileGI}{Tile\+GI}}$>$ Tile\+::graph\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTile_a74c3476e62de7d53f5f87e36b346f8e8}\label{classTile_a74c3476e62de7d53f5f87e36b346f8e8}} 
+\index{Tile@{Tile}!selected@{selected}}
+\index{selected@{selected}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{selected}{selected}}
+{\footnotesize\ttfamily bool Tile\+::selected = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTile_a1053838fe655e55f3acaf48979a4dc99}\label{classTile_a1053838fe655e55f3acaf48979a4dc99}} 
+\index{Tile@{Tile}!tileType@{tileType}}
+\index{tileType@{tileType}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{tileType}{tileType}}
+{\footnotesize\ttfamily int Tile\+::tile\+Type\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
 \item 
-map/tiles/\mbox{\hyperlink{tile_8hh}{tile.\+hh}}\end{DoxyCompactItemize}
+src/game\+Logic/map/tiles/\mbox{\hyperlink{tile_8hh}{tile.\+hh}}\end{DoxyCompactItemize}

@@ -1,0 +1,109 @@
+\hypertarget{classBoardGI}{}\doxysection{Référence de la classe Board\+GI}
+\label{classBoardGI}\index{BoardGI@{BoardGI}}
+
+
+{\ttfamily \#include $<$board\+G\+I.\+hh$>$}
+
+
+
+Graphe d\textquotesingle{}héritage de Board\+GI\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{classBoardGI__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de Board\+GI\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classBoardGI__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBoardGI_a5cc9f72fc7975392ec83a2c206d75371}{Board\+GI}} (int \&window\+Width, int \&window\+Height, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGame}{Game}} $>$ $\ast$game)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classClickable}{Clickable}} $>$ \mbox{\hyperlink{classBoardGI_ae150b078fc200900bc03137c2d152071}{get\+Clicked\+On}} (std\+::pair$<$ int, int $>$mouse) const
+\item 
+virtual void \mbox{\hyperlink{classBoardGI_ac6bd0bbd6b0a4afe6da899742f8c4690}{draw}} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGame}{Game}} \mbox{\hyperlink{classBoardGI_ae5f1069a0bc8ec56fca82ad348a5db52}{\+\_\+game}}
+\item 
+\mbox{\hyperlink{classGameGI}{Game\+GI}} \mbox{\hyperlink{classBoardGI_a0e94ccbbf5752d4c4f1294c9c9a6b41a}{g\+GI}}
+\item 
+\mbox{\hyperlink{classSpriteButtonGI}{Sprite\+Button\+GI}} \mbox{\hyperlink{classBoardGI_afda2a5b189c4182e6dd86491415885b1}{next\+Turn\+Button}}
+\item 
+\mbox{\hyperlink{classButtonGI}{Button\+GI}} \mbox{\hyperlink{classBoardGI_a7be3fc0baed8d4550f5ede775491eeb2}{turn}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classBoardGI_a5cc9f72fc7975392ec83a2c206d75371}\label{classBoardGI_a5cc9f72fc7975392ec83a2c206d75371}} 
+\index{BoardGI@{BoardGI}!BoardGI@{BoardGI}}
+\index{BoardGI@{BoardGI}!BoardGI@{BoardGI}}
+\doxysubsubsection{\texorpdfstring{BoardGI()}{BoardGI()}}
+{\footnotesize\ttfamily Board\+G\+I\+::\+Board\+GI (\begin{DoxyParamCaption}\item[{int \&}]{window\+Width,  }\item[{int \&}]{window\+Height,  }\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGame}{Game}} $>$ $\ast$}]{game }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classBoardGI_ac6bd0bbd6b0a4afe6da899742f8c4690}\label{classBoardGI_ac6bd0bbd6b0a4afe6da899742f8c4690}} 
+\index{BoardGI@{BoardGI}!draw@{draw}}
+\index{draw@{draw}!BoardGI@{BoardGI}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void Board\+G\+I\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{target,  }\item[{sf\+::\+Render\+States}]{states }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implémente \mbox{\hyperlink{classusrInterface_a9b7cd8f878718b08f978101ffa840233}{usr\+Interface}}.
+
+\mbox{\Hypertarget{classBoardGI_ae150b078fc200900bc03137c2d152071}\label{classBoardGI_ae150b078fc200900bc03137c2d152071}} 
+\index{BoardGI@{BoardGI}!getClickedOn@{getClickedOn}}
+\index{getClickedOn@{getClickedOn}!BoardGI@{BoardGI}}
+\doxysubsubsection{\texorpdfstring{getClickedOn()}{getClickedOn()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classClickable}{Clickable}}$>$ Board\+G\+I\+::get\+Clicked\+On (\begin{DoxyParamCaption}\item[{std\+::pair$<$ int, int $>$}]{mouse }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implémente \mbox{\hyperlink{classusrInterface_aca71adb6a91ad92f1118591af9885b26}{usr\+Interface}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{classBoardGI_ae5f1069a0bc8ec56fca82ad348a5db52}\label{classBoardGI_ae5f1069a0bc8ec56fca82ad348a5db52}} 
+\index{BoardGI@{BoardGI}!\_game@{\_game}}
+\index{\_game@{\_game}!BoardGI@{BoardGI}}
+\doxysubsubsection{\texorpdfstring{\_game}{\_game}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGame}{Game}} Board\+G\+I\+::\+\_\+game\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classBoardGI_a0e94ccbbf5752d4c4f1294c9c9a6b41a}\label{classBoardGI_a0e94ccbbf5752d4c4f1294c9c9a6b41a}} 
+\index{BoardGI@{BoardGI}!gGI@{gGI}}
+\index{gGI@{gGI}!BoardGI@{BoardGI}}
+\doxysubsubsection{\texorpdfstring{gGI}{gGI}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGameGI}{Game\+GI}} Board\+G\+I\+::g\+GI\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classBoardGI_afda2a5b189c4182e6dd86491415885b1}\label{classBoardGI_afda2a5b189c4182e6dd86491415885b1}} 
+\index{BoardGI@{BoardGI}!nextTurnButton@{nextTurnButton}}
+\index{nextTurnButton@{nextTurnButton}!BoardGI@{BoardGI}}
+\doxysubsubsection{\texorpdfstring{nextTurnButton}{nextTurnButton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSpriteButtonGI}{Sprite\+Button\+GI}} Board\+G\+I\+::next\+Turn\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classBoardGI_a7be3fc0baed8d4550f5ede775491eeb2}\label{classBoardGI_a7be3fc0baed8d4550f5ede775491eeb2}} 
+\index{BoardGI@{BoardGI}!turn@{turn}}
+\index{turn@{turn}!BoardGI@{BoardGI}}
+\doxysubsubsection{\texorpdfstring{turn}{turn}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classButtonGI}{Button\+GI}} Board\+G\+I\+::turn\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+src/graphics/\mbox{\hyperlink{boardGI_8hh}{board\+G\+I.\+hh}}\end{DoxyCompactItemize}

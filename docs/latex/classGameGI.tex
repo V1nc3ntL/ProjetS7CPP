@@ -1,0 +1,84 @@
+\hypertarget{classGameGI}{}\doxysection{Référence de la classe Game\+GI}
+\label{classGameGI}\index{GameGI@{GameGI}}
+
+
+{\ttfamily \#include $<$game\+G\+I.\+hh$>$}
+
+
+
+Graphe d\textquotesingle{}héritage de Game\+GI\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{classGameGI__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de Game\+GI\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{classGameGI__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGameGI_a9f9693beb90e834182df336665cb07b7}{Game\+GI}} (int \&window\+Width, int \&window\+Height, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGame}{Game}} $>$ $\ast$\&game)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTileGI}{Tile\+GI}} $>$ \mbox{\hyperlink{classGameGI_a4c7653b3425abd4a35752edf8becb31f}{get\+Clicked\+On}} (std\+::pair$<$ int, int $>$mouse) const
+\item 
+virtual void \mbox{\hyperlink{classGameGI_adc2639399c507f1197b1eab92d7e0ca2}{draw}} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMapGI}{Map\+GI}} \mbox{\hyperlink{classGameGI_aaa048fcfb39d403fbdcd447986c12466}{the\+Map}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classUnitGI}{Unit\+GI}} $>$ \mbox{\hyperlink{classGameGI_ade8516be08518dd4aba7d4c610ae8176}{units}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classGameGI_a9f9693beb90e834182df336665cb07b7}\label{classGameGI_a9f9693beb90e834182df336665cb07b7}} 
+\index{GameGI@{GameGI}!GameGI@{GameGI}}
+\index{GameGI@{GameGI}!GameGI@{GameGI}}
+\doxysubsubsection{\texorpdfstring{GameGI()}{GameGI()}}
+{\footnotesize\ttfamily Game\+G\+I\+::\+Game\+GI (\begin{DoxyParamCaption}\item[{int \&}]{window\+Width,  }\item[{int \&}]{window\+Height,  }\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGame}{Game}} $>$ $\ast$\&}]{game }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classGameGI_adc2639399c507f1197b1eab92d7e0ca2}\label{classGameGI_adc2639399c507f1197b1eab92d7e0ca2}} 
+\index{GameGI@{GameGI}!draw@{draw}}
+\index{draw@{draw}!GameGI@{GameGI}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void Game\+G\+I\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{target,  }\item[{sf\+::\+Render\+States}]{states }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classGameGI_a4c7653b3425abd4a35752edf8becb31f}\label{classGameGI_a4c7653b3425abd4a35752edf8becb31f}} 
+\index{GameGI@{GameGI}!getClickedOn@{getClickedOn}}
+\index{getClickedOn@{getClickedOn}!GameGI@{GameGI}}
+\doxysubsubsection{\texorpdfstring{getClickedOn()}{getClickedOn()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classTileGI}{Tile\+GI}}$>$ Game\+G\+I\+::get\+Clicked\+On (\begin{DoxyParamCaption}\item[{std\+::pair$<$ int, int $>$}]{mouse }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{classGameGI_aaa048fcfb39d403fbdcd447986c12466}\label{classGameGI_aaa048fcfb39d403fbdcd447986c12466}} 
+\index{GameGI@{GameGI}!theMap@{theMap}}
+\index{theMap@{theMap}!GameGI@{GameGI}}
+\doxysubsubsection{\texorpdfstring{theMap}{theMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMapGI}{Map\+GI}} Game\+G\+I\+::the\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGameGI_ade8516be08518dd4aba7d4c610ae8176}\label{classGameGI_ade8516be08518dd4aba7d4c610ae8176}} 
+\index{GameGI@{GameGI}!units@{units}}
+\index{units@{units}!GameGI@{GameGI}}
+\doxysubsubsection{\texorpdfstring{units}{units}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classUnitGI}{Unit\+GI}}$>$ Game\+G\+I\+::units\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+src/graphics/\mbox{\hyperlink{gameGI_8hh}{game\+G\+I.\+hh}}\end{DoxyCompactItemize}

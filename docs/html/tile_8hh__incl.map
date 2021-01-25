@@ -1,0 +1,9 @@
+<map id="src/gameLogic/map/tiles/tile.hh" name="src/gameLogic/map/tiles/tile.hh">
+<area shape="rect" id="node1" title="The file containing the tile class for graphic representation." alt="" coords="207,5,371,47"/>
+<area shape="rect" id="node2" href="$tileGI_8hh.html" title="The file containing the tile class for graphic representation." alt="" coords="209,95,369,121"/>
+<area shape="rect" id="node3" href="$clickable_8hh.html" title="The interface for clickable graphics." alt="" coords="5,169,151,196"/>
+<area shape="rect" id="node4" href="$colors_8hh.html" title="The enum and various color used." alt="" coords="175,169,251,196"/>
+<area shape="rect" id="node5" title=" " alt="" coords="181,244,319,271"/>
+<area shape="rect" id="node6" title=" " alt="" coords="326,169,398,196"/>
+<area shape="rect" id="node7" title=" " alt="" coords="423,169,493,196"/>
+</map>

@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet C++ S7 : EL-KHARROUBI LEFEBVRE:  Fichier source de src/graphics/colors.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet C++ S7 : EL-KHARROUBI LEFEBVRE
+   </div>
+   <div id="projectbrief">Le projet S7 de C++ pour EISE4, réalisé par Karim El-KHARROUBI et Vincent LEFEBVRE</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_560415a5d2bc4999842279f4fc1debef.html">graphics</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">colors.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="colors_8hh.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef __COLORS_HH__</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define __COLORS_HH__</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;SFML/Graphics.hpp&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// Forward declaration to access the enum inside the struct</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">enum</span> TileColor : short;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="structColors.html">   14</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structColors.html">Colors</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="structColors.html#a373cfe301d0a5ab158daaf789bf2f077">   16</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="structColors.html#a373cfe301d0a5ab158daaf789bf2f077">TileColor</a> { </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="structColors.html#a373cfe301d0a5ab158daaf789bf2f077ae01d4a770795227dc2e9e481b2ded30b">   17</a></span>&#160;       <a class="code" href="structColors.html#a373cfe301d0a5ab158daaf789bf2f077ae01d4a770795227dc2e9e481b2ded30b">ashes</a> = (sf::Uint32) 0x4712128,</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structColors.html#a373cfe301d0a5ab158daaf789bf2f077ad1003f33a002f1b1b775b181631b866b">   18</a></span>&#160;        <a class="code" href="structColors.html#a373cfe301d0a5ab158daaf789bf2f077ad1003f33a002f1b1b775b181631b866b">mud</a> = (sf::Uint32) 0x8e3d2b, </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="structColors.html#a373cfe301d0a5ab158daaf789bf2f077aba77bee74e4c099d73d0a4dc93ee448a">   19</a></span>&#160;        <a class="code" href="structColors.html#a373cfe301d0a5ab158daaf789bf2f077aba77bee74e4c099d73d0a4dc93ee448a">sand</a> = (sf::Uint32) 0xc48b07,</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structColors.html#a373cfe301d0a5ab158daaf789bf2f077a98403b3eda458e028f52524025a5015d">   20</a></span>&#160;        <a class="code" href="structColors.html#a373cfe301d0a5ab158daaf789bf2f077a98403b3eda458e028f52524025a5015d">white</a> = (sf::Uint32) 0xffffff    };</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="structColors.html#ad54d4573648640e8c5e353bc35f97655">   22</a></span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">int</span> <a class="code" href="structColors.html#ad54d4573648640e8c5e353bc35f97655">NB_COLORS</a> = 4 ;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="structColors.html#a1c11750cca4e109d9e185f9a12254ac4">   23</a></span>&#160;    <span class="keyword">static</span> constexpr <a class="code" href="structColors.html#a373cfe301d0a5ab158daaf789bf2f077">TileColor</a> <a class="code" href="structColors.html#a1c11750cca4e109d9e185f9a12254ac4">colors</a>[<a class="code" href="structColors.html#ad54d4573648640e8c5e353bc35f97655">NB_COLORS</a>] = {<a class="code" href="structColors.html#a373cfe301d0a5ab158daaf789bf2f077ae01d4a770795227dc2e9e481b2ded30b">ashes</a>,<a class="code" href="structColors.html#a373cfe301d0a5ab158daaf789bf2f077ad1003f33a002f1b1b775b181631b866b">mud</a>,<a class="code" href="structColors.html#a373cfe301d0a5ab158daaf789bf2f077aba77bee74e4c099d73d0a4dc93ee448a">sand</a>,<a class="code" href="structColors.html#a373cfe301d0a5ab158daaf789bf2f077a98403b3eda458e028f52524025a5015d">white</a>} ;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;   </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="structColors.html#ad4bd208dbaa45fd3242ec10f26c6fd28">   25</a></span>&#160;    <span class="keyword">static</span>  <a class="code" href="structColors.html#a373cfe301d0a5ab158daaf789bf2f077">TileColor</a> <a class="code" href="structColors.html#ad4bd208dbaa45fd3242ec10f26c6fd28">getTileColor</a>(<span class="keywordtype">int</span> i){</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;       <span class="keywordflow">return</span> <a class="code" href="structColors.html#a373cfe301d0a5ab158daaf789bf2f077">TileColor</a>(i);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="astructColors_html_ad4bd208dbaa45fd3242ec10f26c6fd28"><div class="ttname"><a href="structColors.html#ad4bd208dbaa45fd3242ec10f26c6fd28">Colors::getTileColor</a></div><div class="ttdeci">static TileColor getTileColor(int i)</div><div class="ttdef"><b>Definition:</b> colors.hh:25</div></div>
+<div class="ttc" id="astructColors_html_a373cfe301d0a5ab158daaf789bf2f077ad1003f33a002f1b1b775b181631b866b"><div class="ttname"><a href="structColors.html#a373cfe301d0a5ab158daaf789bf2f077ad1003f33a002f1b1b775b181631b866b">Colors::mud</a></div><div class="ttdeci">@ mud</div><div class="ttdef"><b>Definition:</b> colors.hh:18</div></div>
+<div class="ttc" id="astructColors_html_ad54d4573648640e8c5e353bc35f97655"><div class="ttname"><a href="structColors.html#ad54d4573648640e8c5e353bc35f97655">Colors::NB_COLORS</a></div><div class="ttdeci">static constexpr int NB_COLORS</div><div class="ttdef"><b>Definition:</b> colors.hh:22</div></div>
+<div class="ttc" id="astructColors_html_a373cfe301d0a5ab158daaf789bf2f077"><div class="ttname"><a href="structColors.html#a373cfe301d0a5ab158daaf789bf2f077">Colors::TileColor</a></div><div class="ttdeci">TileColor</div><div class="ttdef"><b>Definition:</b> colors.hh:16</div></div>
+<div class="ttc" id="astructColors_html"><div class="ttname"><a href="structColors.html">Colors</a></div><div class="ttdef"><b>Definition:</b> colors.hh:15</div></div>
+<div class="ttc" id="astructColors_html_a1c11750cca4e109d9e185f9a12254ac4"><div class="ttname"><a href="structColors.html#a1c11750cca4e109d9e185f9a12254ac4">Colors::colors</a></div><div class="ttdeci">static constexpr TileColor colors[NB_COLORS]</div><div class="ttdef"><b>Definition:</b> colors.hh:23</div></div>
+<div class="ttc" id="astructColors_html_a373cfe301d0a5ab158daaf789bf2f077ae01d4a770795227dc2e9e481b2ded30b"><div class="ttname"><a href="structColors.html#a373cfe301d0a5ab158daaf789bf2f077ae01d4a770795227dc2e9e481b2ded30b">Colors::ashes</a></div><div class="ttdeci">@ ashes</div><div class="ttdef"><b>Definition:</b> colors.hh:17</div></div>
+<div class="ttc" id="astructColors_html_a373cfe301d0a5ab158daaf789bf2f077a98403b3eda458e028f52524025a5015d"><div class="ttname"><a href="structColors.html#a373cfe301d0a5ab158daaf789bf2f077a98403b3eda458e028f52524025a5015d">Colors::white</a></div><div class="ttdeci">@ white</div><div class="ttdef"><b>Definition:</b> colors.hh:20</div></div>
+<div class="ttc" id="astructColors_html_a373cfe301d0a5ab158daaf789bf2f077aba77bee74e4c099d73d0a4dc93ee448a"><div class="ttname"><a href="structColors.html#a373cfe301d0a5ab158daaf789bf2f077aba77bee74e4c099d73d0a4dc93ee448a">Colors::sand</a></div><div class="ttdeci">@ sand</div><div class="ttdef"><b>Definition:</b> colors.hh:19</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

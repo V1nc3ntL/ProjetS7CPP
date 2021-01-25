@@ -1,0 +1,8 @@
+<map id="src/graphics/mainMenuGI.hh" name="src/graphics/mainMenuGI.hh">
+<area shape="rect" id="node1" title="The graphic implementation of the main menu." alt="" coords="185,5,375,32"/>
+<area shape="rect" id="node2" href="$buttonGI_8hh.html" title="The graphic implementation of a button." alt="" coords="112,80,203,107"/>
+<area shape="rect" id="node5" href="$localization_8hh.html" title=" " alt="" coords="227,80,333,107"/>
+<area shape="rect" id="node6" href="$usrInterface_8hh.html" title="An interface to ease polymorphism on graphical interfaces." alt="" coords="357,80,467,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,155,144,181"/>
+<area shape="rect" id="node4" href="$clickable_8hh.html" title="The interface for clickable graphics." alt="" coords="169,155,314,181"/>
+</map>

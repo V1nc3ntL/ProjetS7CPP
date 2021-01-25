@@ -1,0 +1,214 @@
+\hypertarget{classMechaMechant}{}\doxysection{Référence de la classe Mecha\+Mechant}
+\label{classMechaMechant}\index{MechaMechant@{MechaMechant}}
+
+
+{\ttfamily \#include $<$Mecha\+Mechant.\+h$>$}
+
+
+
+Graphe d\textquotesingle{}héritage de Mecha\+Mechant\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{classMechaMechant__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de Mecha\+Mechant\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{classMechaMechant__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMechaMechant_a047313c5f23f513ae5e18a7a32f27a56}{Mecha\+Mechant}} ()
+\item 
+virtual \mbox{\hyperlink{classMechaMechant_a8f4f57e9abc5c6be474ae0e0e2cb87ff}{$\sim$\+Mecha\+Mechant}} ()
+\item 
+\mbox{\hyperlink{classUnit}{Unit}} $\ast$ \mbox{\hyperlink{classUnit_ab6b22ed6ce31db0c3c3ff3a9ccc92b56}{operator-\/}} (const int \&b)
+\item 
+void \mbox{\hyperlink{classUnit_a0b79dc3c020e63b2c1f2fff9096e9aaf}{update\+Movements}} ()
+\item 
+std\+::pair$<$ int, int $>$ \mbox{\hyperlink{classUnit_a2602d459455da39b0093cdc935856167}{get\+Pos}} () const
+\item 
+int \mbox{\hyperlink{classUnit_aa4e092bb450797cfd655a582bb6360ab}{get\+Type}} () const
+\item 
+std\+::string \mbox{\hyperlink{classUnit_a5253022c14d2f855563198b9a0de54d5}{to\+String}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classRobot_abffd4cf8ef86939c367ecc3c00b5ad0e}{set\+Defense\+Speciale}} (void value)
+\item 
+void \mbox{\hyperlink{classRobot_a3efe56bdae2e8d682b6000f8fb0b8d59}{get\+Defense\+Speciale}} ()
+\item 
+void \mbox{\hyperlink{classRobot_a4a398f188f47a32c196e02306cb29f21}{Defense}} (\mbox{\hyperlink{classRobot}{Robot}} \&cible)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classRobot_a34af75890a153da85fc51439359e6d00}{defense\+Speciale}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classRobot_a09d4737c4dc69a446a206d3f77df4525}{init\+Attributes}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classUnit_a0d73ae7f79e48da36aaa54ad5f016e71}{max\+HP}}
+\item 
+int \mbox{\hyperlink{classUnit_a45741ad1efff07340150700d9a624678}{hP}}
+\item 
+int \mbox{\hyperlink{classUnit_a45243122ae655f50179f96bc831bfb1d}{type}}
+\item 
+std\+::string \mbox{\hyperlink{classUnit_a03a2344fa6977a2ce44b320e44bc9caa}{name}}
+\item 
+std\+::pair$<$ int, int $>$ \mbox{\hyperlink{classUnit_a5e0d570e8b06f33f873df82ede77bd73}{pos}}
+\item 
+std\+::pair$<$ int, int $>$ \mbox{\hyperlink{classUnit_a7adbe5ed84d5c087edd56bcce2033a89}{next\+Pos}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+class \mbox{\hyperlink{classMechaMechant}{Mecha\+Mechant}} 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classMechaMechant_a047313c5f23f513ae5e18a7a32f27a56}\label{classMechaMechant_a047313c5f23f513ae5e18a7a32f27a56}} 
+\index{MechaMechant@{MechaMechant}!MechaMechant@{MechaMechant}}
+\index{MechaMechant@{MechaMechant}!MechaMechant@{MechaMechant}}
+\doxysubsubsection{\texorpdfstring{MechaMechant()}{MechaMechant()}}
+{\footnotesize\ttfamily Mecha\+Mechant\+::\+Mecha\+Mechant (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Empty Constructor \mbox{\Hypertarget{classMechaMechant_a8f4f57e9abc5c6be474ae0e0e2cb87ff}\label{classMechaMechant_a8f4f57e9abc5c6be474ae0e0e2cb87ff}} 
+\index{MechaMechant@{MechaMechant}!````~MechaMechant@{$\sim$MechaMechant}}
+\index{````~MechaMechant@{$\sim$MechaMechant}!MechaMechant@{MechaMechant}}
+\doxysubsubsection{\texorpdfstring{$\sim$MechaMechant()}{~MechaMechant()}}
+{\footnotesize\ttfamily Mecha\+Mechant\+::$\sim$\+Mecha\+Mechant (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Empty Destructor 
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classRobot_a4a398f188f47a32c196e02306cb29f21}\label{classRobot_a4a398f188f47a32c196e02306cb29f21}} 
+\index{MechaMechant@{MechaMechant}!Defense@{Defense}}
+\index{Defense@{Defense}!MechaMechant@{MechaMechant}}
+\doxysubsubsection{\texorpdfstring{Defense()}{Defense()}}
+{\footnotesize\ttfamily void Robot\+::\+Defense (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRobot}{Robot}} \&}]{cible }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+Fonction Defense qui permet au robot de recuperer des points vie pour lui-\/meme et/ou pour un allie. 
+\begin{DoxyParams}{Paramètres}
+{\em cible} & R{\ucr}ference de la cible {\ucr} qui augmente la vie. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRobot_a3efe56bdae2e8d682b6000f8fb0b8d59}\label{classRobot_a3efe56bdae2e8d682b6000f8fb0b8d59}} 
+\index{MechaMechant@{MechaMechant}!getDefenseSpeciale@{getDefenseSpeciale}}
+\index{getDefenseSpeciale@{getDefenseSpeciale}!MechaMechant@{MechaMechant}}
+\doxysubsubsection{\texorpdfstring{getDefenseSpeciale()}{getDefenseSpeciale()}}
+{\footnotesize\ttfamily void Robot\+::get\+Defense\+Speciale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+Get the value of defense\+Speciale D{\ucr}fense sp{\ucr}ciale du robot. \begin{DoxyReturn}{Renvoie}
+the value of defense\+Speciale 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUnit_a2602d459455da39b0093cdc935856167}\label{classUnit_a2602d459455da39b0093cdc935856167}} 
+\index{MechaMechant@{MechaMechant}!getPos@{getPos}}
+\index{getPos@{getPos}!MechaMechant@{MechaMechant}}
+\doxysubsubsection{\texorpdfstring{getPos()}{getPos()}}
+{\footnotesize\ttfamily std\+::pair$<$int,int$>$ Unit\+::get\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classUnit_aa4e092bb450797cfd655a582bb6360ab}\label{classUnit_aa4e092bb450797cfd655a582bb6360ab}} 
+\index{MechaMechant@{MechaMechant}!getType@{getType}}
+\index{getType@{getType}!MechaMechant@{MechaMechant}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily int Unit\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classRobot_a09d4737c4dc69a446a206d3f77df4525}\label{classRobot_a09d4737c4dc69a446a206d3f77df4525}} 
+\index{MechaMechant@{MechaMechant}!initAttributes@{initAttributes}}
+\index{initAttributes@{initAttributes}!MechaMechant@{MechaMechant}}
+\doxysubsubsection{\texorpdfstring{initAttributes()}{initAttributes()}}
+{\footnotesize\ttfamily void Robot\+::init\+Attributes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classUnit_ab6b22ed6ce31db0c3c3ff3a9ccc92b56}\label{classUnit_ab6b22ed6ce31db0c3c3ff3a9ccc92b56}} 
+\index{MechaMechant@{MechaMechant}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!MechaMechant@{MechaMechant}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUnit}{Unit}}$\ast$ Unit\+::operator-\/ (\begin{DoxyParamCaption}\item[{const int \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classRobot_abffd4cf8ef86939c367ecc3c00b5ad0e}\label{classRobot_abffd4cf8ef86939c367ecc3c00b5ad0e}} 
+\index{MechaMechant@{MechaMechant}!setDefenseSpeciale@{setDefenseSpeciale}}
+\index{setDefenseSpeciale@{setDefenseSpeciale}!MechaMechant@{MechaMechant}}
+\doxysubsubsection{\texorpdfstring{setDefenseSpeciale()}{setDefenseSpeciale()}}
+{\footnotesize\ttfamily void Robot\+::set\+Defense\+Speciale (\begin{DoxyParamCaption}\item[{void}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+Set the value of defense\+Speciale D{\ucr}fense sp{\ucr}ciale du robot. 
+\begin{DoxyParams}{Paramètres}
+{\em value} & the new value of defense\+Speciale \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classUnit_a5253022c14d2f855563198b9a0de54d5}\label{classUnit_a5253022c14d2f855563198b9a0de54d5}} 
+\index{MechaMechant@{MechaMechant}!toString@{toString}}
+\index{toString@{toString}!MechaMechant@{MechaMechant}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily std\+::string Unit\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classUnit_a0b79dc3c020e63b2c1f2fff9096e9aaf}\label{classUnit_a0b79dc3c020e63b2c1f2fff9096e9aaf}} 
+\index{MechaMechant@{MechaMechant}!updateMovements@{updateMovements}}
+\index{updateMovements@{updateMovements}!MechaMechant@{MechaMechant}}
+\doxysubsubsection{\texorpdfstring{updateMovements()}{updateMovements()}}
+{\footnotesize\ttfamily void Unit\+::update\+Movements (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{classRobot_a34af75890a153da85fc51439359e6d00}\label{classRobot_a34af75890a153da85fc51439359e6d00}} 
+\index{MechaMechant@{MechaMechant}!defenseSpeciale@{defenseSpeciale}}
+\index{defenseSpeciale@{defenseSpeciale}!MechaMechant@{MechaMechant}}
+\doxysubsubsection{\texorpdfstring{defenseSpeciale}{defenseSpeciale}}
+{\footnotesize\ttfamily void Robot\+::defense\+Speciale\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classUnit_a45741ad1efff07340150700d9a624678}\label{classUnit_a45741ad1efff07340150700d9a624678}} 
+\index{MechaMechant@{MechaMechant}!hP@{hP}}
+\index{hP@{hP}!MechaMechant@{MechaMechant}}
+\doxysubsubsection{\texorpdfstring{hP}{hP}}
+{\footnotesize\ttfamily int Unit\+::hP\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classUnit_a0d73ae7f79e48da36aaa54ad5f016e71}\label{classUnit_a0d73ae7f79e48da36aaa54ad5f016e71}} 
+\index{MechaMechant@{MechaMechant}!maxHP@{maxHP}}
+\index{maxHP@{maxHP}!MechaMechant@{MechaMechant}}
+\doxysubsubsection{\texorpdfstring{maxHP}{maxHP}}
+{\footnotesize\ttfamily int Unit\+::max\+HP\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classUnit_a03a2344fa6977a2ce44b320e44bc9caa}\label{classUnit_a03a2344fa6977a2ce44b320e44bc9caa}} 
+\index{MechaMechant@{MechaMechant}!name@{name}}
+\index{name@{name}!MechaMechant@{MechaMechant}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string Unit\+::name\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classUnit_a7adbe5ed84d5c087edd56bcce2033a89}\label{classUnit_a7adbe5ed84d5c087edd56bcce2033a89}} 
+\index{MechaMechant@{MechaMechant}!nextPos@{nextPos}}
+\index{nextPos@{nextPos}!MechaMechant@{MechaMechant}}
+\doxysubsubsection{\texorpdfstring{nextPos}{nextPos}}
+{\footnotesize\ttfamily std\+::pair$<$int,int$>$ Unit\+::next\+Pos\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classUnit_a5e0d570e8b06f33f873df82ede77bd73}\label{classUnit_a5e0d570e8b06f33f873df82ede77bd73}} 
+\index{MechaMechant@{MechaMechant}!pos@{pos}}
+\index{pos@{pos}!MechaMechant@{MechaMechant}}
+\doxysubsubsection{\texorpdfstring{pos}{pos}}
+{\footnotesize\ttfamily std\+::pair$<$int,int$>$ Unit\+::pos\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classUnit_a45243122ae655f50179f96bc831bfb1d}\label{classUnit_a45243122ae655f50179f96bc831bfb1d}} 
+\index{MechaMechant@{MechaMechant}!type@{type}}
+\index{type@{type}!MechaMechant@{MechaMechant}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily int Unit\+::type\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+src/game\+Logic/\mbox{\hyperlink{MechaMechant_8h}{Mecha\+Mechant.\+h}}\item 
+src/game\+Logic/\mbox{\hyperlink{MechaMechant_8cpp}{Mecha\+Mechant.\+cpp}}\end{DoxyCompactItemize}

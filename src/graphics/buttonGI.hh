@@ -59,7 +59,7 @@ public:
            int returnCode
   );
   virtual int leftClickAction(){      return returnCode;  }
-  virtual int rightClickAction(){    return -1;  }
+  virtual int rightClickAction(){    return returnCode;  }
 
   virtual void draw(sf::RenderTarget &target, sf::RenderStates states) const {
     target.draw(rect);

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['operator_2d_299',['operator-',['../classUnit.html#ab6b22ed6ce31db0c3c3ff3a9ccc92b56',1,'Unit']]],
-  ['operator_3c_3c_300',['operator&lt;&lt;',['../classGame.html#a683ba3e18bb3396a12d65e7857792bc9',1,'Game']]]
+  ['nextturn_425',['nextTurn',['../classGame.html#a801658c7cef474bc1d9a830f4a79034c',1,'Game']]],
+  ['normaltile_426',['NormalTile',['../classNormalTile.html#ab4c71c8db70b9842278c2fc855b9153d',1,'NormalTile::NormalTile(int tileType)'],['../classNormalTile.html#a4e8098c35184ced67e9292d0b9bf1b55',1,'NormalTile::NormalTile()']]]
 ];

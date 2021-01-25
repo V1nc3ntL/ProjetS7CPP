@@ -1,4 +1,4 @@
 <map id="Game" name="Game">
-<area shape="rect" id="node1" title=" " alt="" coords="5,307,111,501"/>
-<area shape="rect" id="node2" href="$classGameMap.html" title=" " alt="" coords="7,5,109,244"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,307,108,501"/>
+<area shape="rect" id="node2" href="$classGameMap.html" title=" " alt="" coords="5,5,108,244"/>
 </map>

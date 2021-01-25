@@ -15,7 +15,6 @@
 #include APP_STATES_H
 #include "../graphics/boardGI.hh"
 
-constexpr int END_TURN = DEFAULT_SIZE*DEFAULT_SIZE+1;
 
 
 #endif

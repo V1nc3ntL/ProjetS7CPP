@@ -24,10 +24,10 @@ constexpr int TURN_TEXT_HEIGHT = 50;
         BoardGI(int &windowWidth, int &windowHeight, std::unique_ptr<Game>* game) :
             theMap (windowWidth,windowHeight,(*game)->getMap()),
             nextTurnButton(windowWidth-END_TURN_BUTTON_SIZE-MARGIN,
-                windowHeight-END_TURN_BUTTON_SIZE-MARGIN, "hourGlass.png",END_TURN),
+                windowHeight-END_TURN_BUTTON_SIZE-MARGIN, "hourGlass.png",actions::END_TURN),
             turn( windowWidth-END_TURN_BUTTON_SIZE,
                 windowHeight-END_TURN_BUTTON_SIZE-TURN_TEXT_HEIGHT-MARGIN,
-                END_TURN_BUTTON_SIZE-TURN_TEXT_HEIGHT-15,TURN_TEXT_HEIGHT,(*game)->getTurnStr(),END_TURN,MARGIN) ,game(**game)
+                END_TURN_BUTTON_SIZE-TURN_TEXT_HEIGHT-15,TURN_TEXT_HEIGHT,(*game)->getTurnStr(),actions::END_TURN,MARGIN) ,game(**game)
             {};
         
          std::shared_ptr<Clickable> getClickedOn(std::pair<int,int>mouse) const{

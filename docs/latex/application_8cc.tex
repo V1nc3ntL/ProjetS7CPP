@@ -1,0 +1,39 @@
+\hypertarget{application_8cc}{}\doxysection{Référence du fichier src/app/application.cc}
+\label{application_8cc}\index{src/app/application.cc@{src/app/application.cc}}
+{\ttfamily \#include \char`\"{}headers\+Location.\+hh\char`\"{}}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include \char`\"{}../events/event\+Treatment.\+hh\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}application.\+hh\char`\"{}}\newline
+Graphe des dépendances par inclusion de application.\+cc\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{application_8cc__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{application_8cc_a4778194498fb4b50347dcc9385fa9664}{check\+Button\+Pressed}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classClickable}{Clickable}} $>$ clicked)
+\begin{DoxyCompactList}\small\item\em Check if a mouse click is on the left or the right button. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{application_8cc_a4778194498fb4b50347dcc9385fa9664}\label{application_8cc_a4778194498fb4b50347dcc9385fa9664}} 
+\index{application.cc@{application.cc}!checkButtonPressed@{checkButtonPressed}}
+\index{checkButtonPressed@{checkButtonPressed}!application.cc@{application.cc}}
+\doxysubsubsection{\texorpdfstring{checkButtonPressed()}{checkButtonPressed()}}
+{\footnotesize\ttfamily int static check\+Button\+Pressed (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classClickable}{Clickable}} $>$}]{clicked }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Check if a mouse click is on the left or the right button. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em clicked} & a shared pointer on a clickable object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+the return code of the clickable object 
+\end{DoxyReturn}

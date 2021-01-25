@@ -71,89 +71,107 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <a href="eventTreatment_8hh.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;../app/headersLocation.hh&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mainMenuEventTreatment_8hh.html">mainMenuEventTreatment.hh</a>&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="playEventTreatment_8hh.html">playEventTreatment.hh</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef __EVENTTREATMENT_HH__</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define __EVENTTREATMENT_HH__</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;../app/headersLocation.hh&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include APP_STATES_H</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include USR_INTERFACE_H</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="eventTreatment_8hh.html#a4295715706001f1660d4984cbc8bbc2c">   18</a></span>&#160;<span class="keyword">static</span> constexpr <span class="keywordtype">int</span> <a class="code" href="eventTreatment_8hh.html#a4295715706001f1660d4984cbc8bbc2c">NOTHING</a> = -1;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="eventTreatment_8hh.html#a4778194498fb4b50347dcc9385fa9664">   27</a></span>&#160;<span class="keywordtype">int</span> <span class="keyword">static</span> <a class="code" href="eventTreatment_8hh.html#a4778194498fb4b50347dcc9385fa9664">checkButtonPressed</a>(std::shared_ptr&lt;Clickable&gt; clicked ){</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <span class="keywordtype">int</span> rt = <a class="code" href="eventTreatment_8hh.html#a4295715706001f1660d4984cbc8bbc2c">NOTHING</a>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keywordflow">if</span>( sf::Mouse::isButtonPressed(sf::Mouse::Left))</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                    rt =   clicked-&gt;leftClickAction(); </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                    </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (sf::Mouse::isButtonPressed(sf::Mouse::Right))</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                    rt = clicked-&gt;rightClickAction();</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;             std::cout &lt;&lt; <span class="stringliteral">&quot;RT is &quot;</span> &lt;&lt; rt &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include MAP_H</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include GAME_H</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include BOARD_GI_H</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="actions_8hh.html">actions.hh</a>&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="eventTreatment_8hh.html#aabc821b538ed6f7da55604b694e68df1">   24</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="eventTreatment_8hh.html#aabc821b538ed6f7da55604b694e68df1">tab</a>[<a class="code" href="gameMap_8hh.html#afd483d6947247a58e991b0a1c80da7e6">DEFAULT_SIZE</a>*<a class="code" href="gameMap_8hh.html#afd483d6947247a58e991b0a1c80da7e6">DEFAULT_SIZE</a>] ;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; <span class="comment">//= {0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3};</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="eventTreatment_8hh.html#a9642f945ceb590a1d49ed1ab3cd42324">   34</a></span>&#160;<span class="keywordtype">void</span> <span class="keyword">static</span> <a class="code" href="eventTreatment_8hh.html#a9642f945ceb590a1d49ed1ab3cd42324">mainMenuDecode</a>(<span class="keywordtype">int</span> clickedRt,sf::RenderWindow &amp; window,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    std::unique_ptr&lt;usrInterface&gt;* usrInt, <span class="keywordtype">int</span> * appState,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    std::unique_ptr&lt;Game&gt;* theGame ){</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keywordflow">return</span> rt;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="eventTreatment_8hh.html#a43bab761564c2ebdb7cd448208109986">   47</a></span>&#160;<span class="keywordtype">void</span> <span class="keyword">static</span>  <a class="code" href="eventTreatment_8hh.html#a43bab761564c2ebdb7cd448208109986">treatKeyPressed</a>(sf::Event &amp; event,sf::RenderWindow &amp; window ){</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                    <span class="keywordflow">switch</span>(event.key.code){</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                      <span class="keywordflow">case</span> sf::Keyboard::Escape:</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                        window.close();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                      <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                    }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">int</span> curW = window.getSize().y, curH = window.getSize().x;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordflow">if</span>(clickedRt == <a class="code" href="namespaceactions.html#a402c52f91f4b0c5ab8e55bda415d97fc">actions::QUIT</a>)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    window.close();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span>(clickedRt == <a class="code" href="namespaceactions.html#afc377a2afca6667dead0432c6a2f8d72">actions::NEW_GAME</a> ){</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="classGameMap.html">GameMap</a> defaultMap(<a class="code" href="gameMap_8hh.html#afd483d6947247a58e991b0a1c80da7e6">DEFAULT_SIZE</a>,<a class="code" href="gameMap_8hh.html#afd483d6947247a58e991b0a1c80da7e6">DEFAULT_SIZE</a>,<a class="code" href="eventTreatment_8hh.html#aabc821b538ed6f7da55604b694e68df1">tab</a>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    std::vector&lt;Unit&gt; defaultUnits;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="classUnit.html">Unit</a> robot1(std::string(<span class="stringliteral">&quot;Nono&quot;</span>),45,0,std::make_pair&lt;int,int&gt;(4,1));</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="classUnit.html">Unit</a> robot2(std::string(<span class="stringliteral">&quot;Drauwid&quot;</span>),45,0,std::make_pair&lt;int,int&gt;(2,1));</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="classUnit.html">Unit</a> robotMstr(std::string(<span class="stringliteral">&quot;C3-PLO&quot;</span>),45,1,std::make_pair&lt;int,int&gt;(3,0));</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    defaultUnits.push_back(robot1);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    defaultUnits.push_back(robot2);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    defaultUnits.push_back(robotMstr);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="eventTreatment_8hh.html#ab9ea09b31e56ebd5ad82fae01aa65a0d">   63</a></span>&#160;<span class="keywordtype">void</span> <span class="keyword">static</span> <a class="code" href="eventTreatment_8hh.html#ab9ea09b31e56ebd5ad82fae01aa65a0d">playingDecode</a>(</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">int</span> clickedRt,</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    sf::RenderWindow &amp; window,</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    std::unique_ptr&lt;usrInterface&gt;* usrInt,</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">int</span> * appState,std::unique_ptr&lt;Game&gt;* theGame){</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">int</span> curW = window.getSize().y,curH = window.getSize().x;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordflow">if</span>(clickedRt == <a class="code" href="playEventTreatment_8hh.html#ab880a4baebdba540e42c50779b1ce139">END_TURN</a>)</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;     (*theGame)-&gt;nextTurn();</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordflow">else</span>{</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">// Check if is overlayed </span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">// When clicked on it</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  }</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;   usrInt-&gt;reset(<span class="keyword">new</span> <a class="code" href="classBoardGI.html">BoardGI</a>(curH,curW,theGame));</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="eventTreatment_8hh.html#a83c30c1ae75b4aa1f8262d4c7c84492c">   89</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="eventTreatment_8hh.html#a83c30c1ae75b4aa1f8262d4c7c84492c">decode</a>(<span class="keywordtype">int</span> clickedRt,sf::RenderWindow &amp; window, std::unique_ptr&lt;usrInterface&gt;* usrInt,</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordtype">int</span>* currentState,</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        std::unique_ptr&lt;Game&gt;* gamePt </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      ){</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;          <span class="keywordflow">switch</span>(*currentState){</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="appStates_8hh.html#a37a232d272fbb25855dc8e6fbaa23e91">MAIN_MENU</a>:</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;              <a class="code" href="mainMenuEventTreatment_8hh.html#a9642f945ceb590a1d49ed1ab3cd42324">mainMenuDecode</a>(clickedRt,window,usrInt,currentState,gamePt);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;              <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="appStates_8hh.html#a14dfbe2f6e2bcc28fa324b90b0916531">PLAYING</a>:</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;              <a class="code" href="eventTreatment_8hh.html#ab9ea09b31e56ebd5ad82fae01aa65a0d">playingDecode</a>(clickedRt,window,usrInt,currentState,gamePt</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;              );</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;              <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      }</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    (*theGame).reset(<span class="keyword">new</span> <a class="code" href="classGame.html">Game</a>(defaultMap,defaultUnits));</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    usrInt-&gt;reset(<span class="keyword">new</span> <a class="code" href="classBoardGI.html">BoardGI</a>(curH,curW,theGame));</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    *appState = <a class="code" href="appStates_8hh.html#a14dfbe2f6e2bcc28fa324b90b0916531">PLAYING</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="eventTreatment_8hh.html#ab9ea09b31e56ebd5ad82fae01aa65a0d">   71</a></span>&#160;<span class="keywordtype">void</span> <span class="keyword">static</span> <a class="code" href="eventTreatment_8hh.html#ab9ea09b31e56ebd5ad82fae01aa65a0d">playingDecode</a>(</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">int</span> clickedRt,</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    sf::RenderWindow &amp; window,</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    std::unique_ptr&lt;usrInterface&gt;* usrInt,</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">int</span> * appState,std::unique_ptr&lt;Game&gt;* theGame){</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">int</span> curW = window.getSize().y,curH = window.getSize().x;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordflow">if</span>(clickedRt == <a class="code" href="namespaceactions.html#ace5638893ac16c0a3bb0db361dc4df04">actions::END_TURN</a>)</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;     (*theGame)-&gt;nextTurn();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  std::cout &lt;&lt; **theGame;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  usrInt-&gt;reset(<span class="keyword">new</span> <a class="code" href="classBoardGI.html">BoardGI</a>(curH,curW,theGame));</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="eventTreatment_8hh.html#a83c30c1ae75b4aa1f8262d4c7c84492c">   95</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="eventTreatment_8hh.html#a83c30c1ae75b4aa1f8262d4c7c84492c">decode</a>(<span class="keywordtype">int</span> clickedRt,sf::RenderWindow &amp; window, std::unique_ptr&lt;usrInterface&gt;* usrInt,</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordtype">int</span>* currentState,</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        std::unique_ptr&lt;Game&gt;* gamePt </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      ){</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;          <span class="keywordflow">switch</span>(*currentState){</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="appStates_8hh.html#a37a232d272fbb25855dc8e6fbaa23e91">MAIN_MENU</a>:</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;              <a class="code" href="eventTreatment_8hh.html#a9642f945ceb590a1d49ed1ab3cd42324">mainMenuDecode</a>(clickedRt,window,usrInt,currentState,gamePt);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;              <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="appStates_8hh.html#a14dfbe2f6e2bcc28fa324b90b0916531">PLAYING</a>:</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;              <a class="code" href="eventTreatment_8hh.html#ab9ea09b31e56ebd5ad82fae01aa65a0d">playingDecode</a>(clickedRt,window,usrInt,currentState,gamePt</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;              );</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;              <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aeventTreatment_8hh_html_a4778194498fb4b50347dcc9385fa9664"><div class="ttname"><a href="eventTreatment_8hh.html#a4778194498fb4b50347dcc9385fa9664">checkButtonPressed</a></div><div class="ttdeci">static int checkButtonPressed(std::shared_ptr&lt; Clickable &gt; clicked)</div><div class="ttdoc">Check if a mouse click is on the left or the right button.</div><div class="ttdef"><b>Definition:</b> eventTreatment.hh:27</div></div>
-<div class="ttc" id="aeventTreatment_8hh_html_ab9ea09b31e56ebd5ad82fae01aa65a0d"><div class="ttname"><a href="eventTreatment_8hh.html#ab9ea09b31e56ebd5ad82fae01aa65a0d">playingDecode</a></div><div class="ttdeci">static void playingDecode(int clickedRt, sf::RenderWindow &amp;window, std::unique_ptr&lt; usrInterface &gt; *usrInt, int *appState, std::unique_ptr&lt; Game &gt; *theGame)</div><div class="ttdef"><b>Definition:</b> eventTreatment.hh:63</div></div>
-<div class="ttc" id="aeventTreatment_8hh_html_a43bab761564c2ebdb7cd448208109986"><div class="ttname"><a href="eventTreatment_8hh.html#a43bab761564c2ebdb7cd448208109986">treatKeyPressed</a></div><div class="ttdeci">static void treatKeyPressed(sf::Event &amp;event, sf::RenderWindow &amp;window)</div><div class="ttdoc">Check the key pressed.</div><div class="ttdef"><b>Definition:</b> eventTreatment.hh:47</div></div>
-<div class="ttc" id="aeventTreatment_8hh_html_a83c30c1ae75b4aa1f8262d4c7c84492c"><div class="ttname"><a href="eventTreatment_8hh.html#a83c30c1ae75b4aa1f8262d4c7c84492c">decode</a></div><div class="ttdeci">void decode(int clickedRt, sf::RenderWindow &amp;window, std::unique_ptr&lt; usrInterface &gt; *usrInt, int *currentState, std::unique_ptr&lt; Game &gt; *gamePt)</div><div class="ttdef"><b>Definition:</b> eventTreatment.hh:89</div></div>
-<div class="ttc" id="amainMenuEventTreatment_8hh_html_a9642f945ceb590a1d49ed1ab3cd42324"><div class="ttname"><a href="mainMenuEventTreatment_8hh.html#a9642f945ceb590a1d49ed1ab3cd42324">mainMenuDecode</a></div><div class="ttdeci">static void mainMenuDecode(int clickedRt, sf::RenderWindow &amp;window, std::unique_ptr&lt; usrInterface &gt; *usrInt, int *appState, std::unique_ptr&lt; Game &gt; *theGame)</div><div class="ttdef"><b>Definition:</b> mainMenuEventTreatment.hh:30</div></div>
-<div class="ttc" id="aplayEventTreatment_8hh_html_ab880a4baebdba540e42c50779b1ce139"><div class="ttname"><a href="playEventTreatment_8hh.html#ab880a4baebdba540e42c50779b1ce139">END_TURN</a></div><div class="ttdeci">constexpr int END_TURN</div><div class="ttdef"><b>Definition:</b> playEventTreatment.hh:18</div></div>
+<div class="ttc" id="aactions_8hh_html"><div class="ttname"><a href="actions_8hh.html">actions.hh</a></div><div class="ttdoc">A namespace acting as an enum for constexpr int.</div></div>
+<div class="ttc" id="anamespaceactions_html_afc377a2afca6667dead0432c6a2f8d72"><div class="ttname"><a href="namespaceactions.html#afc377a2afca6667dead0432c6a2f8d72">actions::NEW_GAME</a></div><div class="ttdeci">constexpr int NEW_GAME</div><div class="ttdef"><b>Definition:</b> actions.hh:13</div></div>
+<div class="ttc" id="aeventTreatment_8hh_html_ab9ea09b31e56ebd5ad82fae01aa65a0d"><div class="ttname"><a href="eventTreatment_8hh.html#ab9ea09b31e56ebd5ad82fae01aa65a0d">playingDecode</a></div><div class="ttdeci">static void playingDecode(int clickedRt, sf::RenderWindow &amp;window, std::unique_ptr&lt; usrInterface &gt; *usrInt, int *appState, std::unique_ptr&lt; Game &gt; *theGame)</div><div class="ttdef"><b>Definition:</b> eventTreatment.hh:71</div></div>
+<div class="ttc" id="aeventTreatment_8hh_html_a83c30c1ae75b4aa1f8262d4c7c84492c"><div class="ttname"><a href="eventTreatment_8hh.html#a83c30c1ae75b4aa1f8262d4c7c84492c">decode</a></div><div class="ttdeci">void decode(int clickedRt, sf::RenderWindow &amp;window, std::unique_ptr&lt; usrInterface &gt; *usrInt, int *currentState, std::unique_ptr&lt; Game &gt; *gamePt)</div><div class="ttdef"><b>Definition:</b> eventTreatment.hh:95</div></div>
+<div class="ttc" id="anamespaceactions_html_a402c52f91f4b0c5ab8e55bda415d97fc"><div class="ttname"><a href="namespaceactions.html#a402c52f91f4b0c5ab8e55bda415d97fc">actions::QUIT</a></div><div class="ttdeci">constexpr int QUIT</div><div class="ttdef"><b>Definition:</b> actions.hh:14</div></div>
 <div class="ttc" id="aappStates_8hh_html_a37a232d272fbb25855dc8e6fbaa23e91"><div class="ttname"><a href="appStates_8hh.html#a37a232d272fbb25855dc8e6fbaa23e91">MAIN_MENU</a></div><div class="ttdeci">constexpr int MAIN_MENU</div><div class="ttdef"><b>Definition:</b> appStates.hh:3</div></div>
-<div class="ttc" id="aeventTreatment_8hh_html_a4295715706001f1660d4984cbc8bbc2c"><div class="ttname"><a href="eventTreatment_8hh.html#a4295715706001f1660d4984cbc8bbc2c">NOTHING</a></div><div class="ttdeci">static constexpr int NOTHING</div><div class="ttdef"><b>Definition:</b> eventTreatment.hh:18</div></div>
-<div class="ttc" id="aplayEventTreatment_8hh_html"><div class="ttname"><a href="playEventTreatment_8hh.html">playEventTreatment.hh</a></div><div class="ttdoc">File containing the game event treatment.</div></div>
-<div class="ttc" id="aclassBoardGI_html"><div class="ttname"><a href="classBoardGI.html">BoardGI</a></div><div class="ttdef"><b>Definition:</b> boardGI.hh:20</div></div>
+<div class="ttc" id="aclassGameMap_html"><div class="ttname"><a href="classGameMap.html">GameMap</a></div><div class="ttdef"><b>Definition:</b> gameMap.hh:21</div></div>
+<div class="ttc" id="aclassBoardGI_html"><div class="ttname"><a href="classBoardGI.html">BoardGI</a></div><div class="ttdef"><b>Definition:</b> boardGI.hh:22</div></div>
+<div class="ttc" id="aclassUnit_html"><div class="ttname"><a href="classUnit.html">Unit</a></div><div class="ttdef"><b>Definition:</b> unit.hh:14</div></div>
+<div class="ttc" id="agameMap_8hh_html_afd483d6947247a58e991b0a1c80da7e6"><div class="ttname"><a href="gameMap_8hh.html#afd483d6947247a58e991b0a1c80da7e6">DEFAULT_SIZE</a></div><div class="ttdeci">constexpr int DEFAULT_SIZE</div><div class="ttdef"><b>Definition:</b> gameMap.hh:16</div></div>
+<div class="ttc" id="aeventTreatment_8hh_html_a9642f945ceb590a1d49ed1ab3cd42324"><div class="ttname"><a href="eventTreatment_8hh.html#a9642f945ceb590a1d49ed1ab3cd42324">mainMenuDecode</a></div><div class="ttdeci">static void mainMenuDecode(int clickedRt, sf::RenderWindow &amp;window, std::unique_ptr&lt; usrInterface &gt; *usrInt, int *appState, std::unique_ptr&lt; Game &gt; *theGame)</div><div class="ttdef"><b>Definition:</b> eventTreatment.hh:34</div></div>
 <div class="ttc" id="aappStates_8hh_html_a14dfbe2f6e2bcc28fa324b90b0916531"><div class="ttname"><a href="appStates_8hh.html#a14dfbe2f6e2bcc28fa324b90b0916531">PLAYING</a></div><div class="ttdeci">constexpr int PLAYING</div><div class="ttdef"><b>Definition:</b> appStates.hh:4</div></div>
-<div class="ttc" id="amainMenuEventTreatment_8hh_html"><div class="ttname"><a href="mainMenuEventTreatment_8hh.html">mainMenuEventTreatment.hh</a></div></div>
+<div class="ttc" id="anamespaceactions_html_ace5638893ac16c0a3bb0db361dc4df04"><div class="ttname"><a href="namespaceactions.html#ace5638893ac16c0a3bb0db361dc4df04">actions::END_TURN</a></div><div class="ttdeci">constexpr int END_TURN</div><div class="ttdef"><b>Definition:</b> actions.hh:16</div></div>
+<div class="ttc" id="aeventTreatment_8hh_html_aabc821b538ed6f7da55604b694e68df1"><div class="ttname"><a href="eventTreatment_8hh.html#aabc821b538ed6f7da55604b694e68df1">tab</a></div><div class="ttdeci">int tab[DEFAULT_SIZE *DEFAULT_SIZE]</div><div class="ttdef"><b>Definition:</b> eventTreatment.hh:24</div></div>
+<div class="ttc" id="aclassGame_html"><div class="ttname"><a href="classGame.html">Game</a></div><div class="ttdef"><b>Definition:</b> game.hh:16</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Généré par&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20

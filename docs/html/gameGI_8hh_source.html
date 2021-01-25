@@ -71,40 +71,57 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <a href="gameGI_8hh.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef __GAMEGI_HH__</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define __GAMEGI_HH__</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef __GAMEGI_HH__</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define __GAMEGI_HH__</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="unitGI_8hh.html">unitGI.hh</a>&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="unitGI_8hh.html">unitGI.hh</a>&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classGameGI.html">   12</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classGameGI.html">GameGI</a> : <span class="keyword">public</span> sf::Drawable{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;           public : </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classGameGI.html#a9f9693beb90e834182df336665cb07b7">   15</a></span>&#160;           <a class="code" href="classGameGI.html#a9f9693beb90e834182df336665cb07b7">GameGI</a>(<span class="keywordtype">int</span>&amp; windowWidth, <span class="keywordtype">int</span>&amp; windowHeight , std::unique_ptr&lt;Game&gt;*&amp; game) :</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;           <a class="code" href="classGameGI.html#aaa048fcfb39d403fbdcd447986c12466">theMap</a>(windowWidth,windowHeight,(*game)-&gt;getMap()){</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;           }</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classGameGI.html#a4c7653b3425abd4a35752edf8becb31f">   19</a></span>&#160;             std::shared_ptr&lt;TileGI&gt; <a class="code" href="classGameGI.html#a4c7653b3425abd4a35752edf8becb31f">getClickedOn</a>(std::pair&lt;int,int&gt;mouse)<span class="keyword"> const</span>{</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                 <span class="keywordflow">return</span> <a class="code" href="classGameGI.html#aaa048fcfb39d403fbdcd447986c12466">theMap</a>.<a class="code" href="classMapGI.html#a2107ca49ad2bedddb101d11c0dc0fd34">getClickedOn</a>(mouse);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;             }</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classGameGI.html">   11</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classGameGI.html">GameGI</a> : <span class="keyword">public</span> sf::Drawable{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keyword">private</span>: </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;            </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classGameGI.html#aaa048fcfb39d403fbdcd447986c12466">   15</a></span>&#160;            <a class="code" href="classMapGI.html">MapGI</a> <a class="code" href="classGameGI.html#aaa048fcfb39d403fbdcd447986c12466">theMap</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classGameGI.html#a3d19d48e16936a32f454accadefc1fe4">   17</a></span>&#160;            std::vector&lt;Unit&gt; <a class="code" href="classGameGI.html#a3d19d48e16936a32f454accadefc1fe4">units</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classGameGI.html#a364f93b2872235e895f53407d384ca3c">   19</a></span>&#160;            std::vector&lt;UnitGI&gt; <a class="code" href="classGameGI.html#a364f93b2872235e895f53407d384ca3c">unitsGI</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;          </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        public : </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classGameGI.html#adc2639399c507f1197b1eab92d7e0ca2">   23</a></span>&#160;             <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classGameGI.html#adc2639399c507f1197b1eab92d7e0ca2">draw</a>(sf::RenderTarget &amp;target, sf::RenderStates states)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                 target.draw(<a class="code" href="classGameGI.html#aaa048fcfb39d403fbdcd447986c12466">theMap</a>);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;             }</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;          <span class="keyword">private</span>: </div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classGameGI.html#aaa048fcfb39d403fbdcd447986c12466">   27</a></span>&#160;            <a class="code" href="classMapGI.html">MapGI</a> <a class="code" href="classGameGI.html#aaa048fcfb39d403fbdcd447986c12466">theMap</a>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classGameGI.html#ade8516be08518dd4aba7d4c610ae8176">   28</a></span>&#160;            std::vector&lt;UnitGI&gt; <a class="code" href="classGameGI.html#ade8516be08518dd4aba7d4c610ae8176">units</a>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    };</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classGameGI.html#a9f9693beb90e834182df336665cb07b7">   23</a></span>&#160;           <a class="code" href="classGameGI.html#a9f9693beb90e834182df336665cb07b7">GameGI</a>(<span class="keywordtype">int</span>&amp; windowWidth, <span class="keywordtype">int</span>&amp; windowHeight , std::unique_ptr&lt;Game&gt;*&amp; game) :</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;           <a class="code" href="classGameGI.html#aaa048fcfb39d403fbdcd447986c12466">theMap</a>(windowWidth,windowHeight,(*game)-&gt;getMap()),</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;           <a class="code" href="classGameGI.html#a3d19d48e16936a32f454accadefc1fe4">units</a>((*game)-&gt;getUnits()){</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                <span class="keywordflow">for</span>(<a class="code" href="classUnit.html">Unit</a> u : <a class="code" href="classGameGI.html#a3d19d48e16936a32f454accadefc1fe4">units</a>){</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                    <a class="code" href="classGameGI.html#a364f93b2872235e895f53407d384ca3c">unitsGI</a>.push_back(<a class="code" href="classUnitGI.html">UnitGI</a>(u,<a class="code" href="classGameGI.html#aaa048fcfb39d403fbdcd447986c12466">theMap</a>));</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                 }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;           }</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classGameGI.html#a4c7653b3425abd4a35752edf8becb31f">   30</a></span>&#160;             std::shared_ptr&lt;TileGI&gt; <a class="code" href="classGameGI.html#a4c7653b3425abd4a35752edf8becb31f">getClickedOn</a>(std::pair&lt;int,int&gt;mouse)<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                 <span class="keywordflow">return</span> <a class="code" href="classGameGI.html#aaa048fcfb39d403fbdcd447986c12466">theMap</a>.<a class="code" href="classMapGI.html#a2107ca49ad2bedddb101d11c0dc0fd34">getClickedOn</a>(mouse);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;             }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classGameGI.html#adc2639399c507f1197b1eab92d7e0ca2">   34</a></span>&#160;             <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classGameGI.html#adc2639399c507f1197b1eab92d7e0ca2">draw</a>(sf::RenderTarget &amp;target, sf::RenderStates states)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                 target.draw(<a class="code" href="classGameGI.html#aaa048fcfb39d403fbdcd447986c12466">theMap</a>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                 <span class="keywordflow">for</span>(<a class="code" href="classUnitGI.html">UnitGI</a> u : <a class="code" href="classGameGI.html#a364f93b2872235e895f53407d384ca3c">unitsGI</a>){</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                    target.draw(u);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                 }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                 </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;             }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    };</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassGameGI_html"><div class="ttname"><a href="classGameGI.html">GameGI</a></div><div class="ttdef"><b>Definition:</b> gameGI.hh:12</div></div>
-<div class="ttc" id="aclassGameGI_html_ade8516be08518dd4aba7d4c610ae8176"><div class="ttname"><a href="classGameGI.html#ade8516be08518dd4aba7d4c610ae8176">GameGI::units</a></div><div class="ttdeci">std::vector&lt; UnitGI &gt; units</div><div class="ttdef"><b>Definition:</b> gameGI.hh:28</div></div>
+<div class="ttc" id="aclassGameGI_html_a364f93b2872235e895f53407d384ca3c"><div class="ttname"><a href="classGameGI.html#a364f93b2872235e895f53407d384ca3c">GameGI::unitsGI</a></div><div class="ttdeci">std::vector&lt; UnitGI &gt; unitsGI</div><div class="ttdef"><b>Definition:</b> gameGI.hh:19</div></div>
+<div class="ttc" id="aclassGameGI_html"><div class="ttname"><a href="classGameGI.html">GameGI</a></div><div class="ttdef"><b>Definition:</b> gameGI.hh:11</div></div>
 <div class="ttc" id="aclassMapGI_html"><div class="ttname"><a href="classMapGI.html">MapGI</a></div><div class="ttdef"><b>Definition:</b> mapGI.hh:18</div></div>
 <div class="ttc" id="aunitGI_8hh_html"><div class="ttname"><a href="unitGI_8hh.html">unitGI.hh</a></div><div class="ttdoc">A graphical interface to dysplay units.</div></div>
-<div class="ttc" id="aclassGameGI_html_a9f9693beb90e834182df336665cb07b7"><div class="ttname"><a href="classGameGI.html#a9f9693beb90e834182df336665cb07b7">GameGI::GameGI</a></div><div class="ttdeci">GameGI(int &amp;windowWidth, int &amp;windowHeight, std::unique_ptr&lt; Game &gt; *&amp;game)</div><div class="ttdef"><b>Definition:</b> gameGI.hh:15</div></div>
-<div class="ttc" id="aclassGameGI_html_a4c7653b3425abd4a35752edf8becb31f"><div class="ttname"><a href="classGameGI.html#a4c7653b3425abd4a35752edf8becb31f">GameGI::getClickedOn</a></div><div class="ttdeci">std::shared_ptr&lt; TileGI &gt; getClickedOn(std::pair&lt; int, int &gt;mouse) const</div><div class="ttdef"><b>Definition:</b> gameGI.hh:19</div></div>
-<div class="ttc" id="aclassGameGI_html_aaa048fcfb39d403fbdcd447986c12466"><div class="ttname"><a href="classGameGI.html#aaa048fcfb39d403fbdcd447986c12466">GameGI::theMap</a></div><div class="ttdeci">MapGI theMap</div><div class="ttdef"><b>Definition:</b> gameGI.hh:27</div></div>
-<div class="ttc" id="aclassMapGI_html_a2107ca49ad2bedddb101d11c0dc0fd34"><div class="ttname"><a href="classMapGI.html#a2107ca49ad2bedddb101d11c0dc0fd34">MapGI::getClickedOn</a></div><div class="ttdeci">std::shared_ptr&lt; TileGI &gt; getClickedOn(std::pair&lt; int, int &gt;mouse) const</div><div class="ttdoc">Retrieve the clicked tile from the map.</div><div class="ttdef"><b>Definition:</b> mapGI.cc:83</div></div>
-<div class="ttc" id="aclassGameGI_html_adc2639399c507f1197b1eab92d7e0ca2"><div class="ttname"><a href="classGameGI.html#adc2639399c507f1197b1eab92d7e0ca2">GameGI::draw</a></div><div class="ttdeci">virtual void draw(sf::RenderTarget &amp;target, sf::RenderStates states) const</div><div class="ttdef"><b>Definition:</b> gameGI.hh:23</div></div>
+<div class="ttc" id="aclassGameGI_html_a9f9693beb90e834182df336665cb07b7"><div class="ttname"><a href="classGameGI.html#a9f9693beb90e834182df336665cb07b7">GameGI::GameGI</a></div><div class="ttdeci">GameGI(int &amp;windowWidth, int &amp;windowHeight, std::unique_ptr&lt; Game &gt; *&amp;game)</div><div class="ttdef"><b>Definition:</b> gameGI.hh:23</div></div>
+<div class="ttc" id="aclassGameGI_html_a4c7653b3425abd4a35752edf8becb31f"><div class="ttname"><a href="classGameGI.html#a4c7653b3425abd4a35752edf8becb31f">GameGI::getClickedOn</a></div><div class="ttdeci">std::shared_ptr&lt; TileGI &gt; getClickedOn(std::pair&lt; int, int &gt;mouse) const</div><div class="ttdef"><b>Definition:</b> gameGI.hh:30</div></div>
+<div class="ttc" id="aclassUnit_html"><div class="ttname"><a href="classUnit.html">Unit</a></div><div class="ttdef"><b>Definition:</b> unit.hh:14</div></div>
+<div class="ttc" id="aclassGameGI_html_aaa048fcfb39d403fbdcd447986c12466"><div class="ttname"><a href="classGameGI.html#aaa048fcfb39d403fbdcd447986c12466">GameGI::theMap</a></div><div class="ttdeci">MapGI theMap</div><div class="ttdef"><b>Definition:</b> gameGI.hh:15</div></div>
+<div class="ttc" id="aclassMapGI_html_a2107ca49ad2bedddb101d11c0dc0fd34"><div class="ttname"><a href="classMapGI.html#a2107ca49ad2bedddb101d11c0dc0fd34">MapGI::getClickedOn</a></div><div class="ttdeci">std::shared_ptr&lt; TileGI &gt; getClickedOn(std::pair&lt; int, int &gt;mouse) const</div><div class="ttdoc">Retrieve the clicked tile from the map.</div><div class="ttdef"><b>Definition:</b> mapGI.cc:69</div></div>
+<div class="ttc" id="aclassGameGI_html_a3d19d48e16936a32f454accadefc1fe4"><div class="ttname"><a href="classGameGI.html#a3d19d48e16936a32f454accadefc1fe4">GameGI::units</a></div><div class="ttdeci">std::vector&lt; Unit &gt; units</div><div class="ttdef"><b>Definition:</b> gameGI.hh:17</div></div>
+<div class="ttc" id="aclassGameGI_html_adc2639399c507f1197b1eab92d7e0ca2"><div class="ttname"><a href="classGameGI.html#adc2639399c507f1197b1eab92d7e0ca2">GameGI::draw</a></div><div class="ttdeci">virtual void draw(sf::RenderTarget &amp;target, sf::RenderStates states) const</div><div class="ttdef"><b>Definition:</b> gameGI.hh:34</div></div>
+<div class="ttc" id="aclassUnitGI_html"><div class="ttname"><a href="classUnitGI.html">UnitGI</a></div><div class="ttdef"><b>Definition:</b> unitGI.hh:24</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Généré par&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20

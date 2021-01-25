@@ -73,38 +73,45 @@ $(function() {
 <a href="unitGI_8hh.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef __UNITGI_HH__</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define __UNITGI_HH__</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="unitGI_8hh.html#a3af605c9a86be159602f1af1445384d9">   11</a></span>&#160;<span class="keyword">static</span> std::string <a class="code" href="unitGI_8hh.html#a3af605c9a86be159602f1af1445384d9">spriteTab</a>[1] = {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="stringliteral">&quot;badRobot1.jpg&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;};</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classUnitGI.html">   15</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classUnitGI.html">UnitGI</a> : <span class="keyword">public</span> <a class="code" href="classSpriteButtonGI.html">SpriteButtonGI</a>{</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;       </div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classUnitGI.html#ac3844a50c75bb5a21717ab8db39e614f">   19</a></span>&#160;        <a class="code" href="classUnitGI.html#ac3844a50c75bb5a21717ab8db39e614f">UnitGI</a>(<a class="code" href="classUnit.html">Unit</a> &amp; unit,std::pair&lt;int,int&gt;position);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classUnitGI.html#a41bbe6f06293cc40cd753b0bd32f7535">   21</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classUnitGI.html#a41bbe6f06293cc40cd753b0bd32f7535">draw</a>(sf::RenderTarget &amp;target, sf::RenderStates states)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        target.draw(<a class="code" href="classUnitGI.html#a1a1f7b582769c1d5ca0a9baeddc16219">sprit</a>);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    };</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        private :</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classUnitGI.html#a87306b4c1453aa7ec83fb9da3b92816c">   25</a></span>&#160;            <a class="code" href="classUnit.html">Unit</a> <a class="code" href="classUnitGI.html#a87306b4c1453aa7ec83fb9da3b92816c">theUnit</a>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classUnitGI.html#a1a1f7b582769c1d5ca0a9baeddc16219">   26</a></span>&#160;            sf::Sprite <a class="code" href="classUnitGI.html#a1a1f7b582769c1d5ca0a9baeddc16219">sprit</a>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classUnitGI.html#a1ad47aca489b7697ac82ca4af505cd38">   27</a></span>&#160;            sf::Texture <a class="code" href="classUnitGI.html#a1ad47aca489b7697ac82ca4af505cd38">texture</a>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    };</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;../app/headersLocation.hh&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;SFML/Graphics.hpp&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include UNIT_H</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include MAP_GI_H</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="unitGI_8hh.html#a17c15275f79f24be0615d26a2c1eea55">   16</a></span>&#160;<span class="preprocessor">#define N_UNIT_TEXTURE 2</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="unitGI_8hh.html#a83696a6e8b41742938dd1fe0dd71edeb">   17</a></span>&#160;<span class="keyword">static</span> std::string <a class="code" href="unitGI_8hh.html#a83696a6e8b41742938dd1fe0dd71edeb">spriteTab</a>[<a class="code" href="unitGI_8hh.html#a17c15275f79f24be0615d26a2c1eea55">N_UNIT_TEXTURE</a>] = {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="stringliteral">&quot;badRobot1.png&quot;</span>,</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="stringliteral">&quot;badRobot2.png&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="unitGI_8hh.html#ad07480efc8ff5dc3dc243e5e2a789c5b">   22</a></span>&#160;<span class="keyword">static</span> sf::Texture <a class="code" href="unitGI_8hh.html#ad07480efc8ff5dc3dc243e5e2a789c5b">unitTexture</a>[<a class="code" href="unitGI_8hh.html#a17c15275f79f24be0615d26a2c1eea55">N_UNIT_TEXTURE</a>];</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classUnitGI.html">   24</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classUnitGI.html">UnitGI</a> : <span class="keyword">public</span> sf::Drawable{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    public :</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="classUnitGI.html#a16e6233e52580386714324337b1033b5">UnitGI</a>(<a class="code" href="classUnit.html">Unit</a> &amp; unit,<a class="code" href="classMapGI.html">MapGI</a> &amp; map  );</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classUnitGI.html#a41bbe6f06293cc40cd753b0bd32f7535">   36</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classUnitGI.html#a41bbe6f06293cc40cd753b0bd32f7535">draw</a>(sf::RenderTarget &amp;target, sf::RenderStates states)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        target.draw(<a class="code" href="classUnitGI.html#a1a1f7b582769c1d5ca0a9baeddc16219">sprit</a>);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    };</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        private :</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classUnitGI.html#a87306b4c1453aa7ec83fb9da3b92816c">   40</a></span>&#160;            <a class="code" href="classUnit.html">Unit</a> <a class="code" href="classUnitGI.html#a87306b4c1453aa7ec83fb9da3b92816c">theUnit</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classUnitGI.html#a1a1f7b582769c1d5ca0a9baeddc16219">   41</a></span>&#160;            sf::Sprite <a class="code" href="classUnitGI.html#a1a1f7b582769c1d5ca0a9baeddc16219">sprit</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    };</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassUnitGI_html_a87306b4c1453aa7ec83fb9da3b92816c"><div class="ttname"><a href="classUnitGI.html#a87306b4c1453aa7ec83fb9da3b92816c">UnitGI::theUnit</a></div><div class="ttdeci">Unit theUnit</div><div class="ttdef"><b>Definition:</b> unitGI.hh:23</div></div>
-<div class="ttc" id="aclassUnitGI_html_a1a1f7b582769c1d5ca0a9baeddc16219"><div class="ttname"><a href="classUnitGI.html#a1a1f7b582769c1d5ca0a9baeddc16219">UnitGI::sprit</a></div><div class="ttdeci">sf::Sprite sprit</div><div class="ttdef"><b>Definition:</b> unitGI.hh:26</div></div>
-<div class="ttc" id="aclassUnitGI_html_a1ad47aca489b7697ac82ca4af505cd38"><div class="ttname"><a href="classUnitGI.html#a1ad47aca489b7697ac82ca4af505cd38">UnitGI::texture</a></div><div class="ttdeci">sf::Texture texture</div><div class="ttdef"><b>Definition:</b> unitGI.hh:27</div></div>
-<div class="ttc" id="aclassUnit_html"><div class="ttname"><a href="classUnit.html">Unit</a></div><div class="ttdef"><b>Definition:</b> unit.hh:11</div></div>
-<div class="ttc" id="aclassUnitGI_html_ac3844a50c75bb5a21717ab8db39e614f"><div class="ttname"><a href="classUnitGI.html#ac3844a50c75bb5a21717ab8db39e614f">UnitGI::UnitGI</a></div><div class="ttdeci">UnitGI(Unit &amp;unit, std::pair&lt; int, int &gt;position)</div></div>
-<div class="ttc" id="aclassUnitGI_html_a41bbe6f06293cc40cd753b0bd32f7535"><div class="ttname"><a href="classUnitGI.html#a41bbe6f06293cc40cd753b0bd32f7535">UnitGI::draw</a></div><div class="ttdeci">virtual void draw(sf::RenderTarget &amp;target, sf::RenderStates states) const</div><div class="ttdef"><b>Definition:</b> unitGI.hh:21</div></div>
-<div class="ttc" id="aclassUnitGI_html"><div class="ttname"><a href="classUnitGI.html">UnitGI</a></div><div class="ttdef"><b>Definition:</b> unitGI.hh:15</div></div>
-<div class="ttc" id="aclassSpriteButtonGI_html"><div class="ttname"><a href="classSpriteButtonGI.html">SpriteButtonGI</a></div><div class="ttdef"><b>Definition:</b> spriteButtonGI.hh:14</div></div>
-<div class="ttc" id="aunitGI_8hh_html_a3af605c9a86be159602f1af1445384d9"><div class="ttname"><a href="unitGI_8hh.html#a3af605c9a86be159602f1af1445384d9">spriteTab</a></div><div class="ttdeci">static std::string spriteTab[1]</div><div class="ttdef"><b>Definition:</b> unitGI.hh:11</div></div>
+<div class="ttc" id="aunitGI_8hh_html_a17c15275f79f24be0615d26a2c1eea55"><div class="ttname"><a href="unitGI_8hh.html#a17c15275f79f24be0615d26a2c1eea55">N_UNIT_TEXTURE</a></div><div class="ttdeci">#define N_UNIT_TEXTURE</div><div class="ttdef"><b>Definition:</b> unitGI.hh:16</div></div>
+<div class="ttc" id="aclassMapGI_html"><div class="ttname"><a href="classMapGI.html">MapGI</a></div><div class="ttdef"><b>Definition:</b> mapGI.hh:18</div></div>
+<div class="ttc" id="aclassUnitGI_html_a87306b4c1453aa7ec83fb9da3b92816c"><div class="ttname"><a href="classUnitGI.html#a87306b4c1453aa7ec83fb9da3b92816c">UnitGI::theUnit</a></div><div class="ttdeci">Unit theUnit</div><div class="ttdef"><b>Definition:</b> unitGI.hh:38</div></div>
+<div class="ttc" id="aclassUnitGI_html_a1a1f7b582769c1d5ca0a9baeddc16219"><div class="ttname"><a href="classUnitGI.html#a1a1f7b582769c1d5ca0a9baeddc16219">UnitGI::sprit</a></div><div class="ttdeci">sf::Sprite sprit</div><div class="ttdef"><b>Definition:</b> unitGI.hh:41</div></div>
+<div class="ttc" id="aclassUnit_html"><div class="ttname"><a href="classUnit.html">Unit</a></div><div class="ttdef"><b>Definition:</b> unit.hh:14</div></div>
+<div class="ttc" id="aclassUnitGI_html_a41bbe6f06293cc40cd753b0bd32f7535"><div class="ttname"><a href="classUnitGI.html#a41bbe6f06293cc40cd753b0bd32f7535">UnitGI::draw</a></div><div class="ttdeci">virtual void draw(sf::RenderTarget &amp;target, sf::RenderStates states) const</div><div class="ttdef"><b>Definition:</b> unitGI.hh:36</div></div>
+<div class="ttc" id="aclassUnitGI_html_a16e6233e52580386714324337b1033b5"><div class="ttname"><a href="classUnitGI.html#a16e6233e52580386714324337b1033b5">UnitGI::UnitGI</a></div><div class="ttdeci">UnitGI(Unit &amp;unit, MapGI &amp;map)</div><div class="ttdef"><b>Definition:</b> unitGI.cc:15</div></div>
+<div class="ttc" id="aunitGI_8hh_html_a83696a6e8b41742938dd1fe0dd71edeb"><div class="ttname"><a href="unitGI_8hh.html#a83696a6e8b41742938dd1fe0dd71edeb">spriteTab</a></div><div class="ttdeci">static std::string spriteTab[N_UNIT_TEXTURE]</div><div class="ttdef"><b>Definition:</b> unitGI.hh:17</div></div>
+<div class="ttc" id="aunitGI_8hh_html_ad07480efc8ff5dc3dc243e5e2a789c5b"><div class="ttname"><a href="unitGI_8hh.html#ad07480efc8ff5dc3dc243e5e2a789c5b">unitTexture</a></div><div class="ttdeci">static sf::Texture unitTexture[N_UNIT_TEXTURE]</div><div class="ttdef"><b>Definition:</b> unitGI.hh:22</div></div>
+<div class="ttc" id="aclassUnitGI_html"><div class="ttname"><a href="classUnitGI.html">UnitGI</a></div><div class="ttdef"><b>Definition:</b> unitGI.hh:24</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Généré par&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20

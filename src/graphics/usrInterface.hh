@@ -7,7 +7,9 @@
 #ifndef __USER_INTERFACE_HH__
 #define __USER_INTERFACE_HH__
 
-#include GAME_H
+#include "../app/headersLocation.hh"
+#include CLICKABLE_H
+#include <SFML/Graphics.hpp>
 
     class usrInterface : public sf::Drawable{
         public:

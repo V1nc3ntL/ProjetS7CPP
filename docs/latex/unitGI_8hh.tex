@@ -5,11 +5,22 @@
 A graphical interface to dysplay units.  
 
 
-Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:\nopagebreak
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}../app/headers\+Location.\+hh\char`\"{}}\newline
+{\ttfamily \#include $<$S\+F\+M\+L/\+Graphics.\+hpp$>$}\newline
+Graphe des dépendances par inclusion de unit\+G\+I.\+hh\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=201pt]{unitGI_8hh__dep__incl}
+\includegraphics[width=350pt]{unitGI_8hh__incl}
+\end{center}
+\end{figure}
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{unitGI_8hh__dep__incl}
 \end{center}
 \end{figure}
 \doxysubsection*{Classes}
@@ -17,10 +28,17 @@ Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier
 \item 
 class \mbox{\hyperlink{classUnitGI}{Unit\+GI}}
 \end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{unitGI_8hh_a17c15275f79f24be0615d26a2c1eea55}{N\+\_\+\+U\+N\+I\+T\+\_\+\+T\+E\+X\+T\+U\+RE}}~2
+\end{DoxyCompactItemize}
 \doxysubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-static std\+::string \mbox{\hyperlink{unitGI_8hh_a3af605c9a86be159602f1af1445384d9}{sprite\+Tab}} \mbox{[}1\mbox{]}
+static std\+::string \mbox{\hyperlink{unitGI_8hh_a83696a6e8b41742938dd1fe0dd71edeb}{sprite\+Tab}} \mbox{[}\mbox{\hyperlink{unitGI_8hh_a17c15275f79f24be0615d26a2c1eea55}{N\+\_\+\+U\+N\+I\+T\+\_\+\+T\+E\+X\+T\+U\+RE}}\mbox{]}
+\item 
+static sf\+::\+Texture \mbox{\hyperlink{unitGI_8hh_ad07480efc8ff5dc3dc243e5e2a789c5b}{unit\+Texture}} \mbox{[}\mbox{\hyperlink{unitGI_8hh_a17c15275f79f24be0615d26a2c1eea55}{N\+\_\+\+U\+N\+I\+T\+\_\+\+T\+E\+X\+T\+U\+RE}}\mbox{]}
 \end{DoxyCompactItemize}
 
 
@@ -38,17 +56,33 @@ Vincent Lefebvre
 \end{DoxyDate}
 
 
+\doxysubsection{Documentation des macros}
+\mbox{\Hypertarget{unitGI_8hh_a17c15275f79f24be0615d26a2c1eea55}\label{unitGI_8hh_a17c15275f79f24be0615d26a2c1eea55}} 
+\index{unitGI.hh@{unitGI.hh}!N\_UNIT\_TEXTURE@{N\_UNIT\_TEXTURE}}
+\index{N\_UNIT\_TEXTURE@{N\_UNIT\_TEXTURE}!unitGI.hh@{unitGI.hh}}
+\doxysubsubsection{\texorpdfstring{N\_UNIT\_TEXTURE}{N\_UNIT\_TEXTURE}}
+{\footnotesize\ttfamily \#define N\+\_\+\+U\+N\+I\+T\+\_\+\+T\+E\+X\+T\+U\+RE~2}
+
+
+
 \doxysubsection{Documentation des variables}
-\mbox{\Hypertarget{unitGI_8hh_a3af605c9a86be159602f1af1445384d9}\label{unitGI_8hh_a3af605c9a86be159602f1af1445384d9}} 
+\mbox{\Hypertarget{unitGI_8hh_a83696a6e8b41742938dd1fe0dd71edeb}\label{unitGI_8hh_a83696a6e8b41742938dd1fe0dd71edeb}} 
 \index{unitGI.hh@{unitGI.hh}!spriteTab@{spriteTab}}
 \index{spriteTab@{spriteTab}!unitGI.hh@{unitGI.hh}}
 \doxysubsubsection{\texorpdfstring{spriteTab}{spriteTab}}
-{\footnotesize\ttfamily std\+::string sprite\+Tab\mbox{[}1\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily std\+::string sprite\+Tab\mbox{[}\mbox{\hyperlink{unitGI_8hh_a17c15275f79f24be0615d26a2c1eea55}{N\+\_\+\+U\+N\+I\+T\+\_\+\+T\+E\+X\+T\+U\+RE}}\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
 
 {\bfseries Valeur initiale \+:}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{= \{}
-\DoxyCodeLine{    \textcolor{stringliteral}{"{}badRobot1.jpg"{}}}
+\DoxyCodeLine{    \textcolor{stringliteral}{"{}badRobot1.png"{}},}
+\DoxyCodeLine{    \textcolor{stringliteral}{"{}badRobot2.png"{}}}
 \DoxyCodeLine{\}}
 
 \end{DoxyCode}
+\mbox{\Hypertarget{unitGI_8hh_ad07480efc8ff5dc3dc243e5e2a789c5b}\label{unitGI_8hh_ad07480efc8ff5dc3dc243e5e2a789c5b}} 
+\index{unitGI.hh@{unitGI.hh}!unitTexture@{unitTexture}}
+\index{unitTexture@{unitTexture}!unitGI.hh@{unitGI.hh}}
+\doxysubsubsection{\texorpdfstring{unitTexture}{unitTexture}}
+{\footnotesize\ttfamily sf\+::\+Texture unit\+Texture\mbox{[}\mbox{\hyperlink{unitGI_8hh_a17c15275f79f24be0615d26a2c1eea55}{N\+\_\+\+U\+N\+I\+T\+\_\+\+T\+E\+X\+T\+U\+RE}}\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+

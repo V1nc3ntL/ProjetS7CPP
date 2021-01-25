@@ -1,0 +1,201 @@
+\hypertarget{classCyborgHeros}{}\doxysection{Référence de la classe Cyborg\+Heros}
+\label{classCyborgHeros}\index{CyborgHeros@{CyborgHeros}}
+
+
+{\ttfamily \#include $<$Cyborg\+Heros.\+h$>$}
+
+
+
+Graphe d\textquotesingle{}héritage de Cyborg\+Heros\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classCyborgHeros__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de Cyborg\+Heros\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classCyborgHeros__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCyborgHeros_ae69d4bbe096a14f8d93ba95ebc7ab78c}{Cyborg\+Heros}} ()
+\item 
+virtual \mbox{\hyperlink{classCyborgHeros_a538ad522c4d6ccf9fb17748f537e25b0}{$\sim$\+Cyborg\+Heros}} ()
+\item 
+\mbox{\hyperlink{classUnit}{Unit}} $\ast$ \mbox{\hyperlink{classUnit_ab6b22ed6ce31db0c3c3ff3a9ccc92b56}{operator-\/}} (const int \&b)
+\item 
+void \mbox{\hyperlink{classUnit_a0b79dc3c020e63b2c1f2fff9096e9aaf}{update\+Movements}} ()
+\item 
+std\+::pair$<$ int, int $>$ \mbox{\hyperlink{classUnit_a2602d459455da39b0093cdc935856167}{get\+Pos}} () const
+\item 
+int \mbox{\hyperlink{classUnit_aa4e092bb450797cfd655a582bb6360ab}{get\+Type}} () const
+\item 
+std\+::string \mbox{\hyperlink{classUnit_a5253022c14d2f855563198b9a0de54d5}{to\+String}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classHeros_a5e5f08f1c8bfadb0211d6ab13bf183fe}{set\+Attaque\+Speciale}} (int value)
+\item 
+int \mbox{\hyperlink{classHeros_a1befe017506f458b65b627bc168d58c0}{get\+Attaque\+Speciale}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classHeros_a30a954b6550b4523c93b19cfdfc3921b}{attaque\+Speciale}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classHeros_ad4acee9a53e3c0d3d29e07e3fd3178f1}{init\+Attributes}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classUnit_a0d73ae7f79e48da36aaa54ad5f016e71}{max\+HP}}
+\item 
+int \mbox{\hyperlink{classUnit_a45741ad1efff07340150700d9a624678}{hP}}
+\item 
+int \mbox{\hyperlink{classUnit_a45243122ae655f50179f96bc831bfb1d}{type}}
+\item 
+std\+::string \mbox{\hyperlink{classUnit_a03a2344fa6977a2ce44b320e44bc9caa}{name}}
+\item 
+std\+::pair$<$ int, int $>$ \mbox{\hyperlink{classUnit_a5e0d570e8b06f33f873df82ede77bd73}{pos}}
+\item 
+std\+::pair$<$ int, int $>$ \mbox{\hyperlink{classUnit_a7adbe5ed84d5c087edd56bcce2033a89}{next\+Pos}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+class \mbox{\hyperlink{classCyborgHeros}{Cyborg\+Heros}} 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classCyborgHeros_ae69d4bbe096a14f8d93ba95ebc7ab78c}\label{classCyborgHeros_ae69d4bbe096a14f8d93ba95ebc7ab78c}} 
+\index{CyborgHeros@{CyborgHeros}!CyborgHeros@{CyborgHeros}}
+\index{CyborgHeros@{CyborgHeros}!CyborgHeros@{CyborgHeros}}
+\doxysubsubsection{\texorpdfstring{CyborgHeros()}{CyborgHeros()}}
+{\footnotesize\ttfamily Cyborg\+Heros\+::\+Cyborg\+Heros (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Empty Constructor \mbox{\Hypertarget{classCyborgHeros_a538ad522c4d6ccf9fb17748f537e25b0}\label{classCyborgHeros_a538ad522c4d6ccf9fb17748f537e25b0}} 
+\index{CyborgHeros@{CyborgHeros}!````~CyborgHeros@{$\sim$CyborgHeros}}
+\index{````~CyborgHeros@{$\sim$CyborgHeros}!CyborgHeros@{CyborgHeros}}
+\doxysubsubsection{\texorpdfstring{$\sim$CyborgHeros()}{~CyborgHeros()}}
+{\footnotesize\ttfamily Cyborg\+Heros\+::$\sim$\+Cyborg\+Heros (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Empty Destructor 
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classHeros_a1befe017506f458b65b627bc168d58c0}\label{classHeros_a1befe017506f458b65b627bc168d58c0}} 
+\index{CyborgHeros@{CyborgHeros}!getAttaqueSpeciale@{getAttaqueSpeciale}}
+\index{getAttaqueSpeciale@{getAttaqueSpeciale}!CyborgHeros@{CyborgHeros}}
+\doxysubsubsection{\texorpdfstring{getAttaqueSpeciale()}{getAttaqueSpeciale()}}
+{\footnotesize\ttfamily int Heros\+::get\+Attaque\+Speciale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+Get the value of attaque\+Speciale Attaque sp{\ucr}ciale de l\textquotesingle{}h{\ucr}ros. \begin{DoxyReturn}{Renvoie}
+the value of attaque\+Speciale 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUnit_a2602d459455da39b0093cdc935856167}\label{classUnit_a2602d459455da39b0093cdc935856167}} 
+\index{CyborgHeros@{CyborgHeros}!getPos@{getPos}}
+\index{getPos@{getPos}!CyborgHeros@{CyborgHeros}}
+\doxysubsubsection{\texorpdfstring{getPos()}{getPos()}}
+{\footnotesize\ttfamily std\+::pair$<$int,int$>$ Unit\+::get\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classUnit_aa4e092bb450797cfd655a582bb6360ab}\label{classUnit_aa4e092bb450797cfd655a582bb6360ab}} 
+\index{CyborgHeros@{CyborgHeros}!getType@{getType}}
+\index{getType@{getType}!CyborgHeros@{CyborgHeros}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily int Unit\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classHeros_ad4acee9a53e3c0d3d29e07e3fd3178f1}\label{classHeros_ad4acee9a53e3c0d3d29e07e3fd3178f1}} 
+\index{CyborgHeros@{CyborgHeros}!initAttributes@{initAttributes}}
+\index{initAttributes@{initAttributes}!CyborgHeros@{CyborgHeros}}
+\doxysubsubsection{\texorpdfstring{initAttributes()}{initAttributes()}}
+{\footnotesize\ttfamily void Heros\+::init\+Attributes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classUnit_ab6b22ed6ce31db0c3c3ff3a9ccc92b56}\label{classUnit_ab6b22ed6ce31db0c3c3ff3a9ccc92b56}} 
+\index{CyborgHeros@{CyborgHeros}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!CyborgHeros@{CyborgHeros}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUnit}{Unit}}$\ast$ Unit\+::operator-\/ (\begin{DoxyParamCaption}\item[{const int \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classHeros_a5e5f08f1c8bfadb0211d6ab13bf183fe}\label{classHeros_a5e5f08f1c8bfadb0211d6ab13bf183fe}} 
+\index{CyborgHeros@{CyborgHeros}!setAttaqueSpeciale@{setAttaqueSpeciale}}
+\index{setAttaqueSpeciale@{setAttaqueSpeciale}!CyborgHeros@{CyborgHeros}}
+\doxysubsubsection{\texorpdfstring{setAttaqueSpeciale()}{setAttaqueSpeciale()}}
+{\footnotesize\ttfamily void Heros\+::set\+Attaque\+Speciale (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+Set the value of attaque\+Speciale Attaque sp{\ucr}ciale de l\textquotesingle{}h{\ucr}ros. 
+\begin{DoxyParams}{Paramètres}
+{\em value} & the new value of attaque\+Speciale \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classUnit_a5253022c14d2f855563198b9a0de54d5}\label{classUnit_a5253022c14d2f855563198b9a0de54d5}} 
+\index{CyborgHeros@{CyborgHeros}!toString@{toString}}
+\index{toString@{toString}!CyborgHeros@{CyborgHeros}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily std\+::string Unit\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classUnit_a0b79dc3c020e63b2c1f2fff9096e9aaf}\label{classUnit_a0b79dc3c020e63b2c1f2fff9096e9aaf}} 
+\index{CyborgHeros@{CyborgHeros}!updateMovements@{updateMovements}}
+\index{updateMovements@{updateMovements}!CyborgHeros@{CyborgHeros}}
+\doxysubsubsection{\texorpdfstring{updateMovements()}{updateMovements()}}
+{\footnotesize\ttfamily void Unit\+::update\+Movements (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{classHeros_a30a954b6550b4523c93b19cfdfc3921b}\label{classHeros_a30a954b6550b4523c93b19cfdfc3921b}} 
+\index{CyborgHeros@{CyborgHeros}!attaqueSpeciale@{attaqueSpeciale}}
+\index{attaqueSpeciale@{attaqueSpeciale}!CyborgHeros@{CyborgHeros}}
+\doxysubsubsection{\texorpdfstring{attaqueSpeciale}{attaqueSpeciale}}
+{\footnotesize\ttfamily int Heros\+::attaque\+Speciale\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classUnit_a45741ad1efff07340150700d9a624678}\label{classUnit_a45741ad1efff07340150700d9a624678}} 
+\index{CyborgHeros@{CyborgHeros}!hP@{hP}}
+\index{hP@{hP}!CyborgHeros@{CyborgHeros}}
+\doxysubsubsection{\texorpdfstring{hP}{hP}}
+{\footnotesize\ttfamily int Unit\+::hP\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classUnit_a0d73ae7f79e48da36aaa54ad5f016e71}\label{classUnit_a0d73ae7f79e48da36aaa54ad5f016e71}} 
+\index{CyborgHeros@{CyborgHeros}!maxHP@{maxHP}}
+\index{maxHP@{maxHP}!CyborgHeros@{CyborgHeros}}
+\doxysubsubsection{\texorpdfstring{maxHP}{maxHP}}
+{\footnotesize\ttfamily int Unit\+::max\+HP\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classUnit_a03a2344fa6977a2ce44b320e44bc9caa}\label{classUnit_a03a2344fa6977a2ce44b320e44bc9caa}} 
+\index{CyborgHeros@{CyborgHeros}!name@{name}}
+\index{name@{name}!CyborgHeros@{CyborgHeros}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string Unit\+::name\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classUnit_a7adbe5ed84d5c087edd56bcce2033a89}\label{classUnit_a7adbe5ed84d5c087edd56bcce2033a89}} 
+\index{CyborgHeros@{CyborgHeros}!nextPos@{nextPos}}
+\index{nextPos@{nextPos}!CyborgHeros@{CyborgHeros}}
+\doxysubsubsection{\texorpdfstring{nextPos}{nextPos}}
+{\footnotesize\ttfamily std\+::pair$<$int,int$>$ Unit\+::next\+Pos\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classUnit_a5e0d570e8b06f33f873df82ede77bd73}\label{classUnit_a5e0d570e8b06f33f873df82ede77bd73}} 
+\index{CyborgHeros@{CyborgHeros}!pos@{pos}}
+\index{pos@{pos}!CyborgHeros@{CyborgHeros}}
+\doxysubsubsection{\texorpdfstring{pos}{pos}}
+{\footnotesize\ttfamily std\+::pair$<$int,int$>$ Unit\+::pos\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classUnit_a45243122ae655f50179f96bc831bfb1d}\label{classUnit_a45243122ae655f50179f96bc831bfb1d}} 
+\index{CyborgHeros@{CyborgHeros}!type@{type}}
+\index{type@{type}!CyborgHeros@{CyborgHeros}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily int Unit\+::type\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+src/game\+Logic/\mbox{\hyperlink{CyborgHeros_8h}{Cyborg\+Heros.\+h}}\item 
+src/game\+Logic/\mbox{\hyperlink{CyborgHeros_8cpp}{Cyborg\+Heros.\+cpp}}\end{DoxyCompactItemize}

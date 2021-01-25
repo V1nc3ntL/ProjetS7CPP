@@ -1,4 +1,5 @@
 <map id="src/graphics/unitGI.hh" name="src/graphics/unitGI.hh">
-<area shape="rect" id="node1" title="A graphical interface to dysplay units." alt="" coords="11,5,161,32"/>
+<area shape="rect" id="node1" title="A graphical interface to dysplay units." alt="" coords="100,5,251,32"/>
 <area shape="rect" id="node2" href="$gameGI_8hh.html" title="A game graphical interface, dysplaying units,map, and an overlay for the current case." alt="" coords="5,80,167,107"/>
+<area shape="rect" id="node3" href="$unitGI_8cc.html" title="A graphical interface to dysplay units." alt="" coords="191,80,341,107"/>
 </map>

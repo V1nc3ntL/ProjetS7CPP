@@ -15,8 +15,8 @@
         public :
 
             Unit(std::string name,int maxHP,int type,std::pair<int,int> pos) : maxHP(maxHP),hP(maxHP),
-            type(type),name(name),pos(pos) {
-
+            type(type),name(name),pos(pos),nextPos(pos) {
+                nextPos.first+=1;
             }
             Unit* operator-(const int& b) {  
                 this->hP -= b;
@@ -24,14 +24,22 @@
                     delete this;
                 return this;
             }
+            
+            void updateMovements(){
+                pos = nextPos;
+            }
 
-            std::pair<int,int> getPos()const{return pos;}
+            std::pair<int,int> getPos()const{
+                return pos;
+                }
 
-            int getType()const{return type;}
+            int getType()const{
+                return type;
+                }
 
             std::string toString()const{
                 std::stringstream oss;
-                oss << " \n\t" << name << "HP:" << hP << '/' << maxHP ;
+                oss << " \n\t" << name <<'\t'<< " HP: " << hP << '/' << maxHP ;
                 return oss.str();
             }
         private :
@@ -40,5 +48,6 @@
             int type;
             std::string name; 
             std::pair<int,int> pos;
+            std::pair<int,int> nextPos;
     };
 #endif

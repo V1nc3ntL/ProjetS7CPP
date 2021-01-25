@@ -32,13 +32,15 @@ Graphe de collaboration de Tile\+GI\+:\nopagebreak
 \mbox{\hyperlink{classTileGI_ad8f6f4b486f329c5bf84dbab6d65e206}{Tile\+GI}} (std\+::pair$<$ int, int $>$ \mbox{\hyperlink{classTileGI_a1f924dac5907f5ddb6960c108e014327}{north\+Position}}, int square\+Size, int outline\+Size)
 \item 
 \mbox{\hyperlink{classTileGI_a49a4539de908883cec26aa9c18c8006f}{Tile\+GI}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTile}{Tile}} $>$ \mbox{\hyperlink{classTileGI_a08ea45ce1675890be952cb08f3a5054f}{tile}}, std\+::pair$<$ int, int $>$ \mbox{\hyperlink{classTileGI_a1f924dac5907f5ddb6960c108e014327}{north\+Position}}, int square\+Size, int outline\+Size, int \mbox{\hyperlink{classTileGI_aba6af9f42acd389f46b47862bc881519}{rt\+Code}})
-\item 
+\begin{DoxyCompactList}\small\item\em Creates a tile Graphics from a tile, a position and tile parameters. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classTileGI_af075373de82f131983713c2d6f6ce09b}{draw}} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
 \item 
 virtual int \mbox{\hyperlink{classTileGI_a90074668f433d0365ef7a9a3e4a64108}{left\+Click\+Action}} ()
 \begin{DoxyCompactList}\small\item\em The action triggered by a left click button. \end{DoxyCompactList}\item 
 virtual int \mbox{\hyperlink{classTileGI_a35014ce8624ce06ba6cbdff2976509ac}{right\+Click\+Action}} ()
 \begin{DoxyCompactList}\small\item\em The action triggered by a right click button. \end{DoxyCompactList}\item 
+std\+::pair$<$ int, int $>$ \mbox{\hyperlink{classTileGI_ad5f6d46e94fbb909c0cdb39f7e97246d}{left\+Angle}} () const
+\item 
 bool \mbox{\hyperlink{classTileGI_a644903ffaae2045a597509fc113ad14d}{is\+Under}} (std\+::pair$<$ int, int $>$mouse)
 \begin{DoxyCompactList}\small\item\em Checks that a graphic implementation is under a clicked pixel. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Fonctions membres privées}
@@ -102,6 +104,23 @@ Creates an empty graphic implementation The implementation must be set after con
 
 
 
+Creates a tile Graphics from a tile, a position and tile parameters. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em tile} & tile that is displayed \\
+\hline
+{\em north\+Position} & the position of the tile upper corner \\
+\hline
+{\em square\+Size} & the size of the non isometric square in px \\
+\hline
+{\em outline\+Size} & the size of the square outline in px \\
+\hline
+{\em rt\+Code} & the code that the tile returns when clicked on \\
+\hline
+\end{DoxyParams}
+
+
 \doxysubsection{Documentation des fonctions membres}
 \mbox{\Hypertarget{classTileGI_af075373de82f131983713c2d6f6ce09b}\label{classTileGI_af075373de82f131983713c2d6f6ce09b}} 
 \index{TileGI@{TileGI}!draw@{draw}}
@@ -159,6 +178,12 @@ Checks that a graphic implementation is under a clicked pixel.
 \begin{DoxyReturn}{Renvoie}
 a boolean 
 \end{DoxyReturn}
+\mbox{\Hypertarget{classTileGI_ad5f6d46e94fbb909c0cdb39f7e97246d}\label{classTileGI_ad5f6d46e94fbb909c0cdb39f7e97246d}} 
+\index{TileGI@{TileGI}!leftAngle@{leftAngle}}
+\index{leftAngle@{leftAngle}!TileGI@{TileGI}}
+\doxysubsubsection{\texorpdfstring{leftAngle()}{leftAngle()}}
+{\footnotesize\ttfamily std\+::pair$<$int,int$>$ Tile\+G\+I\+::left\+Angle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
 \mbox{\Hypertarget{classTileGI_a90074668f433d0365ef7a9a3e4a64108}\label{classTileGI_a90074668f433d0365ef7a9a3e4a64108}} 
 \index{TileGI@{TileGI}!leftClickAction@{leftClickAction}}
 \index{leftClickAction@{leftClickAction}!TileGI@{TileGI}}

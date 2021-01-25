@@ -8,8 +8,7 @@ File containing the treatment associated with events.
 {\ttfamily \#include $<$iostream$>$}\newline
 {\ttfamily \#include $<$vector$>$}\newline
 {\ttfamily \#include \char`\"{}../app/headers\+Location.\+hh\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}main\+Menu\+Event\+Treatment.\+hh\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}play\+Event\+Treatment.\+hh\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}actions.\+hh\char`\"{}}\newline
 Graphe des dépendances par inclusion de event\+Treatment.\+hh\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -17,13 +16,18 @@ Graphe des dépendances par inclusion de event\+Treatment.\+hh\+:\nopagebreak
 \includegraphics[width=350pt]{eventTreatment_8hh__incl}
 \end{center}
 \end{figure}
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{eventTreatment_8hh__dep__incl}
+\end{center}
+\end{figure}
 \doxysubsection*{Fonctions}
 \begin{DoxyCompactItemize}
 \item 
-static int \mbox{\hyperlink{eventTreatment_8hh_a4778194498fb4b50347dcc9385fa9664}{check\+Button\+Pressed}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classClickable}{Clickable}} $>$ clicked)
-\begin{DoxyCompactList}\small\item\em Check if a mouse click is on the left or the right button. \end{DoxyCompactList}\item 
-static void \mbox{\hyperlink{eventTreatment_8hh_a43bab761564c2ebdb7cd448208109986}{treat\+Key\+Pressed}} (sf\+::\+Event \&event, sf\+::\+Render\+Window \&window)
-\begin{DoxyCompactList}\small\item\em Check the key pressed. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{eventTreatment_8hh_a9642f945ceb590a1d49ed1ab3cd42324}{main\+Menu\+Decode}} (int clicked\+Rt, sf\+::\+Render\+Window \&window, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classusrInterface}{usr\+Interface}} $>$ $\ast$usr\+Int, int $\ast$app\+State, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGame}{Game}} $>$ $\ast$the\+Game)
+\item 
 static void \mbox{\hyperlink{eventTreatment_8hh_ab9ea09b31e56ebd5ad82fae01aa65a0d}{playing\+Decode}} (int clicked\+Rt, sf\+::\+Render\+Window \&window, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classusrInterface}{usr\+Interface}} $>$ $\ast$usr\+Int, int $\ast$app\+State, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGame}{Game}} $>$ $\ast$the\+Game)
 \item 
 void \mbox{\hyperlink{eventTreatment_8hh_a83c30c1ae75b4aa1f8262d4c7c84492c}{decode}} (int clicked\+Rt, sf\+::\+Render\+Window \&window, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classusrInterface}{usr\+Interface}} $>$ $\ast$usr\+Int, int $\ast$current\+State, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGame}{Game}} $>$ $\ast$game\+Pt)
@@ -31,14 +35,12 @@ void \mbox{\hyperlink{eventTreatment_8hh_a83c30c1ae75b4aa1f8262d4c7c84492c}{deco
 \doxysubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-static constexpr int \mbox{\hyperlink{eventTreatment_8hh_a4295715706001f1660d4984cbc8bbc2c}{N\+O\+T\+H\+I\+NG}} = -\/1
+int \mbox{\hyperlink{eventTreatment_8hh_aabc821b538ed6f7da55604b694e68df1}{tab}} \mbox{[}\mbox{\hyperlink{gameMap_8hh_afd483d6947247a58e991b0a1c80da7e6}{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+I\+ZE}} $\ast$\mbox{\hyperlink{gameMap_8hh_afd483d6947247a58e991b0a1c80da7e6}{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+I\+ZE}}\mbox{]}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Description détaillée}
 File containing the treatment associated with events. 
-
-File containing the main menu events.
 
 \begin{DoxyAuthor}{Auteur}
 Karim El-\/\+Kharroubi --- Vincent L\+E\+F\+E\+B\+V\+RE 
@@ -52,29 +54,17 @@ Karim El-\/\+Kharroubi --- Vincent L\+E\+F\+E\+B\+V\+RE
 
 
 \doxysubsection{Documentation des fonctions}
-\mbox{\Hypertarget{eventTreatment_8hh_a4778194498fb4b50347dcc9385fa9664}\label{eventTreatment_8hh_a4778194498fb4b50347dcc9385fa9664}} 
-\index{eventTreatment.hh@{eventTreatment.hh}!checkButtonPressed@{checkButtonPressed}}
-\index{checkButtonPressed@{checkButtonPressed}!eventTreatment.hh@{eventTreatment.hh}}
-\doxysubsubsection{\texorpdfstring{checkButtonPressed()}{checkButtonPressed()}}
-{\footnotesize\ttfamily int static check\+Button\+Pressed (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classClickable}{Clickable}} $>$}]{clicked }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
-
-
-
-Check if a mouse click is on the left or the right button. 
-
-
-\begin{DoxyParams}{Paramètres}
-{\em clicked} & a shared pointer on a clickable object \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Renvoie}
-the return code of the clickable object 
-\end{DoxyReturn}
 \mbox{\Hypertarget{eventTreatment_8hh_a83c30c1ae75b4aa1f8262d4c7c84492c}\label{eventTreatment_8hh_a83c30c1ae75b4aa1f8262d4c7c84492c}} 
 \index{eventTreatment.hh@{eventTreatment.hh}!decode@{decode}}
 \index{decode@{decode}!eventTreatment.hh@{eventTreatment.hh}}
 \doxysubsubsection{\texorpdfstring{decode()}{decode()}}
 {\footnotesize\ttfamily void decode (\begin{DoxyParamCaption}\item[{int}]{clicked\+Rt,  }\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classusrInterface}{usr\+Interface}} $>$ $\ast$}]{usr\+Int,  }\item[{int $\ast$}]{current\+State,  }\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGame}{Game}} $>$ $\ast$}]{game\+Pt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{eventTreatment_8hh_a9642f945ceb590a1d49ed1ab3cd42324}\label{eventTreatment_8hh_a9642f945ceb590a1d49ed1ab3cd42324}} 
+\index{eventTreatment.hh@{eventTreatment.hh}!mainMenuDecode@{mainMenuDecode}}
+\index{mainMenuDecode@{mainMenuDecode}!eventTreatment.hh@{eventTreatment.hh}}
+\doxysubsubsection{\texorpdfstring{mainMenuDecode()}{mainMenuDecode()}}
+{\footnotesize\ttfamily static void main\+Menu\+Decode (\begin{DoxyParamCaption}\item[{int}]{clicked\+Rt,  }\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classusrInterface}{usr\+Interface}} $>$ $\ast$}]{usr\+Int,  }\item[{int $\ast$}]{app\+State,  }\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGame}{Game}} $>$ $\ast$}]{the\+Game }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 \mbox{\Hypertarget{eventTreatment_8hh_ab9ea09b31e56ebd5ad82fae01aa65a0d}\label{eventTreatment_8hh_ab9ea09b31e56ebd5ad82fae01aa65a0d}} 
 \index{eventTreatment.hh@{eventTreatment.hh}!playingDecode@{playingDecode}}
@@ -82,29 +72,12 @@ the return code of the clickable object
 \doxysubsubsection{\texorpdfstring{playingDecode()}{playingDecode()}}
 {\footnotesize\ttfamily static void playing\+Decode (\begin{DoxyParamCaption}\item[{int}]{clicked\+Rt,  }\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classusrInterface}{usr\+Interface}} $>$ $\ast$}]{usr\+Int,  }\item[{int $\ast$}]{app\+State,  }\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGame}{Game}} $>$ $\ast$}]{the\+Game }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\mbox{\Hypertarget{eventTreatment_8hh_a43bab761564c2ebdb7cd448208109986}\label{eventTreatment_8hh_a43bab761564c2ebdb7cd448208109986}} 
-\index{eventTreatment.hh@{eventTreatment.hh}!treatKeyPressed@{treatKeyPressed}}
-\index{treatKeyPressed@{treatKeyPressed}!eventTreatment.hh@{eventTreatment.hh}}
-\doxysubsubsection{\texorpdfstring{treatKeyPressed()}{treatKeyPressed()}}
-{\footnotesize\ttfamily void static treat\+Key\+Pressed (\begin{DoxyParamCaption}\item[{sf\+::\+Event \&}]{event,  }\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
-
-
-
-Check the key pressed. 
-
-
-\begin{DoxyParams}{Paramètres}
-{\em event} & reference on the event triggering the function \\
-\hline
-{\em window} & reference on the application unique window \\
-\hline
-\end{DoxyParams}
 
 
 \doxysubsection{Documentation des variables}
-\mbox{\Hypertarget{eventTreatment_8hh_a4295715706001f1660d4984cbc8bbc2c}\label{eventTreatment_8hh_a4295715706001f1660d4984cbc8bbc2c}} 
-\index{eventTreatment.hh@{eventTreatment.hh}!NOTHING@{NOTHING}}
-\index{NOTHING@{NOTHING}!eventTreatment.hh@{eventTreatment.hh}}
-\doxysubsubsection{\texorpdfstring{NOTHING}{NOTHING}}
-{\footnotesize\ttfamily constexpr int N\+O\+T\+H\+I\+NG = -\/1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
+\mbox{\Hypertarget{eventTreatment_8hh_aabc821b538ed6f7da55604b694e68df1}\label{eventTreatment_8hh_aabc821b538ed6f7da55604b694e68df1}} 
+\index{eventTreatment.hh@{eventTreatment.hh}!tab@{tab}}
+\index{tab@{tab}!eventTreatment.hh@{eventTreatment.hh}}
+\doxysubsubsection{\texorpdfstring{tab}{tab}}
+{\footnotesize\ttfamily int tab\mbox{[}\mbox{\hyperlink{gameMap_8hh_afd483d6947247a58e991b0a1c80da7e6}{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+I\+ZE}} $\ast$\mbox{\hyperlink{gameMap_8hh_afd483d6947247a58e991b0a1c80da7e6}{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+I\+ZE}}\mbox{]}}
 

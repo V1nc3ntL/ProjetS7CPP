@@ -78,7 +78,7 @@ Graphe d'héritage de TileGI:</div>
 <div class="dyncontent">
 <div class="center"><img src="classTileGI__inherit__graph.png" border="0" usemap="#aTileGI_inherit__map" alt="Inheritance graph"/></div>
 <map name="TileGI_inherit__map" id="TileGI_inherit__map">
-<area shape="rect" title=" " alt="" coords="40,145,175,443"/>
+<area shape="rect" title=" " alt="" coords="40,145,175,457"/>
 <area shape="rect" title=" " alt="" coords="5,13,81,90"/>
 <area shape="rect" href="classClickable.html" title=" " alt="" coords="105,5,240,97"/>
 </map>
@@ -88,7 +88,7 @@ Graphe de collaboration de TileGI:</div>
 <div class="dyncontent">
 <div class="center"><img src="classTileGI__coll__graph.png" border="0" usemap="#aTileGI_coll__map" alt="Collaboration graph"/></div>
 <map name="TileGI_coll__map" id="TileGI_coll__map">
-<area shape="rect" title=" " alt="" coords="40,145,175,443"/>
+<area shape="rect" title=" " alt="" coords="40,145,175,457"/>
 <area shape="rect" title=" " alt="" coords="5,13,81,90"/>
 <area shape="rect" href="classClickable.html" title=" " alt="" coords="105,5,240,97"/>
 </map>
@@ -105,6 +105,7 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:ad8f6f4b486f329c5bf84dbab6d65e206"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTileGI.html#ad8f6f4b486f329c5bf84dbab6d65e206">TileGI</a> (std::pair&lt; int, int &gt; <a class="el" href="classTileGI.html#a1f924dac5907f5ddb6960c108e014327">northPosition</a>, int squareSize, int outlineSize)</td></tr>
 <tr class="separator:ad8f6f4b486f329c5bf84dbab6d65e206"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49a4539de908883cec26aa9c18c8006f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTileGI.html#a49a4539de908883cec26aa9c18c8006f">TileGI</a> (const std::shared_ptr&lt; <a class="el" href="classTile.html">Tile</a> &gt; <a class="el" href="classTileGI.html#a08ea45ce1675890be952cb08f3a5054f">tile</a>, std::pair&lt; int, int &gt; <a class="el" href="classTileGI.html#a1f924dac5907f5ddb6960c108e014327">northPosition</a>, int squareSize, int outlineSize, int <a class="el" href="classTileGI.html#aba6af9f42acd389f46b47862bc881519">rtCode</a>)</td></tr>
+<tr class="memdesc:a49a4539de908883cec26aa9c18c8006f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a tile Graphics from a tile, a position and tile parameters.  <a href="classTileGI.html#a49a4539de908883cec26aa9c18c8006f">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a49a4539de908883cec26aa9c18c8006f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af075373de82f131983713c2d6f6ce09b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTileGI.html#af075373de82f131983713c2d6f6ce09b">draw</a> (sf::RenderTarget &amp;target, sf::RenderStates states) const</td></tr>
 <tr class="separator:af075373de82f131983713c2d6f6ce09b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -114,6 +115,8 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:a35014ce8624ce06ba6cbdff2976509ac"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTileGI.html#a35014ce8624ce06ba6cbdff2976509ac">rightClickAction</a> ()</td></tr>
 <tr class="memdesc:a35014ce8624ce06ba6cbdff2976509ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">The action triggered by a right click button.  <a href="classTileGI.html#a35014ce8624ce06ba6cbdff2976509ac">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a35014ce8624ce06ba6cbdff2976509ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5f6d46e94fbb909c0cdb39f7e97246d"><td class="memItemLeft" align="right" valign="top">std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTileGI.html#ad5f6d46e94fbb909c0cdb39f7e97246d">leftAngle</a> () const</td></tr>
+<tr class="separator:ad5f6d46e94fbb909c0cdb39f7e97246d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a644903ffaae2045a597509fc113ad14d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTileGI.html#a644903ffaae2045a597509fc113ad14d">isUnder</a> (std::pair&lt; int, int &gt;mouse)</td></tr>
 <tr class="memdesc:a644903ffaae2045a597509fc113ad14d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks that a graphic implementation is under a clicked pixel.  <a href="classTileGI.html#a644903ffaae2045a597509fc113ad14d">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a644903ffaae2045a597509fc113ad14d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -258,6 +261,18 @@ Attributs privés</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Creates a tile Graphics from a tile, a position and tile parameters. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tile</td><td>tile that is displayed </td></tr>
+    <tr><td class="paramname">northPosition</td><td>the position of the tile upper corner </td></tr>
+    <tr><td class="paramname">squareSize</td><td>the size of the non isometric square in px </td></tr>
+    <tr><td class="paramname">outlineSize</td><td>the size of the square outline in px </td></tr>
+    <tr><td class="paramname">rtCode</td><td>the code that the tile returns when clicked on </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -410,6 +425,31 @@ Attributs privés</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Renvoie</dt><dd>a boolean </dd></dl>
+
+</div>
+</div>
+<a id="ad5f6d46e94fbb909c0cdb39f7e97246d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5f6d46e94fbb909c0cdb39f7e97246d">&#9670;&nbsp;</a></span>leftAngle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::pair&lt;int,int&gt; TileGI::leftAngle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

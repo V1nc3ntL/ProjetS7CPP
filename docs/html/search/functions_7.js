@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['main_293',['main',['../main_8cc.html#a568b3afc214ba30be5bf526d6b27b611',1,'main.cc']]],
-  ['mainmenudecode_294',['mainMenuDecode',['../mainMenuEventTreatment_8hh.html#a9642f945ceb590a1d49ed1ab3cd42324',1,'mainMenuEventTreatment.hh']]],
-  ['mainmenugi_295',['MainMenuGI',['../classMainMenuGI.html#a3ac61a80a5f3dba2e4d0936f81bc9394',1,'MainMenuGI::MainMenuGI()'],['../classMainMenuGI.html#ad5d7906f6b7b2bc467a4f4dbb1159ab9',1,'MainMenuGI::MainMenuGI(int &amp;windowWidth, int &amp;windowHeight)']]],
-  ['mapgi_296',['MapGI',['../classMapGI.html#afd8443fda766591d1410bf00e724913b',1,'MapGI::MapGI()'],['../classMapGI.html#abf08d0e1b6c06c157fe99054a97ce3ea',1,'MapGI::MapGI(int &amp;windowWidth, int &amp;windowHeight, GameMap &amp;map)']]]
+  ['leftangle_417',['leftAngle',['../classTileGI.html#ad5f6d46e94fbb909c0cdb39f7e97246d',1,'TileGI']]],
+  ['leftclickaction_418',['leftClickAction',['../classClickable.html#a86326f5a68dde9469b2a706fa95a2484',1,'Clickable::leftClickAction()'],['../classButtonGI.html#a0904b1c4d20404d3bf31a5d79395815d',1,'ButtonGI::leftClickAction()'],['../classSpriteButtonGI.html#a42f6f9f8ecd95dced1732aef9ef80868',1,'SpriteButtonGI::leftClickAction()'],['../classTileGI.html#a90074668f433d0365ef7a9a3e4a64108',1,'TileGI::leftClickAction()']]]
 ];

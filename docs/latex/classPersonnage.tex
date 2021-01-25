@@ -1,0 +1,146 @@
+\hypertarget{classPersonnage}{}\doxysection{Référence de la classe Personnage}
+\label{classPersonnage}\index{Personnage@{Personnage}}
+
+
+{\ttfamily \#include $<$Personnage.\+h$>$}
+
+
+
+Graphe de collaboration de Personnage\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{classPersonnage__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPersonnage_abec36eb0310adc71f3375297fc590c65}{Personnage}} ()
+\item 
+virtual \mbox{\hyperlink{classPersonnage_a05bdf2a469885bb1fbb6c2e8f98972ab}{$\sim$\+Personnage}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classPersonnage_adf79f6d6c157ae492b5d32f35d0f1141}{set\+Vie}} (int value)
+\item 
+int \mbox{\hyperlink{classPersonnage_a261cbb9bb3b23a147d0f88b10eaa1857}{get\+Vie}} ()
+\item 
+void \mbox{\hyperlink{classPersonnage_ae63a64d798c32588bcb9d98d944ca960}{set\+Attaque}} (int value)
+\item 
+int \mbox{\hyperlink{classPersonnage_a062ebd08b2ae8d70ce5d0e30826d5a54}{get\+Attaque}} ()
+\item 
+void \mbox{\hyperlink{classPersonnage_a34edc743b4514032ade846990afe2ffb}{attaque}} (\mbox{\hyperlink{classPersonnage}{Personnage}} \&cible)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classPersonnage_a1f21daadf6f152072c97b5700849a6bc}{vie}}
+\item 
+int \mbox{\hyperlink{classPersonnage_ade706b8c16146f8976fcdadec6d3d5a3}{attaque}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classPersonnage_acd5ec90356b1942c3675ce57d23cc82b}{init\+Attributes}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+class \mbox{\hyperlink{classPersonnage}{Personnage}} Classe abstraite \mbox{\hyperlink{classPersonnage}{Personnage}}. Les diff�rentes sous classes pour chaque personnage vont h�riter de cette classe. 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classPersonnage_abec36eb0310adc71f3375297fc590c65}\label{classPersonnage_abec36eb0310adc71f3375297fc590c65}} 
+\index{Personnage@{Personnage}!Personnage@{Personnage}}
+\index{Personnage@{Personnage}!Personnage@{Personnage}}
+\doxysubsubsection{\texorpdfstring{Personnage()}{Personnage()}}
+{\footnotesize\ttfamily Personnage\+::\+Personnage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Empty Constructor \mbox{\Hypertarget{classPersonnage_a05bdf2a469885bb1fbb6c2e8f98972ab}\label{classPersonnage_a05bdf2a469885bb1fbb6c2e8f98972ab}} 
+\index{Personnage@{Personnage}!````~Personnage@{$\sim$Personnage}}
+\index{````~Personnage@{$\sim$Personnage}!Personnage@{Personnage}}
+\doxysubsubsection{\texorpdfstring{$\sim$Personnage()}{~Personnage()}}
+{\footnotesize\ttfamily Personnage\+::$\sim$\+Personnage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Empty Destructor 
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classPersonnage_a34edc743b4514032ade846990afe2ffb}\label{classPersonnage_a34edc743b4514032ade846990afe2ffb}} 
+\index{Personnage@{Personnage}!attaque@{attaque}}
+\index{attaque@{attaque}!Personnage@{Personnage}}
+\doxysubsubsection{\texorpdfstring{attaque()}{attaque()}}
+{\footnotesize\ttfamily void Personnage\+::attaque (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPersonnage}{Personnage}} \&}]{cible }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Fonction attaque du \mbox{\hyperlink{classPersonnage}{Personnage}}. 
+\begin{DoxyParams}{Paramètres}
+{\em cible} & On passe en param�tre la r�ference de la cible � attaquer. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPersonnage_a062ebd08b2ae8d70ce5d0e30826d5a54}\label{classPersonnage_a062ebd08b2ae8d70ce5d0e30826d5a54}} 
+\index{Personnage@{Personnage}!getAttaque@{getAttaque}}
+\index{getAttaque@{getAttaque}!Personnage@{Personnage}}
+\doxysubsubsection{\texorpdfstring{getAttaque()}{getAttaque()}}
+{\footnotesize\ttfamily int Personnage\+::get\+Attaque (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Get the value of attaque Attaque du personnage. \begin{DoxyReturn}{Renvoie}
+the value of attaque 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPersonnage_a261cbb9bb3b23a147d0f88b10eaa1857}\label{classPersonnage_a261cbb9bb3b23a147d0f88b10eaa1857}} 
+\index{Personnage@{Personnage}!getVie@{getVie}}
+\index{getVie@{getVie}!Personnage@{Personnage}}
+\doxysubsubsection{\texorpdfstring{getVie()}{getVie()}}
+{\footnotesize\ttfamily int Personnage\+::get\+Vie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Get the value of vie Nombre entier qui caract�rise la vie restante du personnage. \begin{DoxyReturn}{Renvoie}
+the value of vie 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPersonnage_acd5ec90356b1942c3675ce57d23cc82b}\label{classPersonnage_acd5ec90356b1942c3675ce57d23cc82b}} 
+\index{Personnage@{Personnage}!initAttributes@{initAttributes}}
+\index{initAttributes@{initAttributes}!Personnage@{Personnage}}
+\doxysubsubsection{\texorpdfstring{initAttributes()}{initAttributes()}}
+{\footnotesize\ttfamily void Personnage\+::init\+Attributes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classPersonnage_ae63a64d798c32588bcb9d98d944ca960}\label{classPersonnage_ae63a64d798c32588bcb9d98d944ca960}} 
+\index{Personnage@{Personnage}!setAttaque@{setAttaque}}
+\index{setAttaque@{setAttaque}!Personnage@{Personnage}}
+\doxysubsubsection{\texorpdfstring{setAttaque()}{setAttaque()}}
+{\footnotesize\ttfamily void Personnage\+::set\+Attaque (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Set the value of attaque Attaque du personnage. 
+\begin{DoxyParams}{Paramètres}
+{\em value} & the new value of attaque \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPersonnage_adf79f6d6c157ae492b5d32f35d0f1141}\label{classPersonnage_adf79f6d6c157ae492b5d32f35d0f1141}} 
+\index{Personnage@{Personnage}!setVie@{setVie}}
+\index{setVie@{setVie}!Personnage@{Personnage}}
+\doxysubsubsection{\texorpdfstring{setVie()}{setVie()}}
+{\footnotesize\ttfamily void Personnage\+::set\+Vie (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Set the value of vie Nombre entier qui caract�rise la vie restante du personnage. 
+\begin{DoxyParams}{Paramètres}
+{\em value} & the new value of vie \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{classPersonnage_ade706b8c16146f8976fcdadec6d3d5a3}\label{classPersonnage_ade706b8c16146f8976fcdadec6d3d5a3}} 
+\index{Personnage@{Personnage}!attaque@{attaque}}
+\index{attaque@{attaque}!Personnage@{Personnage}}
+\doxysubsubsection{\texorpdfstring{attaque}{attaque}}
+{\footnotesize\ttfamily int Personnage\+::attaque\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPersonnage_a1f21daadf6f152072c97b5700849a6bc}\label{classPersonnage_a1f21daadf6f152072c97b5700849a6bc}} 
+\index{Personnage@{Personnage}!vie@{vie}}
+\index{vie@{vie}!Personnage@{Personnage}}
+\doxysubsubsection{\texorpdfstring{vie}{vie}}
+{\footnotesize\ttfamily int Personnage\+::vie\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+src/game\+Logic/\mbox{\hyperlink{Personnage_8h}{Personnage.\+h}}\item 
+src/game\+Logic/\mbox{\hyperlink{Personnage_8cpp}{Personnage.\+cpp}}\end{DoxyCompactItemize}

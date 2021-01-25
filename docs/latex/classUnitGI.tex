@@ -6,37 +6,26 @@
 
 
 
-Graphe d\textquotesingle{}héritage de Unit\+GI\+:
-\nopagebreak
+Graphe d\textquotesingle{}héritage de Unit\+GI\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=270pt]{classUnitGI__inherit__graph}
+\includegraphics[width=140pt]{classUnitGI__inherit__graph}
 \end{center}
 \end{figure}
 
 
-Graphe de collaboration de Unit\+GI\+:
-\nopagebreak
+Graphe de collaboration de Unit\+GI\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=307pt]{classUnitGI__coll__graph}
+\includegraphics[width=266pt]{classUnitGI__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Fonctions membres publiques}
 \begin{DoxyCompactItemize}
 \item 
-virtual int \mbox{\hyperlink{classSpriteButtonGI_a42f6f9f8ecd95dced1732aef9ef80868}{left\+Click\+Action}} ()
-\begin{DoxyCompactList}\small\item\em The action triggered by a left click button. \end{DoxyCompactList}\item 
-virtual int \mbox{\hyperlink{classSpriteButtonGI_abb53bd9c17f4a7b92695e2dc8572358b}{right\+Click\+Action}} ()
-\begin{DoxyCompactList}\small\item\em The action triggered by a right click button. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classSpriteButtonGI_aa1545da97f3f753f762e3eea8824afc5}{is\+Under}} (std\+::pair$<$ int, int $>$mouse) const
-\end{DoxyCompactItemize}
-\doxysubsection*{Fonctions membres privées}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\hyperlink{classUnitGI_ac3844a50c75bb5a21717ab8db39e614f}{Unit\+GI}} (\mbox{\hyperlink{classUnit}{Unit}} \&unit, std\+::pair$<$ int, int $>$position)
+\mbox{\hyperlink{classUnitGI_a16e6233e52580386714324337b1033b5}{Unit\+GI}} (\mbox{\hyperlink{classUnit}{Unit}} \&unit, \mbox{\hyperlink{classMapGI}{Map\+GI}} \&map)
 \item 
 virtual void \mbox{\hyperlink{classUnitGI_a41bbe6f06293cc40cd753b0bd32f7535}{draw}} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
 \end{DoxyCompactItemize}
@@ -46,21 +35,15 @@ virtual void \mbox{\hyperlink{classUnitGI_a41bbe6f06293cc40cd753b0bd32f7535}{dra
 \mbox{\hyperlink{classUnit}{Unit}} \mbox{\hyperlink{classUnitGI_a87306b4c1453aa7ec83fb9da3b92816c}{the\+Unit}}
 \item 
 sf\+::\+Sprite \mbox{\hyperlink{classUnitGI_a1a1f7b582769c1d5ca0a9baeddc16219}{sprit}}
-\item 
-sf\+::\+Texture \mbox{\hyperlink{classUnitGI_a1ad47aca489b7697ac82ca4af505cd38}{texture}}
-\item 
-int \mbox{\hyperlink{classSpriteButtonGI_a200729783436731ade2bd9ca57a220cd}{return\+Code}}
-\item 
-sf\+::\+Rectangle\+Shape \mbox{\hyperlink{classSpriteButtonGI_aa4f9feab4a1ad5239214c2232bdc8aaf}{rect}}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Documentation des constructeurs et destructeur}
-\mbox{\Hypertarget{classUnitGI_ac3844a50c75bb5a21717ab8db39e614f}\label{classUnitGI_ac3844a50c75bb5a21717ab8db39e614f}} 
+\mbox{\Hypertarget{classUnitGI_a16e6233e52580386714324337b1033b5}\label{classUnitGI_a16e6233e52580386714324337b1033b5}} 
 \index{UnitGI@{UnitGI}!UnitGI@{UnitGI}}
 \index{UnitGI@{UnitGI}!UnitGI@{UnitGI}}
 \doxysubsubsection{\texorpdfstring{UnitGI()}{UnitGI()}}
-{\footnotesize\ttfamily Unit\+G\+I\+::\+Unit\+GI (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classUnit}{Unit}} \&}]{unit,  }\item[{std\+::pair$<$ int, int $>$}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily Unit\+G\+I\+::\+Unit\+GI (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classUnit}{Unit}} \&}]{unit,  }\item[{\mbox{\hyperlink{classMapGI}{Map\+GI}} \&}]{map }\end{DoxyParamCaption})}
 
 
 
@@ -69,78 +52,16 @@ sf\+::\+Rectangle\+Shape \mbox{\hyperlink{classSpriteButtonGI_aa4f9feab4a1ad5239
 \index{UnitGI@{UnitGI}!draw@{draw}}
 \index{draw@{draw}!UnitGI@{UnitGI}}
 \doxysubsubsection{\texorpdfstring{draw()}{draw()}}
-{\footnotesize\ttfamily virtual void Unit\+G\+I\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{target,  }\item[{sf\+::\+Render\+States}]{states }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
-
-
-
-Réimplémentée à partir de \mbox{\hyperlink{classSpriteButtonGI_a8b94b9ed4288e1113982447ed9d9cdc1}{Sprite\+Button\+GI}}.
-
-\mbox{\Hypertarget{classSpriteButtonGI_aa1545da97f3f753f762e3eea8824afc5}\label{classSpriteButtonGI_aa1545da97f3f753f762e3eea8824afc5}} 
-\index{UnitGI@{UnitGI}!isUnder@{isUnder}}
-\index{isUnder@{isUnder}!UnitGI@{UnitGI}}
-\doxysubsubsection{\texorpdfstring{isUnder()}{isUnder()}}
-{\footnotesize\ttfamily bool Sprite\+Button\+G\+I\+::is\+Under (\begin{DoxyParamCaption}\item[{std\+::pair$<$ int, int $>$}]{mouse }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
-
-\mbox{\Hypertarget{classSpriteButtonGI_a42f6f9f8ecd95dced1732aef9ef80868}\label{classSpriteButtonGI_a42f6f9f8ecd95dced1732aef9ef80868}} 
-\index{UnitGI@{UnitGI}!leftClickAction@{leftClickAction}}
-\index{leftClickAction@{leftClickAction}!UnitGI@{UnitGI}}
-\doxysubsubsection{\texorpdfstring{leftClickAction()}{leftClickAction()}}
-{\footnotesize\ttfamily virtual int Sprite\+Button\+G\+I\+::left\+Click\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
-
-
-
-The action triggered by a left click button. 
-
-\begin{DoxyReturn}{Renvoie}
-code an int that the main application translates 
-\end{DoxyReturn}
-
-
-Implémente \mbox{\hyperlink{classClickable_a86326f5a68dde9469b2a706fa95a2484}{Clickable}}.
-
-\mbox{\Hypertarget{classSpriteButtonGI_abb53bd9c17f4a7b92695e2dc8572358b}\label{classSpriteButtonGI_abb53bd9c17f4a7b92695e2dc8572358b}} 
-\index{UnitGI@{UnitGI}!rightClickAction@{rightClickAction}}
-\index{rightClickAction@{rightClickAction}!UnitGI@{UnitGI}}
-\doxysubsubsection{\texorpdfstring{rightClickAction()}{rightClickAction()}}
-{\footnotesize\ttfamily virtual int Sprite\+Button\+G\+I\+::right\+Click\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
-
-
-
-The action triggered by a right click button. 
-
-\begin{DoxyReturn}{Renvoie}
-code an int that the main application translates 
-\end{DoxyReturn}
-
-
-Implémente \mbox{\hyperlink{classClickable_a33ce6f79466159705d00906f7171e33f}{Clickable}}.
+{\footnotesize\ttfamily virtual void Unit\+G\+I\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{target,  }\item[{sf\+::\+Render\+States}]{states }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 
 
 \doxysubsection{Documentation des données membres}
-\mbox{\Hypertarget{classSpriteButtonGI_aa4f9feab4a1ad5239214c2232bdc8aaf}\label{classSpriteButtonGI_aa4f9feab4a1ad5239214c2232bdc8aaf}} 
-\index{UnitGI@{UnitGI}!rect@{rect}}
-\index{rect@{rect}!UnitGI@{UnitGI}}
-\doxysubsubsection{\texorpdfstring{rect}{rect}}
-{\footnotesize\ttfamily sf\+::\+Rectangle\+Shape Sprite\+Button\+G\+I\+::rect\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
-
-\mbox{\Hypertarget{classSpriteButtonGI_a200729783436731ade2bd9ca57a220cd}\label{classSpriteButtonGI_a200729783436731ade2bd9ca57a220cd}} 
-\index{UnitGI@{UnitGI}!returnCode@{returnCode}}
-\index{returnCode@{returnCode}!UnitGI@{UnitGI}}
-\doxysubsubsection{\texorpdfstring{returnCode}{returnCode}}
-{\footnotesize\ttfamily int Sprite\+Button\+G\+I\+::return\+Code\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
-
 \mbox{\Hypertarget{classUnitGI_a1a1f7b582769c1d5ca0a9baeddc16219}\label{classUnitGI_a1a1f7b582769c1d5ca0a9baeddc16219}} 
 \index{UnitGI@{UnitGI}!sprit@{sprit}}
 \index{sprit@{sprit}!UnitGI@{UnitGI}}
 \doxysubsubsection{\texorpdfstring{sprit}{sprit}}
 {\footnotesize\ttfamily sf\+::\+Sprite Unit\+G\+I\+::sprit\hspace{0.3cm}{\ttfamily [private]}}
-
-\mbox{\Hypertarget{classUnitGI_a1ad47aca489b7697ac82ca4af505cd38}\label{classUnitGI_a1ad47aca489b7697ac82ca4af505cd38}} 
-\index{UnitGI@{UnitGI}!texture@{texture}}
-\index{texture@{texture}!UnitGI@{UnitGI}}
-\doxysubsubsection{\texorpdfstring{texture}{texture}}
-{\footnotesize\ttfamily sf\+::\+Texture Unit\+G\+I\+::texture\hspace{0.3cm}{\ttfamily [private]}}
 
 \mbox{\Hypertarget{classUnitGI_a87306b4c1453aa7ec83fb9da3b92816c}\label{classUnitGI_a87306b4c1453aa7ec83fb9da3b92816c}} 
 \index{UnitGI@{UnitGI}!theUnit@{theUnit}}

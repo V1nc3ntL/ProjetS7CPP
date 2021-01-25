@@ -8,8 +8,10 @@
 #define __GAME_HH__
 #include <iostream>
 #include <sstream>  
+#include "../app/headersLocation.hh"
 #include LOCALIZATION_H
 #include UNIT_H
+#include MAP_H
 
     class Game{
         public :
@@ -22,7 +24,12 @@
 
             GameMap& getMap(){return map;}
 
-            void nextTurn(){curTurn++;}
+            void nextTurn(){
+                for(Unit u: units)
+                    u.updateMovements();
+                curTurn++;
+            }
+
             int getTurn()const{return curTurn;}
             
             friend std::ostream& operator<<(std::ostream& os,const Game& s){

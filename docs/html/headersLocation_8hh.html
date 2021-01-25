@@ -77,13 +77,20 @@ Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier
 <div class="dyncontent">
 <div class="center"><img src="headersLocation_8hh__dep__incl.png" border="0" usemap="#asrc_2app_2headersLocation_8hhdep" alt=""/></div>
 <map name="src_2app_2headersLocation_8hhdep" id="asrc_2app_2headersLocation_8hhdep">
-<area shape="rect" title=" " alt="" coords="306,5,489,32"/>
-<area shape="rect" href="mainMenuEventTreatment_8hh.html" title=" " alt="" coords="5,80,184,121"/>
-<area shape="rect" href="eventTreatment_8hh.html" title="File containing the treatment associated with events." alt="" coords="125,169,317,196"/>
-<area shape="rect" href="main_8cc.html" title="File containing the main." alt="" coords="259,87,373,114"/>
-<area shape="rect" href="buttonGI_8cc.html" title="Implementation of the buttons." alt="" coords="397,87,563,114"/>
-<area shape="rect" href="playEventTreatment_8hh.html" title="File containing the game event treatment." alt="" coords="587,87,805,114"/>
-<area shape="rect" href="SpriteButtonGI_8cc.html" title=" " alt="" coords="830,80,999,121"/>
+<area shape="rect" title=" " alt="" coords="654,5,837,32"/>
+<area shape="rect" href="application_8hh.html" title="Class representing the application." alt="" coords="9,87,159,114"/>
+<area shape="rect" href="application_8cc.html" title=" " alt="" coords="144,169,293,196"/>
+<area shape="rect" href="eventTreatment_8hh.html" title="File containing the treatment associated with events." alt="" coords="233,87,425,114"/>
+<area shape="rect" href="game_8hh.html" title="Class to describe a game." alt="" coords="450,87,611,114"/>
+<area shape="rect" href="playEventTreatment_8hh.html" title="File containing the game event treatment." alt="" coords="636,87,855,114"/>
+<area shape="rect" href="buttonGI_8cc.html" title="Implementation of the buttons." alt="" coords="879,87,1044,114"/>
+<area shape="rect" href="SpriteButtonGI_8cc.html" title=" " alt="" coords="1069,80,1238,121"/>
+<area shape="rect" href="usrInterface_8hh.html" title="An interface to ease polymorphism on graphical interfaces." alt="" coords="1262,87,1447,114"/>
+<area shape="rect" href="unitGI_8hh.html" title="A graphical interface to dysplay units." alt="" coords="1475,87,1626,114"/>
+<area shape="rect" href="main_8cc.html" title="File containing the main." alt="" coords="5,169,120,196"/>
+<area shape="rect" href="mainMenuGI_8hh.html" title="The graphic implementation of the main menu." alt="" coords="1256,169,1445,196"/>
+<area shape="rect" href="gameGI_8hh.html" title="A game graphical interface, dysplaying units,map, and an overlay for the current case." alt="" coords="1470,169,1631,196"/>
+<area shape="rect" href="unitGI_8cc.html" title="A graphical interface to dysplay units." alt="" coords="1655,169,1806,196"/>
 </map>
 </div>
 </div>
@@ -93,9 +100,9 @@ Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier
 Macros</h2></td></tr>
 <tr class="memitem:aefcda0ea2eb6897f54080bee3da99bda"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="headersLocation_8hh.html#aefcda0ea2eb6897f54080bee3da99bda">SFML_GRAPHIC</a>&#160;&#160;&#160;&quot;../sfmlLib/include/Graphics.hpp&quot;</td></tr>
 <tr class="separator:aefcda0ea2eb6897f54080bee3da99bda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36c3fec3e9086ef0cf1d639423032f68"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="headersLocation_8hh.html#a36c3fec3e9086ef0cf1d639423032f68">FONTS_DIR</a>&#160;&#160;&#160;&quot;../ressources/fonts/&quot;</td></tr>
+<tr class="memitem:a36c3fec3e9086ef0cf1d639423032f68"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="headersLocation_8hh.html#a36c3fec3e9086ef0cf1d639423032f68">FONTS_DIR</a>&#160;&#160;&#160;&quot;ressources/fonts/&quot;</td></tr>
 <tr class="separator:a36c3fec3e9086ef0cf1d639423032f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a32060ea6e15641630ebbccf4fdd714"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="headersLocation_8hh.html#a5a32060ea6e15641630ebbccf4fdd714">IMGS_DIR</a>&#160;&#160;&#160;&quot;../ressources/imgs/&quot;</td></tr>
+<tr class="memitem:a5a32060ea6e15641630ebbccf4fdd714"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="headersLocation_8hh.html#a5a32060ea6e15641630ebbccf4fdd714">IMGS_DIR</a>&#160;&#160;&#160;&quot;ressources/imgs/&quot;</td></tr>
 <tr class="separator:a5a32060ea6e15641630ebbccf4fdd714"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07ffd6e3f128f941b2f400c352896a74"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="headersLocation_8hh.html#a07ffd6e3f128f941b2f400c352896a74">MAP_H</a>&#160;&#160;&#160;&quot;../gameLogic/map/gameMap.hh&quot;</td></tr>
 <tr class="separator:a07ffd6e3f128f941b2f400c352896a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -107,28 +114,50 @@ Macros</h2></td></tr>
 <tr class="separator:a02765e530bddc56f34836e5aeeaf9330"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad430f4d63e729334c31d86af17576983"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="headersLocation_8hh.html#ad430f4d63e729334c31d86af17576983">EVENT_TREATMENT_H</a>&#160;&#160;&#160;&quot;../events/eventTreatment.hh&quot;</td></tr>
 <tr class="separator:ad430f4d63e729334c31d86af17576983"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54db6aa6138ff05d5b17c8d8a2858736"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="headersLocation_8hh.html#a54db6aa6138ff05d5b17c8d8a2858736">MAIN_MENU_GI_H</a>&#160;&#160;&#160;&quot;../graphics/mainMenuGI.hh&quot;</td></tr>
-<tr class="separator:a54db6aa6138ff05d5b17c8d8a2858736"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fc3f8aed49321017c7dab63d8873028"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="headersLocation_8hh.html#a2fc3f8aed49321017c7dab63d8873028">USR_INTERFACE_H</a>&#160;&#160;&#160;&quot;../graphics/usrInterface.hh&quot;</td></tr>
-<tr class="separator:a2fc3f8aed49321017c7dab63d8873028"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb39c0c02ba14dc45d287a2f14cb08ee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="headersLocation_8hh.html#abb39c0c02ba14dc45d287a2f14cb08ee">APP_STATES_H</a>&#160;&#160;&#160;&quot;../app/appStates.hh&quot;</td></tr>
 <tr class="separator:abb39c0c02ba14dc45d287a2f14cb08ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2c73546c7f558454e2ea39d7aadfab6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="headersLocation_8hh.html#ab2c73546c7f558454e2ea39d7aadfab6">MAIN_EVENTS_H</a>&#160;&#160;&#160;&quot;../events/mainMenuEventTreatment.hh&quot;</td></tr>
 <tr class="separator:ab2c73546c7f558454e2ea39d7aadfab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4aa45b981dc13a70e7b97eb8033d0941"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="headersLocation_8hh.html#a4aa45b981dc13a70e7b97eb8033d0941">PLAY_EVENTS_H</a>&#160;&#160;&#160;&quot;../events/playEventTreatment.hh&quot;</td></tr>
 <tr class="separator:a4aa45b981dc13a70e7b97eb8033d0941"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd02dad027002b623ad701b9e9637266"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="headersLocation_8hh.html#abd02dad027002b623ad701b9e9637266">EVENTS_H</a>&#160;&#160;&#160;&quot;../events/eventTreatment.hh&quot;</td></tr>
+<tr class="separator:abd02dad027002b623ad701b9e9637266"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa185a5a5984e82272dc4d3be90598d86"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="headersLocation_8hh.html#aa185a5a5984e82272dc4d3be90598d86">ACTIONS_H</a>&#160;&#160;&#160;&quot;../events/actions.hh&quot;</td></tr>
+<tr class="separator:aa185a5a5984e82272dc4d3be90598d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e5eaf2c5e01e2a059d21c0c4c0719f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="headersLocation_8hh.html#a9e5eaf2c5e01e2a059d21c0c4c0719f2">LOCALIZATION_H</a>&#160;&#160;&#160;&quot;../graphics/localization.hh&quot;</td></tr>
 <tr class="separator:a9e5eaf2c5e01e2a059d21c0c4c0719f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fc3f8aed49321017c7dab63d8873028"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="headersLocation_8hh.html#a2fc3f8aed49321017c7dab63d8873028">USR_INTERFACE_H</a>&#160;&#160;&#160;&quot;../graphics/usrInterface.hh&quot;</td></tr>
+<tr class="separator:a2fc3f8aed49321017c7dab63d8873028"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54db6aa6138ff05d5b17c8d8a2858736"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="headersLocation_8hh.html#a54db6aa6138ff05d5b17c8d8a2858736">MAIN_MENU_GI_H</a>&#160;&#160;&#160;&quot;../graphics/mainMenuGI.hh&quot;</td></tr>
+<tr class="separator:a54db6aa6138ff05d5b17c8d8a2858736"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9efa3539b6732e21d39d9c07fcc3943d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="headersLocation_8hh.html#a9efa3539b6732e21d39d9c07fcc3943d">GAME_GI_H</a>&#160;&#160;&#160;&quot;../graphics/gameGI.hh&quot;</td></tr>
+<tr class="separator:a9efa3539b6732e21d39d9c07fcc3943d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9efa3539b6732e21d39d9c07fcc3943d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="headersLocation_8hh.html#a9efa3539b6732e21d39d9c07fcc3943d">GAME_GI_H</a>&#160;&#160;&#160;&quot;../graphics/gameGI.hh&quot;</td></tr>
 <tr class="separator:a9efa3539b6732e21d39d9c07fcc3943d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a16cd128e3ae5c834efe81140b1eddc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="headersLocation_8hh.html#a1a16cd128e3ae5c834efe81140b1eddc">BOARD_GI_H</a>&#160;&#160;&#160;&quot;../graphics/boardGI.hh&quot;</td></tr>
 <tr class="separator:a1a16cd128e3ae5c834efe81140b1eddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18aefc70c8ae645b25cf16912e3199d6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="headersLocation_8hh.html#a18aefc70c8ae645b25cf16912e3199d6">MAP_GI_H</a>&#160;&#160;&#160;&quot;../graphics/mapGI.hh&quot;</td></tr>
+<tr class="separator:a18aefc70c8ae645b25cf16912e3199d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57ea2f3b1bafe4de806492ca9ce85116"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="headersLocation_8hh.html#a57ea2f3b1bafe4de806492ca9ce85116">GAME_H</a>&#160;&#160;&#160;&quot;../gameLogic/game.hh&quot;</td></tr>
 <tr class="separator:a57ea2f3b1bafe4de806492ca9ce85116"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05b932fd476028abfcdc0ca8efa7b087"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="headersLocation_8hh.html#a05b932fd476028abfcdc0ca8efa7b087">UNIT_H</a>&#160;&#160;&#160;&quot;../gameLogic/unit.hh&quot;</td></tr>
 <tr class="separator:a05b932fd476028abfcdc0ca8efa7b087"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Documentation des macros</h2>
+<a id="aa185a5a5984e82272dc4d3be90598d86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa185a5a5984e82272dc4d3be90598d86">&#9670;&nbsp;</a></span>ACTIONS_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ACTIONS_H&#160;&#160;&#160;&quot;../events/actions.hh&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="abb39c0c02ba14dc45d287a2f14cb08ee"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abb39c0c02ba14dc45d287a2f14cb08ee">&#9670;&nbsp;</a></span>APP_STATES_H</h2>
 
@@ -185,6 +214,20 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="abd02dad027002b623ad701b9e9637266"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd02dad027002b623ad701b9e9637266">&#9670;&nbsp;</a></span>EVENTS_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EVENTS_H&#160;&#160;&#160;&quot;../events/eventTreatment.hh&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a36c3fec3e9086ef0cf1d639423032f68"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a36c3fec3e9086ef0cf1d639423032f68">&#9670;&nbsp;</a></span>FONTS_DIR</h2>
 
@@ -192,7 +235,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define FONTS_DIR&#160;&#160;&#160;&quot;../ressources/fonts/&quot;</td>
+          <td class="memname">#define FONTS_DIR&#160;&#160;&#160;&quot;ressources/fonts/&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -200,7 +243,21 @@ Macros</h2></td></tr>
 </div>
 </div>
 <a id="a9efa3539b6732e21d39d9c07fcc3943d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9efa3539b6732e21d39d9c07fcc3943d">&#9670;&nbsp;</a></span>GAME_GI_H</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9efa3539b6732e21d39d9c07fcc3943d">&#9670;&nbsp;</a></span>GAME_GI_H <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GAME_GI_H&#160;&#160;&#160;&quot;../graphics/gameGI.hh&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9efa3539b6732e21d39d9c07fcc3943d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9efa3539b6732e21d39d9c07fcc3943d">&#9670;&nbsp;</a></span>GAME_GI_H <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -234,7 +291,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define IMGS_DIR&#160;&#160;&#160;&quot;../ressources/imgs/&quot;</td>
+          <td class="memname">#define IMGS_DIR&#160;&#160;&#160;&quot;ressources/imgs/&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -277,6 +334,20 @@ Macros</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define MAIN_MENU_GI_H&#160;&#160;&#160;&quot;../graphics/mainMenuGI.hh&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a18aefc70c8ae645b25cf16912e3199d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18aefc70c8ae645b25cf16912e3199d6">&#9670;&nbsp;</a></span>MAP_GI_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAP_GI_H&#160;&#160;&#160;&quot;../graphics/mapGI.hh&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -1,7 +1,7 @@
 <map id="src/graphics/boardGI.hh" name="src/graphics/boardGI.hh">
 <area shape="rect" id="node1" title="the board graphic implementation, containing a map and units" alt="" coords="111,5,272,32"/>
 <area shape="rect" id="node2" href="$mapGI_8hh.html" title="The graphic implementation of a map." alt="" coords="309,80,388,107"/>
-<area shape="rect" id="node12" href="$SpriteGI_8hh.html" title="The graphic implementation of a button with an embedded sprite." alt="" coords="5,244,129,271"/>
+<area shape="rect" id="node12" href="$spriteButtonGI_8hh.html" title="The graphic implementation of a button with an embedded sprite." alt="" coords="5,244,129,271"/>
 <area shape="rect" id="node3" href="$tile_8hh.html" title="The file containing the tile class for graphic representation." alt="" coords="271,155,426,196"/>
 <area shape="rect" id="node8" title=" " alt="" coords="497,319,569,345"/>
 <area shape="rect" id="node10" title=" " alt="" coords="504,162,561,189"/>

@@ -74,7 +74,7 @@ void TileGI::getInsideTile(int squareSize, int outlineSize) {
                    northPosition.second + squareSize / 2);
 }
 
-/*! \fn TileGI::TileGI(std::shared_ptr<Tile>,&std::pair<int, int> northPosition,  int squareSize, int outlineSize, int rtCode)
+/*! \fn TileGI::TileGI(std::shared_ptr<Tile>,std::pair<int, int> northPosition,  int squareSize, int outlineSize, int rtCode)
  *  \brief Creates a tile Graphics from a tile, a position and tile parameters
  *  \param tile tile that is displayed
  *  \param northPosition the position of the tile upper corner

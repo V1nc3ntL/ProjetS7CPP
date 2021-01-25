@@ -64,7 +64,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Fonctions membres publiques</a> &#124;
-<a href="#pri-methods">Fonctions membres privées</a> &#124;
 <a href="#pri-attribs">Attributs privés</a> &#124;
 <a href="classMapGI-members.html">Liste de tous les membres</a>  </div>
   <div class="headertitle">
@@ -78,7 +77,7 @@ Graphe d'héritage de MapGI:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMapGI__inherit__graph.png" border="0" usemap="#aMapGI_inherit__map" alt="Inheritance graph"/></div>
 <map name="MapGI_inherit__map" id="MapGI_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,131,151,413"/>
+<area shape="rect" title=" " alt="" coords="5,131,151,428"/>
 <area shape="rect" title=" " alt="" coords="40,5,116,83"/>
 </map>
 </div>
@@ -87,7 +86,7 @@ Graphe de collaboration de MapGI:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMapGI__coll__graph.png" border="0" usemap="#aMapGI_coll__map" alt="Collaboration graph"/></div>
 <map name="MapGI_coll__map" id="MapGI_coll__map">
-<area shape="rect" title=" " alt="" coords="5,131,151,413"/>
+<area shape="rect" title=" " alt="" coords="5,131,151,428"/>
 <area shape="rect" title=" " alt="" coords="40,5,116,83"/>
 </map>
 </div>
@@ -111,12 +110,10 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="separator:a2107ca49ad2bedddb101d11c0dc0fd34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0060df309ed53e97cced8b69a5397583"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMapGI.html#a0060df309ed53e97cced8b69a5397583">draw</a> (sf::RenderTarget &amp;target, sf::RenderStates states) const</td></tr>
 <tr class="separator:a0060df309ed53e97cced8b69a5397583"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42e6c514e9147bfbdbe5a80a00315c79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMapGI.html#a42e6c514e9147bfbdbe5a80a00315c79">resize</a> (int windowWidth, int windowHeight)</td></tr>
-<tr class="memdesc:a42e6c514e9147bfbdbe5a80a00315c79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update an already created graphic implementation.  <a href="classMapGI.html#a42e6c514e9147bfbdbe5a80a00315c79">Plus de détails...</a><br /></td></tr>
-<tr class="separator:a42e6c514e9147bfbdbe5a80a00315c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Fonctions membres privées</h2></td></tr>
+<tr class="memitem:a7d7ed536027477f77426724131cab9ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTileGI.html">TileGI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMapGI.html#a7d7ed536027477f77426724131cab9ad">getTileAt</a> (std::pair&lt; int, int &gt; pos)</td></tr>
+<tr class="separator:a7d7ed536027477f77426724131cab9ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4151992c9626e62aa71dc51a6cf904e1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classTileGI.html">TileGI</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMapGI.html#a4151992c9626e62aa71dc51a6cf904e1">getTiles</a> () const</td></tr>
+<tr class="separator:a4151992c9626e62aa71dc51a6cf904e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81923507fdb7356802ecd44bd1e0ea7f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMapGI.html#a81923507fdb7356802ecd44bd1e0ea7f">getSquareSize</a> () const</td></tr>
 <tr class="separator:a81923507fdb7356802ecd44bd1e0ea7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -272,7 +269,7 @@ Attributs privés</h2></td></tr>
 <p>Creates the sub-graphic implementation.</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">std::pair&lt;int,int&gt;&amp;</td><td>a reference to a pair of int representing the north corner of the map to be created</td></tr>
+    <tr><td class="paramname">std::pair&lt;int,int&gt;&amp;</td><td>a reference to a pair of int representing the north corner of the map to be created </td></tr>
     <tr><td class="paramname">std::vector&lt;std::shared_ptr&lt;Tile&gt;&gt;::iterator</td><td>an iterator initialized on the first tile</td></tr>
     <tr><td class="paramname">northPosition</td><td>the northern corner position of the map </td></tr>
     <tr><td class="paramname">it</td><td>an iterator on a vector of shared pointer to the game Logic tile </td></tr>
@@ -350,9 +347,6 @@ Attributs privés</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int MapGI::getSquareSize </td>
@@ -361,49 +355,50 @@ Attributs privés</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a42e6c514e9147bfbdbe5a80a00315c79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42e6c514e9147bfbdbe5a80a00315c79">&#9670;&nbsp;</a></span>resize()</h2>
+<a id="a7d7ed536027477f77426724131cab9ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d7ed536027477f77426724131cab9ad">&#9670;&nbsp;</a></span>getTileAt()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void MapGI::resize </td>
+          <td class="memname"><a class="el" href="classTileGI.html">TileGI</a> MapGI::getTileAt </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>windowWidth</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">std::pair&lt; int, int &gt;&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>windowHeight</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Update an already created graphic implementation. </p>
-<dl class="params"><dt>Paramètres</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">windowWidth</td><td>the window width </td></tr>
-    <tr><td class="paramname">windowHeight</td><td>the window height </td></tr>
-  </table>
-  </dd>
-</dl>
+</div>
+</div>
+<a id="a4151992c9626e62aa71dc51a6cf904e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4151992c9626e62aa71dc51a6cf904e1">&#9670;&nbsp;</a></span>getTiles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classTileGI.html">TileGI</a>&gt; MapGI::getTiles </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

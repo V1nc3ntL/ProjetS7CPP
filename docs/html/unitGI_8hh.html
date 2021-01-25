@@ -68,6 +68,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">Référence du fichier unitGI.hh</div>  </div>
@@ -76,13 +77,28 @@ $(function() {
 
 <p>A graphical interface to dysplay units.  
 <a href="#details">Plus de détails...</a></p>
-<div class="textblock"><div class="dynheader">
+<div class="textblock"><code>#include &lt;string&gt;</code><br />
+<code>#include &quot;<a class="el" href="headersLocation_8hh_source.html">../app/headersLocation.hh</a>&quot;</code><br />
+<code>#include &lt;SFML/Graphics.hpp&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de unitGI.hh:</div>
+<div class="dyncontent">
+<div class="center"><img src="unitGI_8hh__incl.png" border="0" usemap="#asrc_2graphics_2unitGI_8hh" alt=""/></div>
+<map name="src_2graphics_2unitGI_8hh" id="src_2graphics_2unitGI_8hh">
+<area shape="rect" title="A graphical interface to dysplay units." alt="" coords="96,5,247,32"/>
+<area shape="rect" title=" " alt="" coords="5,80,60,107"/>
+<area shape="rect" href="headersLocation_8hh.html" title=" " alt="" coords="85,80,258,107"/>
+<area shape="rect" title=" " alt="" coords="282,80,421,107"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
 Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier :</div>
 <div class="dyncontent">
 <div class="center"><img src="unitGI_8hh__dep__incl.png" border="0" usemap="#asrc_2graphics_2unitGI_8hhdep" alt=""/></div>
-<map name="src_2graphics_2unitGI_8hhdep" id="src_2graphics_2unitGI_8hhdep">
-<area shape="rect" title="A graphical interface to dysplay units." alt="" coords="11,5,161,32"/>
+<map name="src_2graphics_2unitGI_8hhdep" id="asrc_2graphics_2unitGI_8hhdep">
+<area shape="rect" title="A graphical interface to dysplay units." alt="" coords="100,5,251,32"/>
 <area shape="rect" href="gameGI_8hh.html" title="A game graphical interface, dysplaying units,map, and an overlay for the current case." alt="" coords="5,80,167,107"/>
+<area shape="rect" href="unitGI_8cc.html" title="A graphical interface to dysplay units." alt="" coords="191,80,341,107"/>
 </map>
 </div>
 </div>
@@ -93,19 +109,41 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUnitGI.html">UnitGI</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a17c15275f79f24be0615d26a2c1eea55"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unitGI_8hh.html#a17c15275f79f24be0615d26a2c1eea55">N_UNIT_TEXTURE</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a17c15275f79f24be0615d26a2c1eea55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a3af605c9a86be159602f1af1445384d9"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unitGI_8hh.html#a3af605c9a86be159602f1af1445384d9">spriteTab</a> [1]</td></tr>
-<tr class="separator:a3af605c9a86be159602f1af1445384d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83696a6e8b41742938dd1fe0dd71edeb"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unitGI_8hh.html#a83696a6e8b41742938dd1fe0dd71edeb">spriteTab</a> [<a class="el" href="unitGI_8hh.html#a17c15275f79f24be0615d26a2c1eea55">N_UNIT_TEXTURE</a>]</td></tr>
+<tr class="separator:a83696a6e8b41742938dd1fe0dd71edeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad07480efc8ff5dc3dc243e5e2a789c5b"><td class="memItemLeft" align="right" valign="top">static sf::Texture&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unitGI_8hh.html#ad07480efc8ff5dc3dc243e5e2a789c5b">unitTexture</a> [<a class="el" href="unitGI_8hh.html#a17c15275f79f24be0615d26a2c1eea55">N_UNIT_TEXTURE</a>]</td></tr>
+<tr class="separator:ad07480efc8ff5dc3dc243e5e2a789c5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
 <div class="textblock"><p>A graphical interface to dysplay units. </p>
 <dl class="section author"><dt>Auteur</dt><dd>Vincent Lefebvre </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>21/01/25 </dd></dl>
-</div><h2 class="groupheader">Documentation des variables</h2>
-<a id="a3af605c9a86be159602f1af1445384d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3af605c9a86be159602f1af1445384d9">&#9670;&nbsp;</a></span>spriteTab</h2>
+</div><h2 class="groupheader">Documentation des macros</h2>
+<a id="a17c15275f79f24be0615d26a2c1eea55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17c15275f79f24be0615d26a2c1eea55">&#9670;&nbsp;</a></span>N_UNIT_TEXTURE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define N_UNIT_TEXTURE&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des variables</h2>
+<a id="a83696a6e8b41742938dd1fe0dd71edeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83696a6e8b41742938dd1fe0dd71edeb">&#9670;&nbsp;</a></span>spriteTab</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -114,7 +152,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string spriteTab[1]</td>
+          <td class="memname">std::string spriteTab[<a class="el" href="unitGI_8hh.html#a17c15275f79f24be0615d26a2c1eea55">N_UNIT_TEXTURE</a>]</td>
         </tr>
       </table>
   </td>
@@ -124,9 +162,32 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Valeur initiale :</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    <span class="stringliteral">&quot;badRobot1.jpg&quot;</span></div>
+<div class="line">    <span class="stringliteral">&quot;badRobot1.png&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;badRobot2.png&quot;</span></div>
 <div class="line">}</div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="ad07480efc8ff5dc3dc243e5e2a789c5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad07480efc8ff5dc3dc243e5e2a789c5b">&#9670;&nbsp;</a></span>unitTexture</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Texture unitTexture[<a class="el" href="unitGI_8hh.html#a17c15275f79f24be0615d26a2c1eea55">N_UNIT_TEXTURE</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 </div>
 </div>
 </div><!-- contents -->

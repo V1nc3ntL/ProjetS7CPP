@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet C++ S7 : EL-KHARROUBI LEFEBVRE:  Fichier source de src/app/application.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet C++ S7 : EL-KHARROUBI LEFEBVRE
+   </div>
+   <div id="projectbrief">Le projet S7 de C++ pour EISE4, réalisé par Karim El-KHARROUBI et Vincent LEFEBVRE</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_5194e5fea318fda12687127c23f8aba1.html">app</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">application.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="application_8hh.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef __APPLICATION_HH__</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define __APPLICATION_HH__</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="headersLocation_8hh.html">headersLocation.hh</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;SFML/Graphics.hpp&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include GAME_H</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include USR_INTERFACE_H</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include APP_STATES_H</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include ACTIONS_H</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classApplication.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="classApplication.html">Application</a> {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="classApplication.html#a14e4d3136f27da339ef9eda14ea83102">Application</a>(sf::RenderWindow &amp; <a class="code" href="classApplication.html#a43a1467aeb666137469284b95c522c7f">window</a> );</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classApplication.html#a68965449404743bf1add056784d6cf81">run</a>() ;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classApplication.html#a28c086f3287e878209be91f51026c1a7">treatKeyPressed</a>(sf::Event &amp; event);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classApplication.html#a43a1467aeb666137469284b95c522c7f">   26</a></span>&#160;        sf::RenderWindow&amp; <a class="code" href="classApplication.html#a43a1467aeb666137469284b95c522c7f">window</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classApplication.html#a08be8c0135cff43683f6a5cdb97ea49a">   28</a></span>&#160;        std::unique_ptr&lt;usrInterface&gt; <a class="code" href="classApplication.html#a08be8c0135cff43683f6a5cdb97ea49a">currentUI</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                    <span class="comment">// An int to store the return code of a clickable object</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classApplication.html#a3dc9ba61282e30070783de4a76419f63">   31</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classApplication.html#a3dc9ba61282e30070783de4a76419f63">rtCode</a> = <a class="code" href="namespaceactions.html#a93f38c8989a6f117eda562701097936d">actions::NOTHING</a>,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="comment">// An int to know in which state the application currently is</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classApplication.html#ad40f40fbbf1db6c0fb6ea3a67df34530">   33</a></span>&#160;        <a class="code" href="classApplication.html#ad40f40fbbf1db6c0fb6ea3a67df34530">currentState</a> = <a class="code" href="appStates_8hh.html#a37a232d272fbb25855dc8e6fbaa23e91">MAIN_MENU</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classApplication.html#a36fe57d970a5fda9335fca1eb82dd6e0">   35</a></span>&#160;        std::unique_ptr&lt;Game&gt; <a class="code" href="classApplication.html#a36fe57d970a5fda9335fca1eb82dd6e0">curGame</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classApplication.html#a5f9368077b88940fa4bb01cc0f38f734">   36</a></span>&#160;        std::shared_ptr&lt;Clickable&gt; <a class="code" href="classApplication.html#a5f9368077b88940fa4bb01cc0f38f734">clicked</a> ;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="anamespaceactions_html_a93f38c8989a6f117eda562701097936d"><div class="ttname"><a href="namespaceactions.html#a93f38c8989a6f117eda562701097936d">actions::NOTHING</a></div><div class="ttdeci">static constexpr int NOTHING</div><div class="ttdef"><b>Definition:</b> actions.hh:12</div></div>
+<div class="ttc" id="aclassApplication_html_a43a1467aeb666137469284b95c522c7f"><div class="ttname"><a href="classApplication.html#a43a1467aeb666137469284b95c522c7f">Application::window</a></div><div class="ttdeci">sf::RenderWindow &amp; window</div><div class="ttdef"><b>Definition:</b> application.hh:26</div></div>
+<div class="ttc" id="aclassApplication_html"><div class="ttname"><a href="classApplication.html">Application</a></div><div class="ttdef"><b>Definition:</b> application.hh:20</div></div>
+<div class="ttc" id="aappStates_8hh_html_a37a232d272fbb25855dc8e6fbaa23e91"><div class="ttname"><a href="appStates_8hh.html#a37a232d272fbb25855dc8e6fbaa23e91">MAIN_MENU</a></div><div class="ttdeci">constexpr int MAIN_MENU</div><div class="ttdef"><b>Definition:</b> appStates.hh:3</div></div>
+<div class="ttc" id="aclassApplication_html_ad40f40fbbf1db6c0fb6ea3a67df34530"><div class="ttname"><a href="classApplication.html#ad40f40fbbf1db6c0fb6ea3a67df34530">Application::currentState</a></div><div class="ttdeci">int currentState</div><div class="ttdef"><b>Definition:</b> application.hh:33</div></div>
+<div class="ttc" id="aheadersLocation_8hh_html"><div class="ttname"><a href="headersLocation_8hh.html">headersLocation.hh</a></div></div>
+<div class="ttc" id="aclassApplication_html_a5f9368077b88940fa4bb01cc0f38f734"><div class="ttname"><a href="classApplication.html#a5f9368077b88940fa4bb01cc0f38f734">Application::clicked</a></div><div class="ttdeci">std::shared_ptr&lt; Clickable &gt; clicked</div><div class="ttdef"><b>Definition:</b> application.hh:36</div></div>
+<div class="ttc" id="aclassApplication_html_a08be8c0135cff43683f6a5cdb97ea49a"><div class="ttname"><a href="classApplication.html#a08be8c0135cff43683f6a5cdb97ea49a">Application::currentUI</a></div><div class="ttdeci">std::unique_ptr&lt; usrInterface &gt; currentUI</div><div class="ttdef"><b>Definition:</b> application.hh:28</div></div>
+<div class="ttc" id="aclassApplication_html_a14e4d3136f27da339ef9eda14ea83102"><div class="ttname"><a href="classApplication.html#a14e4d3136f27da339ef9eda14ea83102">Application::Application</a></div><div class="ttdeci">Application(sf::RenderWindow &amp;window)</div><div class="ttdef"><b>Definition:</b> application.cc:8</div></div>
+<div class="ttc" id="aclassApplication_html_a36fe57d970a5fda9335fca1eb82dd6e0"><div class="ttname"><a href="classApplication.html#a36fe57d970a5fda9335fca1eb82dd6e0">Application::curGame</a></div><div class="ttdeci">std::unique_ptr&lt; Game &gt; curGame</div><div class="ttdef"><b>Definition:</b> application.hh:35</div></div>
+<div class="ttc" id="aclassApplication_html_a28c086f3287e878209be91f51026c1a7"><div class="ttname"><a href="classApplication.html#a28c086f3287e878209be91f51026c1a7">Application::treatKeyPressed</a></div><div class="ttdeci">void treatKeyPressed(sf::Event &amp;event)</div><div class="ttdef"><b>Definition:</b> application.cc:40</div></div>
+<div class="ttc" id="aclassApplication_html_a68965449404743bf1add056784d6cf81"><div class="ttname"><a href="classApplication.html#a68965449404743bf1add056784d6cf81">Application::run</a></div><div class="ttdeci">void run()</div><div class="ttdef"><b>Definition:</b> application.cc:49</div></div>
+<div class="ttc" id="aclassApplication_html_a3dc9ba61282e30070783de4a76419f63"><div class="ttname"><a href="classApplication.html#a3dc9ba61282e30070783de4a76419f63">Application::rtCode</a></div><div class="ttdeci">int rtCode</div><div class="ttdef"><b>Definition:</b> application.hh:31</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

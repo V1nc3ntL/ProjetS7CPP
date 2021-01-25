@@ -1,0 +1,201 @@
+\hypertarget{classIAHeros}{}\doxysection{Référence de la classe I\+A\+Heros}
+\label{classIAHeros}\index{IAHeros@{IAHeros}}
+
+
+{\ttfamily \#include $<$I\+A\+Heros.\+h$>$}
+
+
+
+Graphe d\textquotesingle{}héritage de I\+A\+Heros\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classIAHeros__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de I\+A\+Heros\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classIAHeros__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIAHeros_a1e31b75b6056ed2fed5423707e9cd5bb}{I\+A\+Heros}} ()
+\item 
+virtual \mbox{\hyperlink{classIAHeros_a547d17029383594047a499ce8a5903ce}{$\sim$\+I\+A\+Heros}} ()
+\item 
+\mbox{\hyperlink{classUnit}{Unit}} $\ast$ \mbox{\hyperlink{classUnit_ab6b22ed6ce31db0c3c3ff3a9ccc92b56}{operator-\/}} (const int \&b)
+\item 
+void \mbox{\hyperlink{classUnit_a0b79dc3c020e63b2c1f2fff9096e9aaf}{update\+Movements}} ()
+\item 
+std\+::pair$<$ int, int $>$ \mbox{\hyperlink{classUnit_a2602d459455da39b0093cdc935856167}{get\+Pos}} () const
+\item 
+int \mbox{\hyperlink{classUnit_aa4e092bb450797cfd655a582bb6360ab}{get\+Type}} () const
+\item 
+std\+::string \mbox{\hyperlink{classUnit_a5253022c14d2f855563198b9a0de54d5}{to\+String}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classHeros_a5e5f08f1c8bfadb0211d6ab13bf183fe}{set\+Attaque\+Speciale}} (int value)
+\item 
+int \mbox{\hyperlink{classHeros_a1befe017506f458b65b627bc168d58c0}{get\+Attaque\+Speciale}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classHeros_a30a954b6550b4523c93b19cfdfc3921b}{attaque\+Speciale}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classHeros_ad4acee9a53e3c0d3d29e07e3fd3178f1}{init\+Attributes}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classUnit_a0d73ae7f79e48da36aaa54ad5f016e71}{max\+HP}}
+\item 
+int \mbox{\hyperlink{classUnit_a45741ad1efff07340150700d9a624678}{hP}}
+\item 
+int \mbox{\hyperlink{classUnit_a45243122ae655f50179f96bc831bfb1d}{type}}
+\item 
+std\+::string \mbox{\hyperlink{classUnit_a03a2344fa6977a2ce44b320e44bc9caa}{name}}
+\item 
+std\+::pair$<$ int, int $>$ \mbox{\hyperlink{classUnit_a5e0d570e8b06f33f873df82ede77bd73}{pos}}
+\item 
+std\+::pair$<$ int, int $>$ \mbox{\hyperlink{classUnit_a7adbe5ed84d5c087edd56bcce2033a89}{next\+Pos}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+class \mbox{\hyperlink{classIAHeros}{I\+A\+Heros}} 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classIAHeros_a1e31b75b6056ed2fed5423707e9cd5bb}\label{classIAHeros_a1e31b75b6056ed2fed5423707e9cd5bb}} 
+\index{IAHeros@{IAHeros}!IAHeros@{IAHeros}}
+\index{IAHeros@{IAHeros}!IAHeros@{IAHeros}}
+\doxysubsubsection{\texorpdfstring{IAHeros()}{IAHeros()}}
+{\footnotesize\ttfamily I\+A\+Heros\+::\+I\+A\+Heros (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Empty Constructor \mbox{\Hypertarget{classIAHeros_a547d17029383594047a499ce8a5903ce}\label{classIAHeros_a547d17029383594047a499ce8a5903ce}} 
+\index{IAHeros@{IAHeros}!````~IAHeros@{$\sim$IAHeros}}
+\index{````~IAHeros@{$\sim$IAHeros}!IAHeros@{IAHeros}}
+\doxysubsubsection{\texorpdfstring{$\sim$IAHeros()}{~IAHeros()}}
+{\footnotesize\ttfamily I\+A\+Heros\+::$\sim$\+I\+A\+Heros (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Empty Destructor 
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classHeros_a1befe017506f458b65b627bc168d58c0}\label{classHeros_a1befe017506f458b65b627bc168d58c0}} 
+\index{IAHeros@{IAHeros}!getAttaqueSpeciale@{getAttaqueSpeciale}}
+\index{getAttaqueSpeciale@{getAttaqueSpeciale}!IAHeros@{IAHeros}}
+\doxysubsubsection{\texorpdfstring{getAttaqueSpeciale()}{getAttaqueSpeciale()}}
+{\footnotesize\ttfamily int Heros\+::get\+Attaque\+Speciale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+Get the value of attaque\+Speciale Attaque sp{\ucr}ciale de l\textquotesingle{}h{\ucr}ros. \begin{DoxyReturn}{Renvoie}
+the value of attaque\+Speciale 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUnit_a2602d459455da39b0093cdc935856167}\label{classUnit_a2602d459455da39b0093cdc935856167}} 
+\index{IAHeros@{IAHeros}!getPos@{getPos}}
+\index{getPos@{getPos}!IAHeros@{IAHeros}}
+\doxysubsubsection{\texorpdfstring{getPos()}{getPos()}}
+{\footnotesize\ttfamily std\+::pair$<$int,int$>$ Unit\+::get\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classUnit_aa4e092bb450797cfd655a582bb6360ab}\label{classUnit_aa4e092bb450797cfd655a582bb6360ab}} 
+\index{IAHeros@{IAHeros}!getType@{getType}}
+\index{getType@{getType}!IAHeros@{IAHeros}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily int Unit\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classHeros_ad4acee9a53e3c0d3d29e07e3fd3178f1}\label{classHeros_ad4acee9a53e3c0d3d29e07e3fd3178f1}} 
+\index{IAHeros@{IAHeros}!initAttributes@{initAttributes}}
+\index{initAttributes@{initAttributes}!IAHeros@{IAHeros}}
+\doxysubsubsection{\texorpdfstring{initAttributes()}{initAttributes()}}
+{\footnotesize\ttfamily void Heros\+::init\+Attributes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classUnit_ab6b22ed6ce31db0c3c3ff3a9ccc92b56}\label{classUnit_ab6b22ed6ce31db0c3c3ff3a9ccc92b56}} 
+\index{IAHeros@{IAHeros}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!IAHeros@{IAHeros}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUnit}{Unit}}$\ast$ Unit\+::operator-\/ (\begin{DoxyParamCaption}\item[{const int \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classHeros_a5e5f08f1c8bfadb0211d6ab13bf183fe}\label{classHeros_a5e5f08f1c8bfadb0211d6ab13bf183fe}} 
+\index{IAHeros@{IAHeros}!setAttaqueSpeciale@{setAttaqueSpeciale}}
+\index{setAttaqueSpeciale@{setAttaqueSpeciale}!IAHeros@{IAHeros}}
+\doxysubsubsection{\texorpdfstring{setAttaqueSpeciale()}{setAttaqueSpeciale()}}
+{\footnotesize\ttfamily void Heros\+::set\+Attaque\+Speciale (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+Set the value of attaque\+Speciale Attaque sp{\ucr}ciale de l\textquotesingle{}h{\ucr}ros. 
+\begin{DoxyParams}{Paramètres}
+{\em value} & the new value of attaque\+Speciale \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classUnit_a5253022c14d2f855563198b9a0de54d5}\label{classUnit_a5253022c14d2f855563198b9a0de54d5}} 
+\index{IAHeros@{IAHeros}!toString@{toString}}
+\index{toString@{toString}!IAHeros@{IAHeros}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily std\+::string Unit\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classUnit_a0b79dc3c020e63b2c1f2fff9096e9aaf}\label{classUnit_a0b79dc3c020e63b2c1f2fff9096e9aaf}} 
+\index{IAHeros@{IAHeros}!updateMovements@{updateMovements}}
+\index{updateMovements@{updateMovements}!IAHeros@{IAHeros}}
+\doxysubsubsection{\texorpdfstring{updateMovements()}{updateMovements()}}
+{\footnotesize\ttfamily void Unit\+::update\+Movements (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{classHeros_a30a954b6550b4523c93b19cfdfc3921b}\label{classHeros_a30a954b6550b4523c93b19cfdfc3921b}} 
+\index{IAHeros@{IAHeros}!attaqueSpeciale@{attaqueSpeciale}}
+\index{attaqueSpeciale@{attaqueSpeciale}!IAHeros@{IAHeros}}
+\doxysubsubsection{\texorpdfstring{attaqueSpeciale}{attaqueSpeciale}}
+{\footnotesize\ttfamily int Heros\+::attaque\+Speciale\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classUnit_a45741ad1efff07340150700d9a624678}\label{classUnit_a45741ad1efff07340150700d9a624678}} 
+\index{IAHeros@{IAHeros}!hP@{hP}}
+\index{hP@{hP}!IAHeros@{IAHeros}}
+\doxysubsubsection{\texorpdfstring{hP}{hP}}
+{\footnotesize\ttfamily int Unit\+::hP\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classUnit_a0d73ae7f79e48da36aaa54ad5f016e71}\label{classUnit_a0d73ae7f79e48da36aaa54ad5f016e71}} 
+\index{IAHeros@{IAHeros}!maxHP@{maxHP}}
+\index{maxHP@{maxHP}!IAHeros@{IAHeros}}
+\doxysubsubsection{\texorpdfstring{maxHP}{maxHP}}
+{\footnotesize\ttfamily int Unit\+::max\+HP\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classUnit_a03a2344fa6977a2ce44b320e44bc9caa}\label{classUnit_a03a2344fa6977a2ce44b320e44bc9caa}} 
+\index{IAHeros@{IAHeros}!name@{name}}
+\index{name@{name}!IAHeros@{IAHeros}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string Unit\+::name\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classUnit_a7adbe5ed84d5c087edd56bcce2033a89}\label{classUnit_a7adbe5ed84d5c087edd56bcce2033a89}} 
+\index{IAHeros@{IAHeros}!nextPos@{nextPos}}
+\index{nextPos@{nextPos}!IAHeros@{IAHeros}}
+\doxysubsubsection{\texorpdfstring{nextPos}{nextPos}}
+{\footnotesize\ttfamily std\+::pair$<$int,int$>$ Unit\+::next\+Pos\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classUnit_a5e0d570e8b06f33f873df82ede77bd73}\label{classUnit_a5e0d570e8b06f33f873df82ede77bd73}} 
+\index{IAHeros@{IAHeros}!pos@{pos}}
+\index{pos@{pos}!IAHeros@{IAHeros}}
+\doxysubsubsection{\texorpdfstring{pos}{pos}}
+{\footnotesize\ttfamily std\+::pair$<$int,int$>$ Unit\+::pos\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classUnit_a45243122ae655f50179f96bc831bfb1d}\label{classUnit_a45243122ae655f50179f96bc831bfb1d}} 
+\index{IAHeros@{IAHeros}!type@{type}}
+\index{type@{type}!IAHeros@{IAHeros}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily int Unit\+::type\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+src/game\+Logic/\mbox{\hyperlink{IAHeros_8h}{I\+A\+Heros.\+h}}\item 
+src/game\+Logic/\mbox{\hyperlink{IAHeros_8cpp}{I\+A\+Heros.\+cpp}}\end{DoxyCompactItemize}

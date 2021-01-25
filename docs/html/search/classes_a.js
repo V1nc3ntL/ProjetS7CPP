@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['unit_218',['Unit',['../classUnit.html',1,'']]],
-  ['unitgi_219',['UnitGI',['../classUnitGI.html',1,'']]],
-  ['usrinterface_220',['usrInterface',['../classusrInterface.html',1,'']]]
+  ['radiatingeffect_297',['RadiatingEffect',['../classRadiatingEffect.html',1,'']]],
+  ['robot_298',['Robot',['../classRobot.html',1,'']]]
 ];

@@ -37,10 +37,9 @@ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTileGI}{Tile\+GI}} $>$ \mbox{\hy
 \begin{DoxyCompactList}\small\item\em Retrieve the clicked tile from the map. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classMapGI_a0060df309ed53e97cced8b69a5397583}{draw}} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
 \item 
-void \mbox{\hyperlink{classMapGI_a42e6c514e9147bfbdbe5a80a00315c79}{resize}} (int window\+Width, int window\+Height)
-\begin{DoxyCompactList}\small\item\em Update an already created graphic implementation. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Fonctions membres privées}
-\begin{DoxyCompactItemize}
+\mbox{\hyperlink{classTileGI}{Tile\+GI}} \mbox{\hyperlink{classMapGI_a7d7ed536027477f77426724131cab9ad}{get\+Tile\+At}} (std\+::pair$<$ int, int $>$ pos)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classTileGI}{Tile\+GI}} $>$ \mbox{\hyperlink{classMapGI_a4151992c9626e62aa71dc51a6cf904e1}{get\+Tiles}} () const
 \item 
 int \mbox{\hyperlink{classMapGI_a81923507fdb7356802ecd44bd1e0ea7f}{get\+Square\+Size}} () const
 \end{DoxyCompactItemize}
@@ -128,7 +127,7 @@ Creates the sub-\/graphic implementation.
 
 
 \begin{DoxyParams}{Paramètres}
-{\em std\+::pair$<$int,int$>$\&} & a reference to a pair of int representing the north corner of the map to be created\\
+{\em std\+::pair$<$int,int$>$\&} & a reference to a pair of int representing the north corner of the map to be created \\
 \hline
 {\em std\+::vector$<$std\+::shared\+\_\+ptr$<$\+Tile$>$$>$\+::iterator} & an iterator initialized on the first tile\\
 \hline
@@ -165,25 +164,20 @@ Retrieve the clicked tile from the map.
 \index{MapGI@{MapGI}!getSquareSize@{getSquareSize}}
 \index{getSquareSize@{getSquareSize}!MapGI@{MapGI}}
 \doxysubsubsection{\texorpdfstring{getSquareSize()}{getSquareSize()}}
-{\footnotesize\ttfamily int Map\+G\+I\+::get\+Square\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily int Map\+G\+I\+::get\+Square\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-\mbox{\Hypertarget{classMapGI_a42e6c514e9147bfbdbe5a80a00315c79}\label{classMapGI_a42e6c514e9147bfbdbe5a80a00315c79}} 
-\index{MapGI@{MapGI}!resize@{resize}}
-\index{resize@{resize}!MapGI@{MapGI}}
-\doxysubsubsection{\texorpdfstring{resize()}{resize()}}
-{\footnotesize\ttfamily void Map\+G\+I\+::resize (\begin{DoxyParamCaption}\item[{int}]{window\+Width,  }\item[{int}]{window\+Height }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{classMapGI_a7d7ed536027477f77426724131cab9ad}\label{classMapGI_a7d7ed536027477f77426724131cab9ad}} 
+\index{MapGI@{MapGI}!getTileAt@{getTileAt}}
+\index{getTileAt@{getTileAt}!MapGI@{MapGI}}
+\doxysubsubsection{\texorpdfstring{getTileAt()}{getTileAt()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTileGI}{Tile\+GI}} Map\+G\+I\+::get\+Tile\+At (\begin{DoxyParamCaption}\item[{std\+::pair$<$ int, int $>$}]{pos }\end{DoxyParamCaption})}
 
+\mbox{\Hypertarget{classMapGI_a4151992c9626e62aa71dc51a6cf904e1}\label{classMapGI_a4151992c9626e62aa71dc51a6cf904e1}} 
+\index{MapGI@{MapGI}!getTiles@{getTiles}}
+\index{getTiles@{getTiles}!MapGI@{MapGI}}
+\doxysubsubsection{\texorpdfstring{getTiles()}{getTiles()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classTileGI}{Tile\+GI}}$>$ Map\+G\+I\+::get\+Tiles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-
-Update an already created graphic implementation. 
-
-
-\begin{DoxyParams}{Paramètres}
-{\em window\+Width} & the window width \\
-\hline
-{\em window\+Height} & the window height \\
-\hline
-\end{DoxyParams}
 
 
 \doxysubsection{Documentation des données membres}

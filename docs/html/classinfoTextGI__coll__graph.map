@@ -1,7 +1,7 @@
 <map id="infoTextGI" name="infoTextGI">
-<area shape="rect" id="node1" title=" " alt="" coords="58,652,178,759"/>
+<area shape="rect" id="node1" title=" " alt="" coords="58,667,178,773"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,86,81,163"/>
-<area shape="rect" id="node5" href="$classMapGI.html" title=" " alt="" coords="45,307,191,589"/>
-<area shape="rect" id="node3" href="$classGame.html" title=" " alt="" coords="215,351,320,545"/>
-<area shape="rect" id="node4" href="$classGameMap.html" title=" " alt="" coords="216,5,319,244"/>
+<area shape="rect" id="node5" href="$classMapGI.html" title=" " alt="" coords="45,307,191,604"/>
+<area shape="rect" id="node3" href="$classGame.html" title=" " alt="" coords="215,358,317,553"/>
+<area shape="rect" id="node4" href="$classGameMap.html" title=" " alt="" coords="215,5,317,244"/>
 </map>

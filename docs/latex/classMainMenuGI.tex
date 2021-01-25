@@ -19,7 +19,7 @@ Graphe de collaboration de Main\+Menu\+GI\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=550pt]{classMainMenuGI__coll__graph}
+\includegraphics[width=350pt]{classMainMenuGI__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Fonctions membres publiques}
@@ -29,12 +29,12 @@ Graphe de collaboration de Main\+Menu\+GI\+:\nopagebreak
 \begin{DoxyCompactList}\small\item\em Creates an empty graphic implementation The implementation must be set after construction ! \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classMainMenuGI_a2c3388ad574d460801accec46e58dd13}{$\sim$\+Main\+Menu\+GI}} ()
 \begin{DoxyCompactList}\small\item\em Destroys a main menu graphic implementation. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classMainMenuGI_ad5d7906f6b7b2bc467a4f4dbb1159ab9}{Main\+Menu\+GI}} (int \&window\+Width, int \&window\+Height)
+\mbox{\hyperlink{classMainMenuGI_ad24a3cf0e7c77f0cc7f750594d34e4c9}{Main\+Menu\+GI}} (int window\+Width, int window\+Height)
 \begin{DoxyCompactList}\small\item\em Creates a main menu graphic implementation pfollowing its parameter. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classMainMenuGI_acdf837f54f60b743d9cba117eabcfe52}{draw}} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
 \item 
-std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classClickable}{Clickable}} $>$ \mbox{\hyperlink{classMainMenuGI_add708fb2562fb67da5d20f1831badb43}{get\+Clicked\+On}} (std\+::pair$<$ int, int $>$mouse) const
-\end{DoxyCompactItemize}
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classClickable}{Clickable}} $>$ \mbox{\hyperlink{classMainMenuGI_a76fce5b13bb5305e3dae629ab7b20b77}{get\+Clicked\+On}} (std\+::pair$<$ int, int $>$mouse) const
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the item clicked on. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Attributs privés}
 \begin{DoxyCompactItemize}
 \item 
@@ -77,11 +77,11 @@ Creates an empty graphic implementation The implementation must be set after con
 
 Destroys a main menu graphic implementation. 
 
-\mbox{\Hypertarget{classMainMenuGI_ad5d7906f6b7b2bc467a4f4dbb1159ab9}\label{classMainMenuGI_ad5d7906f6b7b2bc467a4f4dbb1159ab9}} 
+\mbox{\Hypertarget{classMainMenuGI_ad24a3cf0e7c77f0cc7f750594d34e4c9}\label{classMainMenuGI_ad24a3cf0e7c77f0cc7f750594d34e4c9}} 
 \index{MainMenuGI@{MainMenuGI}!MainMenuGI@{MainMenuGI}}
 \index{MainMenuGI@{MainMenuGI}!MainMenuGI@{MainMenuGI}}
 \doxysubsubsection{\texorpdfstring{MainMenuGI()}{MainMenuGI()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily Main\+Menu\+G\+I\+::\+Main\+Menu\+GI (\begin{DoxyParamCaption}\item[{int \&}]{window\+Width,  }\item[{int \&}]{window\+Height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Main\+Menu\+G\+I\+::\+Main\+Menu\+GI (\begin{DoxyParamCaption}\item[{int}]{window\+Width,  }\item[{int}]{window\+Height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -107,12 +107,24 @@ Creates a main menu graphic implementation pfollowing its parameter.
 
 Implémente \mbox{\hyperlink{classusrInterface_a9b7cd8f878718b08f978101ffa840233}{usr\+Interface}}.
 
-\mbox{\Hypertarget{classMainMenuGI_add708fb2562fb67da5d20f1831badb43}\label{classMainMenuGI_add708fb2562fb67da5d20f1831badb43}} 
+\mbox{\Hypertarget{classMainMenuGI_a76fce5b13bb5305e3dae629ab7b20b77}\label{classMainMenuGI_a76fce5b13bb5305e3dae629ab7b20b77}} 
 \index{MainMenuGI@{MainMenuGI}!getClickedOn@{getClickedOn}}
 \index{getClickedOn@{getClickedOn}!MainMenuGI@{MainMenuGI}}
 \doxysubsubsection{\texorpdfstring{getClickedOn()}{getClickedOn()}}
-{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classClickable}{Clickable}}$>$ Main\+Menu\+G\+I\+::get\+Clicked\+On (\begin{DoxyParamCaption}\item[{std\+::pair$<$ int, int $>$}]{mouse }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classClickable}{Clickable}} $>$ Main\+Menu\+G\+I\+::get\+Clicked\+On (\begin{DoxyParamCaption}\item[{std\+::pair$<$ int, int $>$}]{mouse }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
+
+
+Returns a pointer to the item clicked on. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mouse} & the xy coordinates of the click \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+a pointer to the clickable object clicked on 
+\end{DoxyReturn}
 
 
 Implémente \mbox{\hyperlink{classusrInterface_aca71adb6a91ad92f1118591af9885b26}{usr\+Interface}}.

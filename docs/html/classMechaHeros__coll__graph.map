@@ -1,0 +1,5 @@
+<map id="MechaHeros" name="MechaHeros">
+<area shape="rect" id="node1" title=" " alt="" coords="21,461,145,553"/>
+<area shape="rect" id="node2" href="$classHeros.html" title=" " alt="" coords="5,277,160,413"/>
+<area shape="rect" id="node3" href="$classUnit.html" title=" " alt="" coords="9,5,157,229"/>
+</map>

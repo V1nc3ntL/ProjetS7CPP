@@ -10,7 +10,7 @@ Graphe de collaboration de Game\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=159pt]{classGame__coll__graph}
+\includegraphics[width=157pt]{classGame__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Fonctions membres publiques}
@@ -26,7 +26,7 @@ void \mbox{\hyperlink{classGame_a801658c7cef474bc1d9a830f4a79034c}{next\+Turn}} 
 \item 
 int \mbox{\hyperlink{classGame_a1deb5e9b45d145383ee5d4f03f5e8eb3}{get\+Turn}} () const
 \item 
-std\+::ostream \& \mbox{\hyperlink{classGame_a683ba3e18bb3396a12d65e7857792bc9}{operator$<$$<$}} (std\+::ostream \&os)
+std\+::vector$<$ \mbox{\hyperlink{classUnit}{Unit}} $>$ \mbox{\hyperlink{classGame_acc5ce115f7d5788afdf4265daa94036d}{get\+Units}} () const
 \item 
 std\+::string \mbox{\hyperlink{classGame_a609b647fa263d3e87f75249058558b2d}{get\+Turn\+Str}} () const
 \item 
@@ -40,6 +40,11 @@ int \mbox{\hyperlink{classGame_ac6668952517c2ed23e73c1e70724db84}{cur\+Turn}} = 
 \mbox{\hyperlink{classGameMap}{Game\+Map}} \mbox{\hyperlink{classGame_a45be81aaf550d2abb9ac4ba9a59d1036}{map}}
 \item 
 std\+::vector$<$ \mbox{\hyperlink{classUnit}{Unit}} $>$ \mbox{\hyperlink{classGame_acc6c46078e14baf7fbc8090cd1e2823f}{units}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Amis}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{classGame_a95cdb41f57bd27ae15f04e6043b12515}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{classGame}{Game}} \&s)
 \end{DoxyCompactItemize}
 
 
@@ -77,23 +82,32 @@ std\+::vector$<$ \mbox{\hyperlink{classUnit}{Unit}} $>$ \mbox{\hyperlink{classGa
 \doxysubsubsection{\texorpdfstring{getTurnStr()}{getTurnStr()}}
 {\footnotesize\ttfamily std\+::string Game\+::get\+Turn\+Str (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
+\mbox{\Hypertarget{classGame_acc5ce115f7d5788afdf4265daa94036d}\label{classGame_acc5ce115f7d5788afdf4265daa94036d}} 
+\index{Game@{Game}!getUnits@{getUnits}}
+\index{getUnits@{getUnits}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getUnits()}{getUnits()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classUnit}{Unit}}$>$ Game\+::get\+Units (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
 \mbox{\Hypertarget{classGame_a801658c7cef474bc1d9a830f4a79034c}\label{classGame_a801658c7cef474bc1d9a830f4a79034c}} 
 \index{Game@{Game}!nextTurn@{nextTurn}}
 \index{nextTurn@{nextTurn}!Game@{Game}}
 \doxysubsubsection{\texorpdfstring{nextTurn()}{nextTurn()}}
 {\footnotesize\ttfamily void Game\+::next\+Turn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-\mbox{\Hypertarget{classGame_a683ba3e18bb3396a12d65e7857792bc9}\label{classGame_a683ba3e18bb3396a12d65e7857792bc9}} 
-\index{Game@{Game}!operator$<$$<$@{operator$<$$<$}}
-\index{operator$<$$<$@{operator$<$$<$}!Game@{Game}}
-\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
-{\footnotesize\ttfamily std\+::ostream\& Game\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
 \mbox{\Hypertarget{classGame_aa6cd58a347914869b106d90e7b74d025}\label{classGame_aa6cd58a347914869b106d90e7b74d025}} 
 \index{Game@{Game}!toString@{toString}}
 \index{toString@{toString}!Game@{Game}}
 \doxysubsubsection{\texorpdfstring{toString()}{toString()}}
 {\footnotesize\ttfamily std\+::string Game\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Documentation des fonctions amies et associées}
+\mbox{\Hypertarget{classGame_a95cdb41f57bd27ae15f04e6043b12515}\label{classGame_a95cdb41f57bd27ae15f04e6043b12515}} 
+\index{Game@{Game}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{classGame}{Game}} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
 
 
 

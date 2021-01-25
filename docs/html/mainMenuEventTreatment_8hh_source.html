@@ -70,62 +70,7 @@ $(function() {
 <div class="title">mainMenuEventTreatment.hh</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="mainMenuEventTreatment_8hh.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef __MAINMENUEVENTTREATMENT_HH__</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define __MAINMENUEVENTTREATMENT_HH__</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;../app/headersLocation.hh&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include USR_INTERFACE_H</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include BOARD_GI_H</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include APP_STATES_H</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include UNIT_H</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="mainMenuEventTreatment_8hh.html#a1f205510e8751d59c1153ec75e1a143a">   17</a></span>&#160;<span class="keyword">static</span> constexpr <span class="keywordtype">int</span> <a class="code" href="mainMenuEventTreatment_8hh.html#a1f205510e8751d59c1153ec75e1a143a">QUIT</a> = 0;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="mainMenuEventTreatment_8hh.html#afaea58f73498ec617c99b875d3937dc5">   18</a></span>&#160;<span class="keyword">static</span> constexpr <span class="keywordtype">int</span> <a class="code" href="mainMenuEventTreatment_8hh.html#afaea58f73498ec617c99b875d3937dc5">NEW_GAME</a> = 1;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="mainMenuEventTreatment_8hh.html#aabc821b538ed6f7da55604b694e68df1">   20</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="mainMenuEventTreatment_8hh.html#aabc821b538ed6f7da55604b694e68df1">tab</a>[<a class="code" href="gameMap_8hh.html#afd483d6947247a58e991b0a1c80da7e6">DEFAULT_SIZE</a>*<a class="code" href="gameMap_8hh.html#afd483d6947247a58e991b0a1c80da7e6">DEFAULT_SIZE</a>] ;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; <span class="comment">//= {0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3};</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="mainMenuEventTreatment_8hh.html#a9642f945ceb590a1d49ed1ab3cd42324">   30</a></span>&#160;<span class="keywordtype">void</span> <span class="keyword">static</span> <a class="code" href="mainMenuEventTreatment_8hh.html#a9642f945ceb590a1d49ed1ab3cd42324">mainMenuDecode</a>(<span class="keywordtype">int</span> clickedRt,sf::RenderWindow &amp; window,</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    std::unique_ptr&lt;usrInterface&gt;* usrInt, <span class="keywordtype">int</span> * appState,</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    std::unique_ptr&lt;Game&gt;* theGame ){</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">int</span> curW = window.getSize().y, curH = window.getSize().x;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordflow">if</span>(clickedRt == <a class="code" href="mainMenuEventTreatment_8hh.html#a1f205510e8751d59c1153ec75e1a143a">QUIT</a>)</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    window.close();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span>(clickedRt == <a class="code" href="mainMenuEventTreatment_8hh.html#afaea58f73498ec617c99b875d3937dc5">NEW_GAME</a> ){</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="classGameMap.html">GameMap</a> defaultMap(<a class="code" href="gameMap_8hh.html#afd483d6947247a58e991b0a1c80da7e6">DEFAULT_SIZE</a>,<a class="code" href="gameMap_8hh.html#afd483d6947247a58e991b0a1c80da7e6">DEFAULT_SIZE</a>,<a class="code" href="mainMenuEventTreatment_8hh.html#aabc821b538ed6f7da55604b694e68df1">tab</a>);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="classUnit.html">Unit</a> robot1(std::string(<span class="stringliteral">&quot;NONO&quot;</span>),45,0,std::make_pair&lt;int,int&gt;(0,0));</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    std::vector&lt;Unit&gt; defaultUnits;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    defaultUnits.push_back(robot1);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    (*theGame).reset(<span class="keyword">new</span> <a class="code" href="classGame.html">Game</a>(defaultMap,defaultUnits));</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    usrInt-&gt;reset(<span class="keyword">new</span> <a class="code" href="classBoardGI.html">BoardGI</a>(curH,curW,theGame));</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    *appState = <a class="code" href="appStates_8hh.html#a14dfbe2f6e2bcc28fa324b90b0916531">PLAYING</a>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif</span></div>
-</div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="amainMenuEventTreatment_8hh_html_a9642f945ceb590a1d49ed1ab3cd42324"><div class="ttname"><a href="mainMenuEventTreatment_8hh.html#a9642f945ceb590a1d49ed1ab3cd42324">mainMenuDecode</a></div><div class="ttdeci">static void mainMenuDecode(int clickedRt, sf::RenderWindow &amp;window, std::unique_ptr&lt; usrInterface &gt; *usrInt, int *appState, std::unique_ptr&lt; Game &gt; *theGame)</div><div class="ttdef"><b>Definition:</b> mainMenuEventTreatment.hh:30</div></div>
-<div class="ttc" id="amainMenuEventTreatment_8hh_html_afaea58f73498ec617c99b875d3937dc5"><div class="ttname"><a href="mainMenuEventTreatment_8hh.html#afaea58f73498ec617c99b875d3937dc5">NEW_GAME</a></div><div class="ttdeci">static constexpr int NEW_GAME</div><div class="ttdef"><b>Definition:</b> mainMenuEventTreatment.hh:18</div></div>
-<div class="ttc" id="aclassGameMap_html"><div class="ttname"><a href="classGameMap.html">GameMap</a></div><div class="ttdef"><b>Definition:</b> gameMap.hh:22</div></div>
-<div class="ttc" id="aclassBoardGI_html"><div class="ttname"><a href="classBoardGI.html">BoardGI</a></div><div class="ttdef"><b>Definition:</b> boardGI.hh:20</div></div>
-<div class="ttc" id="aclassUnit_html"><div class="ttname"><a href="classUnit.html">Unit</a></div><div class="ttdef"><b>Definition:</b> unit.hh:11</div></div>
-<div class="ttc" id="agameMap_8hh_html_afd483d6947247a58e991b0a1c80da7e6"><div class="ttname"><a href="gameMap_8hh.html#afd483d6947247a58e991b0a1c80da7e6">DEFAULT_SIZE</a></div><div class="ttdeci">constexpr int DEFAULT_SIZE</div><div class="ttdef"><b>Definition:</b> gameMap.hh:17</div></div>
-<div class="ttc" id="aappStates_8hh_html_a14dfbe2f6e2bcc28fa324b90b0916531"><div class="ttname"><a href="appStates_8hh.html#a14dfbe2f6e2bcc28fa324b90b0916531">PLAYING</a></div><div class="ttdeci">constexpr int PLAYING</div><div class="ttdef"><b>Definition:</b> appStates.hh:4</div></div>
-<div class="ttc" id="amainMenuEventTreatment_8hh_html_aabc821b538ed6f7da55604b694e68df1"><div class="ttname"><a href="mainMenuEventTreatment_8hh.html#aabc821b538ed6f7da55604b694e68df1">tab</a></div><div class="ttdeci">int tab[DEFAULT_SIZE *DEFAULT_SIZE]</div><div class="ttdef"><b>Definition:</b> mainMenuEventTreatment.hh:20</div></div>
-<div class="ttc" id="aclassGame_html"><div class="ttname"><a href="classGame.html">Game</a></div><div class="ttdef"><b>Definition:</b> game.hh:14</div></div>
-<div class="ttc" id="amainMenuEventTreatment_8hh_html_a1f205510e8751d59c1153ec75e1a143a"><div class="ttname"><a href="mainMenuEventTreatment_8hh.html#a1f205510e8751d59c1153ec75e1a143a">QUIT</a></div><div class="ttdeci">static constexpr int QUIT</div><div class="ttdef"><b>Definition:</b> mainMenuEventTreatment.hh:17</div></div>
+<a href="mainMenuEventTreatment_8hh.html">Aller à la documentation de ce fichier.</a><div class="fragment"></div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Généré par&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20

@@ -1,5 +1,5 @@
 <map id="GameGI" name="GameGI">
-<area shape="rect" id="node1" title=" " alt="" coords="5,477,125,584"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,492,125,613"/>
 <area shape="rect" id="node2" title=" " alt="" coords="22,5,98,83"/>
-<area shape="rect" id="node3" href="$classMapGI.html" title=" " alt="" coords="82,132,227,415"/>
+<area shape="rect" id="node3" href="$classMapGI.html" title=" " alt="" coords="82,132,227,429"/>
 </map>

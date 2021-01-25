@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['select_304',['select',['../classTile.html#a14184d7f22e2f156fa984c1becad2949',1,'Tile']]],
-  ['setgi_305',['setGI',['../classGI.html#ab4b100090e403924db73620b32f89481',1,'GI::setGI()'],['../classGameMap.html#aaaadbbfc0443a8c6b5a720f3444cfbe5',1,'GameMap::setGI()'],['../classTile.html#a027cbb52793ef4db14bd0d3aa33113a7',1,'Tile::setGI()']]],
-  ['setquadcolor_306',['setQuadColor',['../classTileGI.html#a5eedcc8fe86cb186e5d279f122cf73fa',1,'TileGI']]],
-  ['spritebuttongi_307',['SpriteButtonGI',['../classSpriteButtonGI.html#abe07c72e863338195a6a90fa8067d10f',1,'SpriteButtonGI']]]
+  ['rightclickaction_430',['rightClickAction',['../classClickable.html#a33ce6f79466159705d00906f7171e33f',1,'Clickable::rightClickAction()'],['../classButtonGI.html#a0a69b08dde33685291d3051af81816ed',1,'ButtonGI::rightClickAction()'],['../classSpriteButtonGI.html#abb53bd9c17f4a7b92695e2dc8572358b',1,'SpriteButtonGI::rightClickAction()'],['../classTileGI.html#a35014ce8624ce06ba6cbdff2976509ac',1,'TileGI::rightClickAction()']]],
+  ['robot_431',['Robot',['../classRobot.html#a4fc7c70ae20623f05e06f2ecb388b6c4',1,'Robot']]],
+  ['run_432',['run',['../classApplication.html#a68965449404743bf1add056784d6cf81',1,'Application']]]
 ];

@@ -1,0 +1,108 @@
+\hypertarget{classApplication}{}\doxysection{Référence de la classe Application}
+\label{classApplication}\index{Application@{Application}}
+
+
+{\ttfamily \#include $<$application.\+hh$>$}
+
+
+
+Graphe de collaboration de Application\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classApplication__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classApplication_a14e4d3136f27da339ef9eda14ea83102}{Application}} (sf\+::\+Render\+Window \&\mbox{\hyperlink{classApplication_a43a1467aeb666137469284b95c522c7f}{window}})
+\item 
+void \mbox{\hyperlink{classApplication_a68965449404743bf1add056784d6cf81}{run}} ()
+\item 
+void \mbox{\hyperlink{classApplication_a28c086f3287e878209be91f51026c1a7}{treat\+Key\+Pressed}} (sf\+::\+Event \&event)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Render\+Window \& \mbox{\hyperlink{classApplication_a43a1467aeb666137469284b95c522c7f}{window}}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classusrInterface}{usr\+Interface}} $>$ \mbox{\hyperlink{classApplication_a08be8c0135cff43683f6a5cdb97ea49a}{current\+UI}}
+\item 
+int \mbox{\hyperlink{classApplication_a3dc9ba61282e30070783de4a76419f63}{rt\+Code}} = \mbox{\hyperlink{namespaceactions_a93f38c8989a6f117eda562701097936d}{actions\+::\+N\+O\+T\+H\+I\+NG}}
+\item 
+int \mbox{\hyperlink{classApplication_ad40f40fbbf1db6c0fb6ea3a67df34530}{current\+State}} = \mbox{\hyperlink{appStates_8hh_a37a232d272fbb25855dc8e6fbaa23e91}{M\+A\+I\+N\+\_\+\+M\+E\+NU}}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classGame}{Game}} $>$ \mbox{\hyperlink{classApplication_a36fe57d970a5fda9335fca1eb82dd6e0}{cur\+Game}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classClickable}{Clickable}} $>$ \mbox{\hyperlink{classApplication_a5f9368077b88940fa4bb01cc0f38f734}{clicked}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classApplication_a14e4d3136f27da339ef9eda14ea83102}\label{classApplication_a14e4d3136f27da339ef9eda14ea83102}} 
+\index{Application@{Application}!Application@{Application}}
+\index{Application@{Application}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{Application()}{Application()}}
+{\footnotesize\ttfamily Application\+::\+Application (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classApplication_a68965449404743bf1add056784d6cf81}\label{classApplication_a68965449404743bf1add056784d6cf81}} 
+\index{Application@{Application}!run@{run}}
+\index{run@{run}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Application\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classApplication_a28c086f3287e878209be91f51026c1a7}\label{classApplication_a28c086f3287e878209be91f51026c1a7}} 
+\index{Application@{Application}!treatKeyPressed@{treatKeyPressed}}
+\index{treatKeyPressed@{treatKeyPressed}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{treatKeyPressed()}{treatKeyPressed()}}
+{\footnotesize\ttfamily void Application\+::treat\+Key\+Pressed (\begin{DoxyParamCaption}\item[{sf\+::\+Event \&}]{event }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{classApplication_a5f9368077b88940fa4bb01cc0f38f734}\label{classApplication_a5f9368077b88940fa4bb01cc0f38f734}} 
+\index{Application@{Application}!clicked@{clicked}}
+\index{clicked@{clicked}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{clicked}{clicked}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classClickable}{Clickable}}$>$ Application\+::clicked\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApplication_a36fe57d970a5fda9335fca1eb82dd6e0}\label{classApplication_a36fe57d970a5fda9335fca1eb82dd6e0}} 
+\index{Application@{Application}!curGame@{curGame}}
+\index{curGame@{curGame}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{curGame}{curGame}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classGame}{Game}}$>$ Application\+::cur\+Game\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApplication_ad40f40fbbf1db6c0fb6ea3a67df34530}\label{classApplication_ad40f40fbbf1db6c0fb6ea3a67df34530}} 
+\index{Application@{Application}!currentState@{currentState}}
+\index{currentState@{currentState}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{currentState}{currentState}}
+{\footnotesize\ttfamily int Application\+::current\+State = \mbox{\hyperlink{appStates_8hh_a37a232d272fbb25855dc8e6fbaa23e91}{M\+A\+I\+N\+\_\+\+M\+E\+NU}}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApplication_a08be8c0135cff43683f6a5cdb97ea49a}\label{classApplication_a08be8c0135cff43683f6a5cdb97ea49a}} 
+\index{Application@{Application}!currentUI@{currentUI}}
+\index{currentUI@{currentUI}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{currentUI}{currentUI}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classusrInterface}{usr\+Interface}}$>$ Application\+::current\+UI\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApplication_a3dc9ba61282e30070783de4a76419f63}\label{classApplication_a3dc9ba61282e30070783de4a76419f63}} 
+\index{Application@{Application}!rtCode@{rtCode}}
+\index{rtCode@{rtCode}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{rtCode}{rtCode}}
+{\footnotesize\ttfamily int Application\+::rt\+Code = \mbox{\hyperlink{namespaceactions_a93f38c8989a6f117eda562701097936d}{actions\+::\+N\+O\+T\+H\+I\+NG}}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classApplication_a43a1467aeb666137469284b95c522c7f}\label{classApplication_a43a1467aeb666137469284b95c522c7f}} 
+\index{Application@{Application}!window@{window}}
+\index{window@{window}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{window}{window}}
+{\footnotesize\ttfamily sf\+::\+Render\+Window\& Application\+::window\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+src/app/\mbox{\hyperlink{application_8hh}{application.\+hh}}\item 
+src/app/\mbox{\hyperlink{application_8cc}{application.\+cc}}\end{DoxyCompactItemize}

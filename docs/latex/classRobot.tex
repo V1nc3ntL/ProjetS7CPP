@@ -1,0 +1,214 @@
+\hypertarget{classRobot}{}\doxysection{Référence de la classe Robot}
+\label{classRobot}\index{Robot@{Robot}}
+
+
+{\ttfamily \#include $<$Robot.\+h$>$}
+
+
+
+Graphe d\textquotesingle{}héritage de Robot\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRobot__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de Robot\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{classRobot__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRobot_a4fc7c70ae20623f05e06f2ecb388b6c4}{Robot}} ()
+\item 
+virtual \mbox{\hyperlink{classRobot_a924320124b09c2f2ac1621aa210d5f38}{$\sim$\+Robot}} ()
+\item 
+\mbox{\hyperlink{classUnit}{Unit}} $\ast$ \mbox{\hyperlink{classUnit_ab6b22ed6ce31db0c3c3ff3a9ccc92b56}{operator-\/}} (const int \&b)
+\item 
+void \mbox{\hyperlink{classUnit_a0b79dc3c020e63b2c1f2fff9096e9aaf}{update\+Movements}} ()
+\item 
+std\+::pair$<$ int, int $>$ \mbox{\hyperlink{classUnit_a2602d459455da39b0093cdc935856167}{get\+Pos}} () const
+\item 
+int \mbox{\hyperlink{classUnit_aa4e092bb450797cfd655a582bb6360ab}{get\+Type}} () const
+\item 
+std\+::string \mbox{\hyperlink{classUnit_a5253022c14d2f855563198b9a0de54d5}{to\+String}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classRobot_abffd4cf8ef86939c367ecc3c00b5ad0e}{set\+Defense\+Speciale}} (void value)
+\item 
+void \mbox{\hyperlink{classRobot_a3efe56bdae2e8d682b6000f8fb0b8d59}{get\+Defense\+Speciale}} ()
+\item 
+void \mbox{\hyperlink{classRobot_a4a398f188f47a32c196e02306cb29f21}{Defense}} (\mbox{\hyperlink{classRobot}{Robot}} \&cible)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classRobot_a34af75890a153da85fc51439359e6d00}{defense\+Speciale}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classRobot_a09d4737c4dc69a446a206d3f77df4525}{init\+Attributes}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classUnit_a0d73ae7f79e48da36aaa54ad5f016e71}{max\+HP}}
+\item 
+int \mbox{\hyperlink{classUnit_a45741ad1efff07340150700d9a624678}{hP}}
+\item 
+int \mbox{\hyperlink{classUnit_a45243122ae655f50179f96bc831bfb1d}{type}}
+\item 
+std\+::string \mbox{\hyperlink{classUnit_a03a2344fa6977a2ce44b320e44bc9caa}{name}}
+\item 
+std\+::pair$<$ int, int $>$ \mbox{\hyperlink{classUnit_a5e0d570e8b06f33f873df82ede77bd73}{pos}}
+\item 
+std\+::pair$<$ int, int $>$ \mbox{\hyperlink{classUnit_a7adbe5ed84d5c087edd56bcce2033a89}{next\+Pos}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+class \mbox{\hyperlink{classRobot}{Robot}} Classe abstraite pour les ennemis robots. 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classRobot_a4fc7c70ae20623f05e06f2ecb388b6c4}\label{classRobot_a4fc7c70ae20623f05e06f2ecb388b6c4}} 
+\index{Robot@{Robot}!Robot@{Robot}}
+\index{Robot@{Robot}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{Robot()}{Robot()}}
+{\footnotesize\ttfamily Robot\+::\+Robot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Empty Constructor \mbox{\Hypertarget{classRobot_a924320124b09c2f2ac1621aa210d5f38}\label{classRobot_a924320124b09c2f2ac1621aa210d5f38}} 
+\index{Robot@{Robot}!````~Robot@{$\sim$Robot}}
+\index{````~Robot@{$\sim$Robot}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{$\sim$Robot()}{~Robot()}}
+{\footnotesize\ttfamily Robot\+::$\sim$\+Robot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Empty Destructor 
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classRobot_a4a398f188f47a32c196e02306cb29f21}\label{classRobot_a4a398f188f47a32c196e02306cb29f21}} 
+\index{Robot@{Robot}!Defense@{Defense}}
+\index{Defense@{Defense}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{Defense()}{Defense()}}
+{\footnotesize\ttfamily void Robot\+::\+Defense (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRobot}{Robot}} \&}]{cible }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Fonction Defense qui permet au robot de recuperer des points vie pour lui-\/meme et/ou pour un allie. 
+\begin{DoxyParams}{Paramètres}
+{\em cible} & R{\ucr}ference de la cible {\ucr} qui augmente la vie. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRobot_a3efe56bdae2e8d682b6000f8fb0b8d59}\label{classRobot_a3efe56bdae2e8d682b6000f8fb0b8d59}} 
+\index{Robot@{Robot}!getDefenseSpeciale@{getDefenseSpeciale}}
+\index{getDefenseSpeciale@{getDefenseSpeciale}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{getDefenseSpeciale()}{getDefenseSpeciale()}}
+{\footnotesize\ttfamily void Robot\+::get\+Defense\+Speciale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Get the value of defense\+Speciale D{\ucr}fense sp{\ucr}ciale du robot. \begin{DoxyReturn}{Renvoie}
+the value of defense\+Speciale 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUnit_a2602d459455da39b0093cdc935856167}\label{classUnit_a2602d459455da39b0093cdc935856167}} 
+\index{Robot@{Robot}!getPos@{getPos}}
+\index{getPos@{getPos}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{getPos()}{getPos()}}
+{\footnotesize\ttfamily std\+::pair$<$int,int$>$ Unit\+::get\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classUnit_aa4e092bb450797cfd655a582bb6360ab}\label{classUnit_aa4e092bb450797cfd655a582bb6360ab}} 
+\index{Robot@{Robot}!getType@{getType}}
+\index{getType@{getType}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily int Unit\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classRobot_a09d4737c4dc69a446a206d3f77df4525}\label{classRobot_a09d4737c4dc69a446a206d3f77df4525}} 
+\index{Robot@{Robot}!initAttributes@{initAttributes}}
+\index{initAttributes@{initAttributes}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{initAttributes()}{initAttributes()}}
+{\footnotesize\ttfamily void Robot\+::init\+Attributes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classUnit_ab6b22ed6ce31db0c3c3ff3a9ccc92b56}\label{classUnit_ab6b22ed6ce31db0c3c3ff3a9ccc92b56}} 
+\index{Robot@{Robot}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUnit}{Unit}}$\ast$ Unit\+::operator-\/ (\begin{DoxyParamCaption}\item[{const int \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classRobot_abffd4cf8ef86939c367ecc3c00b5ad0e}\label{classRobot_abffd4cf8ef86939c367ecc3c00b5ad0e}} 
+\index{Robot@{Robot}!setDefenseSpeciale@{setDefenseSpeciale}}
+\index{setDefenseSpeciale@{setDefenseSpeciale}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{setDefenseSpeciale()}{setDefenseSpeciale()}}
+{\footnotesize\ttfamily void Robot\+::set\+Defense\+Speciale (\begin{DoxyParamCaption}\item[{void}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Set the value of defense\+Speciale D{\ucr}fense sp{\ucr}ciale du robot. 
+\begin{DoxyParams}{Paramètres}
+{\em value} & the new value of defense\+Speciale \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classUnit_a5253022c14d2f855563198b9a0de54d5}\label{classUnit_a5253022c14d2f855563198b9a0de54d5}} 
+\index{Robot@{Robot}!toString@{toString}}
+\index{toString@{toString}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily std\+::string Unit\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classUnit_a0b79dc3c020e63b2c1f2fff9096e9aaf}\label{classUnit_a0b79dc3c020e63b2c1f2fff9096e9aaf}} 
+\index{Robot@{Robot}!updateMovements@{updateMovements}}
+\index{updateMovements@{updateMovements}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{updateMovements()}{updateMovements()}}
+{\footnotesize\ttfamily void Unit\+::update\+Movements (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{classRobot_a34af75890a153da85fc51439359e6d00}\label{classRobot_a34af75890a153da85fc51439359e6d00}} 
+\index{Robot@{Robot}!defenseSpeciale@{defenseSpeciale}}
+\index{defenseSpeciale@{defenseSpeciale}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{defenseSpeciale}{defenseSpeciale}}
+{\footnotesize\ttfamily void Robot\+::defense\+Speciale\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classUnit_a45741ad1efff07340150700d9a624678}\label{classUnit_a45741ad1efff07340150700d9a624678}} 
+\index{Robot@{Robot}!hP@{hP}}
+\index{hP@{hP}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{hP}{hP}}
+{\footnotesize\ttfamily int Unit\+::hP\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classUnit_a0d73ae7f79e48da36aaa54ad5f016e71}\label{classUnit_a0d73ae7f79e48da36aaa54ad5f016e71}} 
+\index{Robot@{Robot}!maxHP@{maxHP}}
+\index{maxHP@{maxHP}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{maxHP}{maxHP}}
+{\footnotesize\ttfamily int Unit\+::max\+HP\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classUnit_a03a2344fa6977a2ce44b320e44bc9caa}\label{classUnit_a03a2344fa6977a2ce44b320e44bc9caa}} 
+\index{Robot@{Robot}!name@{name}}
+\index{name@{name}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string Unit\+::name\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classUnit_a7adbe5ed84d5c087edd56bcce2033a89}\label{classUnit_a7adbe5ed84d5c087edd56bcce2033a89}} 
+\index{Robot@{Robot}!nextPos@{nextPos}}
+\index{nextPos@{nextPos}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{nextPos}{nextPos}}
+{\footnotesize\ttfamily std\+::pair$<$int,int$>$ Unit\+::next\+Pos\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classUnit_a5e0d570e8b06f33f873df82ede77bd73}\label{classUnit_a5e0d570e8b06f33f873df82ede77bd73}} 
+\index{Robot@{Robot}!pos@{pos}}
+\index{pos@{pos}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{pos}{pos}}
+{\footnotesize\ttfamily std\+::pair$<$int,int$>$ Unit\+::pos\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classUnit_a45243122ae655f50179f96bc831bfb1d}\label{classUnit_a45243122ae655f50179f96bc831bfb1d}} 
+\index{Robot@{Robot}!type@{type}}
+\index{type@{type}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily int Unit\+::type\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [inherited]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+src/game\+Logic/\mbox{\hyperlink{Robot_8h}{Robot.\+h}}\item 
+src/game\+Logic/\mbox{\hyperlink{Robot_8cpp}{Robot.\+cpp}}\end{DoxyCompactItemize}

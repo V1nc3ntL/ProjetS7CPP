@@ -25,5 +25,4 @@
             sprit.getGlobalBounds().width/2-MARGIN,
             map.getTileAt(unit.getPos()).leftAngle().second - 
             sprit.getGlobalBounds().height);
-            //sprit.resize()
         }

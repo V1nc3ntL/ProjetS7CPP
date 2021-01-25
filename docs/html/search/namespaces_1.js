@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['triangle_222',['triangle',['../namespacetriangle.html',1,'']]]
+  ['localization_307',['localization',['../namespacelocalization.html',1,'']]]
 ];

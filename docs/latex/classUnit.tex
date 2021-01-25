@@ -6,11 +6,20 @@
 
 
 
+Graphe d\textquotesingle{}héritage de Unit\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classUnit__inherit__graph}
+\end{center}
+\end{figure}
+
+
 Graphe de collaboration de Unit\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=150pt]{classUnit__coll__graph}
+\includegraphics[width=191pt]{classUnit__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Fonctions membres publiques}
@@ -19,6 +28,14 @@ Graphe de collaboration de Unit\+:\nopagebreak
 \mbox{\hyperlink{classUnit_adcb402ba309c66987397e441ecd5c54b}{Unit}} (std\+::string \mbox{\hyperlink{classUnit_a03a2344fa6977a2ce44b320e44bc9caa}{name}}, int \mbox{\hyperlink{classUnit_a0d73ae7f79e48da36aaa54ad5f016e71}{max\+HP}}, int \mbox{\hyperlink{classUnit_a45243122ae655f50179f96bc831bfb1d}{type}}, std\+::pair$<$ int, int $>$ \mbox{\hyperlink{classUnit_a5e0d570e8b06f33f873df82ede77bd73}{pos}})
 \item 
 \mbox{\hyperlink{classUnit}{Unit}} $\ast$ \mbox{\hyperlink{classUnit_ab6b22ed6ce31db0c3c3ff3a9ccc92b56}{operator-\/}} (const int \&b)
+\item 
+void \mbox{\hyperlink{classUnit_a0b79dc3c020e63b2c1f2fff9096e9aaf}{update\+Movements}} ()
+\item 
+std\+::pair$<$ int, int $>$ \mbox{\hyperlink{classUnit_a2602d459455da39b0093cdc935856167}{get\+Pos}} () const
+\item 
+int \mbox{\hyperlink{classUnit_aa4e092bb450797cfd655a582bb6360ab}{get\+Type}} () const
+\item 
+std\+::string \mbox{\hyperlink{classUnit_a5253022c14d2f855563198b9a0de54d5}{to\+String}} () const
 \end{DoxyCompactItemize}
 \doxysubsection*{Attributs privés}
 \begin{DoxyCompactItemize}
@@ -32,6 +49,8 @@ int \mbox{\hyperlink{classUnit_a45243122ae655f50179f96bc831bfb1d}{type}}
 std\+::string \mbox{\hyperlink{classUnit_a03a2344fa6977a2ce44b320e44bc9caa}{name}}
 \item 
 std\+::pair$<$ int, int $>$ \mbox{\hyperlink{classUnit_a5e0d570e8b06f33f873df82ede77bd73}{pos}}
+\item 
+std\+::pair$<$ int, int $>$ \mbox{\hyperlink{classUnit_a7adbe5ed84d5c087edd56bcce2033a89}{next\+Pos}}
 \end{DoxyCompactItemize}
 
 
@@ -45,11 +64,35 @@ std\+::pair$<$ int, int $>$ \mbox{\hyperlink{classUnit_a5e0d570e8b06f33f873df82e
 
 
 \doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classUnit_a2602d459455da39b0093cdc935856167}\label{classUnit_a2602d459455da39b0093cdc935856167}} 
+\index{Unit@{Unit}!getPos@{getPos}}
+\index{getPos@{getPos}!Unit@{Unit}}
+\doxysubsubsection{\texorpdfstring{getPos()}{getPos()}}
+{\footnotesize\ttfamily std\+::pair$<$int,int$>$ Unit\+::get\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classUnit_aa4e092bb450797cfd655a582bb6360ab}\label{classUnit_aa4e092bb450797cfd655a582bb6360ab}} 
+\index{Unit@{Unit}!getType@{getType}}
+\index{getType@{getType}!Unit@{Unit}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily int Unit\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
 \mbox{\Hypertarget{classUnit_ab6b22ed6ce31db0c3c3ff3a9ccc92b56}\label{classUnit_ab6b22ed6ce31db0c3c3ff3a9ccc92b56}} 
 \index{Unit@{Unit}!operator-\/@{operator-\/}}
 \index{operator-\/@{operator-\/}!Unit@{Unit}}
 \doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classUnit}{Unit}}$\ast$ Unit\+::operator-\/ (\begin{DoxyParamCaption}\item[{const int \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classUnit_a5253022c14d2f855563198b9a0de54d5}\label{classUnit_a5253022c14d2f855563198b9a0de54d5}} 
+\index{Unit@{Unit}!toString@{toString}}
+\index{toString@{toString}!Unit@{Unit}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily std\+::string Unit\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classUnit_a0b79dc3c020e63b2c1f2fff9096e9aaf}\label{classUnit_a0b79dc3c020e63b2c1f2fff9096e9aaf}} 
+\index{Unit@{Unit}!updateMovements@{updateMovements}}
+\index{updateMovements@{updateMovements}!Unit@{Unit}}
+\doxysubsubsection{\texorpdfstring{updateMovements()}{updateMovements()}}
+{\footnotesize\ttfamily void Unit\+::update\+Movements (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -71,6 +114,12 @@ std\+::pair$<$ int, int $>$ \mbox{\hyperlink{classUnit_a5e0d570e8b06f33f873df82e
 \index{name@{name}!Unit@{Unit}}
 \doxysubsubsection{\texorpdfstring{name}{name}}
 {\footnotesize\ttfamily std\+::string Unit\+::name\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classUnit_a7adbe5ed84d5c087edd56bcce2033a89}\label{classUnit_a7adbe5ed84d5c087edd56bcce2033a89}} 
+\index{Unit@{Unit}!nextPos@{nextPos}}
+\index{nextPos@{nextPos}!Unit@{Unit}}
+\doxysubsubsection{\texorpdfstring{nextPos}{nextPos}}
+{\footnotesize\ttfamily std\+::pair$<$int,int$>$ Unit\+::next\+Pos\hspace{0.3cm}{\ttfamily [private]}}
 
 \mbox{\Hypertarget{classUnit_a5e0d570e8b06f33f873df82ede77bd73}\label{classUnit_a5e0d570e8b06f33f873df82ede77bd73}} 
 \index{Unit@{Unit}!pos@{pos}}

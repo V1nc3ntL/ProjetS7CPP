@@ -1,9 +1,12 @@
-#ifndef __LOCALIZATION_HH__
-#define __LOCALIZATION_HH__
+#ifndef __LOCAL_IZATION_HH__
+#define __LOCAL_IZATION_HH__
+
+#include <iostream>
+
 namespace localization {
 
-std::string quitButtonText = "Quit";
-std::string newGameButtonText = "New Game";
-std::string turn = "Turn ";
+extern std::string quitButtonText ;
+extern std::string newGameButtonText ;
+extern std::string turn ;
 } // namespace localization
 #endif

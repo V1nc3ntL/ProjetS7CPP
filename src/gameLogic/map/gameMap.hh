@@ -9,8 +9,7 @@
 
 #include <vector>
 #include <memory>
-
-class MapGI;
+#include "../../graphics/mapGI.hh"
 class Tile;
 
 // Taille standard à la compilation

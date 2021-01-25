@@ -1,16 +1,19 @@
 warning: The selected output language "french" has not been updated
 since release 1.8.15.  As a result some sentences may appear in English.
 
-/home/VEGA/Cours/S7/C++/ProjetS7/src/gameLogic/map/gameMap.hh:24: warning: documented symbol 'GameMap::gameMap' was not declared or defined.
-/home/VEGA/Cours/S7/C++/ProjetS7/src/graphics/tileGI.cc:77: warning: no matching class member found for 
-  TileGI::TileGI(std::shared_ptr< Tile >, &std::pair< int, int > northPosition, int squareSize, int outlineSize, int rtCode)
+/home/VEGA/Cours/S7/C++/ProjetS7/src/graphics/unitGI.hh:32: warning: Empty prototype found!
+/home/VEGA/Cours/S7/C++/ProjetS7/src/app/application.cc:34: warning: documented symbol 'void static treatKeyPressed' was not declared or defined.
+/home/VEGA/Cours/S7/C++/ProjetS7/src/gameLogic/map/gameMap.hh:23: warning: documented symbol 'GameMap::gameMap' was not declared or defined.
+/home/VEGA/Cours/S7/C++/ProjetS7/src/graphics/spriteButtonGI.hh:29: warning: no matching class member found for 
+  SpriteButtonGI::SpriteButtonGI(std::pair< int, int > topLeftCorner, int buttonWidth, std::string spriteFileName, int returnCode)
 Possible candidates:
-  'TileGI::TileGI()'
-  'TileGI::TileGI(std::pair< int, int > northPosition, int squareSize, int outlineSize)'
-  'TileGI::TileGI(const std::shared_ptr< Tile > tile, std::pair< int, int > northPosition, int squareSize, int outlineSize, int rtCode)'
+  'SpriteButtonGI::SpriteButtonGI()'
+  'SpriteButtonGI::SpriteButtonGI(std::pair< int, int > topLeftCorner, std::string spriteFileName, int returnCode)'
 
+/home/VEGA/Cours/S7/C++/ProjetS7/src/graphics/unitGI.hh:27: warning: member with no name found.
 /home/VEGA/Cours/S7/C++/ProjetS7/src/graphics/buttonGI.hh:55: warning: The following parameter of ButtonGI::ButtonGI(std::pair< int, int > topLeftCorner, int buttonWidth, int buttonHeight, std::string buttonString, int returnCode) is not documented:
   parameter 'buttonHeight'
+/home/VEGA/Cours/S7/C++/ProjetS7/src/gameLogic/Robot.h:83: warning: documented empty return type of Robot::getDefenseSpeciale
 /home/VEGA/Cours/S7/C++/ProjetS7/src/graphics/mapGI.hh:39: warning: argument 'windowWidth' from the argument list of MapGI::MapGI has multiple @param documentation sections
 /home/VEGA/Cours/S7/C++/ProjetS7/src/graphics/mapGI.hh:39: warning: argument 'windowHeight' from the argument list of MapGI::MapGI has multiple @param documentation sections
 /home/VEGA/Cours/S7/C++/ProjetS7/src/graphics/mapGI.hh:42: warning: argument 'std' of command @param is not found in the argument list of MapGI::createMapGraphs(std::pair< int, int > &northPosition, std::vector< std::shared_ptr< Tile >>::iterator it)
@@ -23,3 +26,5 @@ Possible candidates:
 /home/VEGA/Cours/S7/C++/ProjetS7/src/graphics/mapGI.hh:42: warning: argument 'shared_ptr' of command @param is not found in the argument list of MapGI::createMapGraphs(std::pair< int, int > &northPosition, std::vector< std::shared_ptr< Tile >>::iterator it)
 /home/VEGA/Cours/S7/C++/ProjetS7/src/graphics/mapGI.hh:42: warning: argument 'Tile' of command @param is not found in the argument list of MapGI::createMapGraphs(std::pair< int, int > &northPosition, std::vector< std::shared_ptr< Tile >>::iterator it)
 /home/VEGA/Cours/S7/C++/ProjetS7/src/graphics/mapGI.hh:42: warning: argument 'iterator' of command @param is not found in the argument list of MapGI::createMapGraphs(std::pair< int, int > &northPosition, std::vector< std::shared_ptr< Tile >>::iterator it)
+/home/VEGA/Cours/S7/C++/ProjetS7/src/gameLogic/Robot.h:83: warning: documented empty return type of Robot::getDefenseSpeciale
+/home/VEGA/Cours/S7/C++/ProjetS7/src/gameLogic/Robot.h:83: warning: documented empty return type of Robot::getDefenseSpeciale

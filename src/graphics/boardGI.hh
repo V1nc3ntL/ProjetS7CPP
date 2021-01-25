@@ -10,34 +10,33 @@
 
 #include "mapGI.hh"
 #include "spriteButtonGI.hh"
+#include EVENTS_H
 #include USR_INTERFACE_H
-#include PLAY_EVENTS_H
 #include GAME_H
 #include GAME_GI_H
+#include ACTIONS_H
 
 static constexpr int END_TURN_BUTTON_SIZE = 150;
 static constexpr int TURN_TEXT_HEIGHT = 50;
+
     class BoardGI : public  usrInterface {
         public :
         /*Creates a board from a game
         */
        // BoardGI(MapGI map) : theMap(map){};
-#include<iostream>
+
 
         BoardGI(int &windowWidth, int &windowHeight, std::unique_ptr<Game>* game) :
             _game(**game),
             gGI (windowWidth,windowHeight,game),
            
             nextTurnButton(std::make_pair<int,int>(windowWidth-END_TURN_BUTTON_SIZE-MARGIN,
-                windowHeight-END_TURN_BUTTON_SIZE-MARGIN), "hourGlass.png",END_TURN),
+                windowHeight-END_TURN_BUTTON_SIZE-MARGIN), "hourGlass.png",actions::END_TURN),
             turn( 
                 std::make_pair<int,int>( windowWidth-END_TURN_BUTTON_SIZE,windowHeight-END_TURN_BUTTON_SIZE-TURN_TEXT_HEIGHT-MARGIN),
                 END_TURN_BUTTON_SIZE-TURN_TEXT_HEIGHT-15,TURN_TEXT_HEIGHT,
-                (*game)->getTurnStr(),END_TURN,MARGIN)
-            {
-                //std::cout << game;
-
-            };
+                (*game)->getTurnStr(),actions::END_TURN,MARGIN)
+            {};
         
          std::shared_ptr<Clickable> getClickedOn(std::pair<int,int>mouse) const{
              std::shared_ptr<Clickable> tmp;

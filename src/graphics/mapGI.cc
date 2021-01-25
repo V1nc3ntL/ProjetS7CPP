@@ -27,21 +27,15 @@ MapGI::MapGI(int & windowWidth, int & windowHeight, GameMap &map)
   createMapGraphs(northPosition, it);
 }
 /*! \fn MapGI::createMapGraphs(std::pair<int, int> &northPosition, std::vector<std::shared_ptr<Tile>>::iterator it)
- *  \brief Creates a graphic representation of a map from an iterator on a
- * vector of tile beyond the northPosition
- *
- *  \param std::pair<int,int>& a reference to a pair of int representing the
- * north corner of the map to be created \param
- * std::vector<std::shared_ptr<Tile>>::iterator an iterator initialized on the
- * first tile
+ *  \brief Creates a graphic representation of a map from an iterator on a vector of tile beyond the northPosition
+ *  \param std::pair<int,int>& a reference to a pair of int representing the north corner of the map to be created 
+ *  \param std::vector<std::shared_ptr<Tile>>::iterator an iterator initialized on the first tile
  */
 
 void MapGI::createMapGraphs(std::pair<int, int> &northPosition,
                             std::vector<std::shared_ptr<Tile>>::iterator it) {
 
-  std::pair<int, int> nPL = northPosition;
-
-  std::pair<int, int> max(sqH, sqW);
+  std::pair<int, int> nPL = northPosition, max(sqH, sqW);
 
   int i = 0, j = 0;
 
@@ -51,12 +45,12 @@ void MapGI::createMapGraphs(std::pair<int, int> &northPosition,
   for (j = 0; j < max.first; j++) {
     northPosition = nPL;
     for (i = 0; i < max.second; i++) {
-      tls.push_back(TileGI(*it++, northPosition, squareSize, outline,j*max.second+i));
+      tls.push_back(TileGI(*it++, northPosition, 
+              squareSize, outline,j*max.first-1+i));
       northPosition.first -= squareSize - outline;
       northPosition.second += squareSize / 2 - outline / 2;
     }
     nPL.first += squareSize - outline;
-    ;
     nPL.second += squareSize / 2 - outline / 2;
     northPosition = nPL;
   }

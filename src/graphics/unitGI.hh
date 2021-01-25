@@ -41,5 +41,4 @@ static sf::Texture unitTexture[N_UNIT_TEXTURE];
             sf::Sprite sprit;
     };
 
-
 #endif

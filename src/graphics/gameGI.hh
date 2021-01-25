@@ -4,13 +4,21 @@
  *  \version 0.1
  *  \date 21/01/25
  */
-
 #ifndef __GAMEGI_HH__
 #define __GAMEGI_HH__
-
 #include "unitGI.hh"
+
     class GameGI : public sf::Drawable{
-           public : 
+        
+        private: 
+            
+            MapGI theMap;
+            
+            std::vector<Unit> units;
+
+            std::vector<UnitGI> unitsGI;
+          
+        public : 
 
            GameGI(int& windowWidth, int& windowHeight , std::unique_ptr<Game>*& game) :
            theMap(windowWidth,windowHeight,(*game)->getMap()),
@@ -30,10 +38,7 @@
                  }
                  
              }
-          private: 
-            MapGI theMap;
-            std::vector<Unit> units;
-            std::vector<UnitGI> unitsGI;
+
     };
 
 #endif

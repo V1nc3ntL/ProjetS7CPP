@@ -4,53 +4,61 @@
  *  \version 0.1
  *  \date 16/12/2020
  */
+#ifndef __EVENTTREATMENT_HH__
+#define __EVENTTREATMENT_HH__
 
 #include <iostream>
 #include <vector>
 #include "../app/headersLocation.hh"
 
-#include "mainMenuEventTreatment.hh"
-#include "playEventTreatment.hh"
 
 #include APP_STATES_H
 #include USR_INTERFACE_H
+#include MAP_H
+#include GAME_H
+#include BOARD_GI_H
+#include "actions.hh"
 
-static constexpr int NOTHING = -1;
 
-/*! \fn int static checkButtonPressed(std::shared_ptr<Clickable> clicked )
- *  \brief Check if a mouse click is on the left or the right button
- *
- *  \param clicked a shared pointer on a clickable object
- *  \return the return code of the clickable object
- */
 
-int static checkButtonPressed(std::shared_ptr<Clickable> clicked ){
-            int rt = NOTHING;
-            
-            if( sf::Mouse::isButtonPressed(sf::Mouse::Left))
-                    rt =   clicked->leftClickAction(); 
-                    
-            else if (sf::Mouse::isButtonPressed(sf::Mouse::Right))
-                    rt = clicked->rightClickAction();
-            
-             std::cout << "RT is " << rt << std::endl;
+int tab[DEFAULT_SIZE*DEFAULT_SIZE] ;
+ //= {0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3};
 
-            return rt;
-}
-
-/*! \fn void static  treatKeyPressed(sf::Event & event,sf::RenderWindow & window )
- *  \brief Check the key pressed
- *
- *  \param event reference on the event triggering the function
+/*! \fn void static mainMenuDecode(int clickedRt,sf::RenderWindow & window, std::unique_ptr<usrInterface> usrInt )
+ *  \brief Do the action provided by a clickable object
+ *  \param clickedRt the int returned by a clickable object
  *  \param window reference on the application unique window
+ *  \param[out] usrInt an unique pointer on the current user interface
+ *  \param[out] appState the current application state
  */
-void static  treatKeyPressed(sf::Event & event,sf::RenderWindow & window ){
-                    switch(event.key.code){
-                      case sf::Keyboard::Escape:
-                        window.close();
-                      default:
-                        break;
-                    }
+void static mainMenuDecode(int clickedRt,sf::RenderWindow & window,
+    std::unique_ptr<usrInterface>* usrInt, int * appState,
+    std::unique_ptr<Game>* theGame ){
+
+  int curW = window.getSize().y, curH = window.getSize().x;
+
+  if(clickedRt == actions::QUIT)
+    window.close();
+
+  else if(clickedRt == actions::NEW_GAME ){
+
+    GameMap defaultMap(DEFAULT_SIZE,DEFAULT_SIZE,tab);
+    std::vector<Unit> defaultUnits;
+    
+    Unit robot1(std::string("Nono"),45,0,std::make_pair<int,int>(4,1));
+    Unit robot2(std::string("Drauwid"),45,0,std::make_pair<int,int>(2,1));
+    Unit robotMstr(std::string("C3-PLO"),45,1,std::make_pair<int,int>(3,0));
+    
+    defaultUnits.push_back(robot1);
+    defaultUnits.push_back(robot2);
+    defaultUnits.push_back(robotMstr);
+
+    (*theGame).reset(new Game(defaultMap,defaultUnits));
+
+    usrInt->reset(new BoardGI(curH,curW,theGame));
+    
+    *appState = PLAYING;
+  }
 }
 
 /*! \fn void static mainMenuDecode(int clickedRt,sf::RenderWindow & window, std::unique_ptr<usrInterface> usrInt )
@@ -68,14 +76,12 @@ void static playingDecode(
  
     int curW = window.getSize().y,curH = window.getSize().x;
  
-  if(clickedRt == END_TURN)
+  if(clickedRt == actions::END_TURN)
      (*theGame)->nextTurn();
-  else{
-    // Check if is overlayed 
-    // When clicked on it
-  }
 
-   usrInt->reset(new BoardGI(curH,curW,theGame));
+  std::cout << **theGame;
+
+  usrInt->reset(new BoardGI(curH,curW,theGame));
 }
 
 /*! \fn decode(int clickedRt,sf;;RenderWindow & window, std::unique_ptr<usrInterface* usrInt)
@@ -103,3 +109,5 @@ void decode(int clickedRt,sf::RenderWindow & window, std::unique_ptr<usrInterfac
       }
 
       }
+
+#endif

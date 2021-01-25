@@ -1,12 +1,19 @@
 var searchData=
 [
-  ['imgs_5fdir_75',['IMGS_DIR',['../headersLocation_8hh.html#a5a32060ea6e15641630ebbccf4fdd714',1,'headersLocation.hh']]],
-  ['infotextgi_76',['infoTextGI',['../classinfoTextGI.html',1,'']]],
-  ['infotextgi_2ehh_77',['infoTextGI.hh',['../infoTextGI_8hh.html',1,'']]],
-  ['insidetile_78',['insideTile',['../classTileGI.html#ad8b3a398a1380a957e329cfcc58fa3af',1,'TileGI']]],
-  ['internallogic_2ehh_79',['internalLogic.hh',['../internalLogic_8hh.html',1,'']]],
-  ['isinside_80',['isInside',['../namespacetriangle.html#a62eaecefed8b56a2362341d7bad0330e',1,'triangle']]],
-  ['isselected_81',['isSelected',['../classTile.html#aa637d7a4c530a66c6bb180494a20ff21',1,'Tile']]],
-  ['isunder_82',['isUnder',['../classButtonGI.html#a2aa483dd0623ce379c4b1b1dd554570b',1,'ButtonGI::isUnder()'],['../classSpriteButtonGI.html#aa1545da97f3f753f762e3eea8824afc5',1,'SpriteButtonGI::isUnder()'],['../classTileGI.html#a644903ffaae2045a597509fc113ad14d',1,'TileGI::isUnder()']]],
-  ['itemsheight_83',['itemsHeight',['../mainMenuGI_8hh.html#a22bf37a66e90898e3aa456a8d121bdf9',1,'mainMenuGI.hh']]]
+  ['iaheros_108',['IAHeros',['../classIAHeros.html',1,'IAHeros'],['../classIAHeros.html#a1e31b75b6056ed2fed5423707e9cd5bb',1,'IAHeros::IAHeros()']]],
+  ['iaheros_2ecpp_109',['IAHeros.cpp',['../IAHeros_8cpp.html',1,'']]],
+  ['iaheros_2eh_110',['IAHeros.h',['../IAHeros_8h.html',1,'']]],
+  ['iamechant_111',['IAMechant',['../classIAMechant.html',1,'IAMechant'],['../classIAMechant.html#a65ad56f39df0d1c3652866fbc95f7bd0',1,'IAMechant::IAMechant()']]],
+  ['iamechant_2ecpp_112',['IAMechant.cpp',['../IAMechant_8cpp.html',1,'']]],
+  ['iamechant_2eh_113',['IAMechant.h',['../IAMechant_8h.html',1,'']]],
+  ['imgs_5fdir_114',['IMGS_DIR',['../headersLocation_8hh.html#a5a32060ea6e15641630ebbccf4fdd714',1,'headersLocation.hh']]],
+  ['infotextgi_115',['infoTextGI',['../classinfoTextGI.html',1,'']]],
+  ['infotextgi_2ehh_116',['infoTextGI.hh',['../infoTextGI_8hh.html',1,'']]],
+  ['initattributes_117',['initAttributes',['../classHeros.html#ad4acee9a53e3c0d3d29e07e3fd3178f1',1,'Heros::initAttributes()'],['../classPersonnage.html#acd5ec90356b1942c3675ce57d23cc82b',1,'Personnage::initAttributes()'],['../classRobot.html#a09d4737c4dc69a446a206d3f77df4525',1,'Robot::initAttributes()']]],
+  ['insidetile_118',['insideTile',['../classTileGI.html#ad8b3a398a1380a957e329cfcc58fa3af',1,'TileGI']]],
+  ['internallogic_2ehh_119',['internalLogic.hh',['../internalLogic_8hh.html',1,'']]],
+  ['isinside_120',['isInside',['../namespacetriangle.html#a62eaecefed8b56a2362341d7bad0330e',1,'triangle']]],
+  ['isselected_121',['isSelected',['../classTile.html#aa637d7a4c530a66c6bb180494a20ff21',1,'Tile']]],
+  ['isunder_122',['isUnder',['../classButtonGI.html#a2aa483dd0623ce379c4b1b1dd554570b',1,'ButtonGI::isUnder()'],['../classSpriteButtonGI.html#aa1545da97f3f753f762e3eea8824afc5',1,'SpriteButtonGI::isUnder()'],['../classTileGI.html#a644903ffaae2045a597509fc113ad14d',1,'TileGI::isUnder()']]],
+  ['itemsheight_123',['itemsHeight',['../mainMenuGI_8hh.html#a22bf37a66e90898e3aa456a8d121bdf9',1,'mainMenuGI.hh']]]
 ];

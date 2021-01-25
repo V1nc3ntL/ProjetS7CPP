@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet C++ S7 : EL-KHARROUBI LEFEBVRE:  Fichier source de src/events/actions.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet C++ S7 : EL-KHARROUBI LEFEBVRE
+   </div>
+   <div id="projectbrief">Le projet S7 de C++ pour EISE4, réalisé par Karim El-KHARROUBI et Vincent LEFEBVRE</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_14e1e259e8275dc0c459acef3bbf05ae.html">events</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">actions.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="actions_8hh.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef __ACTIONS_HH__</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define __ACTIONS_HH__</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="namespaceactions.html">   11</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceactions.html">actions</a>{</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="namespaceactions.html#a93f38c8989a6f117eda562701097936d">   12</a></span>&#160;<span class="keyword">static</span> constexpr <span class="keywordtype">int</span> <a class="code" href="namespaceactions.html#a93f38c8989a6f117eda562701097936d">NOTHING</a> = -1;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="namespaceactions.html#afc377a2afca6667dead0432c6a2f8d72">   13</a></span>&#160;constexpr <span class="keywordtype">int</span> <a class="code" href="namespaceactions.html#afc377a2afca6667dead0432c6a2f8d72">NEW_GAME</a> = 1;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="namespaceactions.html#a402c52f91f4b0c5ab8e55bda415d97fc">   14</a></span>&#160;constexpr <span class="keywordtype">int</span> <a class="code" href="namespaceactions.html#a402c52f91f4b0c5ab8e55bda415d97fc">QUIT</a> = 0;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="namespaceactions.html#ace5638893ac16c0a3bb0db361dc4df04">   16</a></span>&#160;constexpr <span class="keywordtype">int</span> <a class="code" href="namespaceactions.html#ace5638893ac16c0a3bb0db361dc4df04">END_TURN</a> = <a class="code" href="gameMap_8hh.html#afd483d6947247a58e991b0a1c80da7e6">DEFAULT_SIZE</a>*<a class="code" href="gameMap_8hh.html#afd483d6947247a58e991b0a1c80da7e6">DEFAULT_SIZE</a>+1;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="anamespaceactions_html_a93f38c8989a6f117eda562701097936d"><div class="ttname"><a href="namespaceactions.html#a93f38c8989a6f117eda562701097936d">actions::NOTHING</a></div><div class="ttdeci">static constexpr int NOTHING</div><div class="ttdef"><b>Definition:</b> actions.hh:12</div></div>
+<div class="ttc" id="anamespaceactions_html_afc377a2afca6667dead0432c6a2f8d72"><div class="ttname"><a href="namespaceactions.html#afc377a2afca6667dead0432c6a2f8d72">actions::NEW_GAME</a></div><div class="ttdeci">constexpr int NEW_GAME</div><div class="ttdef"><b>Definition:</b> actions.hh:13</div></div>
+<div class="ttc" id="anamespaceactions_html_a402c52f91f4b0c5ab8e55bda415d97fc"><div class="ttname"><a href="namespaceactions.html#a402c52f91f4b0c5ab8e55bda415d97fc">actions::QUIT</a></div><div class="ttdeci">constexpr int QUIT</div><div class="ttdef"><b>Definition:</b> actions.hh:14</div></div>
+<div class="ttc" id="agameMap_8hh_html_afd483d6947247a58e991b0a1c80da7e6"><div class="ttname"><a href="gameMap_8hh.html#afd483d6947247a58e991b0a1c80da7e6">DEFAULT_SIZE</a></div><div class="ttdeci">constexpr int DEFAULT_SIZE</div><div class="ttdef"><b>Definition:</b> gameMap.hh:16</div></div>
+<div class="ttc" id="anamespaceactions_html"><div class="ttname"><a href="namespaceactions.html">actions</a></div><div class="ttdef"><b>Definition:</b> actions.hh:11</div></div>
+<div class="ttc" id="anamespaceactions_html_ace5638893ac16c0a3bb0db361dc4df04"><div class="ttname"><a href="namespaceactions.html#ace5638893ac16c0a3bb0db361dc4df04">actions::END_TURN</a></div><div class="ttdeci">constexpr int END_TURN</div><div class="ttdef"><b>Definition:</b> actions.hh:16</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

@@ -32,14 +32,14 @@ public:
    */
   ~MainMenuGI(){};
 
-  /*! \fn  MainMenuGI(int & windowWidth, int &windowHeight)
+  /*! \fn  MainMenuGI(int  windowWidth, int windowHeight)
    *  \brief Creates a main menu graphic implementation pfollowing its parameter
    *  \param windowWidth the width of the window where the main menu is
    *  displayed in pixel 
    *  \param windowHeight the height of the window where the
    * main menu is displayed in pixel
    */
-  MainMenuGI(int &windowWidth, int &windowHeight)
+  MainMenuGI(int windowWidth, int windowHeight)
       : title("DYSTOPIA", titleFont, itemsHeight), 
       width(windowWidth),
         newGameButton(

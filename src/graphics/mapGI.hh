@@ -36,7 +36,7 @@ public:
    *  \param windowHeight the height of the window where the map is displayed
    *  \param map the gameMap to obtain
    */
-  MapGI(int &windowWidth, int &windowHeight, GameMap &map);
+  MapGI(int & windowWidth, int & windowHeight, GameMap & map);
   
   /*! \fn    void createMapGraphs(std::pair<int,int> & northPosition,std::vector<std::shared_ptr<Tile>>::iterator it );
    *  \brief Creates the sub-graphic implementation
